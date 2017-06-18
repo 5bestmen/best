@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.template.psr.DeviceTemplateData" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="type" type="java.lang.Integer" not-null="true"/>
+        <property name="index"  column="indexnumber" type="java.lang.Integer" not-null="true"/>
+        <property name="name" type="java.lang.String" />
+        <many-to-one name="magicType" class="com.corsair.entity.template.psr.MagicType" fetch="join"/>
+        <many-to-one name="unitType" class="com.corsair.entity.template.psr.UnitType" fetch="join"/>
+
+        <property name="calculate" type="java.lang.Boolean"/>
+        <property name="expression" type="java.lang.String"/>
+
+        <property name="desc" column="comments" type="java.lang.String"/>
+        <property name="invisibleInChart" type="java.lang.Boolean"/>
+
+        <many-to-one name="accumulateType" class="com.corsair.entity.template.psr.AccumulateType" fetch="join"/>
+        <many-to-one name="specialChart" class="com.corsair.entity.SpecialChart" fetch="join"/>
+        <many-to-one name="deviceTemplate" class="com.corsair.entity.template.psr.DeviceTemplate" fetch="join"/>
+        <!--<many-to-one name="dataName" class="com.corsair.entity.template.psr.DataName" fetch="join" not-null="true"/>-->
+    </class>
+</hibernate-mapping>

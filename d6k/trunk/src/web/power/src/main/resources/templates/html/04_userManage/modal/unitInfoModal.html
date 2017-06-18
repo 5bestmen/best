@@ -1,0 +1,31 @@
+<div class="window_add" style="width: 100%;height:100%;margin-top:0px;">
+    <div class="title_w">
+        <span>设备追加</span>
+        <span>设备信息修改</span>
+        <img src="resources/img/close.png" ng-click="cancel();">
+        <div class="clear"></div>
+    </div>
+    <div class="window_c_2" style="height: 18em">
+        <div class="window_l_2" style="height: 14em">
+            <div class="item_2">
+                <span>工程名</span>
+                <select class="show2" id="pjList" ng-model="selectedPj">
+                    <option ng-repeat="pj in modalPjList" value={{pj.intDBPkPjinfoid}}>{{pj.strPjName}}</option>
+                </select>
+                <div class="clear"></div>
+            </div>
+            <div class="item_2">
+                <span>工程节点</span>
+                <input type="text" id="strUnitName" value="{{modalUnitInfo.strUnitName}}">
+                <div class="clear"></div>
+            </div>
+            <div class="item_2">
+                <span>追加说明</span>
+                <textarea id="strUnitNote">{{modalUnitInfo.strUnitNote}}</textarea>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="window_btn"><a ng-click="modalSubmit();this.blur();">提交</a></div>
+    </div>
+</div>

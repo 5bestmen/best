@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<svg width="462.844mm" version="1.2" xmlns="http://www.w3.org/2000/svg" height="170.392mm" viewBox="-96 -92 2624 966" xmlns:xlink="http://www.w3.org/1999/xlink" baseProfile="tiny">
+    <title>Qt Svg Document</title>
+    <desc>Generated with Qt</desc>
+    <defs/>
+    <g fill="none" stroke="black" fill-rule="evenodd" stroke-linejoin="bevel" stroke-linecap="square" stroke-width="1">
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,0,0)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,656,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="#ffffff" font-family="SimSun" stroke="#000080" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,656,92.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="non-scaling-stroke" d="M-108,-86.01 C-108,-89.042 -105.582,-91.5 -102.6,-91.5 L102.6,-91.5 C105.582,-91.5 108,-89.042 108,-86.01 L108,86.01 C108,89.042 105.582,91.5 102.6,91.5 L-102.6,91.5 C-105.582,91.5 -108,89.042 -108,86.01 L-108,-86.01"/>
+        </g>
+        <g stroke-opacity="1" fill="#ffffff" font-family="微软雅黑" stroke="#008000" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,656,92.5)" font-size="15">
+            <image width="200" x="-100" y="-86.5" preserveAspectRatio="none" height="150" xlink:href="./res/pvarray.png"/>
+            <text x="-60" y="83.5" fill="#008000" font-family="微软雅黑" stroke="none" font-style="normal" fill-opacity="1" font-weight="400" xml:space="preserve" font-size="15">长园集团光伏电站</text>
+            <a xlink:href="./主页面.svg">
+                <rect width="200" x="-100" y="-86.5" stroke-opacity="0" height="150" fill-opacity="0"/>
+            </a>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,656,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="#ffffff" font-family="SimSun" stroke="#000080" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,392.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="non-scaling-stroke" d="M-95,-84.13 C-95,-87.0958 -92.448,-89.5 -89.3,-89.5 L89.3,-89.5 C92.448,-89.5 95,-87.0958 95,-84.13 L95,84.13 C95,87.0958 92.448,89.5 89.3,89.5 L-89.3,89.5 C-92.448,89.5 -95,87.0958 -95,84.13 L-95,-84.13"/>
+        </g>
+        <g stroke-opacity="1" fill="#ffffff" font-family="微软雅黑" stroke="#008000" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,392.5)" font-size="15">
+            <image width="174" x="-87" y="-84.5" preserveAspectRatio="none" height="146" xlink:href="./res/inverter.png"/>
+            <text x="-47" y="81.5" fill="#008000" font-family="微软雅黑" stroke="none" font-style="normal" fill-opacity="1" font-weight="400" xml:space="preserve" font-size="15">1#方阵逆变器</text>
+            <a xlink:href="./长园集团光伏电站.svg">
+                <rect width="174" x="-87" y="-84.5" stroke-opacity="0" height="146" fill-opacity="0"/>
+            </a>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="round" font-style="normal" stroke-linecap="round" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="none" d="M560,92.5 L560,151 L0,151 L0,209.5"/>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,376,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="#ffffff" font-family="SimSun" stroke="#000080" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,376,392.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="non-scaling-stroke" d="M-95,-84.13 C-95,-87.0958 -92.448,-89.5 -89.3,-89.5 L89.3,-89.5 C92.448,-89.5 95,-87.0958 95,-84.13 L95,84.13 C95,87.0958 92.448,89.5 89.3,89.5 L-89.3,89.5 C-92.448,89.5 -95,87.0958 -95,84.13 L-95,-84.13"/>
+        </g>
+        <g stroke-opacity="1" fill="#ffffff" font-family="微软雅黑" stroke="#008000" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,376,392.5)" font-size="15">
+            <image width="174" x="-87" y="-84.5" preserveAspectRatio="none" height="146" xlink:href="./res/inverter.png"/>
+            <text x="-47" y="81.5" fill="#008000" font-family="微软雅黑" stroke="none" font-style="normal" fill-opacity="1" font-weight="400" xml:space="preserve" font-size="15">2#方阵逆变器</text>
+            <a xlink:href="./长园集团光伏电站.svg">
+                <rect width="174" x="-87" y="-84.5" stroke-opacity="0" height="146" fill-opacity="0"/>
+            </a>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,376,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="round" font-style="normal" stroke-linecap="round" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="none" d="M560,92.5 L560,151 L280,151 L280,209.5"/>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,656,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="#ffffff" font-family="SimSun" stroke="#000080" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,656,392.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="non-scaling-stroke" d="M-95,-84.13 C-95,-87.0958 -92.448,-89.5 -89.3,-89.5 L89.3,-89.5 C92.448,-89.5 95,-87.0958 95,-84.13 L95,84.13 C95,87.0958 92.448,89.5 89.3,89.5 L-89.3,89.5 C-92.448,89.5 -95,87.0958 -95,84.13 L-95,-84.13"/>
+        </g>
+        <g stroke-opacity="1" fill="#ffffff" font-family="微软雅黑" stroke="#008000" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,656,392.5)" font-size="15">
+            <image width="174" x="-87" y="-84.5" preserveAspectRatio="none" height="146" xlink:href="./res/inverter.png"/>
+            <text x="-47" y="81.5" fill="#008000" font-family="微软雅黑" stroke="none" font-style="normal" fill-opacity="1" font-weight="400" xml:space="preserve" font-size="15">3#方阵逆变器</text>
+            <a xlink:href="./长园集团光伏电站3方阵逆变器.svg">
+                <rect width="174" x="-87" y="-84.5" stroke-opacity="0" height="146" fill-opacity="0"/>
+            </a>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,656,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="round" font-style="normal" stroke-linecap="round" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="none" d="M560,92.5 L560,151 L560,209.5"/>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,936,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="#ffffff" font-family="SimSun" stroke="#000080" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,936,392.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="non-scaling-stroke" d="M-95,-84.13 C-95,-87.0958 -92.448,-89.5 -89.3,-89.5 L89.3,-89.5 C92.448,-89.5 95,-87.0958 95,-84.13 L95,84.13 C95,87.0958 92.448,89.5 89.3,89.5 L-89.3,89.5 C-92.448,89.5 -95,87.0958 -95,84.13 L-95,-84.13"/>
+        </g>
+        <g stroke-opacity="1" fill="#ffffff" font-family="微软雅黑" stroke="#008000" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,936,392.5)" font-size="15">
+            <image width="174" x="-87" y="-84.5" preserveAspectRatio="none" height="146" xlink:href="./res/inverter.png"/>
+            <text x="-47" y="81.5" fill="#008000" font-family="微软雅黑" stroke="none" font-style="normal" fill-opacity="1" font-weight="400" xml:space="preserve" font-size="15">4#方阵逆变器</text>
+            <a xlink:href="./长园集团光伏电站.svg">
+                <rect width="174" x="-87" y="-84.5" stroke-opacity="0" height="146" fill-opacity="0"/>
+            </a>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,936,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="round" font-style="normal" stroke-linecap="round" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="none" d="M560,92.5 L560,151 L840,151 L840,209.5"/>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,1216,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="#ffffff" font-family="SimSun" stroke="#000080" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,1216,392.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="non-scaling-stroke" d="M-95,-84.13 C-95,-87.0958 -92.448,-89.5 -89.3,-89.5 L89.3,-89.5 C92.448,-89.5 95,-87.0958 95,-84.13 L95,84.13 C95,87.0958 92.448,89.5 89.3,89.5 L-89.3,89.5 C-92.448,89.5 -95,87.0958 -95,84.13 L-95,-84.13"/>
+        </g>
+        <g stroke-opacity="1" fill="#ffffff" font-family="微软雅黑" stroke="#008000" stroke-linejoin="bevel" font-style="normal" fill-opacity="1" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,1216,392.5)" font-size="15">
+            <image width="174" x="-87" y="-84.5" preserveAspectRatio="none" height="146" xlink:href="./res/inverter.png"/>
+            <text x="-47" y="81.5" fill="#008000" font-family="微软雅黑" stroke="none" font-style="normal" fill-opacity="1" font-weight="400" xml:space="preserve" font-size="15">5#方阵逆变器</text>
+            <a xlink:href="./长园集团光伏电站.svg">
+                <rect width="174" x="-87" y="-84.5" stroke-opacity="0" height="146" fill-opacity="0"/>
+            </a>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,1216,392.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="round" font-style="normal" stroke-linecap="round" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9">
+            <path fill-rule="evenodd" vector-effect="none" d="M560,92.5 L560,151 L1120,151 L1120,209.5"/>
+        </g>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,96,92.5)" font-size="9"/>
+        <g stroke-opacity="1" fill="none" font-family="SimSun" stroke="#000000" stroke-linejoin="bevel" font-style="normal" stroke-linecap="square" font-weight="400" stroke-width="1" transform="matrix(1,0,0,1,0,0)" font-size="9"/>
+    </g>
+</svg>

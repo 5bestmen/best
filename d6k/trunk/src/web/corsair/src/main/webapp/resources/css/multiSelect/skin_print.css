@@ -1,0 +1,10 @@
+#wrapper{margin:0;box-shadow: none;-moz-box-shadow: none;-webkit-box-shadow: none;}#branding-navigation{-webkit-border-radius: none;-moz-border-radius: none;border-radius: none;-moz-box-shadow: none;-webkit-box-shadow: none;}#branding-navigation a{text-shadow: none;}#branding-navigation h1 a .fa,#branding-navigation h1 a + span,#branding-navigation ul{display: none;}#branding-navigation,#content{border: none;}#content{padding-top:10px;padding-left:30px;color:#333;}#content h2{top: -90px;}
+
+#content {
+    position: relative;
+    /*padding: 75px 10px 30px 10px;*/
+    color: #777777;
+    /* background-color: #ffffff; */
+    border: 1px solid #1F5686;
+    border-top: 0;
+}

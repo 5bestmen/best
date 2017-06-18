@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.NetElectricity" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="netDate" type="java.lang.String" not-null="true" />
+        <property name="totalKwh" type="java.lang.Double" />
+        <property name="peakKwh" type="java.lang.Double" />
+        <property name="normalKwh" type="java.lang.Double" />
+        <property name="valleyKwh" type="java.lang.Double" />
+        <property name="reverseTotalKwh" type="java.lang.Double" />
+        <property name="totalKVar" type="java.lang.Double" />
+        <property name="multiple" type="java.lang.Integer" />
+        <property name="station" type="java.lang.String" />
+     </class>
+</hibernate-mapping>

@@ -1,0 +1,74 @@
+<style type="text/css">
+    .item_content ul  {
+        list-style:none;
+    }
+    .item_content ul li {
+        width:200px;
+        height:120px;
+        float:left;
+        margin:10px
+    }
+    .item_content {
+        width:auto;
+        height:460px;
+        /*margin:0 auto;*/
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+
+    .item_content .item {
+        width:200px;
+        height:120px;
+        line-height:20px;
+        text-align:center;
+        cursor:pointer;
+
+    }
+    .item_content .item img {
+        width:200px;
+        height:120px;
+        border-radius:6px;
+        position: absolute;
+        top:0px;
+        left: 0px;
+    }
+    .item .title{
+        position:absolute;
+        font-family:"Microsoft YaHei";
+        top:23px;
+        color:white;
+        left:10px;
+        z-index: 1;
+        font-weight: normal;
+    }
+    .item .value{
+        position:absolute;
+        font-family:"Microsoft YaHei";
+        top:69px;
+        color:black;
+        left:50px;
+        font-size: 15px;
+        z-index: 1;
+    }
+    .item .unit{
+        position:absolute;
+        font-family:"Microsoft YaHei";
+        top:69px;
+        color:black;
+        left:152px;
+        font-size: 15px;
+        z-index: 1;
+    }
+</style>
+<div class="item_content">
+    <ul>
+        <li ng-repeat="card in deviceCardList">
+            <div class="item">
+                <span class="title">{{deviceName +" : "+card.strTitle}}</span>
+                <span class="value" id="devicecard_{{card.strDBKey}}">{{card.strDBValue}}</span>
+                <span class="unit">A</span>
+                <img src="resources/img/card.png" />
+            </div>
+        </li>
+    </ul>
+</div>

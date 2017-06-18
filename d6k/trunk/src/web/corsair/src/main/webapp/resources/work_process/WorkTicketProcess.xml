@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<process name="workTicketProcess" displayName="工作票流程" instanceUrl="/snaker/flow/all" >
+<start layout="487,96,50,50" name="start" >
+<transition offset="0,-10" to="workTicketEdit" name="path17" />
+</start>
+<task layout="463,190,100,50" name="workTicketEdit" displayName="填写工作票" form="/workTicketModify" assignee="workTicketModify.operator" taskType="Major" performType="ANY" autoExecute="N" >
+<transition offset="0,-10" to="workTicketIssued" name="path18" />
+</task>
+<task layout="464,285,100,50" name="workTicketIssued" displayName="签发" form="/workTicketIssued" assignee="workTicketIssued.operator" taskType="Major" performType="ANY" autoExecute="N" >
+<transition offset="0,-10" to="workTicketPermit" name="path19" />
+</task>
+<task layout="463,381,100,50" name="workTicketPermit" displayName="工作票审结" form="/workTicketPermit" assignee="workTicketPermit.operator" taskType="Major" performType="ANY" autoExecute="N" >
+<transition offset="0,-10" to="decision" name="path16" />
+</task>
+<task layout="457,571,112,50" name="workTicketEnd" displayName="办理终结手续" form="/workTicketEnd" assignee="workTicketEnd.operator" taskType="Major" performType="ANY" autoExecute="N" >
+<transition offset="0,-10" to="end" name="path20" />
+</task>
+<decision layout="463,470,100,50" name="decision" expr="#result" >
+<transition offset="-40,30" to="workTicketEdit" g="653,497;653,454;653,217" name="disagree" displayName="不通过" />
+<transition offset="18,-7" to="workTicketEnd" name="agree" displayName="通过" />
+<transition offset="38,36" to="workTicketPermit" g="407,496;407,444;407,408" name="extension" displayName="工作票延期" />
+<transition offset="-43,99" to="workTicketIssued" g="743,499;744,425;744,346;744,315" name="alter" displayName="变更负责人" />
+</decision>
+<end layout="490,673,50,50" name="end" >
+</end>
+</process>

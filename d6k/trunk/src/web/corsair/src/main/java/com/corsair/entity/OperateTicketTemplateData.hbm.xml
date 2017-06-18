@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.OperateTicketTemplateData" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="indexNumber" type="java.lang.Integer"/>
+        <property name="content" type="java.lang.String"/>
+        <property name="comments" type="java.lang.String"/>
+        <many-to-one name="baseTicket" class="com.corsair.entity.BaseTicket" fetch="join"/>
+    </class>
+</hibernate-mapping>

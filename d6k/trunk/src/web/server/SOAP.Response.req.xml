@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+  xmlns:ns2="http://iec.ch/TC57/2011/schema/message"
+  xmlns:ns1="http://iec.ch/TC57/2011/abstract">
+ <SOAP-ENV:Body>
+   <ns2:ResponseMessage>
+    <Header>
+     <Verb>cancel</Verb>
+     <Noun></Noun>
+     <Revision></Revision>
+     <ReplayDetection>
+      <Nonce></Nonce>
+      <Created>2015-07-08T09:17:54Z</Created>
+     </ReplayDetection>
+     <Context></Context>
+     <Timestamp>2015-07-08T09:17:54Z</Timestamp>
+     <Source></Source>
+     <AsyncReplyFlag>false</AsyncReplyFlag>
+     <ReplyAddress></ReplyAddress>
+     <AckRequired>false</AckRequired>
+     <User>
+      <UserID></UserID>
+      <Organization></Organization>
+     </User>
+     <MessageID></MessageID>
+     <CorrelationID></CorrelationID>
+     <Comment></Comment>
+     <Property>
+      <Name></Name>
+      <Value></Value>
+     </Property>
+     <Property>
+      <Name></Name>
+      <Value></Value>
+     </Property>
+
+
+    </Header>
+    <Reply>
+     <Result>OK</Result>
+     <Error>
+      <code></code>
+      <level>INFORM</level>
+      <reason></reason>
+      <details></details>
+      <xpath></xpath>
+      <stackTrace></stackTrace>
+      <Location>
+       <node></node>
+       <pipeline></pipeline>
+       <stage></stage>
+      </Location>
+      <ID idType="" idAuthority="" kind="name" objectType=""></ID>
+      <relatedID idType="" idAuthority="" kind="name" objectType=""></relatedID>
+      <object>
+       <mRID></mRID>
+       <Name>
+        <name></name>
+        <NameType>
+         <name></name>
+         <description></description>
+         <NameTypeAuthority>
+          <name></name>
+         </NameTypeAuthority>
+        </NameType>
+       </Name>
+       <Name>
+        <name></name>
+        <NameType>
+         <name></name>
+         <description></description>
+         <NameTypeAuthority>
+          <name></name>
+         </NameTypeAuthority>
+        </NameType>
+       </Name>
+       <objectType></objectType>
+      </object>
+      <operationId></operationId>
+     </Error>
+     <Error>
+      <code></code>
+      <level>INFORM</level>
+      <reason></reason>
+      <details></details>
+      <xpath></xpath>
+      <stackTrace></stackTrace>
+      <Location>
+       <node></node>
+       <pipeline></pipeline>
+       <stage></stage>
+      </Location>
+      <ID idType="" idAuthority="" kind="name" objectType=""></ID>
+      <relatedID idType="" idAuthority="" kind="name" objectType=""></relatedID>
+      <object>
+       <mRID></mRID>
+       <Name>
+        <name></name>
+        <NameType>
+         <name></name>
+         <description></description>
+         <NameTypeAuthority>
+          <name></name>
+         </NameTypeAuthority>
+        </NameType>
+       </Name>
+       <Name>
+        <name></name>
+        <NameType>
+         <name></name>
+         <description></description>
+         <NameTypeAuthority>
+          <name></name>
+         </NameTypeAuthority>
+        </NameType>
+       </Name>
+       <objectType></objectType>
+      </object>
+      <operationId></operationId>
+     </Error>
+     <ID></ID>
+
+
+     <operationId></operationId>
+    </Reply>
+    <Payload>
+
+     <Format></Format>
+    </Payload>
+   </ns2:ResponseMessage>
+
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

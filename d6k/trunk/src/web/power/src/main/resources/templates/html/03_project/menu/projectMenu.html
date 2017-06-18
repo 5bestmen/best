@@ -1,0 +1,40 @@
+<div id="left" class="main_left_dl">
+    <ul id="huabu" style="OVERFLOW-Y: auto; OVERFLOW-X:auto; width:100%;">
+        <div ng-repeat="pjInfo in pjInfoList">
+            <li class="nav_first" ng-click="this.blur();goToProject(pjInfo.intDBPkPjinfoid,$event)"
+                data-toggle="collapse" data-parent="#huabu" data-target="#project_{{pjInfo.intDBPkPjinfoid}}">
+                <span class="c02"><img src="../../../img/nav_tag02.png" /></span>
+                <span class="c01">{{pjInfo.strPjName}} (状态:正常)</span>
+                <div class="clear"></div>
+            </li>
+            <ul class="content_dl collapse" id="project_{{pjInfo.intDBPkPjinfoid}}" >
+                <div ng-repeat="unit in unitInfoList|filter : {intDBPkPjinfoid:pjInfo.intDBPkPjinfoid}">
+                    <li class="nav_second" data-toggle="collapse" data-parent="#project_{{pjInfo.intDBPkPjinfoid}}" data-target="#unitIn_{{pjInfo.intDBPkPjinfoid}}_{{unit.intPjUnitId}}"
+                        ng-click="collapseDevice($event)">
+                        <span class="c04"><img src="../../../img/nav_tag02.png" /></span>
+                        <span class="c03">{{unit.strUnitName}} (总数：{{getDeviceCount(pjInfo.intDBPkPjinfoid,unit.intPjUnitId).length}})</span>
+                        <div class="clear"></div>
+                    </li>
+                    <ul id="unitIn_{{pjInfo.intDBPkPjinfoid}}_{{unit.intPjUnitId}}" class="collapse">
+                        <div ng-repeat="deviceKind in deviceKindList">
+                            <li class="my_nav_third" data-toggle="collapse" data-parent="#unitIn_{{pjInfo.intDBPkPjinfoid}}_{{unit.intPjUnitId}}" ng-click="collapseDevice($event)"
+                                data-target="#deviceIn_{{pjInfo.intDBPkPjinfoid}}_{{unit.intPjUnitId}}_{{deviceKind.intDeviceKindId}}">
+                                <span class="m01"><img src="../../../img/nav_tag02.png" /></span>
+                                <span class="m02">{{deviceKind.strDeviceKindName}} (总数：{{getDeviceList(pjInfo.intDBPkPjinfoid,unit.intPjUnitId,deviceKind.intDeviceKindId).length}})</span>
+                                <div class="clear"></div>
+                            </li>
+                            <ul id="deviceIn_{{pjInfo.intDBPkPjinfoid}}_{{unit.intPjUnitId}}_{{deviceKind.intDeviceKindId}}" class="collapse">
+                                <li class="my_nav_four" ng-click="goToPage(device.intDeviceid)"
+                                    ng-repeat="device in getDeviceList(pjInfo.intDBPkPjinfoid,unit.intPjUnitId,deviceKind.intDeviceKindId)">
+                                    <span class="m03">{{device.strDeviceName}} (状态：正常)</span>
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+
+    </ul>
+</div>

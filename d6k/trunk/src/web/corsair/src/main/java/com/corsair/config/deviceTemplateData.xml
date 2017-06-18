@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<deviceTemplateDataConfig>
+
+    <deviceTemplateDataTypes>
+        <typeInt>1</typeInt>
+        <typeString>遥信</typeString>
+    </deviceTemplateDataTypes>
+
+    <deviceTemplateDataTypes>
+        <typeInt>2</typeInt>
+        <typeString>遥测</typeString>
+    </deviceTemplateDataTypes>
+
+    <deviceTemplateDataTypes>
+        <typeInt>3</typeInt>
+        <typeString>电度</typeString>
+    </deviceTemplateDataTypes>
+
+    <deviceTemplateDataTypes>
+        <typeInt>4</typeInt>
+        <typeString>特殊图表</typeString>
+    </deviceTemplateDataTypes>
+
+</deviceTemplateDataConfig>

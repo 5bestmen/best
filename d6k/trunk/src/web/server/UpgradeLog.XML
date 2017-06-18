@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="server">
+</Property><Property Name="Solution File" Value="C:\Users\zyj\Desktop\rtbDataGet\server.sln">
+</Property><Property Name="User Options File" Value="C:\Users\zyj\Desktop\rtbDataGet\server.suo">
+</Property><Property Name="Date" Value="2016年10月26日">
+</Property><Property Name="Time" Value="14:07">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="server.sln" Description="File successfully backed up as C:\Users\zyj\Desktop\rtbDataGet\server.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="server.suo" Description="File successfully backed up as C:\Users\zyj\Desktop\rtbDataGet\server.suo.old">
+</Event><Event ErrorLevel="0" Project="server" Source="server.vcproj" Description="Converting project file 'C:\Users\zyj\Desktop\rtbDataGet\server.vcproj'.">
+</Event><Event ErrorLevel="1" Project="server" Source="server.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="server" Source="server.vcproj" Description="MSB8012: $(TargetName) ('server') does not match the Linker's OutputFile property value '\bin\rtbdataget.exe' ('rtbdataget') in project configuration 'Debug|x64'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetName) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="server" Source="server.vcproj" Description="MSB8012: $(TargetPath) ('\bin\server.exe') does not match the Linker's OutputFile property value '\bin\rtbdataget.exe' ('C:\bin\rtbdataget.exe') in project configuration 'Debug|x64'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="server" Source="server.vcproj" Description="Done converting to new project file 'C:\Users\zyj\Desktop\rtbDataGet\server.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="server" Source="server.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="server.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="server.sln" Description="Converted">
+</Event></UpgradeLog>

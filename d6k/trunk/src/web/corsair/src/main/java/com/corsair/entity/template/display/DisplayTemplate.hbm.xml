@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.template.display.DisplayTemplate" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="name" type="java.lang.String" not-null="true" unique="true"/>
+        <property name="desc" column="comments" type="java.lang.String"/>
+        <property name="needContainer" type="java.lang.Boolean"/>
+        <many-to-one name="elementTemplate" class="com.corsair.entity.template.display.DisplayElementTemplate" fetch="join"/>
+        <many-to-one name="containerTemplate" class="com.corsair.entity.template.display.DisplayElementTemplate" fetch="join"/>
+        <many-to-one name="deviceTemplate" class="com.corsair.entity.template.psr.DeviceTemplate" fetch="join"/>
+        <many-to-one name="displayArea" class="com.corsair.entity.template.display.DisplayArea" fetch="join"/>
+        <set name="displayTemplateDatas" inverse="true">
+            <key column="displayTemplate"/>
+            <one-to-many class="com.corsair.entity.template.display.DisplayTemplateData"/>
+        </set>
+    </class>
+</hibernate-mapping>

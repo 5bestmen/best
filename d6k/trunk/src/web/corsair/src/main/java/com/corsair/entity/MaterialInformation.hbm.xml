@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.MaterialInformation" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="comment" column="comments" type="java.lang.String"/>
+        <property name="materialSeriesNo" type="java.lang.String"/>
+        <property name="materialId" type="java.lang.String"/>
+        <property name="materialName" type="java.lang.String"/>
+        <property name="materialDesc" type="java.lang.String"/>
+        <property name="materialExtendDesc" type="java.lang.String"/>
+        <property name="materialType" type="java.lang.String"/>
+        <many-to-one name="materialSupply" class="com.corsair.entity.MaterialSupply" fetch="join"/>
+        <many-to-one name="materialManufacturer" class="com.corsair.entity.MaterialManufacturer" fetch="join"/>
+        <set name="materialStores" inverse="true">
+            <key column="materialInformation"/>
+            <one-to-many class="com.corsair.entity.MaterialStore"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,92 @@
+<div class="window_add" style="width: 100%;height:100%;margin-top:0px;">
+    <div class="title_w">
+        <span>用户追加</span>
+        <img src="resources/img/close.png" ng-click="cancel();">
+        <div class="clear"></div>
+    </div>
+    <div class="window_c_2">
+        <div class="window_l_2" style="height: 38.5em">
+            <div class="item_2">
+                <span>用户名</span>
+                <input type="text" id="strUsername" value="{{modalUser.strUsername}}">
+                <div class="clear"></div>
+            </div>
+            <div class="item_2">
+                <span>密码</span>
+                <input type="text" id="strPassword" value="{{modalUser.strPassword}}">
+                <div class="clear"></div>
+            </div>
+            <div class="item_2">
+                <span>姓名</span>
+                <input type="text" id="strName" value="{{modalUser.strName}}">
+                <div class="clear"></div>
+            </div>
+            <div class="item_2">
+                <span>职位</span>
+                <input type="text" id="strJob" value="{{modalUser.strJob}}">
+                <div class="clear"></div>
+            </div>
+            <div class="item_2">
+                <span>联系方式</span>
+                <input type="text" id="strTelephone" value="{{modalUser.strTelephone}}">
+                <div class="clear"></div>
+            </div>
+            <div class="item_2">
+                <span>邮箱</span>
+                <input type="text" id="strEmail" value="{{modalUser.strEmail}}">
+                <div class="clear"></div>
+            </div>
+            <div class="item_2">
+                <span>关联工程</span>
+                <div class="tab_pro">
+                    <p ng-repeat="pj in modalUser.pjList" ng-click="deletePj(pj.intDBPkPjinfoid)">{{pj.strPjName}}</p>
+                </div>
+                <img src="resources/img/next_02.png" style="margin-top:5%">
+                <div class="tab_pro_c">
+                    <div style="color:#f04d22">选择项目</div>
+                    <p ng-repeat="pjelem in modalAllPjInfo" ng-click="addPj(pjelem.intDBPkPjinfoid)">{{pjelem.strPjName}}</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="item_2" style="margin-top:1%">
+                <span>IMEI号</span>
+                <div class="tab_pro">
+                    <p ng-repeat="imei in modalUser.imeiList" ng-click="deleteImei(imei.intImeiId)">{{imei.strImei}}</p>
+                </div>
+                <img src="resources/img/next_02.png" style="margin-top:5%">
+                <div class="tab_pro_c">
+                    <div style="color:#f04d22">追加IMEI号</div>
+                    <p ng-repeat="imeielem in modalAllImei" ng-click="addImei(imeielem.intImeiId)">{{imeielem.strImei}}</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="item_2" style="margin-top:1%; margin-bottom:1%">
+                <span>权限</span>
+                <div class="c11" style="width:80%; margin-top:1rem;">
+            <span style="width:100%" class="oi-list oi-list-text" id="strAuthority">
+                <label class="oi-radio" for="radio" style="line-height:0.5rem">
+                    <input type="radio" name="radio" value="Admin" />
+                    Admin
+                </label>
+                <label class="oi-radio" for="radio" style="line-height:0.5rem">
+                    <input type="radio" name="radio" value="Owner" />
+                    Owner
+                </label>
+                <label class="oi-radio" for="radio" style="line-height:0.5rem">
+                    <input type="radio" name="radio" value="Worker" />
+                    Worker
+                </label>
+                <label class="oi-radio" for="radio" style="line-height:0.5rem">
+                    <input type="radio" name="radio" value="Constructor" />
+                    Constructor
+                </label>
+                <div class="clear"></div>
+            </span>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="window_btn"><a style="margin-top: 0em" ng-click="this.blur();modalSubmit()">提交</a></div>
+    </div>
+</div>

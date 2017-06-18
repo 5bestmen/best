@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+d6k/.svn/entries
+d6k/.svn/format
+*.svn-base
+d6k/.svn/wc.db
+d6k/.svn/wc.db-journal

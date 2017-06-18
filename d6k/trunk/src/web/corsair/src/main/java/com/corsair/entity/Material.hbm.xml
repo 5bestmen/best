@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.Material" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="materialID">
+            <generator class="uuid"/>
+        </id>
+        <property name="fixedID" type="java.lang.String" not-null="true" unique="true"/>
+        <many-to-one name="materialModel" class="com.corsair.entity.MaterialModel" fetch="join"/>
+        <set name="materialExtendLables" table="material_materialextend" inverse="false" order-by="materialExtendLableID asc">
+            <key column="materialID"/>
+            <many-to-many column="materialExtendLableID" class="com.corsair.entity.MaterialExtendLable"/>
+        </set>
+    </class>
+</hibernate-mapping>

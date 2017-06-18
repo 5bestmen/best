@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDataTypeDI</class>
+ <widget class="QDialog" name="QDataTypeDI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>488</width>
+    <height>285</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Binary DataSource</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>486</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="title">
+       <string>时间</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>设定时间</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>开始</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="startDateEdit"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>终止</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateEdit" name="endDateEdit"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="setTimePushButton">
+            <property name="text">
+             <string>设置起始时间</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>时间序列增量</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QComboBox" name="TimeComboBox">
+            <item>
+             <property name="text">
+              <string/>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>15分钟</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>30分钟</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>1小时</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>2小时</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>3小时</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="title">
+       <string>基本数据类型</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QRadioButton" name="dayruntime">
+         <property name="text">
+          <string>日运行时间</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="daystoptime">
+         <property name="text">
+          <string>日停止次数</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="daytotalruntime">
+         <property name="text">
+          <string>总运行时间</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="daytotalstopcount">
+         <property name="text">
+          <string>总停止次数</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="title">
+       <string>统计数值</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QRadioButton" name="totalruntime">
+         <property name="text">
+          <string>总运行时间</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="totalstopcount">
+         <property name="text">
+          <string>总停止次数</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="maxstopcount">
+         <property name="text">
+          <string>最大停止次数</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>260</y>
+     <width>158</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_6">
+    <item>
+     <widget class="QPushButton" name="okPushButton">
+      <property name="text">
+       <string>确定</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelPushButton">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>setTimePushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_settime()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>okPushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_ok()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelPushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_cancel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dayruntime</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_setbasedatatype()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>52</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>daystoptime</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_setbasedatatype()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>141</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>daytotalruntime</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_setbasedatatype()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>daytotalstopcount</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_setbasedatatype()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>319</x>
+     <y>123</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>totalruntime</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_setstayicsdata()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>67</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>totalstopcount</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_setstayicsdata()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maxstopcount</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataTypeDI</receiver>
+   <slot>slot_on_setstayicsdata()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>304</x>
+     <y>177</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>114</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_on_settime()</slot>
+  <slot>slot_on_setbasedatatype()</slot>
+  <slot>slot_on_setstayicsdata()</slot>
+  <slot>slot_on_ok()</slot>
+  <slot>slot_on_cancel()</slot>
+ </slots>
+</ui>

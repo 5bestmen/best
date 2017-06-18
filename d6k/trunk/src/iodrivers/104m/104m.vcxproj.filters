@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="104public">
+      <UniqueIdentifier>{00945a72-d644-42e7-b337-3cd65c38461f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dataunit">
+      <UniqueIdentifier>{02132f11-51e8-494c-b988-f1e804306a99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="104server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="iodrv_main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="104public\104cache.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="104public\104impl.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunit\asdu_104.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="104public\ontimer.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="104public\recver.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="104public\recver_from_monitor.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="104public\sender.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="104public\sender_to_monitor.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunit\channel.cpp">
+      <Filter>dataunit</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunit\device.cpp">
+      <Filter>dataunit</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunit\dll_lib.cpp">
+      <Filter>dataunit</Filter>
+    </ClCompile>
+    <ClCompile Include="104public\ihost.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunit\param104.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="104public\define_104.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunit\tag.cpp">
+      <Filter>dataunit</Filter>
+    </ClCompile>
+    <ClCompile Include="104master.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="104main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dataunit\asdu_base.cpp">
+      <Filter>104public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\scdpub\variant_data.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="104server.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\scdpub\variant_data.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="104main.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="104master.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\..\include\fesapi\iodriver_main.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="104public\104cache.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="104public\104impl.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dataunit\asdu_104.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dataunit\asdu_base.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="104public\define_104.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="104public\ihost.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="macrodefine.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="104public\ontimer.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dataunit\param104.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="104public\recver.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dataunit\scada_common.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="104public\sender.h">
+      <Filter>104public</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dataunit\channel.h">
+      <Filter>dataunit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dataunit\device.h">
+      <Filter>dataunit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dataunit\dll_lib.h">
+      <Filter>dataunit</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dataunit\tag.h">
+      <Filter>dataunit</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\debug\moc_104server.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_104server.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="GeneratedFiles\debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

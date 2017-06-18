@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.eventsrv.entity.SysEvent" table="sys_event" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id" type="java.lang.String" />
+        <property name="read" type="short"/>
+        <property name="grpno" type="short"/>
+        <property name="sort" type="short"/>
+        <property name="type" type="short"/>
+        <property name="ymd" type="int"/>
+        <property name="hmsms" type="int"/>
+        <property name="security" type="short"/>
+        <property name="volgrade" type="short"/>
+        <property name="testflag" type="short"/>
+        <property name="PrintOut" type="short"/>
+        <property name="DiskOut" type="short"/>
+        <property name="ToneOut" type="short"/>
+        <property name="GraphOut" type="short"/>
+        <property name="DispOut" type="short"/>
+        <property name="state" type="short"/>
+        <property name="state1" type="short"/>
+        <property name="state2" type="short"/>
+        <property name="val" type="float"/>
+        <property name="val1" type="float"/>
+        <property name="val2" type="float"/>
+        <property name="val3" type="float"/>
+        <property name="Object" type="java.lang.String"/>
+        <property name="member0" type="java.lang.String"/>
+        <property name="member1" type="java.lang.String"/>
+        <property name="member2" type="java.lang.String"/>
+        <property name="member3" type="java.lang.String"/>
+        <property name="graph" type="java.lang.String"/>
+        <property name="tone" type="java.lang.String"/>
+        <property name="text" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

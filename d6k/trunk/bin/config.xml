@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rfconf v="0.1.001">
+<lib libno="1" libname="FES_CHANNEL" libalias="通道参数表" librwtype="HASH" libkeyfieldno="0" libsize="300000" libfieldcount="20">
+    <field fieldname="ID" fieldcolumn="0" fieldalias="ID" fieldvoltype="UNINT" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="1" defaultvalue="1"></field>
+    <field fieldname="TagName" fieldcolumn="1" fieldalias="代码" fieldvoltype="STRING" fieldwidth="24" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="channel"></field>
+    <field fieldname="OccNo" fieldcolumn="2" fieldalias="大排行号" fieldvoltype="UNINT" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="1" defaultvalue="1"></field>
+
+    <field fieldname="Description" fieldcolumn="3" fieldalias="描述" fieldvoltype="STRING" fieldwidth="40" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="1"></field>
+    <field fieldname="DriverName" fieldcolumn="4" fieldalias="规约名" fieldvoltype="UNINT" fieldwidth="4" fieldflag="2" searchtable="FES_PROTOCOL" valuefield="PROTOCOL_ID " showdesc="DESCRIPTION" fieldiskey="0" defaultvalue="1"></field>
+    <field fieldname="DriverParam" fieldcolumn="5" fieldalias="驱动参数" fieldvoltype="UCHAR" fieldwidth="1" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+
+    <field fieldname="Medium" fieldcolumn="6" fieldalias="通讯方式" fieldvoltype="UNCHAR" fieldwidth="1" fieldflag="3" searchtable="commucatemedia.txt" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="DeviceAddress" fieldcolumn="7" fieldalias="设备地址" fieldvoltype="IPPORT" fieldwidth="0" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    
+    <field fieldname="DriveType" fieldcolumn="8" fieldalias="驱动类型" fieldvoltype="UNINT" fieldwidth="4" fieldflag="3" searchtable="drivetype.txt" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="COM" fieldcolumn="9" fieldalias="串口" fieldvoltype="UNINT" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="Baud" fieldcolumn="10" fieldalias="波特率" fieldvoltype="IPPORT" fieldwidth="30" fieldflag="4" searchtable="baud.txt" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+
+    <field fieldname="Station" fieldcolumn="11" fieldalias="场站" fieldvoltype="UNINT" fieldwidth="4" fieldflag="2" searchtable="SCD_STATION" valuefield="STATION_ID" showdesc="DESCRIPTION" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="GroupName" fieldcolumn="12" fieldalias="分组" fieldvoltype="UNCHAR" fieldwidth="1" fieldflag="3" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="Extention" fieldcolumn="13" fieldalias="扩展" fieldvoltype="UNCHAR" fieldwidth="1" fieldflag="3" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+</lib>
+<lib libno="2" libname="ANALOG_INPUT" libalias="模拟量表" librwtype="HASH" libkeyfieldno="0" libsize="300000" libfieldcount="20">
+    <field fieldname="ID" fieldcolumn="0" fieldalias="ID" fieldvoltype="UNINT" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="1" defaultvalue="1"></field>
+    <field fieldname="TagName" fieldcolumn="1" fieldalias="代码" fieldvoltype="STRING" fieldwidth="24" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="channel"></field>
+    <field fieldname="OccNo" fieldcolumn="2" fieldalias="大排行号" fieldvoltype="UNINT" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="1" defaultvalue="1"></field>
+    <field fieldname="BlockNo" fieldcolumn="3" fieldalias="小排行号" fieldvoltype="UNCHAR" fieldwidth="1" fieldflag="3" searchtable="commucatemedia.txt" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="DataType" fieldcolumn="4" fieldalias="数据类型" fieldvoltype="UNINT" fieldwidth="4" fieldflag="2" searchtable="FES_PROTOCOL" valuefield="PROTOCOL_ID " showdesc="DESCRIPTION" fieldiskey="0" defaultvalue="1"></field>
+
+    <field fieldname="Description" fieldcolumn="5" fieldalias="描述" fieldvoltype="STRING" fieldwidth="40" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="1"></field>
+
+    <field fieldname="InitValue" fieldcolumn="6" fieldalias="初始值" fieldvoltype="UCHAR" fieldwidth="1" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+
+ 
+    <field fieldname="InitialQua" fieldcolumn="7" fieldalias="初始品质" fieldvoltype="" fieldwidth="0" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    
+    <field fieldname="Address" fieldcolumn="8" fieldalias="地址" fieldvoltype="STRING" fieldwidth="4" fieldflag="3" searchtable="drivetype.txt" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="PinLabel" fieldcolumn="9" fieldalias="串口" fieldvoltype="STRING" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="Scale" fieldcolumn="10" fieldalias="转换" fieldvoltype="STRING" fieldwidth="30" fieldflag="4" searchtable="baud.txt" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+
+    <field fieldname="ChannelTag" fieldcolumn="11" fieldalias="通道" fieldvoltype="STRING" fieldwidth="4" fieldflag="2" searchtable="SCD_STATION" valuefield="STATION_ID" showdesc="DESCRIPTION" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="DeviceTag" fieldcolumn="12" fieldalias="装置" fieldvoltype="STRING" fieldwidth="1" fieldflag="3" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="GroupName" fieldcolumn="13" fieldalias="组" fieldvoltype="STRING" fieldwidth="1" fieldflag="3" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+</lib>
+<lib libno="2" libname="DIGITAL_INPIT" libalias="DIGITAL_INPIT" librwtype="HASH" libkeyfieldno="0" libsize="300000" libfieldcount="20">
+    <field fieldname="ID" fieldcolumn="0" fieldalias="ID" fieldvoltype="UNINT" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="1" defaultvalue="1"></field>
+    <field fieldname="TagName" fieldcolumn="1" fieldalias="代码" fieldvoltype="STRING" fieldwidth="24" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="channel"></field>
+    <field fieldname="OccNo" fieldcolumn="2" fieldalias="大排行号" fieldvoltype="UNINT" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="1" defaultvalue="1"></field>
+    <field fieldname="BlockNo" fieldcolumn="3" fieldalias="小排行号" fieldvoltype="UNCHAR" fieldwidth="1" fieldflag="3" searchtable="commucatemedia.txt" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="DataType" fieldcolumn="4" fieldalias="数据类型" fieldvoltype="UNINT" fieldwidth="4" fieldflag="2" searchtable="FES_PROTOCOL" valuefield="PROTOCOL_ID " showdesc="DESCRIPTION" fieldiskey="0" defaultvalue="1"></field>
+
+    <field fieldname="Description" fieldcolumn="5" fieldalias="描述" fieldvoltype="STRING" fieldwidth="40" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="1"></field>
+
+    <field fieldname="InitValue" fieldcolumn="6" fieldalias="初始值" fieldvoltype="UCHAR" fieldwidth="1" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+ 
+    <field fieldname="InitialQua" fieldcolumn="7" fieldalias="初始品质" fieldvoltype="" fieldwidth="0" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    
+    <field fieldname="Address" fieldcolumn="8" fieldalias="地址" fieldvoltype="STRING" fieldwidth="4" fieldflag="3" searchtable="drivetype.txt" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="PinLabel" fieldcolumn="9" fieldalias="串口" fieldvoltype="STRING" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+
+    <field fieldname="ChannelTag" fieldcolumn="11" fieldalias="通道" fieldvoltype="STRING" fieldwidth="4" fieldflag="2" searchtable="SCD_STATION" valuefield="STATION_ID" showdesc="DESCRIPTION" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="DeviceTag" fieldcolumn="12" fieldalias="装置" fieldvoltype="STRING" fieldwidth="1" fieldflag="3" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="GroupName" fieldcolumn="13" fieldalias="组" fieldvoltype="STRING" fieldwidth="1" fieldflag="3" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+</lib>
+<lib libno="2" libname="FES_DEVICE" libalias="装置表" librwtype="HASH" libkeyfieldno="0" libsize="300000" libfieldcount="20">
+    <field fieldname="ID" fieldcolumn="0" fieldalias="ID" fieldvoltype="UNINT" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="1" defaultvalue="1"></field>
+    <field fieldname="TagName" fieldcolumn="1" fieldalias="代码" fieldvoltype="STRING" fieldwidth="24" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="channel"></field>
+    <field fieldname="OccNo" fieldcolumn="2" fieldalias="大排行号" fieldvoltype="UNINT" fieldwidth="4" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="1" defaultvalue="1"></field>
+    <field fieldname="Description" fieldcolumn="6" fieldalias="初始值" fieldvoltype="UCHAR" fieldwidth="1" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="Priority" fieldcolumn="3" fieldalias="小排行号" fieldvoltype="UNCHAR" fieldwidth="1" fieldflag="3" searchtable="commucatemedia.txt" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+    <field fieldname="DeviceAddr" fieldcolumn="4" fieldalias="数据类型" fieldvoltype="UNINT" fieldwidth="4" fieldflag="2" searchtable="FES_PROTOCOL" valuefield="PROTOCOL_ID " showdesc="DESCRIPTION" fieldiskey="0" defaultvalue="1"></field>
+    <field fieldname="ExtentionParam" fieldcolumn="5" fieldalias="描述" fieldvoltype="STRING" fieldwidth="40" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="1"></field>
+    <field fieldname="DeviceModelID" fieldcolumn="6" fieldalias="初始值" fieldvoltype="UCHAR" fieldwidth="1" fieldflag="0" searchtable="" valuefield="" showdesc="" fieldiskey="0" defaultvalue="0"></field>
+
+</lib>
+</rfconf>

@@ -1,0 +1,12 @@
+﻿#ifndef COMMPLUGIN_GLOBAL_H
+#define COMMPLUGIN_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(COMMPLUGIN_LIBRARY)
+#  define COMMPLUGINSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define COMMPLUGINSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // COMMPLUGIN_GLOBAL_H

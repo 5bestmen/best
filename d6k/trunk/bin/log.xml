@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config  log_station_server="127.0.0.1:28292">  
+    <log name="fes" write_file="1" format="txt" file_number="5" file_length="50" log_level="0" svc_port="10001"  router_port="20000"/>
+    <log name="scada" write_file="1" format="txt" file_number="5" file_length="50" log_level="0" svc_port="10002" router_port="20001"/>
+    <log name="rt_graph" write_file="1" format="txt" file_number="5" file_length="50" log_level="0" svc_port="10003" router_port="20002"/>
+</config> 

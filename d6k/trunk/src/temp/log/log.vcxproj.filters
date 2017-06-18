@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="..\..\include\log\log.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="logimpl.h" />
+    <ClInclude Include="logcache.h">
+      <Filter>LogComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="logdefine.h">
+      <Filter>LogComponent</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{0697f1b6-5b3c-4444-900c-af5dded6a426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LogComponent">
+      <UniqueIdentifier>{3d797187-ea8a-4466-bbbc-9af230b67382}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="logimpl.cpp" />
+    <ClCompile Include="logimpl_cache.cpp" />
+    <ClCompile Include="logimpl_process.cpp" />
+    <ClCompile Include="logcache.cpp">
+      <Filter>LogComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="logdefine.cpp">
+      <Filter>LogComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="logimpl_process_file.cpp" />
+    <ClCompile Include="logimpl_process_sqlite.cpp" />
+  </ItemGroup>
+</Project>

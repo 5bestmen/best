@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scene>
+    <s Name="光伏">
+        <e Name="3号逆变器">
+            <m Name="汇流箱型号A" TagName="tag1" Guid="{1c9fd6af-250e-40e1-bab4-09308a2876c1}">
+                <Static Name="static1" Destriber="静态1号" Value="12"/>
+                <Static Name="static3" Destriber="静态3号" Value="15"/>
+                <Static Name="Static2" Destriber="" Value=""/>
+                <Static Name="Static3" Destriber="" Value=""/>
+                <Static Name="Static4" Destriber="" Value=""/>
+                <Static Name="Static5" Destriber="" Value=""/>
+                <Dynamic Name="Dynamic1" Destriber="动态1号" ReadWrite="1"/>
+                <Dynamic Name="Dynamic2" Destriber="动态2号" ReadWrite="0"/>
+            </m>
+            <m Name="汇流箱型号B" TagName="" Guid="{5916af75-c8b2-41f5-953b-4662439c05c7}"/>
+            <m Name="汇流箱型号C" TagName="" Guid="{bbbd5375-7046-4583-9629-797819deaebd}"/>
+            <m Name="汇流箱型号D" TagName="" Guid="{864a0785-56d1-44ce-adcb-40275940e587}"/>
+            <m Name="汇流箱型号E" TagName="" Guid="{6d65b6bd-de0b-4a6e-aa54-10f5ebf72a86}"/>
+        </e>
+        <e Name="4号逆变器"/>
+        <m Name="SVG保护装置" TagName="tag2" Guid="{66462e4f-3e11-473e-ac10-39857b6c210d}"/>
+        <m Name="站电变装置" TagName="tag3" Guid="{a319d218-341b-4d0f-b1ca-71b22663b0d9}"/>
+        <m Name="站电变装置5" TagName="tag4" Guid="{306a824e-bae9-468c-9c5e-dd4a5cc77f54}"/>
+    </s>
+    <s Name="水利水电">
+        <e Name="逆变器">
+            <m Name="逆变器AA" TagName="tag4" Guid="{32d95ede-f421-430c-b663-19d48b85d54d}"/>
+        </e>
+    </s>
+</scene>

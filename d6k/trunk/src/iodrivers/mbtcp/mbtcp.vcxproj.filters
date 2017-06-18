@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="tcpclient.cpp" />
+    <ClCompile Include="mb_task.cpp" />
+    <ClCompile Include="mb_data.cpp" />
+    <ClCompile Include="modbustcp.cpp" />
+    <ClCompile Include="mbconfig.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="tcpclient.h" />
+    <ClInclude Include="mb_task.h" />
+    <ClInclude Include="mb_data.h" />
+    <ClInclude Include="modbustcp.h" />
+    <ClInclude Include="mbconfig.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{805ae48c-ec9d-4a39-ad80-0cfc15ed37b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\uimodule">
+      <UniqueIdentifier>{80a43d91-5f67-4447-a26e-c16ceebf8cf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\managemodel">
+      <UniqueIdentifier>{78f651ed-48d4-492c-88e7-e06db614b350}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\projmanage">
+      <UniqueIdentifier>{6dc540e0-c6e2-4845-b97c-fe92a75b1710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module">
+      <UniqueIdentifier>{d557ee63-2f3e-4479-8cea-0685577f7458}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\base">
+      <UniqueIdentifier>{98a83630-e1b2-43fa-a014-1a5db9a66c8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\equipmentmodel">
+      <UniqueIdentifier>{5629c2e3-a5cc-482d-a167-e0e1ef625197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\fes">
+      <UniqueIdentifier>{06c738b1-7c08-4895-bd4a-61224570f1b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\graph">
+      <UniqueIdentifier>{5c2e8f53-49e2-4f09-a0c1-35ab65cb5455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\node">
+      <UniqueIdentifier>{567305ee-e0b9-46fc-98c9-f5b6b1bede8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config">
+      <UniqueIdentifier>{0f14dd52-e531-4798-b5af-20e2ce28c732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\seqscriptmodel">
+      <UniqueIdentifier>{23cba81b-6efb-4ce6-815c-c99bb62cf18e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\user">
+      <UniqueIdentifier>{e6e8145c-58a7-49f8-a8c6-26d4b081447b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\sys">
+      <UniqueIdentifier>{7f1bdb01-c466-4bba-bd39-9da6569391c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\utilsmgr">
+      <UniqueIdentifier>{d83334c2-bdfa-4816-81ed-c43bf622869a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="module\log">
+      <UniqueIdentifier>{6c56629e-0e95-4afb-b63b-28845290736a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{3a83d36f-70f6-410a-9a3f-be00594f4dca}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{0df488d0-25b5-4907-aed7-06970fe8024f}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Form Files\fesselectpoint">
+      <UniqueIdentifier>{6311cba4-b002-4e00-a982-5a4f0d542377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\node">
+      <UniqueIdentifier>{f90621d1-6f94-4a1b-8d60-586c2cd22e8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\fespub">
+      <UniqueIdentifier>{8e311759-5df1-4af9-80ed-58bce18408b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\extendservice">
+      <UniqueIdentifier>{67a0aa16-9c92-4916-8177-5e4037438a10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\extendservice">
+      <UniqueIdentifier>{8e88eaaf-2544-4614-aae2-4ab1c8af3cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\node\server">
+      <UniqueIdentifier>{0d02c9b5-f943-4bd5-89d5-46dcebc7c02f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\node\fep">
+      <UniqueIdentifier>{09964615-e0ba-40ee-a4c5-8b0ce38fb65c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\node\workstation">
+      <UniqueIdentifier>{ffd6b617-8aaf-4ab7-8df1-885bde55187f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files\node">
+      <UniqueIdentifier>{bb342503-a384-44c8-a97e-521cdf72378a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config">
+      <UniqueIdentifier>{6b065d05-e11d-4825-87a1-b4a8d1cd2cbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\fes">
+      <UniqueIdentifier>{603f7d5a-eec2-4ec0-b03e-6f74d43c2a69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\channel">
+      <UniqueIdentifier>{1f40fdb5-cb9f-41be-9cba-1d0334408b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\device">
+      <UniqueIdentifier>{e8c57416-b7ac-4cd2-8fbb-10be2d8ef8ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\data">
+      <UniqueIdentifier>{8ad2bf97-4486-44e6-9b44-c0cda5f2a03a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\data\ai">
+      <UniqueIdentifier>{9f875009-e076-4aba-8db6-dc1f567ae272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\data\di">
+      <UniqueIdentifier>{766df34d-aa39-4d8c-ad73-09cd9bc7942e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\data\ao">
+      <UniqueIdentifier>{67e0b617-58af-4f6b-8fc2-0e25f4c8b893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\scale">
+      <UniqueIdentifier>{da68d6c3-da93-4c0d-8645-689ea1b922ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\alarm">
+      <UniqueIdentifier>{a96e3e0c-44a7-45c5-b705-d644edc53183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\alarm\ai">
+      <UniqueIdentifier>{f68b0636-f56b-4751-a69e-e7e1cb25c102}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\data\do">
+      <UniqueIdentifier>{cddee4da-b3e2-4b88-b660-28c5cf2f5664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\alarm\di">
+      <UniqueIdentifier>{f2fdc79c-7a13-419a-9739-776bad4b56c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable">
+      <UniqueIdentifier>{0f3f38e2-a348-4b39-a754-0bb1da6d585b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\system">
+      <UniqueIdentifier>{cb044d2d-00c0-4f89-8075-973e33974c22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\user">
+      <UniqueIdentifier>{f394d8bf-0f25-44ad-823f-d2abcd7c7db8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\alarm">
+      <UniqueIdentifier>{11db0c61-9dbc-48cb-a796-39912498d92e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\alarm\ai">
+      <UniqueIdentifier>{b81216e1-02e8-4814-a0ab-ebd351f4725e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\alarm\di">
+      <UniqueIdentifier>{11e0dd00-8f3d-462a-8b22-9c8134ce98d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\scale">
+      <UniqueIdentifier>{8f7f4ced-3f37-4cb3-87fc-3b3ae1d95c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\scale\linear">
+      <UniqueIdentifier>{6cbc7764-c5fa-4a23-acb9-771977c9c8f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\scale\nonlinear">
+      <UniqueIdentifier>{c4e0ac22-16e7-432c-b8a1-eb0faad05191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\scale\linear\form">
+      <UniqueIdentifier>{6bc917bf-0979-4698-88cf-75256ae6ac05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\scale\nonlinear\form">
+      <UniqueIdentifier>{e3f66d14-b081-4da1-8f02-a5d7ed94d016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\user\form">
+      <UniqueIdentifier>{3384d319-f29c-4aae-9efe-b0a1f2bc1254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\variable">
+      <UniqueIdentifier>{fdf64fd1-8fb8-4c14-b92d-f0ccf0a25f28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\node\server\form">
+      <UniqueIdentifier>{f123f97a-a645-48d9-bc42-ac49570fb445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\scadavariable\scada">
+      <UniqueIdentifier>{334f136b-57e9-4156-8f06-9fd996ae168b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\variable\form">
+      <UniqueIdentifier>{59304183-8a1f-4086-a898-5097dde528f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\data\ai\form">
+      <UniqueIdentifier>{4720be44-e019-4428-b2fb-fdb7ad8511d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding">
+      <UniqueIdentifier>{e9e668d4-6620-4488-843c-e213712450d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_ai">
+      <UniqueIdentifier>{73013599-a244-458f-abc4-12fd6b6f0f78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_di">
+      <UniqueIdentifier>{4b0c5244-483a-467d-9f10-69ea673eef80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_do">
+      <UniqueIdentifier>{6628ea3e-da78-40e7-9e53-f6fd010a27ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_ao">
+      <UniqueIdentifier>{5e47b0c7-6ef3-4fa9-a39b-44bcfdfc83e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_kwh">
+      <UniqueIdentifier>{c6b3fe43-b22e-4510-92fb-4cc0427ef785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_cg">
+      <UniqueIdentifier>{482a507c-daae-402e-b7b0-5c2ccf374e1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_ai\form">
+      <UniqueIdentifier>{a4a16db1-84af-433a-b981-93060795bace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_di\form">
+      <UniqueIdentifier>{8066a2ea-4e0b-4164-a44b-703fbff826b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_ao\form">
+      <UniqueIdentifier>{e562f993-478d-4039-bf09-3c1c5b5e821c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\forwarding\forwarding_do\form">
+      <UniqueIdentifier>{cc8ca412-eb7a-4261-9fcc-16ab5b5ac398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\data\di\form">
+      <UniqueIdentifier>{17397316-c46c-497a-8a76-51f07a16d5c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\data\do\form">
+      <UniqueIdentifier>{62260d4a-db76-4aac-8d54-5e1e1c66ca5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="module\scadavariable">
+      <UniqueIdentifier>{273e8be5-e61c-40ca-8631-57e498dc5d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\report">
+      <UniqueIdentifier>{1519cde8-8528-4a0d-b0a1-05fcf9f184fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="config_data.cpp">
+      <Filter>module\config</Filter>
+    </ClCompile>
+    <ClCompile Include="uimodule\leftdock.cpp">
+      <Filter>core\uimodule</Filter>
+    </ClCompile>
+    <ClCompile Include="uimodule\rightdock.cpp">
+      <Filter>core\uimodule</Filter>
+    </ClCompile>
+    <ClCompile Include="uimodule\sysoutdock.cpp">
+      <Filter>core\uimodule</Filter>
+    </ClCompile>
+    <ClCompile Include="uimodule\systemoutputmodel.cpp">
+      <Filter>core\uimodule</Filter>
+    </ClCompile>
+    <ClCompile Include="uimodule\systemoutputview.cpp">
+      <Filter>core\uimodule</Filter>
+    </ClCompile>
+    <ClCompile Include="uimodule\tabwidget.cpp">
+      <Filter>core\uimodule</Filter>
+    </ClCompile>
+    <ClCompile Include="uimodule\treewidget.cpp">
+      <Filter>core\uimodule</Filter>
+    </ClCompile>
+    <ClCompile Include="delegate.cpp">
+      <Filter>module\base</Filter>
+    </ClCompile>
+    <ClCompile Include="readtableconfig.cpp">
+      <Filter>module\base</Filter>
+    </ClCompile>
+    <ClCompile Include="sortfiltermodel.cpp">
+      <Filter>module\base</Filter>
+    </ClCompile>
+    <ClCompile Include="standarview.cpp">
+      <Filter>module\base</Filter>
+    </ClCompile>
+    <ClCompile Include="tablemodel.cpp">
+      <Filter>module\base</Filter>
+    </ClCompile>
+    <ClCompile Include="tableview.cpp">
+      <Filter>module\base</Filter>
+    </ClCompile>
+    <ClCompile Include="xmlreader.cpp">
+      <Filter>module\base</Filter>
+    </ClCompile>
+    <ClCompile Include="equipmentmodel.cpp">
+      <Filter>module\equipmentmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="alarm.cpp">
+      <Filter>module\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="channel.cpp">
+      <Filter>module\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="hissave.cpp">
+      <Filter>module\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="pdr.cpp">
+      <Filter>module\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="scale.cpp">
+      <Filter>module\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="variable.cpp">
+      <Filter>module\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="graph.cpp">
+      <Filter>module\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="graphmodel.cpp">
+      <Filter>module\graph</Filter>
+    </ClCompile>
+    <ClCompile Include="reportmodel.cpp">
+      <Filter>module\report</Filter>
+    </ClCompile>
+    <ClCompile Include="seqscriptmodel.cpp">
+      <Filter>module\seqscriptmodel</Filter>
+    </ClCompile>
+    <ClCompile Include="user.cpp">
+      <Filter>module\user</Filter>
+    </ClCompile>
+    <ClCompile Include="ccore.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="uimodule\uimgr.cpp">
+      <Filter>core\uimodule</Filter>
+    </ClCompile>
+    <ClCompile Include="modulemgr.cpp">
+      <Filter>core\managemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="projmgr.cpp">
+      <Filter>core\projmanage</Filter>
+    </ClCompile>
+    <ClCompile Include="setscaledialog.cpp">
+      <Filter>Form Files</Filter>
+    </ClCompile>
+    <ClCompile Include="selectscaledialog.cpp">
+      <Filter>Form Files</Filter>
+    </ClCompile>
+    <ClCompile Include="selectscaletable.cpp">
+      <Filter>Form Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uimodule\imainwindow.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="selectalarmdialog.cpp">
+      <Filter>Form Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_leftdock.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_leftdock.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_rightdock.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_rightdock.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sysoutdock.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sysoutdock.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_systemoutputview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_systemoutputview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_projmgr.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_projmgr.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_delegate.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_delegate.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sortfiltermodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sortfiltermodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_standarview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_standarview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tablemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tablemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tableview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tableview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_equipmentmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_equipmentmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_alarm.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_alarm.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_channel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_channel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_hissave.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_hissave.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_pdr.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_pdr.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scale.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scale.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_variable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_variable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_graph.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_graph.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_graphmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_graphmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aimodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aimodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aitable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aitable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aomodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aomodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aotable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aotable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_channelmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_channelmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_channeltable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_channeltable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_channelview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_channelview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_deviceview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_deviceview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_dimodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_dimodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ditable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ditable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_domodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_domodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_dotable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_dotable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fesdatamodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fesdatamodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_festable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_festable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fesview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fesview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scalemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scalemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scalenonlearmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scalenonlearmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scaletable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scaletable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scaleview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scaleview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_reportmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_reportmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_seqscriptmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_seqscriptmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_user.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_user.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_selectscaledialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_selectscaledialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_selectscaletable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_selectscaletable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_setscaledialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_setscaledialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_selectalarmdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_selectalarmdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_coreui.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_iutilsmgr.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_iutilsmgr.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_uimgr.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_uimgr.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_treewidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_treewidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tabwidget.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tabwidget.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ccore.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ccore.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_closeprojectdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_closeprojectdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="closeprojectdialog.cpp">
+      <Filter>Form Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_devicetable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_devicetable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_devicemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_devicemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aiview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aiview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_diview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_diview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aoview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aoview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_doview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_doview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_exportmodeldialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_exportmodeldialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="exportmodeldialog.cpp">
+      <Filter>Form Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fesmodule.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fesmodule.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="fesmodule.cpp">
+      <Filter>module\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeparamodule.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeparamodule.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeparamodule.cpp">
+      <Filter>module\node</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_usermodule.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_usermodule.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="usermodule.cpp">
+      <Filter>module\user</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_sysmodule.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_sysmodule.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="sysmodule.cpp">
+      <Filter>module\sys</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_analogalarmview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_analogalarmtable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_analogalarmtable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_analogalarmmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_analogalarmmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_analogalarmlimitview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_analogalarmlimitview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_analogalarmlimittable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_analogalarmlimittable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_analogalarmlimitmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_analogalarmlimitmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_digitalalarmview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_digitalalarmview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_digitalalarmtable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_digitalalarmtable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_digitalalarmmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_digitalalarmmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_digitalalarmlimitview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_digitalalarmlimitview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_digitalalarmlimittable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_digitalalarmlimittable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_digitalalarmlimitmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_digitalalarmlimitmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeserverview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeserverview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeservertable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeservertable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeservermodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeservermodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodefesgroupview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodefesgroupview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodefesgrouptable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodefesgrouptable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodefesgroupmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodefesgroupmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeworkstationview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeworkstationview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeworkstationtable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeworkstationtable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeworkstationmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeworkstationmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_outputmessagerclient.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_outputmessagerserver.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_analogalarmview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_selectpointdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_selectpointdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fesselectpointmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fesselectpointmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="selectpointdialog.cpp">
+      <Filter>Form Files\fesselectpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_totalselectdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_totalselectdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="totalselectdialog.cpp">
+      <Filter>Form Files\fesselectpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="fesselectpointmodel.cpp">
+      <Filter>Form Files\fesselectpoint</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_systemvariableview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_systemvariableview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_systemvariabletable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_systemvariabletable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_systemvariablemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_systemvariablemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_uservariablview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_uservariablview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_uservariabletable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_uservariabletable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_uservariablemodle.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_uservariablemodle.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="systemvariablemodel.cpp">
+      <Filter>module\config\fes config\variable</Filter>
+    </ClCompile>
+    <ClCompile Include="systemvariabletable.cpp">
+      <Filter>module\config\fes config\variable</Filter>
+    </ClCompile>
+    <ClCompile Include="systemvariableview.cpp">
+      <Filter>module\config\fes config\variable</Filter>
+    </ClCompile>
+    <ClCompile Include="uservariablemodle.cpp">
+      <Filter>module\config\fes config\variable</Filter>
+    </ClCompile>
+    <ClCompile Include="uservariabletable.cpp">
+      <Filter>module\config\fes config\variable</Filter>
+    </ClCompile>
+    <ClCompile Include="uservariablview.cpp">
+      <Filter>module\config\fes config\variable</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_channelparaconfigdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_channelparaconfigdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_button_edit.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_button_edit.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="button_edit.cpp">
+      <Filter>module\base</Filter>
+    </ClCompile>
+    <ClCompile Include="channelparaconfigdialog.cpp">
+      <Filter>Form Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\fespub\tag_att.cpp">
+      <Filter>module\fespub</Filter>
+    </ClCompile>
+    <ClCompile Include="scale_data.cpp">
+      <Filter>module\config</Filter>
+    </ClCompile>
+    <ClCompile Include="base_data.cpp">
+      <Filter>module\config</Filter>
+    </ClCompile>
+    <ClCompile Include="alarm_data.cpp">
+      <Filter>module\config</Filter>
+    </ClCompile>
+    <ClCompile Include="variable_data.cpp">
+      <Filter>module\config</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_extendservicemodule.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_extendservicemodule.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="extendservicemodule.cpp">
+      <Filter>module\extendservice</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_extendserviceconfigdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_extendserviceconfigdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="extendserviceconfigdialog.cpp">
+      <Filter>Form Files\extendservice</Filter>
+    </ClCompile>
+    <ClCompile Include="extenservicemodulemgr.cpp">
+      <Filter>core\managemodel</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadavariablemodule.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadavariablemodule.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadavariablemodule.cpp">
+      <Filter>module\scadavariable</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeworkstationgroupview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeworkstationgroupview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeworkstationgrouptable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeworkstationgrouptable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodeworkstationgroupnmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodeworkstationgroupnmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodefesview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodefesview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodefestable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodefestable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_nodefesmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_nodefesmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeservermodel.cpp">
+      <Filter>module\config\node\server</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeservertable.cpp">
+      <Filter>module\config\node\server</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeserverview.cpp">
+      <Filter>module\config\node\server</Filter>
+    </ClCompile>
+    <ClCompile Include="nodefesgroupmodel.cpp">
+      <Filter>module\config\node\fep</Filter>
+    </ClCompile>
+    <ClCompile Include="nodefesgrouptable.cpp">
+      <Filter>module\config\node\fep</Filter>
+    </ClCompile>
+    <ClCompile Include="nodefesgroupview.cpp">
+      <Filter>module\config\node\fep</Filter>
+    </ClCompile>
+    <ClCompile Include="nodefesmodel.cpp">
+      <Filter>module\config\node\fep</Filter>
+    </ClCompile>
+    <ClCompile Include="nodefestable.cpp">
+      <Filter>module\config\node\fep</Filter>
+    </ClCompile>
+    <ClCompile Include="nodefesview.cpp">
+      <Filter>module\config\node\fep</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeworkstationgroupnmodel.cpp">
+      <Filter>module\config\node\workstation</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeworkstationgrouptable.cpp">
+      <Filter>module\config\node\workstation</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeworkstationgroupview.cpp">
+      <Filter>module\config\node\workstation</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeworkstationmodel.cpp">
+      <Filter>module\config\node\workstation</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeworkstationtable.cpp">
+      <Filter>module\config\node\workstation</Filter>
+    </ClCompile>
+    <ClCompile Include="nodeworkstationview.cpp">
+      <Filter>module\config\node\workstation</Filter>
+    </ClCompile>
+    <ClCompile Include="fesdatamodel.cpp">
+      <Filter>module\config\fes config\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="festable.cpp">
+      <Filter>module\config\fes config\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="fesview.cpp">
+      <Filter>module\config\fes config\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="channelmodel.cpp">
+      <Filter>module\config\fes config\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="channeltable.cpp">
+      <Filter>module\config\fes config\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="channelview.cpp">
+      <Filter>module\config\fes config\channel</Filter>
+    </ClCompile>
+    <ClCompile Include="devicemodel.cpp">
+      <Filter>module\config\fes config\device</Filter>
+    </ClCompile>
+    <ClCompile Include="devicetable.cpp">
+      <Filter>module\config\fes config\device</Filter>
+    </ClCompile>
+    <ClCompile Include="deviceview.cpp">
+      <Filter>module\config\fes config\device</Filter>
+    </ClCompile>
+    <ClCompile Include="aimodel.cpp">
+      <Filter>module\config\fes config\data\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="aitable.cpp">
+      <Filter>module\config\fes config\data\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="aiview.cpp">
+      <Filter>module\config\fes config\data\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="dimodel.cpp">
+      <Filter>module\config\fes config\data\di</Filter>
+    </ClCompile>
+    <ClCompile Include="ditable.cpp">
+      <Filter>module\config\fes config\data\di</Filter>
+    </ClCompile>
+    <ClCompile Include="diview.cpp">
+      <Filter>module\config\fes config\data\di</Filter>
+    </ClCompile>
+    <ClCompile Include="aomodel.cpp">
+      <Filter>module\config\fes config\data\ao</Filter>
+    </ClCompile>
+    <ClCompile Include="aotable.cpp">
+      <Filter>module\config\fes config\data\ao</Filter>
+    </ClCompile>
+    <ClCompile Include="aoview.cpp">
+      <Filter>module\config\fes config\data\ao</Filter>
+    </ClCompile>
+    <ClCompile Include="scalemodel.cpp">
+      <Filter>module\config\fes config\scale</Filter>
+    </ClCompile>
+    <ClCompile Include="scalenonlearmodel.cpp">
+      <Filter>module\config\fes config\scale</Filter>
+    </ClCompile>
+    <ClCompile Include="scaletable.cpp">
+      <Filter>module\config\fes config\scale</Filter>
+    </ClCompile>
+    <ClCompile Include="scaleview.cpp">
+      <Filter>module\config\fes config\scale</Filter>
+    </ClCompile>
+    <ClCompile Include="analogalarmlimitmodel.cpp">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="analogalarmlimittable.cpp">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="analogalarmlimitview.cpp">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="analogalarmmodel.cpp">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="analogalarmtable.cpp">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="analogalarmview.cpp">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="domodel.cpp">
+      <Filter>module\config\fes config\data\do</Filter>
+    </ClCompile>
+    <ClCompile Include="dotable.cpp">
+      <Filter>module\config\fes config\data\do</Filter>
+    </ClCompile>
+    <ClCompile Include="doview.cpp">
+      <Filter>module\config\fes config\data\do</Filter>
+    </ClCompile>
+    <ClCompile Include="digitalalarmlimitmodel.cpp">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="digitalalarmlimittable.cpp">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="digitalalarmlimitview.cpp">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="digitalalarmmodel.cpp">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="digitalalarmtable.cpp">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="digitalalarmview.cpp">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="scadavirable_data.cpp">
+      <Filter>module\config</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadasystemvariableview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadasystemvariableview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadasystemvariablemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadasystemvariablemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadasystemvariabletable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadasystemvariabletable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadasystemvariablemodel.cpp">
+      <Filter>module\config\scadavariable\system</Filter>
+    </ClCompile>
+    <ClCompile Include="scadasystemvariabletable.cpp">
+      <Filter>module\config\scadavariable\system</Filter>
+    </ClCompile>
+    <ClCompile Include="scadasystemvariableview.cpp">
+      <Filter>module\config\scadavariable\system</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadauservariableview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadauservariableview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadauservariableview.cpp">
+      <Filter>module\config\scadavariable\user</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadauservariabletable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadauservariabletable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadauservariabletable.cpp">
+      <Filter>module\config\scadavariable\user</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadauservariablemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadauservariablemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadauservariablemodel.cpp">
+      <Filter>module\config\scadavariable\user</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadaanalogalarmview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadaanalogalarmview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadaanalogalarmtable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadaanalogalarmtable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadaanalogalarmmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadaanalogalarmmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadaanalogalarmlimitmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadaanalogalarmlimitmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadaanalogalarmmodel.cpp">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="scadaanalogalarmtable.cpp">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="scadaanalogalarmview.cpp">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="scadaanalogalarmlimitmodel.cpp">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="scadaanalogalarmlimittable.cpp">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadaanalogalarmlimittable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadaanalogalarmlimittable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadaanalogalarmlimitview.cpp">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadaanalogalarmlimitview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadaanalogalarmlimitview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadadigitalalarmview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadadigitalalarmview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadadigitalalarmview.cpp">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadadigitalalarmtable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadadigitalalarmtable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadadigitalalarmtable.cpp">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadadigitalalarmmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadadigitalalarmmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadadigitalalarmmodel.cpp">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadadigitalalarmlimitview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadadigitalalarmlimitview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadadigitalalarmlimitview.cpp">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadadigitalalarmlimittable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadadigitalalarmlimittable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadadigitalalarmlimittable.cpp">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadadigitalalarmlimitmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadadigitalalarmlimitmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadadigitalalarmlimitmodel.cpp">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadalinearscaleview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadalinearscaleview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadalinearscaleview.cpp">
+      <Filter>module\config\scadavariable\scale\linear</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadalinearscaletable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadalinearscaletable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadalinearscaletable.cpp">
+      <Filter>module\config\scadavariable\scale\linear</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadalinearscalemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadalinearscalemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadalinearscalemodel.cpp">
+      <Filter>module\config\scadavariable\scale\linear</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadalinearscalesetdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadalinearscalesetdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadalinearscalesetdialog.cpp">
+      <Filter>module\config\scadavariable\scale\linear\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadanonlinearscaleview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadanonlinearscaleview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadanonlinearscaleview.cpp">
+      <Filter>module\config\scadavariable\scale\nonlinear</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadanonlinearscaletalbe.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadanonlinearscaletalbe.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadanonlinearscaletalbe.cpp">
+      <Filter>module\config\scadavariable\scale\nonlinear</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadanonlinearscalemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadanonlinearscalemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadanonlinearscalemodel.cpp">
+      <Filter>module\config\scadavariable\scale\nonlinear</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadanonlinearscalesetdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadanonlinearscalesetdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadanonlinearscalesetdialog.cpp">
+      <Filter>module\config\scadavariable\scale\nonlinear\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadauservariableselectscaledialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadauservariableselectscaledialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadauservariableselectscaledialog.cpp">
+      <Filter>module\config\scadavariable\user\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_setscadaalarmdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_setscadaalarmdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="setscadaalarmdialog.cpp">
+      <Filter>module\config\scadavariable\user\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_confignodeservicedialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_confignodeservicedialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="confignodeservicedialog.cpp">
+      <Filter>module\config\node\server\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_confignodeservicetablemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_confignodeservicetablemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="confignodeservicetablemodel.cpp">
+      <Filter>module\config\node\server\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_addservicedialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_addservicedialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="addservicedialog.cpp">
+      <Filter>module\config\node\server\form</Filter>
+    </ClCompile>
+    <ClCompile Include="addservicemodel.cpp">
+      <Filter>module\config\node\server\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_addservicemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_addservicemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_addserviceplandialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_addserviceplandialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="addserviceplandialog.cpp">
+      <Filter>module\config\node\server\form</Filter>
+    </ClCompile>
+    <ClCompile Include="addplanservicemodel.cpp">
+      <Filter>module\config\node\server\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_addplanservicemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_addplanservicemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="clickplanservicemodel.cpp">
+      <Filter>module\config\node\server\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_clickplanservicemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_clickplanservicemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadaview.cpp">
+      <Filter>module\config\scadavariable\scada</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadaview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadaview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadatable.cpp">
+      <Filter>module\config\scadavariable\scada</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadatable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadatable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="scadamodel.cpp">
+      <Filter>module\config\scadavariable\scada</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_scadamodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_scadamodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="uservariableselectalarmdialog.cpp">
+      <Filter>module\config\fes config\variable\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_uservariableselectalarmdialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_uservariableselectalarmdialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding.cpp">
+      <Filter>module\fes</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwaridng_channel_view.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwaridng_channel_view.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwaridng_channel_view.cpp">
+      <Filter>module\config\fes config\forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_channel_table.cpp">
+      <Filter>module\config\fes config\forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_channel_table.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_channel_table.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_channel_model.cpp">
+      <Filter>module\config\fes config\forwarding</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_channel_model.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_channel_model.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_ai_view.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_ai_view.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_ai_view.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwading_ai_table.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwading_ai_table.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwading_ai_table.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_aimodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ai</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_aimodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_aimodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_diview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_diview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_diview.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_di</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_ditable.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_di</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_ditable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_ditable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_dimodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_di</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_dimodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_dimodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_doview.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_do</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_doview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_doview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_dotable.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_do</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_dotable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_dotable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_domodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_do</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_domodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_domodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_aoview.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ao</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_aoview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_aoview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_aotable.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ao</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_aotable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_aotable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_aomodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ao</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_aomodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_aomodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_kwhview.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_kwh</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_kwhview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_kwhview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_kwhtable.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_kwh</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_kwhtable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_kwhtable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_kwhmodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_kwh</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_kwhmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_kwhmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_cgview.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_cg</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_cgview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_cgview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_cgtable.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_cg</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_cgtable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_cgtable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_cgmodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_cgmodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_cgmodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_cg</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_select_ai_tagname_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_select_ai_tagname_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_select_ai_tagname_dialog.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ai\form</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_select_aimodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ai\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_select_aimodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_select_aimodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_select_di_tagname_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_select_di_tagname_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_select_di_tagname_dialog.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_di\form</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_select_dimodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_di\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_select_dimodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_select_dimodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_select_ao_tagname_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_select_ao_tagname_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_select_ao_tagname_dialog.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ao\form</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_select_aomodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_ao\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_select_aomodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_select_aomodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_select_do_tagname_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_select_do_tagname_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_select_do_tagname_dialog.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_do\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_forwarding_select_domodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_forwarding_select_domodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="forwarding_select_domodel.cpp">
+      <Filter>module\config\fes config\forwarding\forwarding_do\form</Filter>
+    </ClCompile>
+    <ClCompile Include="fes_conf_data.cpp">
+      <Filter>module\config</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fes_di_select_doubledi_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fes_di_select_doubledi_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="fes_di_select_doubledi_dialog.cpp">
+      <Filter>module\config\fes config\data\di\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fes_di_select_doubledi_model.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fes_di_select_doubledi_model.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="fes_di_select_doubledi_model.cpp">
+      <Filter>module\config\fes config\data\di\form</Filter>
+    </ClCompile>
+    <ClCompile Include="fesdo_blockingsignaltag_select_dialog.cpp">
+      <Filter>module\config\fes config\data\do\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fesdo_blockingsignaltag_select_dialog.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fesdo_blockingsignaltag_select_dialog.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="fes_do_blockingsignaltag_select_devicedi_model.cpp">
+      <Filter>module\config\fes config\data\do\form</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fes_do_blockingsignaltag_select_devicedi_model.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fes_do_blockingsignaltag_select_devicedi_model.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_fes_do_blockingsignaletan_select_fesuservaraible_model.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_fes_do_blockingsignaletan_select_fesuservaraible_model.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="fes_do_blockingsignaletan_select_fesuservaraible_model.cpp">
+      <Filter>module\config\fes config\data\do\form</Filter>
+    </ClCompile>
+    <ClCompile Include="feschannel_forwardingchannel_data.cpp">
+      <Filter>module\config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="channel.h">
+      <Filter>module\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="alarm.h">
+      <Filter>module\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scale.h">
+      <Filter>module\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="variable.h">
+      <Filter>module\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="hissave.h">
+      <Filter>module\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="pdr.h">
+      <Filter>module\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="equipmentmodel.h">
+      <Filter>module\equipmentmodel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="reportmodel.h">
+      <Filter>module\report</Filter>
+    </CustomBuild>
+    <CustomBuild Include="user.h">
+      <Filter>module\user</Filter>
+    </CustomBuild>
+    <CustomBuild Include="standarview.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sortfiltermodel.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tablemodel.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="seqscriptmodel.h">
+      <Filter>module\seqscriptmodel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tableview.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="delegate.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graph.h">
+      <Filter>module\graph</Filter>
+    </CustomBuild>
+    <CustomBuild Include="graphmodel.h">
+      <Filter>module\graph</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uimodule\leftdock.h">
+      <Filter>core\uimodule</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uimodule\rightdock.h">
+      <Filter>core\uimodule</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uimodule\sysoutdock.h">
+      <Filter>core\uimodule</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uimodule\systemoutputview.h">
+      <Filter>core\uimodule</Filter>
+    </CustomBuild>
+    <CustomBuild Include="coreui.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="projmgr.h">
+      <Filter>core\projmanage</Filter>
+    </CustomBuild>
+    <CustomBuild Include="setscaledialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="setscaledialog.h">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="selectscaledialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="selectscaledialog.h">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="selectscaletable.h">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="selectalarmdialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="selectalarmdialog.h">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\iutilsmgr.h">
+      <Filter>core\utilsmgr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\uimgr.h">
+      <Filter>core\uimodule</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\treewidget.h">
+      <Filter>core\uimodule</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\tabwidget.h">
+      <Filter>core\uimodule</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ccore.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="closeprojectdialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="closeprojectdialog.h">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="exportmodeldialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="exportmodeldialog.h">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fesmodule.h">
+      <Filter>module\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeparamodule.h">
+      <Filter>module\node</Filter>
+    </CustomBuild>
+    <CustomBuild Include="usermodule.h">
+      <Filter>module\user</Filter>
+    </CustomBuild>
+    <CustomBuild Include="sysmodule.h">
+      <Filter>module\sys</Filter>
+    </CustomBuild>
+    <CustomBuild Include="selectpointdialog.ui">
+      <Filter>Form Files\fesselectpoint</Filter>
+    </CustomBuild>
+    <CustomBuild Include="selectpointdialog.h">
+      <Filter>Form Files\fesselectpoint</Filter>
+    </CustomBuild>
+    <CustomBuild Include="totalselectdialog.ui">
+      <Filter>Form Files\fesselectpoint</Filter>
+    </CustomBuild>
+    <CustomBuild Include="totalselectdialog.h">
+      <Filter>Form Files\fesselectpoint</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fesselectpointmodel.h">
+      <Filter>Form Files\fesselectpoint</Filter>
+    </CustomBuild>
+    <CustomBuild Include="systemvariablemodel.h">
+      <Filter>module\config\fes config\variable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="systemvariabletable.h">
+      <Filter>module\config\fes config\variable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="systemvariableview.h">
+      <Filter>module\config\fes config\variable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uservariablemodle.h">
+      <Filter>module\config\fes config\variable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uservariabletable.h">
+      <Filter>module\config\fes config\variable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uservariablview.h">
+      <Filter>module\config\fes config\variable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="channelparaconfigdialog.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="button_edit.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="channelparaconfigdialog.h">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="extendservicemodule.h">
+      <Filter>module\extendservice</Filter>
+    </CustomBuild>
+    <CustomBuild Include="extendserviceconfigdialog.ui">
+      <Filter>Form Files\extendservice</Filter>
+    </CustomBuild>
+    <CustomBuild Include="extendserviceconfigdialog.h">
+      <Filter>Form Files\extendservice</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadavariablemodule.h">
+      <Filter>module\scadavariable</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeservermodel.h">
+      <Filter>module\config\node\server</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeservertable.h">
+      <Filter>module\config\node\server</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeserverview.h">
+      <Filter>module\config\node\server</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodefesgroupmodel.h">
+      <Filter>module\config\node\fep</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodefesgrouptable.h">
+      <Filter>module\config\node\fep</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodefesgroupview.h">
+      <Filter>module\config\node\fep</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodefesmodel.h">
+      <Filter>module\config\node\fep</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodefestable.h">
+      <Filter>module\config\node\fep</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodefesview.h">
+      <Filter>module\config\node\fep</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeworkstationgroupnmodel.h">
+      <Filter>module\config\node\workstation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeworkstationgrouptable.h">
+      <Filter>module\config\node\workstation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeworkstationgroupview.h">
+      <Filter>module\config\node\workstation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeworkstationmodel.h">
+      <Filter>module\config\node\workstation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeworkstationtable.h">
+      <Filter>module\config\node\workstation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nodeworkstationview.h">
+      <Filter>module\config\node\workstation</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fesview.h">
+      <Filter>module\config\fes config\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fesdatamodel.h">
+      <Filter>module\config\fes config\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="festable.h">
+      <Filter>module\config\fes config\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="channelmodel.h">
+      <Filter>module\config\fes config\channel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="channeltable.h">
+      <Filter>module\config\fes config\channel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="channelview.h">
+      <Filter>module\config\fes config\channel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="devicemodel.h">
+      <Filter>module\config\fes config\device</Filter>
+    </CustomBuild>
+    <CustomBuild Include="devicetable.h">
+      <Filter>module\config\fes config\device</Filter>
+    </CustomBuild>
+    <CustomBuild Include="deviceview.h">
+      <Filter>module\config\fes config\device</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aimodel.h">
+      <Filter>module\config\fes config\data\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aitable.h">
+      <Filter>module\config\fes config\data\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aiview.h">
+      <Filter>module\config\fes config\data\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="diview.h">
+      <Filter>module\config\fes config\data\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dimodel.h">
+      <Filter>module\config\fes config\data\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ditable.h">
+      <Filter>module\config\fes config\data\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aoview.h">
+      <Filter>module\config\fes config\data\ao</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aomodel.h">
+      <Filter>module\config\fes config\data\ao</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aotable.h">
+      <Filter>module\config\fes config\data\ao</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scalemodel.h">
+      <Filter>module\config\fes config\scale</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scalenonlearmodel.h">
+      <Filter>module\config\fes config\scale</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scaletable.h">
+      <Filter>module\config\fes config\scale</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scaleview.h">
+      <Filter>module\config\fes config\scale</Filter>
+    </CustomBuild>
+    <CustomBuild Include="analogalarmlimitmodel.h">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="analogalarmlimittable.h">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="analogalarmlimitview.h">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="analogalarmmodel.h">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="analogalarmtable.h">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="analogalarmview.h">
+      <Filter>module\config\fes config\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="doview.h">
+      <Filter>module\config\fes config\data\do</Filter>
+    </CustomBuild>
+    <CustomBuild Include="domodel.h">
+      <Filter>module\config\fes config\data\do</Filter>
+    </CustomBuild>
+    <CustomBuild Include="dotable.h">
+      <Filter>module\config\fes config\data\do</Filter>
+    </CustomBuild>
+    <CustomBuild Include="digitalalarmlimitmodel.h">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="digitalalarmlimittable.h">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="digitalalarmlimitview.h">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="digitalalarmmodel.h">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="digitalalarmtable.h">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="digitalalarmview.h">
+      <Filter>module\config\fes config\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadasystemvariablemodel.h">
+      <Filter>module\config\scadavariable\system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadasystemvariabletable.h">
+      <Filter>module\config\scadavariable\system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadasystemvariableview.h">
+      <Filter>module\config\scadavariable\system</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadauservariableview.h">
+      <Filter>module\config\scadavariable\user</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadauservariabletable.h">
+      <Filter>module\config\scadavariable\user</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadauservariablemodel.h">
+      <Filter>module\config\scadavariable\user</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadaanalogalarmview.h">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadaanalogalarmmodel.h">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadaanalogalarmtable.h">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadaanalogalarmlimitmodel.h">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadaanalogalarmlimittable.h">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadaanalogalarmlimitview.h">
+      <Filter>module\config\scadavariable\alarm\ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadadigitalalarmview.h">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadadigitalalarmtable.h">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadadigitalalarmmodel.h">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadadigitalalarmlimitview.h">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadadigitalalarmlimittable.h">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadadigitalalarmlimitmodel.h">
+      <Filter>module\config\scadavariable\alarm\di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadalinearscaleview.h">
+      <Filter>module\config\scadavariable\scale\linear</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadalinearscaletable.h">
+      <Filter>module\config\scadavariable\scale\linear</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadalinearscalemodel.h">
+      <Filter>module\config\scadavariable\scale\linear</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadalinearscalesetdialog.ui">
+      <Filter>module\config\scadavariable\scale\linear\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadalinearscalesetdialog.h">
+      <Filter>module\config\scadavariable\scale\linear\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadanonlinearscaleview.h">
+      <Filter>module\config\scadavariable\scale\nonlinear</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadanonlinearscaletalbe.h">
+      <Filter>module\config\scadavariable\scale\nonlinear</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadanonlinearscalemodel.h">
+      <Filter>module\config\scadavariable\scale\nonlinear</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadanonlinearscalesetdialog.h">
+      <Filter>module\config\scadavariable\scale\nonlinear\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadanonlinearscalesetdialog.ui">
+      <Filter>module\config\scadavariable\scale\nonlinear\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadauservariableselectscaledialog.h">
+      <Filter>module\config\scadavariable\user\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadauservariableselectscaledialog.ui">
+      <Filter>module\config\scadavariable\user\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="setscadaalarmdialog.ui">
+      <Filter>module\config\scadavariable\user\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="setscadaalarmdialog.h">
+      <Filter>module\config\scadavariable\user\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="confignodeservicedialog.h">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="confignodeserviceDialog.ui">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="confignodeservicetablemodel.h">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="addservicedialog.ui">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="addservicedialog.h">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="addservicemodel.h">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="addserviceplandialog.ui">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="addserviceplandialog.h">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="addplanservicemodel.h">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="clickplanservicemodel.h">
+      <Filter>module\config\node\server\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadaview.h">
+      <Filter>module\config\scadavariable\scada</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadatable.h">
+      <Filter>module\config\scadavariable\scada</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadamodel.h">
+      <Filter>module\config\scadavariable\scada</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uservariableselectalarmdialog.h">
+      <Filter>module\config\fes config\variable\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uservariableselectalarmdialog.ui">
+      <Filter>module\config\fes config\variable\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding.h">
+      <Filter>module\fes</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwaridng_channel_view.h">
+      <Filter>module\config\fes config\forwarding</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_channel_table.h">
+      <Filter>module\config\fes config\forwarding</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_channel_model.h">
+      <Filter>module\config\fes config\forwarding</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_ai_view.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwading_ai_table.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_aimodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ai</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_diview.h">
+      <Filter>module\config\fes config\forwarding\forwarding_di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_ditable.h">
+      <Filter>module\config\fes config\forwarding\forwarding_di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_dimodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_di</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_doview.h">
+      <Filter>module\config\fes config\forwarding\forwarding_do</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_dotable.h">
+      <Filter>module\config\fes config\forwarding\forwarding_do</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_domodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_do</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_aoview.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ao</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_aotable.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ao</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_aomodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ao</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_kwhview.h">
+      <Filter>module\config\fes config\forwarding\forwarding_kwh</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_kwhtable.h">
+      <Filter>module\config\fes config\forwarding\forwarding_kwh</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_kwhmodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_kwh</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_cgview.h">
+      <Filter>module\config\fes config\forwarding\forwarding_cg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_cgtable.h">
+      <Filter>module\config\fes config\forwarding\forwarding_cg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_cgmodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_cg</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_ai_tagname_dialog.ui">
+      <Filter>module\config\fes config\forwarding\forwarding_ai\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_ai_tagname_dialog.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ai\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_aimodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ai\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_di_tagname_dialog.ui">
+      <Filter>module\config\fes config\forwarding\forwarding_di\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_di_tagname_dialog.h">
+      <Filter>module\config\fes config\forwarding\forwarding_di\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_dimodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_di\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_ao_tagname_dialog.ui">
+      <Filter>module\config\fes config\forwarding\forwarding_ao\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_ao_tagname_dialog.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ao\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_aomodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_ao\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_do_tagname_dialog.ui">
+      <Filter>module\config\fes config\forwarding\forwarding_do\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_do_tagname_dialog.h">
+      <Filter>module\config\fes config\forwarding\forwarding_do\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="forwarding_select_domodel.h">
+      <Filter>module\config\fes config\forwarding\forwarding_do\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\debug\moc_predefs.h.cbt" />
+    <CustomBuild Include="GeneratedFiles\release\moc_predefs.h.cbt" />
+    <CustomBuild Include="fes_di_select_doubledi_dialog.ui">
+      <Filter>module\config\fes config\data\di\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fes_di_select_doubledi_dialog.h">
+      <Filter>module\config\fes config\data\di\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fes_di_select_doubledi_model.h">
+      <Filter>module\config\fes config\data\di\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fesdo_blockingsignaltag_select_dialog.h">
+      <Filter>module\config\fes config\data\do\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fesdo_blockingsignaltag_select_dialog.ui">
+      <Filter>module\config\fes config\data\do\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fes_do_blockingsignaltag_select_devicedi_model.h">
+      <Filter>module\config\fes config\data\do\form</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fes_do_blockingsignaletan_select_fesuservaraible_model.h">
+      <Filter>module\config\fes config\data\do\form</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="scadastudio.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_fes_di_select_doubledi_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_fesdo_blockingsignaltag_select_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="feschannel_forwardingchannel_data.h">
+      <Filter>module\config</Filter>
+    </ClInclude>
+    <ClInclude Include="alarm_data.h">
+      <Filter>module\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\scadastudio\base.h">
+      <Filter>module\config</Filter>
+    </ClInclude>
+    <ClInclude Include="base_data.h">
+      <Filter>module\config</Filter>
+    </ClInclude>
+    <ClInclude Include="config_data.h">
+      <Filter>module\config</Filter>
+    </ClInclude>
+    <ClInclude Include="fes_conf_data.h">
+      <Filter>module\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\scadastudio\icore.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\scadastudio\imodule.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\scadastudio\imainwindow.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\scadastudio\iprojmgr.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="logdefine.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\scadastudio\quoteItem.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\scadastudio\define.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="modulemgr.h">
+      <Filter>core\managemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>module\base</Filter>
+    </ClInclude>
+    <ClInclude Include="extenservicemodulemgr.h">
+      <Filter>core\managemodel</Filter>
+    </ClInclude>
+    <ClInclude Include="scadastudiodefine.h">
+      <Filter>module\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\datatypes.h">
+      <Filter>module\base</Filter>
+    </ClInclude>
+    <ClInclude Include="readtableconfig.h">
+      <Filter>module\base</Filter>
+    </ClInclude>
+    <ClInclude Include="variable_data.h">
+      <Filter>module\config</Filter>
+    </ClInclude>
+    <ClInclude Include="scale_data.h">
+      <Filter>module\config</Filter>
+    </ClInclude>
+    <ClInclude Include="scadavirable_data.h">
+      <Filter>module\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\fespub\tag_att.h">
+      <Filter>module\fespub</Filter>
+    </ClInclude>
+    <ClInclude Include="stl_util-inl.h">
+      <Filter>module\base</Filter>
+    </ClInclude>
+    <ClInclude Include="uimodule\systemoutputmodel.h">
+      <Filter>core\uimodule</Filter>
+    </ClInclude>
+    <ClInclude Include="timepack.h">
+      <Filter>module\base</Filter>
+    </ClInclude>
+    <ClInclude Include="xmlreader.h">
+      <Filter>module\base</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_addservicedialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_addserviceplandialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_channelparaconfigdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_closeprojectdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_confignodeserviceDialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_exportmodeldialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_extendserviceconfigdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_forwarding_select_ai_tagname_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_forwarding_select_ao_tagname_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_forwarding_select_di_tagname_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_forwarding_select_do_tagname_dialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_scadalinearscalesetdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_scadanonlinearscalesetdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_scadauservariableselectscaledialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_selectalarmdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_selectpointdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_selectscaledialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_setscadaalarmdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_setscaledialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_totalselectdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_uservariableselectalarmdialog.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\alarm.png" />
+    <None Include="images\channel.png" />
+    <None Include="images\close_group.png" />
+    <None Include="images\closeproject.png" />
+    <None Include="images\delete.png" />
+    <None Include="images\device.png" />
+    <None Include="images\equipment.png" />
+    <None Include="images\fes.png" />
+    <None Include="images\graph.png" />
+    <None Include="images\hissave.png" />
+    <None Include="images\new.png" />
+    <None Include="images\node.png" />
+    <None Include="images\open_group.png" />
+    <None Include="images\pdr.png" />
+    <None Include="images\project.png" />
+    <None Include="images\report.png" />
+    <None Include="images\save.png" />
+    <None Include="images\scale.png" />
+    <None Include="images\seqscript.png" />
+    <None Include="images\system.png" />
+    <None Include="images\systemvariable.png" />
+    <None Include="images\uservariable.png" />
+    <None Include="images\variablelist.png" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,49 @@
+.measurement-container {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.measurement-panel {
+    color: white;
+    margin-bottom: 12px;
+    width:10%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.measurement-panel-body {
+    padding: 10px;
+    font-size: 36px;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid solid none solid;
+    border-width: 1px 0;
+    min-height: 72px;
+}
+
+.measurement-panel-heading {
+    border-bottom: 1px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    font-size: 12px;
+}
+
+.measurement-panel-lime {
+    background-color: #1ec722;
+}
+
+.measurement_set {
+    color:#ed1e12;
+    font-size:14px;
+}
+
+.pull-left {
+    font-size:14px;
+    float: left;
+}
+
+.pull-right {
+    font-size:14px;
+    float: right;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.MaterialModel" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="materialModelID">
+            <generator class="uuid"/>
+        </id>
+        <property name="codeID" type="java.lang.String" not-null="true" unique="true"/>
+        <many-to-one name="materialType" class="com.corsair.entity.MaterialType" fetch="join"/>
+        <set name="materials" inverse="false" cascade="all" order-by="materialID asc">
+            <key column="materialModel"/>
+            <one-to-many class="com.corsair.entity.Material"/>
+        </set>
+        <set name="materialModelLables" table="model_modellable" inverse="false" order-by="materialModelLableID asc">
+            <key column="materialModelID"/>
+            <many-to-many column="materialModelLableID" class="com.corsair.entity.MaterialModelLable"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.StationLocation" table="station_location" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="station_id">
+            <generator class="uuid"/>
+        </id>
+        <property name="station_name" type="java.lang.String">
+            <column name="station_name" length="40" not-null="true">
+            </column>
+        </property>
+        <property name="station_city" type="java.lang.String">
+            <column name="station_city" length="40" not-null="true">
+            </column>
+        </property>
+        <property name="longitude" type="java.lang.Float">
+            <column name="longitude" not-null="true">
+            </column>
+        </property>
+        <property name="latitude" type="java.lang.Float">
+            <column name="latitude" not-null="true">
+            </column>
+        </property>
+        <property name="linkurl" type="java.lang.String">
+            <column name="linkurl" not-null="true">
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

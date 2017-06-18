@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conifg>
+    <mantanceIP></mantanceIP>
+    <mantancePort>5000</mantancePort>
+    <download>
+        <ftpip>127.0.0.1</ftpip>
+        <ftpport>21</ftpport>
+        <username>wangwei</username>
+        <password>2222</password>
+        <filename>fff/dee/dd/file.xml</filename>
+    </download>
+    <upload>
+        <ftpip></ftpip>
+        <ftpport>21</ftpport>
+        <username></username>
+        <password></password>
+        <upPath></upPath>
+    </upload>
+</conifg>

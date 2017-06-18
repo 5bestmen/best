@@ -1,0 +1,60 @@
+<div style="background:#ffffff">
+    <div class="content" style="padding-top:1%;">
+        <span style="line-height:2em; margin-left:1%">条件过滤：</span>
+        <span style="width:50%">
+         <select class="c12" id="filterKind" style="width:14%"  ng-model="ftKind">
+             <option value="pjName">工程名</option>
+             <option value="strUnitInfo">工程节点</option>
+             <option value="strDeviceKind">设备种类</option>
+             <option value="strDeviceName">设备名</option>
+             <option value="strGuid">GUID</option>
+             <option value="strVendor">厂商</option>
+             <option value="strModel">设备型号</option>
+             <option value="strPosition">安装位置</option>
+             <option value="strPosition">追加说明</option>
+         </select>
+    </span>
+        <div class="clear"></div>
+    </div>
+    <div class="content" style="padding-bottom:1%">
+        <span style="line-height:2em; margin-left:1%">过滤内容：</span>
+        <input style="margin-left:1%" class="c18" id="filterContent" type="text" placeholder="请输入" ng-model="ftContent">
+        <a class="build_g" ng-click="this.blur();doFilter()" style="margin-left:5%">搜索</a>
+        <a class="build" ng-click="this.blur();cleanFilter()" onclick="this.blur(); return false;" style="margin-left:3%">全部显示</a>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<table class="sheet" style="width:90%" cellpadding="0" cellspacing="0">
+    <tr>
+        <th>工程名</th>
+        <th>工程节点</th>
+        <th>设备种类</th>
+        <th>设备名</th>
+        <th>GUID</th>
+        <th>厂商</th>
+        <th>设备型号</th>
+        <th>安装位置</th>
+        <th>设备图片</th>
+        <th>追加说明</th>
+        <th>操作</th>
+    </tr>
+    <tr ng-repeat="device in deviceInfoList|filter:{deleteFlag:'!-1'}">
+        <td>{{device.strPjName}}</td>
+        <td>{{device.strUnitInfo}}</td>
+        <td>{{device.strDeviceKind}}</td>
+        <td>{{device.strDeviceName}}</td>
+        <td>{{device.strGuid}}</td>
+        <td>{{device.strVendor}}</td>
+        <td>{{device.strModel}}</td>
+        <td>{{device.strPosition}}</td>
+        <td>{{device.strDeviceSnapShot}}</td>
+        <td>{{device.strDeviceNote}}</td>
+        <td>
+            <span class="opr c15" ng-click="deleteDeviceInfo(device.intDeviceid)">删除</span>
+            <span class="opr" ng-click="openUpdateMacInfoModal(device)">修改</span>
+        </td>
+    </tr>
+
+</table>
+<div style="width:90%; margin:0 auto; margin-top:1%;"><a class="build02" ng-click="this.blur(); openMacInfoModal()">追加</a></div>

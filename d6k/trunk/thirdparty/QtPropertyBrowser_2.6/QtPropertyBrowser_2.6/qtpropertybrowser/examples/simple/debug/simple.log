@@ -1,0 +1,13 @@
+﻿生成启动时间为 2015/11/26 19:43:52。
+     1>项目“G:\QtPropertyBrowser_2.6\QtPropertyBrowser_2.6\qtpropertybrowser\examples\simple\simple.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /I. /I..\..\src /IC:\Qt\Qt5.5.1\5.5\msvc2013\include /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtWidgets /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtGui /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtANGLE /IC:\Qt\Qt5.5.1\5.5\msvc2013\include\QtCore /Idebug /I"C:\Qt\Qt5.5.1\5.5\msvc2013\mkspecs\win32-msvc2013" /Zi /nologo /W3 /WX- /Od /Oy- /D _WINDOWS /D UNICODE /D WIN32 /D QT_QTPROPERTYBROWSER_IMPORT /D QT_WIDGETS_LIB /D QT_GUI_LIB /D QT_CORE_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"debug\\" /Fd"debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt -w34100 -w34189 -w44996 main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"debug\\simple.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.5.1\5.5\msvc2013\lib /LIBPATH:C:/Qt/Qt5.5.1/5.5/msvc2013/lib /LIBPATH:G:\QtPropertyBrowser_2.6\QtPropertyBrowser_2.6\qtpropertybrowser\lib C:\Qt\Qt5.5.1\5.5\msvc2013\lib\qtmaind.lib shell32.lib C:/Qt/Qt5.5.1/5.5/msvc2013/lib\Qt5Cored.lib "G:\QtPropertyBrowser_2.6\QtPropertyBrowser_2.6\qtpropertybrowser\lib\QtSolutions_PropertyBrowser-headd.lib" C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Widgetsd.lib C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Guid.lib C:\Qt\Qt5.5.1\5.5\msvc2013\lib\Qt5Cored.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"debug\simple.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /MACHINE:X86 /SAFESEH "/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" debug\main.obj
+         simple.vcxproj -> G:\QtPropertyBrowser_2.6\QtPropertyBrowser_2.6\qtpropertybrowser\examples\simple\debug\simple.exe
+     1>已完成生成项目“G:\QtPropertyBrowser_2.6\QtPropertyBrowser_2.6\qtpropertybrowser\examples\simple\simple.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.35

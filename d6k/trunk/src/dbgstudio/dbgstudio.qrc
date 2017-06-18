@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/analog.png</file>
+        <file>icons/binary.png</file>
+        <file>icons/choose.png</file>
+        <file>icons/control.png</file>
+        <file>icons/dbgstudio.png</file>
+        <file>icons/fix.png</file>
+        <file>icons/ftu.png</file>
+        <file>icons/gongcheng.png</file>
+        <file>icons/jianshi.png</file>
+        <file>icons/kwh.png</file>
+        <file>icons/Open.png</file>
+        <file>icons/soe.png</file>
+        <file>dbgstudio.qss</file>
+        <file>images/add-line_horizontal.png</file>
+        <file>images/add-line_vertical.png</file>
+        <file>images/array_down.png</file>
+        <file>images/checkbox_checked.png</file>
+        <file>images/checkbox_unchecked.png</file>
+        <file>images/error.png</file>
+        <file>images/info.png</file>
+        <file>images/question.png</file>
+        <file>images/radio_normal.png</file>
+        <file>images/radio_selected.png</file>
+        <file>images/sub-line_horizontal.png</file>
+        <file>images/sub-line_vertical.png</file>
+    </qresource>
+</RCC>

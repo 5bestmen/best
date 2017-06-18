@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="100%" x="0" y="0" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 1215.25 737.734" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://iec.ch/TC57/2005/SVG-schema#">
+    <defs>
+        <linearGradient id="MyGradient_1770" y1="32.5" x1="154.254" y2="32.5" gradientUnits="userSpaceOnUse" x2="641.254">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_3841" y1="32.5" x1="716.881" y2="32.5" gradientUnits="userSpaceOnUse" x2="923.881">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_5652" y1="282.18742" x1="240.819" y2="296.45058" gradientUnits="userSpaceOnUse" x2="240.819">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_4040">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_28438">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_16476">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_16808">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_22109">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_9893">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <linearGradient id="MyGradient_16902" y1="290.55342" x1="848.461" y2="304.81658" gradientUnits="userSpaceOnUse" x2="848.461">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <symbol viewBox="0 0 30.479 109.925" id="753@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="753" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.216" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5959" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.69) rotate(180) translate(-15.2395,-55.69)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.248" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="753"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="753@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="753" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.784" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1421" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.463) rotate(180) translate(-15.2395,-55.463)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.816" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="753"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="766@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="766" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.216" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5959" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.69) rotate(180) translate(-15.2395,-55.69)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.248" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="766"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="766@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="766" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.784" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1421" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.463) rotate(180) translate(-15.2395,-55.463)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.816" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="766"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="779@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="779" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.216" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5959" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.69) rotate(180) translate(-15.2395,-55.69)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.248" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="779"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="779@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="779" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.784" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1421" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.463) rotate(180) translate(-15.2395,-55.463)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.816" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="779"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.926" id="792@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.426" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="792" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.217" x1="16.3995" y2="106.11" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5969" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.691) rotate(180) translate(-15.2395,-55.691)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.249" x1="16.3995" y2="31.143" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="792"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.926" id="792@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.426" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="792" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.785" x1="16.3995" y2="106.11" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1431" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.464) rotate(180) translate(-15.2395,-55.464)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.817" x1="16.3995" y2="31.143" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="792"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="805@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="805" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.216" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5959" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.69) rotate(180) translate(-15.2395,-55.69)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.248" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="805"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="805@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="805" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.784" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1421" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.463) rotate(180) translate(-15.2395,-55.463)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.816" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="805"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="818@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="818" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.216" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5959" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.69) rotate(180) translate(-15.2395,-55.69)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.249" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="818"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="818@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="818" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.784" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1421" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.463) rotate(180) translate(-15.2395,-55.463)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.817" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="818"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="831@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="831" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.216" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5959" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.69) rotate(180) translate(-15.2395,-55.69)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.248" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="831"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="831@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="831" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.784" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1421" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.463) rotate(180) translate(-15.2395,-55.463)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.816" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="831"/>
+        </symbol>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_25827">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <symbol viewBox="0 0 30.479 109.926" id="847@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.426" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="847" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.217" x1="16.3995" y2="106.11" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5969" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.691) rotate(180) translate(-15.2395,-55.691)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.249" x1="16.3995" y2="31.143" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="847"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.926" id="847@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.426" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="847" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.785" x1="16.3995" y2="106.11" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1431" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.464) rotate(180) translate(-15.2395,-55.464)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.817" x1="16.3995" y2="31.143" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="847"/>
+        </symbol>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_4156">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <symbol viewBox="0 0 30.479 109.926" id="863@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.426" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="863" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.217" x1="16.3995" y2="106.11" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5969" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.691) rotate(180) translate(-15.2395,-55.691)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.249" x1="16.3995" y2="31.143" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="863"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.926" id="863@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.426" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="863" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.785" x1="16.3995" y2="106.11" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1431" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.464) rotate(180) translate(-15.2395,-55.464)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.817" x1="16.3995" y2="31.143" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="863"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="876@0">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="876" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="80.216" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.5959" height="48.1882" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.69) rotate(180) translate(-15.2395,-55.69)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="5.248" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="876"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="876@1">
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="876" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="79.784" x1="16.3995" y2="106.109" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="31.1421" height="48.6418" style="stroke-width:2;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,55.463) rotate(180) translate(-15.2395,-55.463)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="4.816" x1="16.3995" y2="31.142" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="876"/>
+        </symbol>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_14739">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_17886">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+    </defs>
+    <rect width="3345.75" flags="GDF" x="-1115.25" y="-637.734" fill="rgb(0,0,0)" height="1913.202" maxid="994" type="接线图" id="0" owner="系统站" rule="1"/>
+    <g id="共享层">
+        <g id="382">
+            <a xlink:href="sys/一次接线索引图.svg">
+                <rect width="487" x="154.254" y="0" height="65" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_1770)"/>
+                <polygon points="154.254,0 154.254,65 155.254,64 155.254,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="154.254,0 641.254,0 640.254,1 155.254,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="641.254,0 640.254,1 640.254,64 641.254,65" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="640.254,64 641.254,65 154.254,65 155.254,64" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="303.254" y="49" font-family="黑体" fill="rgb(128,0,0)" font-size="33">电源点接线图</text>
+            </a>
+        </g>
+        <g id="383">
+            <a xlink:href="sys/偃师配网接线图.svg">
+                <rect width="207" x="716.881" y="0" height="65" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_3841)"/>
+                <polygon points="716.881,0 716.881,65 717.881,64 717.881,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="716.881,0 923.881,0 922.881,1 717.881,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="923.881,0 922.881,1 922.881,64 923.881,65" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="922.881,64 923.881,65 716.881,65 717.881,64" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="741.881" y="49" font-family="黑体" fill="rgb(128,0,0)" font-size="33">配网接线图</text>
+            </a>
+        </g>
+        <g id="691">
+            <path style="stroke-width:0;fill:url(#MyGradient_5652)" d="M 0 282.187 H481.638 V296.451 H0 Z">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Msys4#"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="692">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_4040);fill:none;" y1="392.859" x1="59.154" y2="512.779" x2="59.154"/>
+            <circle visibility="hidden" cx="59.154" cy="394.525" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="692"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys-s1"/>
+            </metadata>
+        </g>
+        <g id="695">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_28438);fill:none;" y1="393.655" x1="157.989" y2="513.575" x2="157.989"/>
+            <circle visibility="hidden" cx="157.989" cy="395.321" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="695"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys-s1-2"/>
+            </metadata>
+        </g>
+        <g id="701">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_16476);fill:none;" y1="405.958" x1="648.52" y2="525.878" x2="648.52"/>
+            <circle visibility="hidden" cx="648.52" cy="407.624" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="701"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys-s2"/>
+            </metadata>
+        </g>
+        <g id="704">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_16808);fill:none;" y1="407.615" x1="880.878" y2="527.534" x2="880.878"/>
+            <circle visibility="hidden" cx="880.878" cy="409.28" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="704"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys-s3-2"/>
+            </metadata>
+        </g>
+        <g id="707">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_22109);fill:none;" y1="408.396" x1="790.826" y2="528.315" x2="790.826"/>
+            <circle visibility="hidden" cx="790.826" cy="410.061" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="707"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys-s3"/>
+            </metadata>
+        </g>
+        <g id="710">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_9893);fill:none;" y1="397.832" x1="261.521" y2="517.751" x2="261.521"/>
+            <circle visibility="hidden" cx="261.521" cy="399.497" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="710"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys-s2-2"/>
+            </metadata>
+        </g>
+        <g id="715">
+            <path style="stroke-width:0;fill:url(#MyGradient_16902)" d="M 599.878 290.553 H1097.04 V304.817 H599.878 Z">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Msys6#"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="718">
+            <circle cx="46.654" cy="236.849" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="21.2187"/>
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="286.54" x1="47.454" y2="256.532" x2="47.454"/>
+            <circle visibility="hidden" cx="47.454" cy="289.541" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="718"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M33.174,237.602 A7.56324,7.56324 0 0,1 48.184,237.602"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M48.184,237.602 A7.5,7.5 0 1,0 63.184,237.602"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Fsys4#"/>
+            </metadata>
+        </g>
+        <g id="732">
+            <circle cx="632.298" cy="242.522" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="21.2187"/>
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="292.214" x1="633.106" y2="262.206" x2="633.106"/>
+            <circle visibility="hidden" cx="633.106" cy="295.214" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="732"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M618.824,243.275 A7.56038,7.56038 0 0,1 633.828,243.275"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M633.828,243.275 A7.502,7.502 0 1,0 648.832,243.275"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Fsys6#"/>
+            </metadata>
+        </g>
+        <g id="753">
+            <use width="30.479" x="41.5445" y="285.671" height="109.925" xlink:href="#753@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys4#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys4#Kg value"/>
+            </metadata>
+        </g>
+        <g id="766">
+            <use width="30.47899999999999" x="142.9295" y="290.301" height="109.925" xlink:href="#766@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys5#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys5#Kg value"/>
+            </metadata>
+        </g>
+        <g id="779">
+            <use width="30.47900000000004" x="632.4745" y="298.042" height="109.925" xlink:href="#779@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys6#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys6#Kg value"/>
+            </metadata>
+        </g>
+        <g id="792">
+            <use width="30.47900000000001" x="245.6765" y="289.183" height="109.926" xlink:href="#792@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys7#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys7#Kg value"/>
+            </metadata>
+        </g>
+        <g id="805">
+            <use width="30.47900000000004" x="773.0995" y="298.828" height="109.925" xlink:href="#805@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys8#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys8#Kg value"/>
+            </metadata>
+        </g>
+        <g id="818">
+            <use width="30.47900000000004" x="863.9485" y="298.142" height="109.925" xlink:href="#818@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys9#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys9#Kg value"/>
+            </metadata>
+        </g>
+        <g id="831">
+            <use width="30.47900000000004" x="349.5825" y="288.192" height="109.925" xlink:href="#831@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys10#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys10#Kg value"/>
+            </metadata>
+        </g>
+        <g id="844">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_25827);fill:none;" y1="396.84" x1="365.427" y2="516.759" x2="365.427"/>
+            <circle visibility="hidden" cx="365.427" cy="398.505" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="844"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys_s1-3"/>
+            </metadata>
+        </g>
+        <g id="847">
+            <use width="30.47900000000004" x="957.3985" y="298.962" height="109.926" xlink:href="#847@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys11#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys11#Kg value"/>
+            </metadata>
+        </g>
+        <g id="860">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_4156);fill:none;" y1="407.611" x1="973.243" y2="527.53" x2="973.243"/>
+            <circle visibility="hidden" cx="973.2430000000001" cy="409.276" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="860"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys_s2-3"/>
+            </metadata>
+        </g>
+        <g id="863">
+            <use width="30.47899999999981" x="1045.6805" y="299.183" height="109.926" xlink:href="#863@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys13#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys13#Kg value"/>
+            </metadata>
+        </g>
+        <g id="876">
+            <use width="30.47900000000004" x="451.3925" y="286.569" height="109.925" xlink:href="#876@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksys12#"/>
+                <cge:Meas_Ref  ObjectID="break Ksys12#Kg value"/>
+            </metadata>
+        </g>
+        <g id="889">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_14739);fill:none;" y1="407.832" x1="1061.52" y2="527.751" x2="1061.52"/>
+            <circle visibility="hidden" cx="1061.52" cy="409.497" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="889"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys_s4-3"/>
+            </metadata>
+        </g>
+        <g id="892">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_17886);fill:none;" y1="395.217" x1="467.237" y2="515.137" x2="467.237"/>
+            <circle visibility="hidden" cx="467.237" cy="396.883" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="892"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Xsyssys_s3-3"/>
+            </metadata>
+        </g>
+        <g id="895">
+            <text x="68.75400000000001" y="396.234" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">4#</text>
+        </g>
+        <g id="896">
+            <text x="175.754" y="400.234" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">5#</text>
+        </g>
+        <g id="897">
+            <text x="285.754" y="400.234" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">7#</text>
+        </g>
+        <g id="898">
+            <text x="372.66" y="399.242" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">10#</text>
+        </g>
+        <g id="899">
+            <text x="990.98" y="410.013" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">11#</text>
+        </g>
+        <g id="900">
+            <text x="665.754" y="400.234" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">6#</text>
+        </g>
+        <g id="901">
+            <text x="805.754" y="400.234" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">8#</text>
+        </g>
+        <g id="902">
+            <text x="895.754" y="400.234" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">9#</text>
+        </g>
+        <g id="903">
+            <text x="484.47" y="387.619" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">12#</text>
+        </g>
+        <g id="904">
+            <text x="1078.75" y="400.234" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="31">13#</text>
+        </g>
+        <g id="905">
+            <text width="47" x="36.924" y="558.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="19" x="50.924" y="589.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s1</text>
+            <text width="79" x="20.924" y="620.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+        <g id="906">
+            <text width="47" x="136.921" y="554.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="46" x="137.421" y="585.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s1-2</text>
+            <text width="79" x="120.921" y="616.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+        <g id="907">
+            <text width="47" x="236.921" y="554.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="46" x="237.421" y="585.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s2-2</text>
+            <text width="79" x="220.921" y="616.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+        <g id="908">
+            <text width="47" x="340.827" y="553.742" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="45" x="341.827" y="584.742" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s1-3</text>
+            <text width="79" x="324.827" y="615.742" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+        <g id="909">
+            <text width="47" x="948.643" y="564.513" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="45" x="949.643" y="595.513" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s2-3</text>
+            <text width="79" x="932.643" y="626.513" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+        <g id="910">
+            <text width="47" x="626.9210000000001" y="564.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="23" x="638.9210000000001" y="595.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s2</text>
+            <text width="79" x="610.9210000000001" y="626.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+        <g id="911">
+            <text width="47" x="766.9210000000001" y="564.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="22" x="779.4210000000001" y="595.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s3</text>
+            <text width="79" x="750.9210000000001" y="626.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+        <g id="912">
+            <text width="47" x="856.9210000000001" y="564.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="46" x="857.4210000000001" y="595.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s3-2</text>
+            <text width="79" x="840.9210000000001" y="626.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+        <g id="913">
+            <text width="47" x="442.637" y="552.119" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="45" x="443.637" y="583.119" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s3-3</text>
+            <text width="79" x="426.637" y="614.119" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+        <g id="914">
+            <text width="47" x="1036.92" y="564.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">sys_</text>
+            <text width="45" x="1037.92" y="595.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">s4-3</text>
+            <text width="79" x="1020.92" y="626.734" font-family="ËÎÌå" fill="rgb(255,255,255)" height="31" font-weight="normal" font-size="31">架空线</text>
+        </g>
+    </g>
+    <g id="SCD层"/>
+    <g visibility="hidden" id="EMS层"/>
+    <g>
+        <circle fill="yellow" cx="58.3473333333333" cy="393.5723333333334" stroke="green" id="node_0" r="2.25"/>
+        <circle fill="yellow" cx="158.8823333333333" cy="396.9243333333334" stroke="green" id="node_1" r="2.25"/>
+        <circle fill="yellow" cx="648.7559999999999" cy="406.186" stroke="green" id="node_2" r="2.25"/>
+        <circle fill="yellow" cx="880.8779999999999" cy="409.28" stroke="green" id="node_3" r="2.25"/>
+        <circle fill="yellow" cx="790.8259999999999" cy="410.061" stroke="green" id="node_4" r="2.25"/>
+        <circle fill="yellow" cx="261.8909999999999" cy="397.5716666666667" stroke="green" id="node_5" r="2.25"/>
+        <circle fill="yellow" cx="47.45399999999995" cy="289.541" stroke="green" id="node_6" r="2.25"/>
+        <circle fill="yellow" cx="633.1059999999999" cy="295.2143" stroke="green" id="node_7" r="2.25"/>
+        <circle fill="yellow" cx="57.94399999999996" cy="288.1712" stroke="green" id="node_8" r="2.25"/>
+        <circle fill="yellow" cx="159.329" cy="292.8007" stroke="green" id="node_9" r="2.25"/>
+        <circle fill="yellow" cx="648.8739999999999" cy="300.5419" stroke="green" id="node_10" r="2.25"/>
+        <circle fill="yellow" cx="262.0759999999999" cy="291.6835" stroke="green" id="node_11" r="2.25"/>
+        <circle fill="yellow" cx="789.4989999999999" cy="406.253" stroke="green" id="node_12" r="2.25"/>
+        <circle fill="yellow" cx="789.4989999999999" cy="301.3276" stroke="green" id="node_13" r="2.25"/>
+        <circle fill="yellow" cx="880.348" cy="405.567" stroke="green" id="node_14" r="2.25"/>
+        <circle fill="yellow" cx="880.348" cy="300.6425" stroke="green" id="node_15" r="2.25"/>
+        <circle fill="yellow" cx="365.7969999999999" cy="396.5796666666667" stroke="green" id="node_16" r="2.25"/>
+        <circle fill="yellow" cx="365.9819999999999" cy="290.6916" stroke="green" id="node_17" r="2.25"/>
+        <circle fill="yellow" cx="973.6129999999999" cy="407.3506666666667" stroke="green" id="node_18" r="2.25"/>
+        <circle fill="yellow" cx="973.7979999999999" cy="301.4625" stroke="green" id="node_19" r="2.25"/>
+        <circle fill="yellow" cx="1061.890933333333" cy="407.5716666666667" stroke="green" id="node_20" r="2.25"/>
+        <circle fill="yellow" cx="1062.0761" cy="301.6835" stroke="green" id="node_21" r="2.25"/>
+        <circle fill="yellow" cx="467.6069999999999" cy="394.9570000000001" stroke="green" id="node_22" r="2.25"/>
+        <circle fill="yellow" cx="467.7919999999999" cy="289.069" stroke="green" id="node_23" r="2.25"/>
+    </g>
+</svg>

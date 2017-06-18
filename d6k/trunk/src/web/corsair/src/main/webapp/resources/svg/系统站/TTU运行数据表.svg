@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="100%" x="0" y="0" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 3257 2010.88" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://iec.ch/TC57/2005/SVG-schema#">
+    <defs/>
+    <rect width="9471" flags="GDF" x="-3157" y="-1910.878" fill="rgb(0,0,0)" height="5732.634" maxid="807" type="索引图" id="0" owner="系统站" rule="1"/>
+    <g id="第1层">
+        <g id="4">
+            <a xlink:href="../sys/主目录.svg">
+                <rect width="1176.47" x="937.1550000000001" y="0" height="117.647" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(204,255,255);"/>
+                <polygon points="937.155,0 937.155,117.647 938.155,116.647 938.155,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="937.155,0 2113.62,0 2112.62,1 938.155,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="2113.62,0 2112.62,1 2112.62,116.647 2113.62,117.647" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="2112.62,116.647 2113.62,117.647 937.155,117.647 938.155,116.647" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="1263.89" y="95.3235" font-family="Thonburi" fill="rgb(128,0,0)" font-weight="bold" font-size="73">TTU 运 行 数 据 表</text>
+            </a>
+        </g>
+        <g id="643">
+            <text x="1671.28" y="914.578" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0504-33</text>
+        </g>
+        <g id="644">
+            <text x="1670.78" y="1554.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0542-39</text>
+        </g>
+        <g id="645">
+            <text x="93.36500000000001" y="1344.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0488-21</text>
+        </g>
+        <g id="646">
+            <text x="91.86500000000001" y="1449.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0489-22</text>
+        </g>
+        <g id="647">
+            <text x="1670.78" y="484.577" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0496-29</text>
+        </g>
+        <g id="648">
+            <text x="1670.78" y="804.578" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0499-32</text>
+        </g>
+        <g id="649">
+            <text x="91.86500000000001" y="1774.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0493-26</text>
+        </g>
+        <g id="650">
+            <text x="91.86500000000001" y="1882.36" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0494-27</text>
+        </g>
+        <g id="651">
+            <text x="1670.78" y="379.012" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0495-28</text>
+        </g>
+        <g id="652">
+            <text x="1670.78" y="1024.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="41.99999999999989">0514-34</text>
+        </g>
+        <g id="653">
+            <text x="1672.28" y="704.577" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0498-31</text>
+        </g>
+        <g id="654">
+            <text x="1670.78" y="594.577" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0497-30</text>
+        </g>
+        <g id="655">
+            <text x="1670.78" y="1344.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0540-37</text>
+        </g>
+        <g id="656">
+            <text width="123" x="91.86500000000001" y="1641.58" font-family="Thonburi" fill="rgb(255,255,255)" height="42" font-weight="bold" font-size="42">0491-24</text>
+            <text width="0" x="153.365" y="1683.58" font-family="Thonburi" fill="rgb(255,255,255)" height="42" font-weight="bold" font-size="42"></text>
+        </g>
+        <g id="657">
+            <text x="91.86500000000001" y="379.012" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0479-12</text>
+        </g>
+        <g id="658">
+            <text x="1670.78" y="1234.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0534-36</text>
+        </g>
+        <g id="659">
+            <text x="91.86500000000001" y="1124.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0486-19</text>
+        </g>
+        <g id="660">
+            <text x="1671.28" y="1126.2" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0524-35</text>
+        </g>
+        <g id="661">
+            <text x="91.86500000000001" y="1234.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0487-20</text>
+        </g>
+        <g id="662">
+            <text x="91.86500000000001" y="1024.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="41.99999999999989">0485-18</text>
+        </g>
+        <g id="663">
+            <text x="91.86500000000001" y="914.578" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0484-17</text>
+        </g>
+        <g id="664">
+            <text x="91.86500000000001" y="804.578" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0483-16</text>
+        </g>
+        <g id="665">
+            <text x="92.36500000000001" y="704.577" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0482-15</text>
+        </g>
+        <g id="666">
+            <text x="91.86500000000001" y="594.577" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0481-14</text>
+        </g>
+        <g id="667">
+            <text x="92.36500000000001" y="484.577" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0480-13</text>
+        </g>
+        <g id="668">
+            <text x="92.36500000000001" y="1554.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0490-23</text>
+        </g>
+        <g id="669">
+            <text x="1670.78" y="1449.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">0541-38</text>
+        </g>
+        <g id="673">
+            <text x="1940.78" y="914.578" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">迎宾路1#箱变</text>
+        </g>
+        <g id="675">
+            <text x="1940.78" y="1554.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">迎宾路2#箱变</text>
+        </g>
+        <g id="676">
+            <text x="362.865" y="1344.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">迎宾路3#箱变</text>
+        </g>
+        <g id="677">
+            <text x="381.865" y="1447.08" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">迎宾馆公变</text>
+        </g>
+        <g id="678">
+            <text x="1940.78" y="482.077" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">民兵训练基地</text>
+        </g>
+        <g id="679">
+            <text x="1922.78" y="802.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">偃康线农机供电</text>
+        </g>
+        <g id="680">
+            <text x="1922.78" y="592.077" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">偃康线水泵供电</text>
+        </g>
+        <g id="681">
+            <text x="1923.28" y="702.077" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">偃康线水泵厂东</text>
+        </g>
+        <g id="682">
+            <text width="183" x="1959.78" y="1003.58" font-family="Thonburi" fill="rgb(255,255,255)" height="36.99999999999994" font-weight="bold" font-size="36.99999999999994">环保局供电</text>
+            <text width="0" x="2051.28" y="1040.58" font-family="Thonburi" fill="rgb(255,255,255)" height="36.99999999999994" font-weight="bold" font-size="36.99999999999994"></text>
+        </g>
+        <g id="683">
+            <text width="183" x="1959.78" y="358.012" font-family="Thonburi" fill="rgb(255,255,255)" height="37" font-weight="bold" font-size="37">槐化路公变</text>
+            <text width="0" x="2051.28" y="395.012" font-family="Thonburi" fill="rgb(255,255,255)" height="37" font-weight="bold" font-size="37"></text>
+        </g>
+        <g id="684">
+            <text x="381.865" y="1872.08" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">兴隆东公变</text>
+        </g>
+        <g id="685">
+            <text x="381.865" y="1762.08" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">兴隆西公变</text>
+        </g>
+        <g id="686">
+            <text x="381.365" y="379.012" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">槐新1#箱变</text>
+        </g>
+        <g id="687">
+            <text x="363.865" y="1662.08" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">窑头砖厂台区</text>
+        </g>
+        <g id="689">
+            <text x="1940.78" y="1342.08" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">商兴线城区所</text>
+        </g>
+        <g id="690">
+            <text x="1922.78" y="1232.08" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">商兴线党校公变</text>
+        </g>
+        <g id="691">
+            <text width="221" x="362.865" y="1103.58" font-family="Thonburi" fill="rgb(255,255,255)" height="42" font-weight="bold" font-size="42">民主路3#箱变</text>
+            <text width="0" x="473.365" y="1145.58" font-family="Thonburi" fill="rgb(255,255,255)" height="42" font-weight="bold" font-size="42"></text>
+        </g>
+        <g id="692">
+            <text x="1940.78" y="1126.2" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">民主路4#箱变</text>
+        </g>
+        <g id="693">
+            <text x="363.865" y="1232.08" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">槐庙大队台区</text>
+        </g>
+        <g id="694">
+            <text x="362.865" y="1024.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="41.99999999999989">工东村中2#变</text>
+        </g>
+        <g id="695">
+            <text x="354.365" y="914.578" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">新城队部2台区</text>
+        </g>
+        <g id="696">
+            <text x="363.865" y="802.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">槐庙村中台区</text>
+        </g>
+        <g id="697">
+            <text x="363.865" y="702.077" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="37">槐庙村北台区</text>
+        </g>
+        <g id="698">
+            <text x="372.865" y="594.577" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">大队部1台区</text>
+        </g>
+        <g id="699">
+            <text x="354.365" y="484.577" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">新城村中1台区</text>
+        </g>
+        <g id="700">
+            <text x="344.365" y="1554.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">工东线槐庙14队</text>
+        </g>
+        <g id="701">
+            <text x="1922.28" y="1449.58" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="42">工东窑头14队北</text>
+        </g>
+        <g id="707">
+            <text x="2303.27" y="911.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kybl1Ia value"/>
+            </metadata>
+        </g>
+        <g id="708">
+            <text x="2623.27" y="911.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kybl1P value"/>
+            </metadata>
+        </g>
+        <g id="709">
+            <text x="2943.27" y="911.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kybl1Q value"/>
+            </metadata>
+        </g>
+        <g id="710">
+            <text x="2303.27" y="1551.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kybl2Ia value"/>
+            </metadata>
+        </g>
+        <g id="711">
+            <text x="2623.27" y="1551.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kybl2P value"/>
+            </metadata>
+        </g>
+        <g id="712">
+            <text x="2943.27" y="1551.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kybl2Q value"/>
+            </metadata>
+        </g>
+        <g id="713">
+            <text x="735.356" y="1341.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kybl3Ia value"/>
+            </metadata>
+        </g>
+        <g id="714">
+            <text x="1055.36" y="1341.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kybl3P value"/>
+            </metadata>
+        </g>
+        <g id="715">
+            <text x="1363.14" y="1341.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kybl3Q value"/>
+            </metadata>
+        </g>
+        <g id="716">
+            <text x="735.356" y="1446.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxybIa value"/>
+            </metadata>
+        </g>
+        <g id="717">
+            <text x="1055.36" y="1446.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxybP value"/>
+            </metadata>
+        </g>
+        <g id="718">
+            <text x="1363.14" y="1446.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxybQ value"/>
+            </metadata>
+        </g>
+        <g id="719">
+            <text x="2303.27" y="481.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykmbIa value"/>
+            </metadata>
+        </g>
+        <g id="720">
+            <text x="2623.27" y="481.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykmbP value"/>
+            </metadata>
+        </g>
+        <g id="721">
+            <text x="2943.27" y="481.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykmbQ value"/>
+            </metadata>
+        </g>
+        <g id="722">
+            <text x="2303.27" y="801.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KyknjIa value"/>
+            </metadata>
+        </g>
+        <g id="723">
+            <text x="2623.27" y="801.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KyknjP value"/>
+            </metadata>
+        </g>
+        <g id="724">
+            <text x="2943.27" y="801.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KyknjQ value"/>
+            </metadata>
+        </g>
+        <g id="725">
+            <text x="2303.27" y="591.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KyksbIa value"/>
+            </metadata>
+        </g>
+        <g id="726">
+            <text x="2623.27" y="591.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KyksbP value"/>
+            </metadata>
+        </g>
+        <g id="727">
+            <text x="2943.27" y="591.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KyksbQ value"/>
+            </metadata>
+        </g>
+        <g id="728">
+            <text x="2303.27" y="701.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KyksbdIa value"/>
+            </metadata>
+        </g>
+        <g id="729">
+            <text x="2623.27" y="701.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KyksbdP value"/>
+            </metadata>
+        </g>
+        <g id="730">
+            <text x="2943.27" y="701.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KyksbdQ value"/>
+            </metadata>
+        </g>
+        <g id="731">
+            <text x="2303.27" y="1341.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxcqsIa value"/>
+            </metadata>
+        </g>
+        <g id="732">
+            <text x="2623.27" y="1341.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxcqsP value"/>
+            </metadata>
+        </g>
+        <g id="733">
+            <text x="2943.27" y="1341.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxcqsQ value"/>
+            </metadata>
+        </g>
+        <g id="734">
+            <text x="735.356" y="1661.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KgdytzcIa value"/>
+            </metadata>
+        </g>
+        <g id="735">
+            <text x="1055.36" y="1661.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KgdytzcP value"/>
+            </metadata>
+        </g>
+        <g id="736">
+            <text x="1363.14" y="1661.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KgdytzcQ value"/>
+            </metadata>
+        </g>
+        <g id="737">
+            <text x="1363.14" y="375.75" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Ksxhx1Q value"/>
+            </metadata>
+        </g>
+        <g id="738">
+            <text x="1055.36" y="375.75" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Ksxhx1P value"/>
+            </metadata>
+        </g>
+        <g id="739">
+            <text x="735.356" y="375.75" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Ksxhx1Ia value"/>
+            </metadata>
+        </g>
+        <g id="740">
+            <text x="735.356" y="1761.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxxlxIa value"/>
+            </metadata>
+        </g>
+        <g id="741">
+            <text x="1055.36" y="1761.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxxlxP value"/>
+            </metadata>
+        </g>
+        <g id="742">
+            <text x="1363.14" y="1761.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxxlxQ value"/>
+            </metadata>
+        </g>
+        <g id="743">
+            <text x="1363.14" y="1871.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxxldQ value"/>
+            </metadata>
+        </g>
+        <g id="744">
+            <text x="1055.36" y="1871.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxxldP value"/>
+            </metadata>
+        </g>
+        <g id="745">
+            <text x="735.356" y="1871.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxxldIa value"/>
+            </metadata>
+        </g>
+        <g id="746">
+            <text x="2303.27" y="375.75" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykhhlIa value"/>
+            </metadata>
+        </g>
+        <g id="747">
+            <text x="2623.27" y="375.75" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykhhlP value"/>
+            </metadata>
+        </g>
+        <g id="748">
+            <text x="2943.27" y="375.75" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykhhlQ value"/>
+            </metadata>
+        </g>
+        <g id="749">
+            <text x="2943.27" y="1021.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykhbjQ value"/>
+            </metadata>
+        </g>
+        <g id="750">
+            <text x="2614.27" y="1021.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">9999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykhbjP value"/>
+            </metadata>
+        </g>
+        <g id="751">
+            <text x="2303.27" y="1021.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykhbjIa value"/>
+            </metadata>
+        </g>
+        <g id="761">
+            <text x="2303.27" y="1446.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdyt14bIa value"/>
+            </metadata>
+        </g>
+        <g id="762">
+            <text x="2623.27" y="1446.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdyt14bP value"/>
+            </metadata>
+        </g>
+        <g id="763">
+            <text x="2943.27" y="1446.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdyt14bQ value"/>
+            </metadata>
+        </g>
+        <g id="764">
+            <text x="1363.14" y="1551.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdhm14Q value"/>
+            </metadata>
+        </g>
+        <g id="765">
+            <text x="1055.36" y="1551.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdhm14P value"/>
+            </metadata>
+        </g>
+        <g id="766">
+            <text x="735.356" y="1551.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdhm14Ia value"/>
+            </metadata>
+        </g>
+        <g id="767">
+            <text x="735.356" y="481.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KczttIa value"/>
+            </metadata>
+        </g>
+        <g id="768">
+            <text x="1055.36" y="481.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KczttP value"/>
+            </metadata>
+        </g>
+        <g id="769">
+            <text x="1363.14" y="481.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KczttQ value"/>
+            </metadata>
+        </g>
+        <g id="770">
+            <text x="1363.14" y="591.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdddb1Q value"/>
+            </metadata>
+        </g>
+        <g id="771">
+            <text x="1055.36" y="591.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdddb1P value"/>
+            </metadata>
+        </g>
+        <g id="772">
+            <text x="735.356" y="591.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdddb1Ia value"/>
+            </metadata>
+        </g>
+        <g id="773">
+            <text x="735.356" y="701.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KhmcbIa value"/>
+            </metadata>
+        </g>
+        <g id="774">
+            <text x="1055.36" y="701.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KhmcbP value"/>
+            </metadata>
+        </g>
+        <g id="775">
+            <text x="1363.14" y="701.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KhmcbQ value"/>
+            </metadata>
+        </g>
+        <g id="776">
+            <text x="1363.14" y="801.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxhmczQ value"/>
+            </metadata>
+        </g>
+        <g id="777">
+            <text x="1363.14" y="911.316" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KddbttQ value"/>
+            </metadata>
+        </g>
+        <g id="778">
+            <text x="1363.14" y="1021.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdcz2Q value"/>
+            </metadata>
+        </g>
+        <g id="779">
+            <text x="1363.14" y="1231.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykrdhmQ value"/>
+            </metadata>
+        </g>
+        <g id="780">
+            <text x="2943.27" y="1122.94" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Ksxmz4Q value"/>
+            </metadata>
+        </g>
+        <g id="781">
+            <text x="1363.14" y="1121.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kykmz3Q value"/>
+            </metadata>
+        </g>
+        <g id="782">
+            <text x="2943.27" y="1231.32" font-family="Thonburi" fill="rgb(0,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxdxQ value"/>
+            </metadata>
+        </g>
+        <g id="783">
+            <text x="2623.27" y="1231.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxdxP value"/>
+            </metadata>
+        </g>
+        <g id="784">
+            <text x="1055.36" y="1121.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kykmz3P value"/>
+            </metadata>
+        </g>
+        <g id="785">
+            <text x="2623.27" y="1122.94" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Ksxmz4P value"/>
+            </metadata>
+        </g>
+        <g id="786">
+            <text x="1055.36" y="1231.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykrdhmP value"/>
+            </metadata>
+        </g>
+        <g id="787">
+            <text x="1055.36" y="1021.32" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdcz2P value"/>
+            </metadata>
+        </g>
+        <g id="788">
+            <text x="1055.36" y="911.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KddbttP value"/>
+            </metadata>
+        </g>
+        <g id="789">
+            <text x="1055.36" y="801.316" font-family="Thonburi" fill="rgb(255,255,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxhmczP value"/>
+            </metadata>
+        </g>
+        <g id="790">
+            <text x="735.356" y="801.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxhmczIa value"/>
+            </metadata>
+        </g>
+        <g id="791">
+            <text x="735.356" y="911.316" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KddbttIa value"/>
+            </metadata>
+        </g>
+        <g id="792">
+            <text x="735.356" y="1021.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kgdcz2Ia value"/>
+            </metadata>
+        </g>
+        <g id="793">
+            <text x="735.356" y="1231.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KykrdhmIa value"/>
+            </metadata>
+        </g>
+        <g id="794">
+            <text x="2303.27" y="1122.94" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Ksxmz4Ia value"/>
+            </metadata>
+        </g>
+        <g id="795">
+            <text x="735.356" y="1121.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Kykmz3Ia value"/>
+            </metadata>
+        </g>
+        <g id="796">
+            <text x="2303.27" y="1231.32" font-family="Thonburi" fill="rgb(255,0,0)" font-weight="bold" font-size="40">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog KsxdxIa value"/>
+            </metadata>
+        </g>
+        <g id="797"/>
+        <g id="798">
+            <text x="86.36500000000001" y="272.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999997">号码地址</text>
+        </g>
+        <g id="799">
+            <text x="433.365" y="272.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999997">名称</text>
+        </g>
+        <g id="800">
+            <text x="712.365" y="274.578" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="41.99999999999997">A相电流</text>
+        </g>
+        <g id="801">
+            <text x="1026.36" y="272.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999997">有功功率</text>
+        </g>
+        <g id="802">
+            <text x="1346.36" y="272.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999997">无功功率</text>
+        </g>
+        <g id="803">
+            <text x="1656.36" y="272.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999997">号码地址</text>
+        </g>
+        <g id="804">
+            <text x="2003.36" y="272.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999997">名称</text>
+        </g>
+        <g id="805">
+            <text x="2282.36" y="274.578" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="41.99999999999997">A相电流</text>
+        </g>
+        <g id="806">
+            <text x="2596.36" y="272.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999997">有功功率</text>
+        </g>
+        <g id="807">
+            <text x="2916.36" y="272.078" font-family="Thonburi" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999997">无功功率</text>
+        </g>
+    </g>
+    <g/>
+</svg>

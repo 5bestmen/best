@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/add.jpg</file>
+        <file>images/add1.jpg</file>
+        <file>images/close_group.png</file>
+        <file>images/device.png</file>
+        <file>images/document-save.png</file>
+        <file>images/document-save-all.png</file>
+        <file>images/group.jpg</file>
+        <file>images/list-add.png</file>
+        <file>images/list-remove.png</file>
+        <file>images/minus.jpg</file>
+        <file>images/open_group.png</file>
+        <file>images/powerpredict.png</file>
+        <file>images/powerpredictitem.png</file>
+        <file>images/rename_1.png</file>
+        <file>images/run-build.png</file>
+        <file>images/save.jpg</file>
+        <file>images/setting.jpg</file>
+        <file>images/data_pic.jpg</file>
+    </qresource>
+</RCC>

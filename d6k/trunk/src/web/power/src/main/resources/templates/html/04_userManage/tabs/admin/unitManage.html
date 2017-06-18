@@ -1,0 +1,39 @@
+<div style="background:#ffffff">
+    <div class="content" style="padding-top:1%;">
+        <span style="line-height:2em; margin-left:1%">条件过滤：</span>
+        <span style="width:50%">
+                 <select class="c12" style="width:14%" id="filterKind">
+                     <option value="strPjName">工程名</option>
+                     <option value="strUnitName">工程节点名</option>
+                 </select>
+            </span>
+        <div class="clear"></div>
+    </div>
+    <div class="content" style="padding-bottom:1%">
+        <span style="line-height:2em; margin-left:1%">过滤内容：</span>
+        <input style="margin-left:1%" id="filterContent" class="c18" type="text" placeholder="请输入">
+        <a class="build_g" ng-click="this.blur(); doFilter()" style="margin-left:5%">搜索</a>
+        <a class="build" ng-click="this.blur(); doClear()" style="margin-left:3%">全部显示</a>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<table class="sheet" style="width:90%" cellpadding="0" cellspacing="0">
+    <tr>
+        <th style="width: 20%">工程名</th>
+        <th style="width: 20%">工程节点名</th>
+        <th style="width: 50%">工程备注</th>
+        <th style="width: 10%">操作</th>
+    </tr>
+    <tr ng-repeat="unit in unitListManage">
+        <td>{{unit.strPjName}}</td>
+        <td>{{unit.strUnitName}}</td>
+        <td>{{unit.strUnitNote}}</td>
+        <td>
+            <span class="opr c15" ng-click="deleteUnit(unit.intPjUnitId)">删除</span>
+            <span class="opr" ng-click="editUnitInfoModal(unit.intPjUnitId,unit.intDBPkPjinfoid)">修改</span>
+        </td>
+    </tr>
+</table>
+<div style="width:90%; margin:0 auto; margin-top:1%;"><a class="build02" ng-click="this.blur();openUnitInfoModal()">追加</a></div>
+

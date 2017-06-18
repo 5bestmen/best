@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conifg>
+    <mantanceIP>127.0.0.1</mantanceIP>
+    <mantancePort>7883</mantancePort>
+    <download>
+        <ftpip>127.0.0.1</ftpip>
+        <ftpport>21</ftpport>
+        <username>anonymous</username>
+        <password></password>
+        <filename>pub/FENGKang/image/ball.lightblue.gif</filename>
+    </download>
+    <upload>
+        <ftpip>127.0.0.1</ftpip>
+        <ftpport>21</ftpport>
+        <username>daqo</username>
+        <password>daqo</password>
+        <upPath>ww/</upPath>
+    </upload>
+</conifg>

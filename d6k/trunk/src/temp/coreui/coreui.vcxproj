@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{561323D1-6951-4643-A465-FB35A242E11B}</ProjectGuid>
+    <RootNamespace>coreui</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>coreui</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolSet>v120</PlatformToolSet>
+    <OutputDirectory>..\..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>coreui</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)bin</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">coreui</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">coreui</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;GeneratedFiles;GeneratedFiles\Debug;..\..\include;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtGui;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtANGLE;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtNetwork;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtCore;GeneratedFiles\debug;C:\Qt\Qt5.6.0\5.6\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;WIN64;QT_DLL;QT_WIDGETS_LIB;COREUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\..\lib\attriwindow.lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib\Qt5Guid.lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib\Qt5Networkd.lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\lib\qtpropertybrowser;..\..\lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)\$(TargetFileName)</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;WIN64;QT_DLL;QT_WIDGETS_LIB;COREUI_LIB;QT_NETWORK_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;GeneratedFiles;.;GeneratedFiles\Debug;..\..\include\attriwindow;..\..\thirdparty\QtPropertyBrowser_2.6\QtPropertyBrowser_2.6\qtpropertybrowser\src;..\..\include;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtWidgets;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtGui;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtANGLE;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtNetwork;C:\Qt\Qt5.6.0\5.6\msvc2013_64\include\QtCore;GeneratedFiles\release;C:\Qt\Qt5.6.0\5.6\msvc2013_64\mkspecs\win32-msvc2013;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -w34100 -w34189 -w44996 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;WIN64;QT_DLL;QT_WIDGETS_LIB;COREUI_LIB;QT_NETWORK_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>..\..\lib\attriwindow.lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib\Qt5Gui.lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib\Qt5Network.lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\lib\qtpropertybrowser;..\..\lib;C:\Qt\Qt5.6.0\5.6\msvc2013_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\coreui.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;WIN64;QT_DLL;QT_WIDGETS_LIB;COREUI_LIB;QT_NETWORK_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="channel.cpp" />
+    <ClCompile Include="coreui.cpp" />
+    <ClCompile Include="fesmodel.cpp" />
+    <ClCompile Include="icoreui.cpp" />
+    <ClCompile Include="leftdock.cpp" />
+    <ClCompile Include="outputmessagerserver.cpp" />
+    <ClCompile Include="rightdock.cpp" />
+    <ClCompile Include="sysoutdock.cpp" />
+    <ClCompile Include="systemoutputmodel.cpp" />
+    <ClCompile Include="systemoutputview.cpp" />
+    <ClCompile Include="tabwidget.cpp" />
+    <ClCompile Include="treewidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="channel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">channel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore channel.h -o GeneratedFiles\debug\moc_channel.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC channel.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_channel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">channel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore channel.h -o GeneratedFiles\release\moc_channel.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC channel.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_channel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\icore\coreui.h" />
+    <ClInclude Include="..\..\include\icore\coreui_global.h" />
+    <ClInclude Include="..\..\include\icore\define.h" />
+    <CustomBuild Include="fesmodel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">fesmodel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore fesmodel.h -o GeneratedFiles\debug\moc_fesmodel.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC fesmodel.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_fesmodel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">fesmodel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore fesmodel.h -o GeneratedFiles\release\moc_fesmodel.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC fesmodel.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_fesmodel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\icore\icoreui.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\include\icore\icoreui.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore ..\..\include\icore\icoreui.h -o GeneratedFiles\debug\moc_icoreui.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ../../include/icore/icoreui.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_icoreui.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\include\icore\icoreui.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore ..\..\include\icore\icoreui.h -o GeneratedFiles\release\moc_icoreui.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ../../include/icore/icoreui.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_icoreui.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\icore\imodel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\include\icore\imodel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore ..\..\include\icore\imodel.h -o GeneratedFiles\debug\moc_imodel.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ../../include/icore/imodel.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_imodel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\include\icore\imodel.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore ..\..\include\icore\imodel.h -o GeneratedFiles\release\moc_imodel.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ../../include/icore/imodel.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_imodel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="leftdock.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">leftdock.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore leftdock.h -o GeneratedFiles\debug\moc_leftdock.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC leftdock.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_leftdock.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">leftdock.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore leftdock.h -o GeneratedFiles\release\moc_leftdock.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC leftdock.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_leftdock.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="outputmessagerserver.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">outputmessagerserver.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore outputmessagerserver.h -o GeneratedFiles\debug\moc_outputmessagerserver.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC outputmessagerserver.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_outputmessagerserver.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">outputmessagerserver.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore outputmessagerserver.h -o GeneratedFiles\release\moc_outputmessagerserver.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC outputmessagerserver.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_outputmessagerserver.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\icore\quoteItem.h" />
+    <CustomBuild Include="rightdock.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">rightdock.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore rightdock.h -o GeneratedFiles\debug\moc_rightdock.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC rightdock.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_rightdock.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">rightdock.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore rightdock.h -o GeneratedFiles\release\moc_rightdock.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC rightdock.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_rightdock.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="sysoutdock.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">sysoutdock.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore sysoutdock.h -o GeneratedFiles\debug\moc_sysoutdock.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC sysoutdock.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_sysoutdock.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">sysoutdock.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore sysoutdock.h -o GeneratedFiles\release\moc_sysoutdock.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC sysoutdock.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_sysoutdock.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="systemoutputmodel.h" />
+    <CustomBuild Include="systemoutputview.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">systemoutputview.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore systemoutputview.h -o GeneratedFiles\debug\moc_systemoutputview.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC systemoutputview.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_systemoutputview.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">systemoutputview.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore systemoutputview.h -o GeneratedFiles\release\moc_systemoutputview.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC systemoutputview.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_systemoutputview.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\icore\tabwidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\include\icore\tabwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore ..\..\include\icore\tabwidget.h -o GeneratedFiles\debug\moc_tabwidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ../../include/icore/tabwidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_tabwidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\include\icore\tabwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore ..\..\include\icore\tabwidget.h -o GeneratedFiles\release\moc_tabwidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ../../include/icore/tabwidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_tabwidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\icore\treewidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\include\icore\treewidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore ..\..\include\icore\treewidget.h -o GeneratedFiles\debug\moc_treewidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ../../include/icore/treewidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_treewidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\include\icore\treewidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -DWIN64 -DQT_DLL -DQT_WIDGETS_LIB -DCOREUI_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -D_MSC_VER=1800 -D_WIN32 -D_WIN64 -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/mkspecs/win32-msvc2013 -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles -IG:/develop/trunk/src/coreui -IG:/develop/trunk/src/coreui/GeneratedFiles/Debug -IG:/develop/trunk/include/attriwindow -IG:/develop/trunk/thirdparty/QtPropertyBrowser_2.6/QtPropertyBrowser_2.6/qtpropertybrowser/src -IG:/develop/trunk/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtWidgets -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtGui -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtANGLE -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtNetwork -IC:/Qt/Qt5.6.0/5.6/msvc2013_64/include/QtCore ..\..\include\icore\treewidget.h -o GeneratedFiles\release\moc_treewidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ../../include/icore/treewidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_treewidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\debug\moc_channel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_channel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_fesmodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_fesmodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_icoreui.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_icoreui.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_imodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_imodel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_leftdock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_leftdock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_outputmessagerserver.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_outputmessagerserver.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_rightdock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_rightdock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_sysoutdock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_sysoutdock.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_systemoutputview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_systemoutputview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_tabwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_tabwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_treewidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_treewidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_coreui.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\alarm.png" />
+    <None Include="images\channel.png" />
+    <None Include="images\close_group.png" />
+    <CustomBuild Include="coreui.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">coreui.qrc;images\node.png;images\uservariable.png;images\open_group.png;images\close_group.png;images\equipment.png;images\variablelist.png;images\graph.png;images\hissave.png;images\device.png;images\delete.png;images\channel.png;images\fes.png;images\seqscript.png;images\alarm.png;images\system.png;images\save.png;images\project.png;images\pdr.png;images\report.png;images\systemvariable.png;images\scale.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\rcc.exe -name coreui coreui.qrc -o GeneratedFiles\qrc_coreui.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RCC coreui.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\qrc_coreui.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">coreui.qrc;images\node.png;images\uservariable.png;images\open_group.png;images\close_group.png;images\equipment.png;images\variablelist.png;images\graph.png;images\hissave.png;images\device.png;images\delete.png;images\channel.png;images\fes.png;images\seqscript.png;images\alarm.png;images\system.png;images\save.png;images\project.png;images\pdr.png;images\report.png;images\systemvariable.png;images\scale.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.6.0\5.6\msvc2013_64\bin\rcc.exe -name coreui coreui.qrc -o GeneratedFiles\qrc_coreui.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RCC coreui.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\qrc_coreui.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="images\delete.png" />
+    <None Include="images\device.png" />
+    <None Include="images\equipment.png" />
+    <None Include="images\fes.png" />
+    <None Include="images\graph.png" />
+    <None Include="images\hissave.png" />
+    <None Include="images\node.png" />
+    <None Include="images\open_group.png" />
+    <None Include="images\pdr.png" />
+    <None Include="images\project.png" />
+    <None Include="images\report.png" />
+    <None Include="images\save.png" />
+    <None Include="images\scale.png" />
+    <None Include="images\seqscript.png" />
+    <None Include="images\system.png" />
+    <None Include="images\systemvariable.png" />
+    <None Include="images\uservariable.png" />
+    <None Include="images\variablelist.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

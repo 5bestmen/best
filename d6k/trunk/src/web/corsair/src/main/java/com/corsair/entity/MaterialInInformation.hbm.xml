@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.MaterialInInformation" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <many-to-one name="materialStore" class="com.corsair.entity.MaterialStore" fetch="join"/>
+        <property name="inTime"  type="java.util.Date"/>
+        <property name="price"  type="java.lang.Long"/>
+        <property name="inNumber"  type="java.lang.Integer"/>
+        <property name="comment" column="comments" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

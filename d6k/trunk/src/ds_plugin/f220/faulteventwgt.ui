@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CFaultEventWgt</class>
+ <widget class="QWidget" name="CFaultEventWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1205</width>
+    <height>645</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CFaultEventWgt</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QSplitter" name="splitter">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <widget class="QTableWidget" name="tableWidget">
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Num</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>BinaryType</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>BinaryAddr</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>BinaryValue</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>nAnalyType</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>MalfunctionTime</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Analog Info</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QTreeWidget" name="treeWidget">
+      <column>
+       <property name="text">
+        <string>DetailInfomation</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,42 @@
+<div style="position:relative; left:0; top:40px; z-index:99; width:100%;">
+
+    <div style="background:#ffffff">
+        <div class="part_r_mode_02" style="height:40px">
+            <span style="display:block; float:left; width:380px; line-height:40px">
+                <span style="float:left; line-height:40px;font-size: 18px;">最新50条报警信息</span>
+                <div class="clear"></div>
+            </span>
+            <div class="clear"></div>
+        </div>
+
+        <div class="list_title" style="padding-top:0; width:100%; padding-bottom:0" ng-repeat="breakinfo in deviceBreakList | orderBy :'strBreakTimeStamp':true">
+            <div class="date_title">
+                <table cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                        <td class="c36">{{breakinfo.strBreakTimeStamp.slice(0,19)}}</td>
+                        <td class="c37"><span>设备名：{{breakinfo.strDeviceName}}</span><span></span></td>
+                        <td class="c38"><span>报警类型：{{breakinfo.strBreakKind}}</span><span></span></td>
+                        <td class="c39"><span>状态：{{breakinfo.strBreakStatus == 0 ? "故障中" :
+                            breakinfo.strBreakStatus == 1 ? "处理中" : "处理完毕"}}</span><span></span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pro_list">
+                <span>※</span>
+                <span>报警内容：{{breakinfo.strBreakContent}}</span>
+                <span></span>
+            </div>
+            <div class="pro_list">
+                <span>※</span>
+                <span>可能原因操作：{{breakinfo.deviceBreakInfo.strPossibleReason}}</span>
+                <span></span>
+            </div>
+            <div class="pro_list" style="border-bottom:0">
+                <span>※</span>
+                <span>建议操作：{{breakinfo.deviceBreakInfo.strSuggestOperate}}</span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+</div>

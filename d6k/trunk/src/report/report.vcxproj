@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4957D1C0-1FBC-4947-A57E-11F76DEBF516}</ProjectGuid>
+    <RootNamespace>report</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>..\..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>report</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolSet>v140</PlatformToolSet>
+    <OutputDirectory>..\..\bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>report</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">report</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\bin\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">report</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;.;GeneratedFiles;GeneratedFiles\Debug;..\..\include;GeneratedFiles\debug;$(QTDIR)/mkspecs/win32-msvc2013;GeneratedFiles;..\scadastudio;GeneratedFiles\debug;GeneratedFiles;$(QTDIR)/mkspecs/win32-msvc2013;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtPrintSupport;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCharts;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtANGLE;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtSql;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWebChannel;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtQml;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtXml;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore;GeneratedFiles\debug;GeneratedFiles;C:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;_WINDOWS;WIN64;_WINDOWS;WIN64;QT_DLL;MODULE_LIB;QT_SQL_LIB;QT_PRINTSUPPORT_LIB;QT_XML_LIB;REPORT_LIB;QT_WIDGETS_LIB;QT_WEBCHANNEL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_XML_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_PRINTSUPPORT_LIB;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QtDir)\lib\Qt5PrintSupportd.lib;$(QtDir)\lib\Qt5Chartsd.lib;$(QtDir)\lib\Qt5Widgetsd.lib;$(QtDir)\lib\Qt5Guid.lib;$(QtDir)\lib\Qt5Sqld.lib;$(QtDir)\lib\Qt5WebChanneld.lib;$(QtDir)\lib\Qt5Qmld.lib;$(QtDir)\lib\Qt5Networkd.lib;$(QtDir)\lib\Qt5Xmld.lib;$(QtDir)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\lib;$(QtDir)\lib;C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)\report.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;_WINDOWS;WIN64;_WINDOWS;WIN64;QT_DLL;MODULE_LIB;QT_SQL_LIB;QT_PRINTSUPPORT_LIB;QT_XML_LIB;REPORT_LIB;QT_WIDGETS_LIB;QT_WEBCHANNEL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_XML_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_PRINTSUPPORT_LIB;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;.;.;GeneratedFiles;GeneratedFiles\Debug;..\..\include;GeneratedFiles\debug;$(QTDIR)/mkspecs/win32-msvc2013;GeneratedFiles;..\scadastudio;GeneratedFiles\debug;GeneratedFiles;$(QTDIR)/mkspecs/win32-msvc2013;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtPrintSupport;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCharts;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWidgets;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtGui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtANGLE;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtSql;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtWebChannel;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtQml;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtNetwork;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtXml;C:\Qt\Qt5.8.0\5.8\msvc2015_64\include\QtCore;GeneratedFiles\release;GeneratedFiles;C:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;_WINDOWS;WIN64;_WINDOWS;WIN64;QT_DLL;MODULE_LIB;QT_SQL_LIB;QT_PRINTSUPPORT_LIB;QT_XML_LIB;REPORT_LIB;QT_WIDGETS_LIB;QT_WEBCHANNEL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_XML_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>.lib;QtChartsd;$(QtDir)\lib\Qt5PrintSupport.lib;$(QtDir)\lib\Qt5Charts.lib;$(QtDir)\lib\Qt5Widgets.lib;$(QtDir)\lib\Qt5Gui.lib;$(QtDir)\lib\Qt5Sql.lib;$(QtDir)\lib\Qt5WebChannel.lib;$(QtDir)\lib\Qt5Qml.lib;$(QtDir)\lib\Qt5Network.lib;$(QtDir)\lib\Qt5Xml.lib;$(QtDir)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\lib;$(QtDir)\lib;C:\Qt\Qt5.8.0\5.8\msvc2015_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\report.dll</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;_WINDOWS;WIN64;_WINDOWS;WIN64;QT_DLL;MODULE_LIB;QT_SQL_LIB;QT_PRINTSUPPORT_LIB;QT_XML_LIB;REPORT_LIB;QT_WIDGETS_LIB;QT_WEBCHANNEL_LIB;QT_PRINTSUPPORT_LIB;QT_WIDGETS_LIB;QT_SQL_LIB;QT_XML_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_NO_DEBUG;QT_PRINTSUPPORT_LIB;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="aqp\alt_key.cpp" />
+    <ClCompile Include="aqp\aqp.cpp" />
+    <ClCompile Include="barview.cpp" />
+    <ClCompile Include="calformula.cpp" />
+    <ClCompile Include="cctrlparadialog.cpp" />
+    <ClCompile Include="chartview.cpp" />
+    <ClCompile Include="configinfo.cpp" />
+    <ClCompile Include="createtimecolumn.cpp" />
+    <ClCompile Include="ctree.cpp" />
+    <ClCompile Include="cwidget.cpp" />
+    <ClCompile Include="datatypedi.cpp" />
+    <ClCompile Include="public\dcolorbutton.cpp" />
+    <ClCompile Include="public\dcolorpanel.cpp" />
+    <ClCompile Include="dgetselection.cpp" />
+    <ClCompile Include="insertformula.cpp" />
+    <ClCompile Include="aqp\kuhn_munkres.cpp" />
+    <ClCompile Include="modfilename.cpp" />
+    <ClCompile Include="modreporttype.cpp" />
+    <ClCompile Include="pieview.cpp" />
+    <ClCompile Include="public_functions.cpp" />
+    <ClCompile Include="qcell.cpp" />
+    <ClCompile Include="qcreatereport.cpp" />
+    <ClCompile Include="qdataproperty.cpp" />
+    <ClCompile Include="qgeneratereport.cpp" />
+    <ClCompile Include="qspreadsheet.cpp" />
+    <ClCompile Include="qxmlfunction.cpp" />
+    <ClCompile Include="report.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aqp\alt_key.hpp" />
+    <ClInclude Include="aqp\aqp.hpp" />
+    <CustomBuild Include="barview.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">barview.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore barview.h -o GeneratedFiles\debug\moc_barview.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC barview.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_barview.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">barview.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore barview.h -o GeneratedFiles\release\moc_barview.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC barview.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_barview.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="calformula.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">calformula.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore calformula.h -o GeneratedFiles\debug\moc_calformula.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC calformula.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_calformula.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">calformula.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore calformula.h -o GeneratedFiles\release\moc_calformula.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC calformula.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_calformula.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="chartview.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">chartview.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore chartview.h -o GeneratedFiles\debug\moc_chartview.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC chartview.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_chartview.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">chartview.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore chartview.h -o GeneratedFiles\release\moc_chartview.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC chartview.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_chartview.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="configinfo.h" />
+    <CustomBuild Include="createreport.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">createreport.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore createreport.h -o GeneratedFiles\debug\moc_createreport.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC createreport.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_createreport.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">createreport.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore createreport.h -o GeneratedFiles\release\moc_createreport.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC createreport.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_createreport.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="createtimecolumn.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">createtimecolumn.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore createtimecolumn.h -o GeneratedFiles\debug\moc_createtimecolumn.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC createtimecolumn.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_createtimecolumn.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">createtimecolumn.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore createtimecolumn.h -o GeneratedFiles\release\moc_createtimecolumn.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC createtimecolumn.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_createtimecolumn.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ctree.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ctree.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore ctree.h -o GeneratedFiles\debug\moc_ctree.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ctree.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_ctree.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ctree.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore ctree.h -o GeneratedFiles\release\moc_ctree.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ctree.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_ctree.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ctrlparadialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ctrlparadialog.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore ctrlparadialog.h -o GeneratedFiles\debug\moc_ctrlparadialog.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC ctrlparadialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_ctrlparadialog.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ctrlparadialog.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore ctrlparadialog.h -o GeneratedFiles\release\moc_ctrlparadialog.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC ctrlparadialog.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_ctrlparadialog.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="cwidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cwidget.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore cwidget.h -o GeneratedFiles\debug\moc_cwidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC cwidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_cwidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cwidget.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore cwidget.h -o GeneratedFiles\release\moc_cwidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC cwidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_cwidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="public\dataconvert.h" />
+    <CustomBuild Include="dataproperty.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dataproperty.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore dataproperty.h -o GeneratedFiles\debug\moc_dataproperty.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC dataproperty.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_dataproperty.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dataproperty.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore dataproperty.h -o GeneratedFiles\release\moc_dataproperty.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC dataproperty.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_dataproperty.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="datatypedi.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">datatypedi.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore datatypedi.h -o GeneratedFiles\debug\moc_datatypedi.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC datatypedi.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_datatypedi.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">datatypedi.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore datatypedi.h -o GeneratedFiles\release\moc_datatypedi.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC datatypedi.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_datatypedi.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="public\dbasicwidget_global.h" />
+    <CustomBuild Include="public\dcolorbutton.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">public\dcolorbutton.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore public\dcolorbutton.h -o GeneratedFiles\debug\moc_dcolorbutton.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC public/dcolorbutton.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_dcolorbutton.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">public\dcolorbutton.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore public\dcolorbutton.h -o GeneratedFiles\release\moc_dcolorbutton.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC public/dcolorbutton.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_dcolorbutton.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="public\dcolorpanel.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">public\dcolorpanel.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore public\dcolorpanel.h -o GeneratedFiles\debug\moc_dcolorpanel.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC public/dcolorpanel.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_dcolorpanel.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">public\dcolorpanel.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore public\dcolorpanel.h -o GeneratedFiles\release\moc_dcolorpanel.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC public/dcolorpanel.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_dcolorpanel.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dgetselection.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dgetselection.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore dgetselection.h -o GeneratedFiles\debug\moc_dgetselection.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC dgetselection.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_dgetselection.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dgetselection.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore dgetselection.h -o GeneratedFiles\release\moc_dgetselection.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC dgetselection.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_dgetselection.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="generatereport.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generatereport.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore generatereport.h -o GeneratedFiles\debug\moc_generatereport.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC generatereport.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_generatereport.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generatereport.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore generatereport.h -o GeneratedFiles\release\moc_generatereport.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC generatereport.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_generatereport.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\include\scadastudio\imodule.h" />
+    <CustomBuild Include="insertformula.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">insertformula.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore insertformula.h -o GeneratedFiles\debug\moc_insertformula.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC insertformula.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_insertformula.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">insertformula.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore insertformula.h -o GeneratedFiles\release\moc_insertformula.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC insertformula.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_insertformula.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="aqp\kuhn_munkres.hpp" />
+    <ClInclude Include="public\menumacro.h" />
+    <CustomBuild Include="modfilename.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">modfilename.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore modfilename.h -o GeneratedFiles\debug\moc_modfilename.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC modfilename.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_modfilename.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">modfilename.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore modfilename.h -o GeneratedFiles\release\moc_modfilename.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC modfilename.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_modfilename.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="modreporttype.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">modreporttype.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore modreporttype.h -o GeneratedFiles\debug\moc_modreporttype.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC modreporttype.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_modreporttype.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">modreporttype.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore modreporttype.h -o GeneratedFiles\release\moc_modreporttype.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC modreporttype.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_modreporttype.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="pieview.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">pieview.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore pieview.h -o GeneratedFiles\debug\moc_pieview.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC pieview.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_pieview.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">pieview.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore pieview.h -o GeneratedFiles\release\moc_pieview.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC pieview.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_pieview.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="public_define.h" />
+    <ClInclude Include="qcell.h" />
+    <CustomBuild Include="qspreadsheet.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">qspreadsheet.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore qspreadsheet.h -o GeneratedFiles\debug\moc_qspreadsheet.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC qspreadsheet.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_qspreadsheet.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">qspreadsheet.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore qspreadsheet.h -o GeneratedFiles\release\moc_qspreadsheet.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC qspreadsheet.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_qspreadsheet.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="qxmlfunction.h" />
+    <CustomBuild Include="report.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">report.h;GeneratedFiles\debug\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/debug/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore report.h -o GeneratedFiles\debug\moc_report.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MOC report.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_report.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">report.h;GeneratedFiles\release\moc_predefs.h;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\moc.exe  -DUNICODE -DWIN32 -DWIN64 -D_WINDOWS -DWIN64 -D_WINDOWS -DWIN64 -DQT_DLL -DMODULE_LIB -DQT_SQL_LIB -DQT_PRINTSUPPORT_LIB -DQT_XML_LIB -DREPORT_LIB -DQT_WIDGETS_LIB -DQT_WEBCHANNEL_LIB -DQT_PRINTSUPPORT_LIB -DQT_WIDGETS_LIB -DQT_SQL_LIB -DQT_XML_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_NO_DEBUG -DQT_PRINTSUPPORT_LIB -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./GeneratedFiles/release/moc_predefs.h -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/mkspecs/win32-msvc2015 -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/report/GeneratedFiles/Debug -ID:/newdevelop/trunk/include -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -ID:/newdevelop/trunk/src/report/GeneratedFiles -ID:/newdevelop/trunk/src/scadastudio -ID:/newdevelop/trunk/src/report/GeneratedFiles/debug -ID:/newdevelop/trunk/src/report/GeneratedFiles -I"D:/newdevelop/trunk/src/report/$(QTDIR)/mkspecs/win32-msvc2013" -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtPrintSupport -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtGui -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtSql -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtWebChannel -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtQml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtNetwork -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtXml -IC:/Qt/Qt5.8.0/5.8/msvc2015_64/include/QtCore report.h -o GeneratedFiles\release\moc_report.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MOC report.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_report.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="report_global.h" />
+    <ClInclude Include="reportdefine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\debug\moc_barview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_barview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_calformula.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_calformula.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_chartview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_chartview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_createreport.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_createreport.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_createtimecolumn.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_createtimecolumn.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_ctree.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_ctree.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_ctrlparadialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_ctrlparadialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_cwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_cwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_dataproperty.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_dataproperty.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_datatypedi.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_datatypedi.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_dcolorbutton.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_dcolorbutton.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_dcolorpanel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_dcolorpanel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_dgetselection.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_dgetselection.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_generatereport.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_generatereport.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_insertformula.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_insertformula.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_modfilename.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_modfilename.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_modreporttype.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_modreporttype.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_pieview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_pieview.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="GeneratedFiles\debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -BxC:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -Zi -MDd -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E -Za C:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;GeneratedFiles\debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\debug\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -BxC:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:strictStrings -Zc:throwingNew -O2 -MD -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E -Za C:\Qt\Qt5.8.0\5.8\msvc2015_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;GeneratedFiles\release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\release\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClCompile Include="GeneratedFiles\debug\moc_qspreadsheet.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_qspreadsheet.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\debug\moc_report.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\release\moc_report.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_report.cpp" />
+    <ClInclude Include="GeneratedFiles\ui_calformula.h" />
+    <ClInclude Include="GeneratedFiles\ui_createreport.h" />
+    <ClInclude Include="GeneratedFiles\ui_createtimecolumn.h" />
+    <ClInclude Include="GeneratedFiles\ui_ctrlparadialog.h" />
+    <ClInclude Include="GeneratedFiles\ui_dataproperty.h" />
+    <ClInclude Include="GeneratedFiles\ui_datatypedi.h" />
+    <ClInclude Include="GeneratedFiles\ui_dgetselection.h" />
+    <ClInclude Include="GeneratedFiles\ui_generatereport.h" />
+    <ClInclude Include="GeneratedFiles\ui_insertformula.h" />
+    <ClInclude Include="GeneratedFiles\ui_modfilename.h" />
+    <ClInclude Include="GeneratedFiles\ui_modreporttype.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="report_zh.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="calformula.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">calformula.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe calformula.ui -o GeneratedFiles\ui_calformula.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC calformula.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_calformula.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">calformula.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe calformula.ui -o GeneratedFiles\ui_calformula.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC calformula.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_calformula.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="createreport.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">createreport.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe createreport.ui -o GeneratedFiles\ui_createreport.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC createreport.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_createreport.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">createreport.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe createreport.ui -o GeneratedFiles\ui_createreport.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC createreport.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_createreport.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="createtimecolumn.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">createtimecolumn.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe createtimecolumn.ui -o GeneratedFiles\ui_createtimecolumn.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC createtimecolumn.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_createtimecolumn.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">createtimecolumn.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe createtimecolumn.ui -o GeneratedFiles\ui_createtimecolumn.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC createtimecolumn.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_createtimecolumn.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ctrlparadialog.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ctrlparadialog.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe ctrlparadialog.ui -o GeneratedFiles\ui_ctrlparadialog.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC ctrlparadialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_ctrlparadialog.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ctrlparadialog.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe ctrlparadialog.ui -o GeneratedFiles\ui_ctrlparadialog.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC ctrlparadialog.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_ctrlparadialog.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dataproperty.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dataproperty.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe dataproperty.ui -o GeneratedFiles\ui_dataproperty.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC dataproperty.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_dataproperty.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dataproperty.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe dataproperty.ui -o GeneratedFiles\ui_dataproperty.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC dataproperty.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_dataproperty.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="datatypedi.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">datatypedi.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe datatypedi.ui -o GeneratedFiles\ui_datatypedi.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC datatypedi.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_datatypedi.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">datatypedi.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe datatypedi.ui -o GeneratedFiles\ui_datatypedi.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC datatypedi.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_datatypedi.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="dgetselection.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dgetselection.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe dgetselection.ui -o GeneratedFiles\ui_dgetselection.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC dgetselection.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_dgetselection.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dgetselection.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe dgetselection.ui -o GeneratedFiles\ui_dgetselection.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC dgetselection.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_dgetselection.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="generatereport.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">generatereport.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe generatereport.ui -o GeneratedFiles\ui_generatereport.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC generatereport.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_generatereport.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">generatereport.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe generatereport.ui -o GeneratedFiles\ui_generatereport.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC generatereport.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_generatereport.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="insertformula.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">insertformula.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe insertformula.ui -o GeneratedFiles\ui_insertformula.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC insertformula.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_insertformula.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">insertformula.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe insertformula.ui -o GeneratedFiles\ui_insertformula.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC insertformula.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_insertformula.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="modfilename.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">modfilename.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe modfilename.ui -o GeneratedFiles\ui_modfilename.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC modfilename.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_modfilename.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">modfilename.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe modfilename.ui -o GeneratedFiles\ui_modfilename.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC modfilename.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_modfilename.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="modreporttype.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">modreporttype.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe modreporttype.ui -o GeneratedFiles\ui_modreporttype.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">UIC modreporttype.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\ui_modreporttype.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">modreporttype.ui;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\uic.exe modreporttype.ui -o GeneratedFiles\ui_modreporttype.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">UIC modreporttype.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\ui_modreporttype.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\add_col.png" />
+    <None Include="images\add_report_file.ico" />
+    <None Include="images\add_report_group.ico" />
+    <None Include="images\add_row.png" />
+    <None Include="images\ali_center.png" />
+    <None Include="images\ali_left.png" />
+    <None Include="images\ali_right.png" />
+    <None Include="images\arrow_left.ico" />
+    <None Include="images\arrow_right.ico" />
+    <None Include="images\background_color.png" />
+    <None Include="images\brush_color.png" />
+    <None Include="images\cell_function.png" />
+    <None Include="images\cell_print.png" />
+    <None Include="images\copy.png" />
+    <None Include="images\cut.png" />
+    <None Include="images\data_s.png" />
+    <None Include="images\del_col.png" />
+    <None Include="images\del_row.png" />
+    <None Include="images\delete_report_file.ico" />
+    <None Include="images\delete_report_group.ico" />
+    <None Include="images\exportpdf.png" />
+    <None Include="images\font.png" />
+    <None Include="images\font_bold.png" />
+    <None Include="images\font_italic.png" />
+    <None Include="images\font_underline.png" />
+    <None Include="images\function.png" />
+    <None Include="images\moredata.png" />
+    <None Include="images\new.png" />
+    <None Include="images\no.png" />
+    <None Include="images\open.png" />
+    <None Include="images\open_group.ico" />
+    <None Include="images\paste.png" />
+    <None Include="images\preview.png" />
+    <None Include="images\print.png" />
+    <None Include="images\query.png" />
+    <None Include="images\report.ico" />
+    <CustomBuild Include="report.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">report.qrc;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe;images\report_month.ico;images\cell_function.png;images\add_row.png;images\save_as.png;images\brush_color.png;images\font_italic.png;images\query.png;images\save.png;images\ali_center.png;images\cut.png;images\open_group.ico;images\add_report_file.ico;images\new.png;images\yes.png;images\del_row.png;images\span_cell.png;images\cell_print.png;images\moredata.png;images\background_color.png;images\report_pie.ico;images\split_cell.png;images\delete_report_file.ico;images\spancell.png;images\ali_left.png;images\add_report_group.ico;images\font_underline.png;images\open.png;images\function.png;images\report_bar.ico;images\data_s.png;images\no.png;images\font_bold.png;images\print.png;images\set_time.png;images\arrow_left.ico;images\report_custom.ico;images\win.png;images\report.ico;images\font.png;images\report_year.ico;images\add_col.png;images\arrow_right.ico;images\singledata.png;images\splitcell.png;images\paste.png;images\report_file.ico;images\exportpdf.png;images\delete_report_group.ico;images\del_col.png;images\ali_right.png;images\copy.png;images\report_import.ico;images\report_curve.ico;images\report_modify_type.ico;images\report_modify_name.ico;images\preview.png;images\winicon.ico;images\report_day.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe -name report report.qrc -o GeneratedFiles\qrc_report.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RCC report.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GeneratedFiles\qrc_report.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">report.qrc;C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe;images\report_month.ico;images\cell_function.png;images\add_row.png;images\save_as.png;images\brush_color.png;images\font_italic.png;images\query.png;images\save.png;images\ali_center.png;images\cut.png;images\open_group.ico;images\add_report_file.ico;images\new.png;images\yes.png;images\del_row.png;images\span_cell.png;images\cell_print.png;images\moredata.png;images\background_color.png;images\report_pie.ico;images\split_cell.png;images\delete_report_file.ico;images\spancell.png;images\ali_left.png;images\add_report_group.ico;images\font_underline.png;images\open.png;images\function.png;images\report_bar.ico;images\data_s.png;images\no.png;images\font_bold.png;images\print.png;images\set_time.png;images\arrow_left.ico;images\report_custom.ico;images\win.png;images\report.ico;images\font.png;images\report_year.ico;images\add_col.png;images\arrow_right.ico;images\singledata.png;images\splitcell.png;images\paste.png;images\report_file.ico;images\exportpdf.png;images\delete_report_group.ico;images\del_col.png;images\ali_right.png;images\copy.png;images\report_import.ico;images\report_curve.ico;images\report_modify_type.ico;images\report_modify_name.ico;images\preview.png;images\winicon.ico;images\report_day.ico;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Qt\Qt5.8.0\5.8\msvc2015_64\bin\rcc.exe -name report report.qrc -o GeneratedFiles\qrc_report.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RCC report.qrc</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GeneratedFiles\qrc_report.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="images\report_bar.ico" />
+    <None Include="images\report_curve.ico" />
+    <None Include="images\report_custom.ico" />
+    <None Include="images\report_day.ico" />
+    <None Include="images\report_file.ico" />
+    <None Include="images\report_import.ico" />
+    <None Include="images\report_modify_name.ico" />
+    <None Include="images\report_modify_type.ico" />
+    <None Include="images\report_month.ico" />
+    <None Include="images\report_pie.ico" />
+    <None Include="images\report_year.ico" />
+    <None Include="images\save.png" />
+    <None Include="images\save_as.png" />
+    <None Include="images\set_time.png" />
+    <None Include="images\singledata.png" />
+    <None Include="images\span_cell.png" />
+    <None Include="images\spancell.png" />
+    <None Include="images\split_cell.png" />
+    <None Include="images\splitcell.png" />
+    <None Include="images\win.png" />
+    <None Include="images\winicon.ico" />
+    <None Include="images\yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="report.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

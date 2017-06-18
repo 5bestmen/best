@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.ElectricTime" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="startTime" type="java.lang.String" not-null="true" unique="true"/>
+        <property name="endTime" type="java.lang.String" not-null="true" />
+        <many-to-one name="electricPrice" class="com.corsair.entity.ElectricPrice" fetch="join" />
+    </class>
+</hibernate-mapping>

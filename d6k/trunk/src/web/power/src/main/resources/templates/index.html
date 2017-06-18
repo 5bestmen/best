@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="DaQOCloud">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>功率预测系统</title>
+    <meta name="keywords" content="功率预测系统"/>
+    <meta name="description" content="功率预测系统"/>
+    <!--  css  -->
+    <link rel="stylesheet" type="text/css" href="framwork/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="framwork/jqueryui/css/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="css/clockstyle.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+    <link rel="stylesheet" type="text/css" href="css/chose.css"/>
+
+    <!-- realdate -->
+    <link rel="stylesheet" type="text/css" href="css/realdata.css"/>
+
+    <!-- 高德地图 -->
+    <script src="http://webapi.amap.com/maps?v=1.3&key=47b6897d7df4f6f6355dca21b92f735f"></script>
+
+    <!--  angularjs  -->
+    <script src="framwork/angularjs/js/angular.js"></script>
+    <script src="framwork/angularjs/js/angular-animate.js"></script>
+    <!--  路由  -->
+    <script src="framwork/angularjs/js/angular-ui-router.min.js"></script>
+    <!--  jquery  -->
+    <script src="framwork/jquery/jquery.min.js"></script>
+    <!--  jquery ui  -->
+    <script src="framwork/jqueryui/js/jquery-ui.js"></script>
+    <!--  bootstrap  -->
+    <script src="framwork/tether/js/tether.js"></script>
+    <script src="framwork/bootstrap/js/bootstrap.js"></script>
+    <script src="framwork/bootstrap/js/ui-bootstrap-tpls.js"></script>
+    <!--  echarts  -->
+    <script src="framwork/echarts/js/echarts-all.js"></script>
+    <!--<script src="framwork/echarts/js/shine.js"></script>-->
+    <script src="framwork/echarts/js/theme/macarons.js"></script>
+
+    <!--<script data-require-id="theme/macarons" src="framwork/echarts/js/theme/macarons.js" async=""></script>-->
+
+    <script src="js/lib/fetch.js"></script>
+    <script src="js/lib/lz-string.min.js"></script>
+    <script src="js/lib/jquery.mousewheel.js"></script>
+    <script src="js/lib/jquery.ajaxupload.js"></script>
+    <script src="js/lib/moment.min.js"></script>
+    <script src="js/lib/colors.js"></script>
+    <script src="js/lib/jqColorPicker.js"></script>
+    <script src="js/lib/socket.js"></script>
+    <script src="js/lib/stomp.js"></script>
+    <script src="js/lib/carddrag.js"></script>
+    <!--  app.js  -->
+    <script src="js/app.js"></script>
+
+    <!--量测-->
+    <script src="js/getData/generalMeasurement.js"></script>
+    <script src="js/04_userManage/controllers/userMangeCtrl.js"></script>
+
+    <script src="myjs/date/jedate.min.js"></script>
+    <!--<script src="myjs/date/jedate.js"></script>-->
+</head>
+
+<body ng-controller="indexCtrl">
+
+    <div ui-view="header"></div>
+    <div ui-view="content"></div>
+    <div ui-view="footer"></div>
+</body>
+
+<script src="js/indexCtrl.js"></script>
+<script src="js/headerCtrl.js"></script>
+
+<script src="js/00_login/controllers/loginCtrl.js"></script>
+
+<script src="js/home/controllers/homeCtrl.js"></script>
+
+<script src="js/03_project/controllers/projectCtrl.js"></script>
+<script src="js/03_project/controllers/projectMenuCtrl.js"></script>
+<script src="js/03_project/controllers/projectTabs_StatusCtrl.js"></script>
+<script src="js/03_project/controllers/projectInfoCtrl.js"></script>
+<script src="js/03_project/controllers/breakerTabCtrl.js"></script>
+<script src="js/03_project/controllers/breakerInfoCtrl.js"></script>
+<script src="js/03_project/controllers/breakerRunCtrl.js"></script>
+<script src="js/03_project/controllers/breakerRealDataCtrl.js"></script>
+<script src="js/03_project/controllers/breakerWarningCtrl.js"></script>
+<script src="js/03_project/controllers/breakerFormCtrl.js"></script>
+
+<!--predictionCurve-->
+<script src="js/predictionCurve/controllers/predictionCurveCtrl.js"></script>
+<script src="js/predictionCurve/controllers/modal/shortModalCtrl.js"></script>
+<script src="js/predictionCurve/controllers/modal/ultraShortModalCtrl.js"></script>
+
+
+<script src="js/04_userManage/controllers/userMangeCtrl.js"></script>
+<script src="js/04_userManage/controllers/userInfoMangeCtrl.js"></script>
+<script src="js/04_userManage/controllers/userPwdCtrl.js"></script>
+<script src="js/04_userManage/controllers/proManageCtrl.js"></script>
+<script src="js/04_userManage/controllers/macManageCtrl.js"></script>
+<script src="js/04_userManage/controllers/unitManageCtrl.js"></script>
+
+<script src="js/04_userManage/controllers/modal/userInfoModalCtrl.js"></script>
+<script src="js/04_userManage/controllers/modal/pjInfoModalCtrl.js"></script>
+<script src="js/04_userManage/controllers/modal/macInfoModalCtrl.js"></script>
+<script src="js/04_userManage/controllers/modal/unitInfoModalCtrl.js"></script>
+
+<script src="js/06_macTypeModel/controllers/vendorConfigureCtrl.js"></script>
+
+<script src="js/07_proConfigure/controllers/workProConfigureCtrl.js"></script>
+
+<!--login-->
+<script src="js/00_login/services/loginService.js"></script>
+
+<!--home-->
+<script src="js/home/services/homeService.js"></script>
+
+<!--predicton-->
+<script src="js/predictionCurve/services/shortManageService.js"></script>
+<script src="js/predictionCurve/services/ultraShortManageService.js"></script>
+
+<script src="js/03_project/services/projectService.js"></script>
+<script src="js/03_project/services/projectMenuService.js"></script>
+<script src="js/03_project/services/breakerWarningService.js"></script>
+
+<script src="js/04_userManage/services/userInfoMangeService.js"></script>
+<script src="js/04_userManage/services/proManageService.js"></script>
+<script src="js/04_userManage/services/unitManageService.js"></script>
+<script src="js/04_userManage/services/macManageService.js"></script>
+
+
+
+</html>

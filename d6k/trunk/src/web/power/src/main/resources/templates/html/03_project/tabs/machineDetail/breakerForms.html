@@ -1,0 +1,60 @@
+<!--报表 -->
+<div id="login_one_4" style="position:relative; left:0; top:40px; z-index:99; width:100%">
+    <div style="background:#ffffff">
+        <div class="content" style="padding-top:1%">
+            <span style="line-height:2em; margin-left:1%">选择时间期间：</span>
+            <input type="date" style="width: 15em" class="c12" ng-model="startDateValue" />
+            <span style="float:left"> &nbsp;--&nbsp;</span>
+            <input type="date" style="width: 15em" class="c12" ng-model="endDateValue" />
+            <div class="clear"></div>
+        </div>
+        <div style="padding-bottom:1%;">
+            <span style="line-height:2em; margin-left:1%;">选择报表内容：</span>
+            <div class="sheet_choice">
+                <div class="sheet_det">
+                    <div>选择设备</div>
+                    <div class="sheet_list">
+                        <span name="choice" >{{targetDevice.strDeviceName}}</span>
+                    </div>
+                </div>
+                <img src="resources/img/next.png">
+                <div class="sheet_det">
+                    <div>
+                        <span>选择测量点</span>
+                    </div>
+                    <div class="sheet_list">
+                        <span name="choice2" ng-repeat="point in targetDevice.lstDBParams"
+                              ng-click="refleshSelectedList($event,point.strDBKey)">{{point.strTitle}}</span>
+                    </div>
+                </div>
+                <img src="resources/img/next.png">
+                <div class="sheet_det">
+                    <div>
+                        <span>报表项目</span>
+                        <span class="c15" style="float:right; margin-right:2%; cursor:pointer" ng-click="delSelectParam()">删除</span>
+                    </div>
+                    <div class="sheet_list">
+                        <span name="choice3" id="select_{{param.strDBKey}}" ng-repeat="param in selectedParams" ng-click="chooseThis($event,'choice3')">{{targetDevice.strDeviceName+"."+param.strTitle}}</span>
+                    </div>
+                </div>
+                <a class="build03" ng-click="this.blur(); createTable();">生成报表</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <table class="sheet" style="width:80%" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>时间间隔</th>
+            <th ng-repeat="head in selectedParams">{{targetDevice.strDeviceName+"."+head.strTitle}}</th>
+        </tr>
+        <tr ng-repeat="obj in reportDataList">
+            <td>{{myFormat(startDateValue.valueOf()+($index*timeSpace))}}</td>
+            <td ng-repeat="col in selectedParams">{{obj[col.strDBKey]}}</td>
+        </tr>
+    </table>
+    <div style="width:64%; margin:0 auto; margin-top:1%;">
+        <a class="build02" style="margin-left:2%"  onclick="this.blur(); return false;">打印</a>
+        <a class="build02" id="downloadBtn" ng-click="this.blur(); downLoadCsv();">下载</a>
+    </div>
+</div>
+<!--报表结束 -->

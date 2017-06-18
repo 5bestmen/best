@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="100%" x="0" y="0" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 891.461 645.171" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://iec.ch/TC57/2005/SVG-schema#">
+    <defs>
+        <linearGradient id="MyGradient_22547" y1="306.18627" x1="76.82299999999999" y2="319.78173" gradientUnits="userSpaceOnUse" x2="76.82299999999999">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_27308">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <linearGradient id="MyGradient_19027" y1="32.5" x1="0" y2="32.5" gradientUnits="userSpaceOnUse" x2="487">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_16188" y1="32.5" x1="562.627" y2="32.5" gradientUnits="userSpaceOnUse" x2="769.627">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_22103">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <linearGradient id="MyGradient_23344" y1="306.18627" x1="636.823" y2="319.78173" gradientUnits="userSpaceOnUse" x2="636.823">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_11030" y1="306.18627" x1="366.823" y2="319.78173" gradientUnits="userSpaceOnUse" x2="366.823">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_10563">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+        <symbol viewBox="0 0 30.479 109.925" id="537@0">
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="537" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="29.709" x1="16.3995" y2="3.816" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="30.1409" height="48.1882" style="stroke-width:1;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,54.235) rotate(180) translate(-15.2395,-54.235)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="104.677" x1="16.3995" y2="78.783" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="537"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="537@1">
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="537" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="30.141" x1="16.3995" y2="3.816" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="30.1411" height="48.6418" style="stroke-width:1;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,54.462) rotate(180) translate(-15.2395,-54.462)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="105.109" x1="16.3995" y2="78.783" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="537"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="550@0">
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="550" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="29.709" x1="16.3995" y2="3.816" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="30.1409" height="48.1882" style="stroke-width:1;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,54.235) rotate(180) translate(-15.2395,-54.235)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="104.677" x1="16.3995" y2="78.783" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="550"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="550@1">
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="550" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="30.141" x1="16.3995" y2="3.816" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="30.1411" height="48.6418" style="stroke-width:1;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,54.462) rotate(180) translate(-15.2395,-54.462)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="105.109" x1="16.3995" y2="78.783" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="550"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="563@0">
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="563" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="29.709" x1="16.3995" y2="3.816" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="30.1409" height="48.1882" style="stroke-width:1;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,54.235) rotate(180) translate(-15.2395,-54.235)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="104.677" x1="16.3995" y2="78.783" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="563"/>
+        </symbol>
+        <symbol viewBox="0 0 30.479 109.925" id="563@1">
+            <circle visibility="hidden" cx="16.3995" cy="2.5" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="563" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="30.141" x1="16.3995" y2="3.816" x2="16.3995"/>
+            <rect width="25.479" x="2.5" y="30.1411" height="48.6418" style="stroke-width:1;stroke:rgb(0,128,0);fill:rgb(0,128,0);" transform="translate(15.2395,54.462) rotate(180) translate(-15.2395,-54.462)"/>
+            <line style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" y1="105.109" x1="16.3995" y2="78.783" x2="16.3995"/>
+            <circle visibility="hidden" cx="16.3995" cy="107.425" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="563"/>
+        </symbol>
+    </defs>
+    <rect width="2374.3815" flags="GDF" x="-791.4605" y="-545.1710000000001" fill="rgb(0,0,0)" height="1635.513" maxid="758" type="接线图" id="0" owner="系统站" rule="1"/>
+    <g id="共享层">
+        <g id="298">
+            <circle cx="60.468" cy="168.911" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="21.2187"/>
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="218.602" x1="61.276" y2="188.594" x2="61.276"/>
+            <circle visibility="hidden" cx="61.276" cy="221.603" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="298"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M46.994,169.664 A7.56038,7.56038 0 0,1 61.998,169.664"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M61.998,169.664 A7.502,7.502 0 1,0 77.002,169.664"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Fsys1#"/>
+            </metadata>
+        </g>
+        <g id="305">
+            <path style="stroke-width:0;fill:url(#MyGradient_22547)" d="M 33.2374 306.186 H120.409 V319.782 H33.2374 Z">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Msys1#"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="319">
+            <text x="79.81700000000001" y="367.97" font-family="黑体" fill="rgb(255,255,255)" font-weight="normal" font-size="27">偃康线开关</text>
+        </g>
+        <g id="323">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_27308);fill:none;" y1="420.752" x1="51.691" y2="540.671" x2="51.691"/>
+            <circle visibility="hidden" cx="51.691" cy="422.417" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="323"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Lyk4fjxyk43-ykx"/>
+            </metadata>
+        </g>
+        <g id="382">
+            <a xlink:href="../sys/一次接线索引图.svg">
+                <rect width="487" x="0" y="0" height="65" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_19027)"/>
+                <polygon points="0,0 0,65 1,64 1,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="0,0 487,0 486,1 1,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="487,0 486,1 486,64 487,65" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="486,64 487,65 0,65 1,64" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="149" y="49" font-family="黑体" fill="rgb(128,0,0)" font-size="33">电源点接线图</text>
+            </a>
+        </g>
+        <g id="383">
+            <a xlink:href="../sys/偃师配网接线图.svg">
+                <rect width="207" x="562.627" y="0" height="65" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_16188)"/>
+                <polygon points="562.627,0 562.627,65 563.627,64 563.627,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="562.627,0 769.627,0 768.627,1 563.627,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="769.627,0 768.627,1 768.627,64 769.627,65" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="768.627,64 769.627,65 562.627,65 563.627,64" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="587.627" y="49" font-family="黑体" fill="rgb(128,0,0)" font-size="33">配网接线图</text>
+            </a>
+        </g>
+        <g id="386">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_22103);fill:none;" y1="417.752" x1="613.691" y2="537.671" x2="613.691"/>
+            <circle visibility="hidden" cx="613.691" cy="419.417" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="386"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Lsys-tjz"/>
+            </metadata>
+        </g>
+        <g id="392">
+            <text x="643.817" y="367.97" font-family="黑体" fill="rgb(255,255,255)" font-weight="normal" font-size="27">工东线开关</text>
+        </g>
+        <g id="406">
+            <path style="stroke-width:0;fill:url(#MyGradient_23344)" d="M 593.237 306.186 H680.409 V319.782 H593.237 Z">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Msys3#"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="407">
+            <circle cx="620.245" cy="167.911" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="21.2187"/>
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="217.602" x1="621.053" y2="187.594" x2="621.053"/>
+            <circle visibility="hidden" cx="621.053" cy="220.603" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="407"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M606.771,168.664 A7.56038,7.56038 0 0,1 621.775,168.664"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M621.775,168.664 A7.502,7.502 0 1,0 636.779,168.664"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Fsys3#"/>
+            </metadata>
+        </g>
+        <g id="496">
+            <circle cx="355.188" cy="166.911" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="21.2187"/>
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="216.602" x1="355.996" y2="186.594" x2="355.996"/>
+            <circle visibility="hidden" cx="355.996" cy="219.603" style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="496"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M341.714,167.664 A7.56038,7.56038 0 0,1 356.718,167.664"/>
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M356.718,167.664 A7.502,7.502 0 1,0 371.722,167.664"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Fsys2#"/>
+            </metadata>
+        </g>
+        <g id="503">
+            <path style="stroke-width:0;fill:url(#MyGradient_11030)" d="M 323.237 306.186 H410.409 V319.782 H323.237 Z">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Msys2#"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="517">
+            <text x="365.817" y="367.97" font-family="黑体" fill="rgb(255,255,255)" font-weight="normal" font-size="27">商兴线开关</text>
+        </g>
+        <g id="518">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_10563);fill:none;" y1="418.752" x1="339.691" y2="538.671" x2="339.691"/>
+            <circle visibility="hidden" cx="339.691" cy="420.417" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="518"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Lsx33sx33-sxx"/>
+            </metadata>
+        </g>
+        <g id="521">
+            <text x="42.81699999999999" y="147.97" font-family="黑体" fill="rgb(255,255,255)" font-weight="normal" font-size="27">偃师变</text>
+        </g>
+        <g id="522">
+            <text x="322.817" y="147.97" font-family="黑体" fill="rgb(255,255,255)" font-weight="normal" font-size="27">商都变</text>
+        </g>
+        <g id="523">
+            <text x="574.064" y="148.217" font-family="黑体" fill="rgb(255,255,255)" font-weight="normal" font-size="27">工业园变</text>
+        </g>
+        <g id="537">
+            <use width="30.479" x="35.3625" y="315.241" height="109.925" xlink:href="#537@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksysyk"/>
+                <cge:Meas_Ref  ObjectID="break KsysykKg value"/>
+            </metadata>
+        </g>
+        <g id="550">
+            <use width="30.47900000000004" x="323.3625" y="313.241" height="109.925" xlink:href="#550@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksyssx"/>
+                <cge:Meas_Ref  ObjectID="break KsyssxKg value"/>
+            </metadata>
+        </g>
+        <g id="563">
+            <use width="30.47900000000004" x="597.3625" y="312.241" height="109.925" xlink:href="#563@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Ksysgd"/>
+                <cge:Meas_Ref  ObjectID="break KsysgdKg value"/>
+            </metadata>
+        </g>
+        <g id="576">
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="261.34" x1="631.178" y2="256.741" x2="622.73"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="263.824" x1="611.301" y2="255.498" x2="622.234"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="253.759" x1="621.24" y2="245.19" x2="621.24"/>
+            <circle visibility="hidden" cx="621.24" cy="221.708" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="576"/>
+            <circle cx="621.191" cy="255.102" style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" r="17.5685"/>
+            <circle cx="621.191" cy="281.19" style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" r="17.5685"/>
+            <polygon points="612.963,286.727 622.109,270.887 631.255,286.727 612.963,286.727" style="stroke-width:2;stroke:rgb(0,255,0);fill:none;"/>
+            <circle visibility="hidden" cx="622.109" cy="312.504" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="576" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="225.435" x1="621.24" y2="239.1" x2="621.24"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="298.73" x1="621.24" y2="312.395" x2="621.24"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="bsys3#"/>
+            </metadata>
+        </g>
+        <g id="587">
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="261.372" x1="71.589" y2="256.773" x2="63.141"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="263.856" x1="51.712" y2="255.531" x2="62.644"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="253.791" x1="61.651" y2="245.222" x2="61.651"/>
+            <circle visibility="hidden" cx="61.651" cy="221.74" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="587"/>
+            <circle cx="61.602" cy="255.134" style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" r="17.5685"/>
+            <circle cx="61.602" cy="281.222" style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" r="17.5685"/>
+            <polygon points="53.3744,286.759 62.52,270.919 71.6656,286.759 53.3744,286.759" style="stroke-width:2;stroke:rgb(0,255,0);fill:none;"/>
+            <circle visibility="hidden" cx="62.52" cy="312.537" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="587" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="225.467" x1="61.651" y2="239.132" x2="61.651"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="298.762" x1="61.651" y2="312.427" x2="61.651"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="bsys1#"/>
+            </metadata>
+        </g>
+        <g id="598">
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="260.746" x1="365.742" y2="256.147" x2="357.294"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="263.23" x1="345.865" y2="254.904" x2="356.797"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="253.165" x1="355.803" y2="244.596" x2="355.803"/>
+            <circle visibility="hidden" cx="355.803" cy="221.114" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="598"/>
+            <circle cx="355.755" cy="254.508" style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" r="17.5685"/>
+            <circle cx="355.755" cy="280.596" style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" r="17.5685"/>
+            <polygon points="347.527,286.133 356.673,270.293 365.819,286.133 347.527,286.133" style="stroke-width:2;stroke:rgb(0,255,0);fill:none;"/>
+            <circle visibility="hidden" cx="356.673" cy="311.91" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="598" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="224.841" x1="355.803" y2="238.506" x2="355.803"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="298.136" x1="355.803" y2="311.801" x2="355.803"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="bsys2#"/>
+            </metadata>
+        </g>
+    </g>
+    <g id="SCD层">
+        <g id="460">
+            <text x="91.52500000000001" y="479.989" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">Ia</text>
+        </g>
+        <g id="461">
+            <text x="122.025" y="479.989" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Lyk4fjxyk43-ykxIa1 value"/>
+            </metadata>
+        </g>
+        <g id="462">
+            <text x="93.52500000000001" y="508.989" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">P</text>
+        </g>
+        <g id="463">
+            <text x="122.025" y="508.989" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Lyk4fjxyk43-ykxP1 value"/>
+            </metadata>
+        </g>
+        <g id="464">
+            <text x="92.02500000000001" y="537.989" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">Q</text>
+        </g>
+        <g id="465">
+            <text x="122.025" y="537.989" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Lyk4fjxyk43-ykxQ1 value"/>
+            </metadata>
+        </g>
+        <g id="472">
+            <text x="367.697" y="484.171" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">Ia</text>
+        </g>
+        <g id="473">
+            <text x="398.197" y="484.171" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Lsx33sx33-sxxIa1 value"/>
+            </metadata>
+        </g>
+        <g id="474">
+            <text x="369.697" y="513.1710000000001" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19.00000000000006">P</text>
+        </g>
+        <g id="475">
+            <text x="398.197" y="513.1710000000001" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19.00000000000006">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Lsx33sx33-sxxP1 value"/>
+            </metadata>
+        </g>
+        <g id="476">
+            <text x="368.197" y="542.1710000000001" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">Q</text>
+        </g>
+        <g id="477">
+            <text x="398.197" y="542.1710000000001" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Lsx33sx33-sxxQ1 value"/>
+            </metadata>
+        </g>
+        <g id="478">
+            <text x="641.628" y="475.604" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">Ia</text>
+        </g>
+        <g id="479">
+            <text x="672.128" y="475.604" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Lgd34-tjzIa1 value"/>
+            </metadata>
+        </g>
+        <g id="480">
+            <text x="643.628" y="504.604" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">P</text>
+        </g>
+        <g id="481">
+            <text x="672.128" y="504.604" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Lgd34-tjzP1 value"/>
+            </metadata>
+        </g>
+        <g id="482">
+            <text x="642.128" y="533.604" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">Q</text>
+        </g>
+        <g id="483">
+            <text x="672.128" y="533.604" font-family="ËÎÌå" fill="rgb(255,255,255)" font-weight="normal" font-size="19">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog Lgd34-tjzQ1 value"/>
+            </metadata>
+        </g>
+    </g>
+    <g visibility="hidden" id="EMS层"/>
+    <g>
+        <circle fill="yellow" cx="61.46349999999995" cy="221.67155" stroke="green" id="node_0" r="2.25"/>
+        <circle fill="yellow" cx="51.73833333333329" cy="422.583" stroke="green" id="node_1" r="2.25"/>
+        <circle fill="yellow" cx="613.7383333333333" cy="419.583" stroke="green" id="node_2" r="2.25"/>
+        <circle fill="yellow" cx="621.1465000000001" cy="221.15545" stroke="green" id="node_3" r="2.25"/>
+        <circle fill="yellow" cx="355.89965" cy="220.35845" stroke="green" id="node_4" r="2.25"/>
+        <circle fill="yellow" cx="339.7380666666666" cy="420.583" stroke="green" id="node_5" r="2.25"/>
+        <circle fill="yellow" cx="51.76199999999994" cy="317.7408" stroke="green" id="node_6" r="2.25"/>
+        <circle fill="yellow" cx="339.76175" cy="315.7407" stroke="green" id="node_7" r="2.25"/>
+        <circle fill="yellow" cx="613.7619999999999" cy="314.7408" stroke="green" id="node_8" r="2.25"/>
+        <circle fill="yellow" cx="622.1089999999999" cy="312.5043" stroke="green" id="node_9" r="2.25"/>
+        <circle fill="yellow" cx="62.51999999999998" cy="312.5366" stroke="green" id="node_10" r="2.25"/>
+        <circle fill="yellow" cx="356.673" cy="311.9103" stroke="green" id="node_11" r="2.25"/>
+    </g>
+</svg>

@@ -1,0 +1,61 @@
+
+<div style="background:#ffffff">
+    <div class="content" style="padding-top:1%;">
+        <span style="line-height:2em; margin-left:1%">条件过滤：</span>
+        <span style="width:50%">
+                 <select class="c12" id="filterKind" style="width:14%">
+                     <option value="strUsername">用户名</option>
+                     <option value="strName">姓名</option>
+                     <option value="strJob">职位</option>
+                     <option value="strTelephone">联系方式</option>
+                     <option value="strEmail">邮箱</option>
+                     <option value="">关联项目</option>
+                     <option value="strAuthority">权限</option>
+                 </select>
+            </span>
+        <div class="clear"></div>
+    </div>
+    <div class="content" style="padding-bottom:1%">
+        <span style="line-height:2em; margin-left:1%">过滤内容：</span>
+        <input style="margin-left:1%" class="c18" id="filterContent" type="text" placeholder="请输入">
+        <a class="build_g" ng-click="this.blur();doFilter()" style="margin-left:5%">搜索</a>
+        <a class="build" ng-click="this.blur();doClear()" onclick="this.blur(); return false;" style="margin-left:3%">全部显示</a>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<table class="sheet" style="width:90%" cellpadding="0" cellspacing="0">
+    <tr>
+        <th style="width: 3%">No.</th>
+        <th style="width: 5%">用户名</th>
+        <th style="width: 5%">密码</th>
+        <th style="width: 7%">姓名</th>
+        <th style="width: 7%">职位</th>
+        <th style="width: 7%">地址</th>
+        <th style="width: 7%">电话</th>
+        <th style="width: 7%">邮箱</th>
+        <th style="width: 20%">关联项目</th>
+        <th style="width: 20%">IMEI</th>
+        <th style="width: 6%">权限</th>
+        <th style="width: 6%">操作</th>
+    </tr>
+    <tr ng-repeat="user in UserinfoList">
+        <td>{{$index+1}}</td>
+        <td>{{user.strUsername}}</td>
+        <td>{{user.strPassword}}</td>
+        <td>{{user.strName}}</td>
+        <td>{{user.strJob}}</td>
+        <td>{{user.strAddress}}</td>
+        <td>{{user.strTelephone}}</td>
+        <td>{{user.strEmail}}</td>
+        <td>{{getPjList(user.pjList)}}</td>
+        <td>{{getImeiList(user.imeiList)}}</td>
+        <td>{{user.strAuthority}}</td>
+        <td>
+            <span class="opr c15" ng-click="deleteUser(user.intPkUserInfoId)">删除</span>
+            <span class="opr" ng-click="editUserInfoModal(user.intPkUserInfoId)">修改</span>
+        </td>
+    </tr>
+</table>
+<div style="width:90%; margin:0 auto; margin-top:1%;"><a ng-click="this.blur();openUserInfoModal()" class="build02">追加</a></div>
+

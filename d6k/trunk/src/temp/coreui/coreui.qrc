@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/save.png</file>
+        <file>images/project.png</file>
+        <file>images/fes.png</file>
+        <file>images/channel.png</file>
+        <file>images/alarm.png</file>
+        <file>images/hissave.png</file>
+        <file>images/variablelist.png</file>
+        <file>images/scale.png</file>
+        <file>images/pdr.png</file>
+        <file>images/device.png</file>
+        <file>images/close_group.png</file>
+        <file>images/equipment.png</file>
+        <file>images/graph.png</file>
+        <file>images/report.png</file>
+        <file>images/system.png</file>
+        <file>images/node.png</file>
+        <file>images/seqscript.png</file>
+        <file>images/uservariable.png</file>
+        <file>images/systemvariable.png</file>
+        <file>images/delete.png</file>
+        <file>images/open_group.png</file>
+    </qresource>
+</RCC>

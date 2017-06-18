@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+.logo{
+    margin: 0 auto;
+}
+.logo img{
+    margin: 0 auto;
+    display: block;
+    width: 18%;
+}
+
+.login{
+    width:22%;
+    background:#ffffff;
+    border:1px solid #1c84f9;
+    padding-left:2%;
+    padding-right:2%;
+    padding-top:3.2%;
+    padding-bottom:3%;
+    margin:0 auto;
+    z-index:-1;
+}
+
+.f_form{
+    width: 98%;
+    padding:1%;
+    padding-top:3%;
+    padding-bottom:3%;
+    display: block;
+    margin: 0 auto;
+    color: #868686;
+    border: 2px solid #d9d9d9;
+    border-radius: 5px;
+    margin-bottom: 8%;
+    font-size: 16px;
+}
+.remember{
+    width: 100%;
+    height:1.6rem;
+    line-height:1.6rem;
+}
+
+.left{
+    float: left;
+    font-size: 16px;
+    color: #8e8e8e;
+    line-height:1.6rem;
+    width:50%;
+}
+.left img{
+    display:block;
+    float:left;
+}
+.left span{
+    display:block;
+    float:left;
+    margin-left:2%;
+}
+.right{
+    float: right;
+    line-height:1.6rem;
+}
+.right a{
+    color: #0b99db;
+    font-size: 16px;
+}
+.login a{
+    display:block;
+}
+
+.btn{
+    width:80%;
+    margin:0 auto;
+    margin-top:8%;
+    border-radius:10px;
+    padding-top:4%;
+    padding-bottom:4%;
+    text-align:center;
+    background:#f04d22;
+    color:#ffffff;
+    font-size:18px;
+    cursor:pointer;
+}
+.btn:hover{
+    background:#e14820;
+}
+.btn:active{
+    background:#cc3f1a;
+}
+
+.light img{
+    display:block;
+    width:53%;
+    z-index:999;
+    margin:0 auto;
+    margin-top:2%;
+    box-shadow:0 5px 20px 0 #000;
+}

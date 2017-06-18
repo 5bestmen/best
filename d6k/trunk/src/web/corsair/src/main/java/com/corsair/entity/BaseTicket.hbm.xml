@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.BaseTicket" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="operateTask" type="java.lang.String"/>
+
+
+        <list name="operateTicketTemplateData" inverse="false" cascade="all-delete-orphan" lazy="false">
+            <key><column name="baseTicket"/></key>
+            <list-index column="indexNumber" base="1"/>
+            <one-to-many class="com.corsair.entity.OperateTicketTemplateData"/>
+        </list>
+
+        <set name="operateTicketProcessRecords" inverse="true" cascade="delete" lazy="false" order-by="operateTime asc">
+            <key><column name="baseTicket"/></key>
+            <one-to-many class="com.corsair.entity.OperateTicketProcessRecord"/>
+        </set>
+
+        <joined-subclass name="com.corsair.entity.OperateTicketTemplate">
+            <key column="id"></key>
+            <property name="name" type="java.lang.String" not-null="true" unique="true"/>
+            <property name="comments" type="java.lang.String"/>
+        </joined-subclass>
+
+        <joined-subclass name="com.corsair.entity.OperateTicket">
+            <key column="id"></key>
+            <property name="seriesNo" type="java.lang.String" not-null="true" unique="true"/>
+            <property name="name" type="java.lang.String" not-null="true" unique="true"/>
+            <property name="state" type="java.lang.Integer"/>
+            <property name="sendName" type="java.lang.String"/>
+            <property name="recvName" type="java.lang.String"/>
+            <property name="sendTime" type="java.lang.String"/>
+            <property name="beginTime" type="java.lang.String"/>
+            <property name="endTime" type="java.lang.String"/>
+            <property name="guardianName" type="java.lang.String"/>
+            <property name="singleOperator" type="java.lang.String"/>
+            <property name="repairOperator" type="java.lang.String"/>
+
+            <property name="comments" type="java.lang.String"/>
+        </joined-subclass>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>logicmove.png</file>
+        <file>pen.png</file>
+    </qresource>
+</RCC>

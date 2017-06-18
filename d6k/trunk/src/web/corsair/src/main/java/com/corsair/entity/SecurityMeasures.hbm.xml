@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.SecurityMeasures"  catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="measure" type="java.lang.String"/>
+        <property name="securityMeasuresType" type="java.lang.String"/>
+        <property name="switchesAndKnife" type="java.lang.String"/>
+        <property name="groundLineName" type="java.lang.String"/>
+        <property name="groundLineNumber" type="java.lang.String"/>
+        <property name="otherMeasures" type="java.lang.String"/>
+        <property name="finished" type="java.lang.Boolean"/>
+        <property name="count" type="java.lang.Integer"/>
+        <many-to-one name="workTicket" class="com.corsair.entity.WorkTicket" fetch="join"/>
+    </class>
+</hibernate-mapping>

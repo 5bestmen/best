@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2008/CIM-schema-cim13#" xmlns:dm="http://iec.ch/2002/schema/CIM_difference_model#">
+	<dm:DifferenceModel about="">
+		<dm:reverseDifferences rdf:parseType="Statements">
+			<cim:ACLineSegment rdf:ID="_56B490DCDD4C0D1FE04014AC92606106"/>
+			<cim:Line rdf:ID="_56B490DCDDD50D1FE04014AC92606106"/>
+			<cim:Terminal rdf:ID="_56B490DCDD980D1FE04014AC92606106"/>
+			<cim:Terminal rdf:ID="_56B490DCDD6C0D1FE04014AC92606106"/>
+      <cim:Terminal rdf:ID="_InvalidIDAddedForValidationTest"/>
+      <rdf:Description rdf:about="#_4D8FC17D94F143EB922F7B6D29C48B2E">
+        <cim:OperationalLimitSet.Equipment rdf:resource="#_56B490DCDD4C0D1FE04014AC92606106"/>
+      </rdf:Description>
+      <rdf:Description rdf:about="#_817E0996847F4D66A744580BCE8FA3CF">
+        <cim:ApparentPowerLimit.value>1129.599</cim:ApparentPowerLimit.value>
+      </rdf:Description>
+      <rdf:Description rdf:about="#_0A2D2F8BCD524F578544D28AAAD73444">
+        <cim:ApparentPowerLimit.value>1129.599</cim:ApparentPowerLimit.value>
+      </rdf:Description>
+      <rdf:Description rdf:about="#_1C3D4F623F1A4374B42CA922801A2A63">
+        <cim:ApparentPowerLimit.value>1004.088</cim:ApparentPowerLimit.value>
+      </rdf:Description>
+      <rdf:Description rdf:about="#_56B490DC45650D1FE04014AC92606106_X">
+        <cim:BaseVoltage.nominalVoltage>12.5</cim:BaseVoltage.nominalVoltage>
+        <cim:IdentifiedObject.description>12.5 kV</cim:IdentifiedObject.description>
+      </rdf:Description>
+
+    </dm:reverseDifferences>
+		<dm:forwardDifferences rdf:parseType="Statements">
+      <cim:Substation rdf:ID="_56B490DCDE470D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>ECAR ECAR NEWSUB</cim:IdentifiedObject.pathName>
+        <cim:IdentifiedObject.aliasName>NEWSUB</cim:IdentifiedObject.aliasName>
+        <cim:IdentifiedObject.description>The new substation added in ECAR </cim:IdentifiedObject.description>
+        <cim:IdentifiedObject.name>NEWSUB</cim:IdentifiedObject.name>
+        <cim:Substation.Region rdf:resource="#_56B490DCDB9D0D1FE04014AC92606106" />
+      </cim:Substation>
+      <cim:VoltageLevel rdf:ID="_56B490DCDDE90D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>ECAR ECAR NEWSUB 345</cim:IdentifiedObject.pathName>
+        <cim:VoltageLevel.BaseVoltage rdf:resource="#_56B490DCDDDB0D1FE04014AC92606106" />
+        <cim:VoltageLevel.lowVoltageLimit>310.5</cim:VoltageLevel.lowVoltageLimit>
+        <cim:IdentifiedObject.aliasName>345</cim:IdentifiedObject.aliasName>
+        <cim:VoltageLevel.MemberOf_Substation rdf:resource="#_56B490DCDE470D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.description>A new 345KV VoltageLevel in Substation NEWSUB</cim:IdentifiedObject.description>
+        <cim:VoltageLevel.highVoltageLimit>379.5</cim:VoltageLevel.highVoltageLimit>
+        <cim:IdentifiedObject.name>345</cim:IdentifiedObject.name>
+      </cim:VoltageLevel>
+      <cim:Breaker rdf:ID="_56B490DCDF530D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>ECAR ECAR NEWSUB 345 163A164A</cim:IdentifiedObject.pathName>
+        <cim:IdentifiedObject.aliasName>163A164A</cim:IdentifiedObject.aliasName>
+        <cim:IdentifiedObject.description>A new 345KV Breaker in Substation NEWSUB</cim:IdentifiedObject.description>
+        <cim:Switch.normalOpen>false</cim:Switch.normalOpen>
+        <cim:IdentifiedObject.name>163A164A</cim:IdentifiedObject.name>
+        <cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#_56B490DCDDE90D1FE04014AC92606106_A" />
+        <cim:Breaker.ratedCurrent>1000</cim:Breaker.ratedCurrent>
+      </cim:Breaker>
+      <cim:ConformLoad rdf:ID="_56B490DCE29B0D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>ECAR ECAR NEWSUB 345 164</cim:IdentifiedObject.pathName>
+        <cim:IdentifiedObject.aliasName>164A</cim:IdentifiedObject.aliasName>
+        <cim:ConformLoad.LoadGroup rdf:resource="#_56B490DCE2DE0D1FE04014AC92606106" />
+        <cim:EnergyConsumer.qfixedPct>51.19703</cim:EnergyConsumer.qfixedPct>
+        <cim:EnergyConsumer.pfixedPct>382.3833</cim:EnergyConsumer.pfixedPct>
+        <cim:IdentifiedObject.description>An invalid association ID i.e. 'INVALID_ID', is added for validation test.</cim:IdentifiedObject.description>
+        <cim:EnergyConsumer.LoadResponse rdf:resource="#INVALID_ID" />
+        <cim:IdentifiedObject.name>164A</cim:IdentifiedObject.name>
+        <cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#_56B490DCDDE90D1FE04014AC92606106_A" />
+        <cim:EnergyConsumer.pfixed>0</cim:EnergyConsumer.pfixed>
+        <cim:EnergyConsumer.qfixed>0</cim:EnergyConsumer.qfixed>
+      </cim:ConformLoad>
+      <cim:BusbarSection rdf:ID="_56B490DCE34C0D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.name>164A</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.description>An invalid attribute BusbarSection.invalidAtt is added for validation test.</cim:IdentifiedObject.description>
+        <cim:BusbarSection.invalidAttr>164A</cim:BusbarSection.invalidAttr>
+        <cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#_56B490DCDDE90D1FE04014AC92606106_A" />
+    </cim:BusbarSection>
+      <cim:ConnectivityNode rdf:ID="_56B490DCDCCA0D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>ECAR ECAR NEWSUB 345 163A</cim:IdentifiedObject.pathName>
+        <cim:ConnectivityNode.MemberOf_EquipmentContainer rdf:resource="#_56B490DCDDE90D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.name>163A</cim:IdentifiedObject.name>
+      </cim:ConnectivityNode>
+      <cim:ConnectivityNode rdf:ID="_56B490DCDCCB0D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>ECAR ECAR NEWSUB 345 164A</cim:IdentifiedObject.pathName>
+        <cim:ConnectivityNode.MemberOf_EquipmentContainer rdf:resource="#_56B490DCDDE90D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.name>164A</cim:IdentifiedObject.name>
+      </cim:ConnectivityNode>
+      <cim:Terminal rdf:ID="_56B490DCE0B10D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>Switch ECAR ECAR NEWSUB 345 163A164 N</cim:IdentifiedObject.pathName>
+        <cim:Terminal.ConnectivityNode rdf:resource="#_56B490DCDCCA0D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.name>NEAR</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_56B490DCDF530D1FE04014AC92606106_A" />
+      </cim:Terminal>
+      <cim:Terminal rdf:ID="_56B490DCE2120D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>Switch ECAR ECAR NEWSUB 345 163A164 F</cim:IdentifiedObject.pathName>
+        <cim:Terminal.ConnectivityNode rdf:resource="#_56B490DCDCCB0D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.name>FAR</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_56B490DCDF530D1FE04014AC92606106_A" />
+      </cim:Terminal>
+      <cim:Terminal rdf:ID="_56B490DCE2C80D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>EquivalentLoad ECAR ECAR NEW 345 164 N</cim:IdentifiedObject.pathName>
+        <cim:Terminal.ConnectivityNode rdf:resource="#_56B490DCDCCB0D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.name>NEAR</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_56B490DCE29B0D1FE04014AC92606106_A" />
+      </cim:Terminal>
+      <cim:Terminal rdf:ID="_56B490DCE3B20D1FE04014AC92606106_A">
+        <cim:Terminal.ConnectivityNode rdf:resource="#_56B490DCDCCB0D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.name>NEAR</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_56B490DCE34C0D1FE04014AC92606106_A" />
+      </cim:Terminal>
+      <cim:OperationalLimitSet rdf:ID="_5B29840E0ECD4E108A8530DD01B502EF_A">
+        <cim:OperationalLimitSet.Equipment rdf:resource="#_56B490DCE29B0D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.name>164A</cim:IdentifiedObject.name>
+      </cim:OperationalLimitSet>
+      <cim:VoltageLimit rdf:ID="_35D293AB8FB649839B5653EDE4DFAFFB_A">
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_5B29840E0ECD4E108A8530DD01B502EF_A" />
+        <cim:OperationalLimit.type>High1</cim:OperationalLimit.type>
+        <cim:IdentifiedObject.name>164A</cim:IdentifiedObject.name>
+        <cim:VoltageLimit.value>379.5</cim:VoltageLimit.value>
+      </cim:VoltageLimit>
+      <cim:VoltageLimit rdf:ID="_175DEDAEAE234047B56F0E91C3CE7C8C">
+        <cim:IdentifiedObject.description>The rdf:ID already exists in the base model. It should trigger an error message.</cim:IdentifiedObject.description>
+        <cim:OperationalLimit.OperationalLimitSet rdf:resource="#_5B29840E0ECD4E108A8530DD01B502EF_A" />
+        <cim:OperationalLimit.type>Low1</cim:OperationalLimit.type>
+        <cim:IdentifiedObject.name>164A</cim:IdentifiedObject.name>
+        <cim:VoltageLimit.value>310.5</cim:VoltageLimit.value>
+      </cim:VoltageLimit>
+      <cim:Line rdf:ID="_56B490DCDDD50D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.pathName>ECAR ECAR 34502A</cim:IdentifiedObject.pathName>
+        <cim:IdentifiedObject.aliasName>34502A</cim:IdentifiedObject.aliasName>
+        <cim:IdentifiedObject.description>New line added to link CHENAUX with NEWSUB</cim:IdentifiedObject.description>
+        <cim:Line.Region rdf:resource="#_56B490DCDB9D0D1FE04014AC92606106" />
+        <cim:IdentifiedObject.name>34502A</cim:IdentifiedObject.name>
+      </cim:Line>
+      <cim:ACLineSegment rdf:ID="_56B490DCDD4C0D1FE04014AC92606106_A">
+        <cim:IdentifiedObject.name>ECAR ECAR 34502A 1</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.aliasName>1</cim:IdentifiedObject.aliasName>
+        <cim:Conductor.x>48.91928</cim:Conductor.x>
+        <cim:Conductor.bch>0.0005872716</cim:Conductor.bch>
+        <cim:IdentifiedObject.description>New line added to link CHENAUX with NEWSUB</cim:IdentifiedObject.description>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_56B490DCDDDB0D1FE04014AC92606106" />
+        <cim:Conductor.r>4.165875</cim:Conductor.r>
+        <cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#_56B490DCDDD50D1FE04014AC92606106_A" />
+      </cim:ACLineSegment>
+      <cim:Terminal rdf:ID="_56B490DCDD6C0D1FE04014AC92606106_A1">
+        <cim:IdentifiedObject.pathName>ACLineSegment ECAR ECAR 34502A 1 N</cim:IdentifiedObject.pathName>
+        <cim:Terminal.ConnectivityNode rdf:resource="#_56B490DCDCCA0D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.name>NEAR</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_56B490DCDD4C0D1FE04014AC92606106_A" />
+      </cim:Terminal>
+      <cim:Terminal rdf:ID="_56B490DCDD6C0D1FE04014AC92606106_A2">
+        <cim:IdentifiedObject.pathName>ACLineSegment ECAR ECAR 34502A 1 F</cim:IdentifiedObject.pathName>
+        <cim:Terminal.ConnectivityNode rdf:resource="#_56B490DCDCAB0D1FE04014AC92606106" />
+        <cim:IdentifiedObject.name>FAR</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_56B490DCDD4C0D1FE04014AC92606106_A" />
+      </cim:Terminal>
+      <cim:Line rdf:ID="_56B490DCDDD50D1FE04014AC92606106_B">
+        <cim:IdentifiedObject.pathName>ECAR ECAR 34502B</cim:IdentifiedObject.pathName>
+        <cim:IdentifiedObject.aliasName>34502B</cim:IdentifiedObject.aliasName>
+        <cim:IdentifiedObject.description>New line added to link REDBRIDG with NEWSUB</cim:IdentifiedObject.description>
+        <cim:Line.Region rdf:resource="#_56B490DCDB9D0D1FE04014AC92606106" />
+        <cim:IdentifiedObject.name>34502B</cim:IdentifiedObject.name>
+      </cim:Line>
+      <cim:ACLineSegment rdf:ID="_56B490DCDD4C0D1FE04014AC92606106_B">
+        <cim:IdentifiedObject.name>ECAR ECAR 34502A 1</cim:IdentifiedObject.name>
+        <cim:IdentifiedObject.aliasName>1</cim:IdentifiedObject.aliasName>
+        <cim:Conductor.x>32.91928</cim:Conductor.x>
+        <cim:Conductor.bch>0.0003872716</cim:Conductor.bch>
+        <cim:IdentifiedObject.description>New line added to link REDBRIDG with NEWSUB</cim:IdentifiedObject.description>
+        <cim:ConductingEquipment.BaseVoltage rdf:resource="#_56B490DCDDDB0D1FE04014AC92606106" />
+        <cim:Conductor.r>2.165875</cim:Conductor.r>
+        <cim:Equipment.MemberOf_EquipmentContainer rdf:resource="#_56B490DCDDD50D1FE04014AC92606106_B" />
+      </cim:ACLineSegment>
+      <cim:Terminal rdf:ID="_56B490DCDD6C0D1FE04014AC92606106_B1">
+        <cim:IdentifiedObject.pathName>ACLineSegment ECAR ECAR 34502B 1 N</cim:IdentifiedObject.pathName>
+        <cim:Terminal.ConnectivityNode rdf:resource="#_56B490DCDCCA0D1FE04014AC92606106_A" />
+        <cim:IdentifiedObject.name>NEAR</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_56B490DCDD4C0D1FE04014AC92606106_B" />
+      </cim:Terminal>
+      <cim:Terminal rdf:ID="_56B490DCDD6C0D1FE04014AC92606106_B2">
+        <cim:IdentifiedObject.pathName>ACLineSegment ECAR ECAR 34502B 1 F</cim:IdentifiedObject.pathName>
+        <cim:Terminal.ConnectivityNode rdf:resource="#_56B490DCDCDB0D1FE04014AC92606106" />
+        <cim:IdentifiedObject.name>FAR</cim:IdentifiedObject.name>
+        <cim:Terminal.ConductingEquipment rdf:resource="#_56B490DCDD4C0D1FE04014AC92606106_B" />
+      </cim:Terminal>
+      <rdf:Description rdf:about="#_4D8FC17D94F143EB922F7B6D29C48B2E">
+        <cim:OperationalLimitSet.Equipment rdf:resource="#_56B490DCDD4C0D1FE04014AC92606106_A"/>
+      </rdf:Description>
+      <rdf:Description rdf:about="#_817E0996847F4D66A744580BCE8FA3CF">
+        <cim:ApparentPowerLimit.value>1400</cim:ApparentPowerLimit.value>
+      </rdf:Description>
+      <rdf:Description rdf:about="#_0A2D2F8BCD524F578544D28AAAD73444">
+        <cim:ApparentPowerLimit.value>1350</cim:ApparentPowerLimit.value>
+      </rdf:Description>
+      <rdf:Description rdf:about="#_1C3D4F623F1A4374B42CA922801A2A63">
+        <cim:ApparentPowerLimit.value>1200</cim:ApparentPowerLimit.value>
+      </rdf:Description>
+      <cim:UnknownCIMClass rdf:ID="_56B490DCDDD50D1FE04014AC92606106_X">
+        <cim:IdentifiedObject.description>This class is undeclared in CIM, added for validation test.</cim:IdentifiedObject.description>
+      </cim:UnknownCIMClass>
+      <rdf:Description rdf:about="#_56B490DC45650D1FE04014AC92606106_X">
+        <cim:BaseVoltage.nominalVoltage>12.8</cim:BaseVoltage.nominalVoltage>
+        <cim:IdentifiedObject.description>This instance doesn't exist in base model, added for validation test.</cim:IdentifiedObject.description>
+      </rdf:Description>
+
+
+    </dm:forwardDifferences>
+	</dm:DifferenceModel>
+</rdf:RDF>

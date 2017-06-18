@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.ElectricPrice" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="name" type="java.lang.String" not-null="true" unique="true"/>
+        <property name="price" type="java.lang.Double" />
+        <property name="comments" type="java.lang.String" />
+        <set name="electricTimes" inverse="true">
+            <key column="electricPrice"/>
+            <one-to-many class="com.corsair.entity.ElectricTime"/>
+        </set>
+    </class>
+</hibernate-mapping>

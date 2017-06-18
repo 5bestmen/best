@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conifg>
+    <ProjectIP>192.168.116.19</ProjectIP>
+    <ProjectPort>2404</ProjectPort>
+    <DeviceAddr>1</DeviceAddr>
+    <DeviceType>DA-D224</DeviceType>
+    <BinaryAddr>0</BinaryAddr>
+    <AnalogAddr>16385</AnalogAddr>
+    <KwhAddr>25601</KwhAddr>
+    <ControlAddr>24577</ControlAddr>
+    <GeneralTime>10</GeneralTime>
+    <SyncTime>11</SyncTime>
+    <download>
+        <ftpip>192.168.116.19</ftpip>
+        <ftpport>21</ftpport>
+        <username></username>
+        <password></password>
+        <filename></filename>
+    </download>
+</conifg>

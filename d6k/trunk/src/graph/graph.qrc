@@ -1,0 +1,8 @@
+<RCC>
+  <qresource>
+    <file>images/eye_off.png</file>
+    <file>images/eye_on.png</file>
+    <file>images/layers.png</file>
+    <file>images/left.png</file>
+  </qresource>
+</RCC>

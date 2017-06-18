@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.template.psr.DeviceTemplate" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="name" type="java.lang.String" not-null="true" unique="true"/>
+        <property name="desc" column="comments" type="java.lang.String"/>
+
+        <property name="model" type="java.lang.String"/>
+        <set name="deviceTemplateDatas" inverse="true">
+            <key column="deviceTemplate"/>
+            <one-to-many class="com.corsair.entity.template.psr.DeviceTemplateData"/>
+        </set>
+        <set name="displayTemplates" inverse="true">
+            <key column="deviceTemplate"/>
+            <one-to-many class="com.corsair.entity.template.display.DisplayTemplate"/>
+        </set>
+
+        <!--新增-->
+        <set name="psrSpecs" inverse="false" sort="com.corsair.entity.template.psr.PSRSpecCompare">
+            <key column="deviceTemplate"/>
+            <one-to-many class="com.corsair.entity.template.psr.PSRSpec"/>
+        </set>
+
+        <many-to-one name="type" class="com.corsair.entity.template.psr.PSRType" not-null="true" fetch="join"/>
+        <many-to-one name="psrFactory" class="com.corsair.entity.template.psr.PSRFactory" fetch="join"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <module>
+    <item id="1" name="report" descript="报表" dllname="report"  type="" version="V1.2"/>
+    <item id="2" name="graph" descript="图形" dllname="graph"  type="" version="V1.1"/>
+    <item id="3" name="object" descript="对象组态" dllname="object"  type="" version="V2.2"/>
+    <item id="4" name="rmt104" descript="" dllname="dada" type="" version="V1.2"/>   
+  </module>
+  <ExtendModule>
+    <eitem id="3" name="powerprediction" descript="avc" dllname="powerprediction"  type="" version="V2.2"/>
+  </ExtendModule> 
+</config> 

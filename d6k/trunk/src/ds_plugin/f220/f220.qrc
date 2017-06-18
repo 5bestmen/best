@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/analog.png</file>
+        <file>icons/binary.png</file>
+        <file>icons/choose.png</file>
+        <file>icons/control.png</file>
+        <file>icons/devicestudio.png</file>
+        <file>icons/fix.png</file>
+        <file>icons/ftu.png</file>
+        <file>icons/gongcheng.png</file>
+        <file>icons/jianshi.png</file>
+        <file>icons/kwh.png</file>
+        <file>icons/Open.png</file>
+        <file>icons/soe.png</file>
+    </qresource>
+</RCC>

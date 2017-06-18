@@ -1,0 +1,20 @@
+<div id="mid" class="main_mid_dl" style=" z-index:20" >
+    <div id="huabu1">
+        <!--设备运行情况内容 -->
+        <div>
+            <div class="tab_box">
+                <ul>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.beakerTabs.run')}" ng-click="goPage('project.tabs.beakerTabs.run')">设备运行情况</li>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.beakerTabs.realData')}" ng-click="goPage('project.tabs.beakerTabs.realData')">实时数据</li>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.beakerTabs.info')}" ng-click="goPage('project.tabs.beakerTabs.info')">设备信息</li>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.beakerTabs.warning')}" ng-click="goPage('project.tabs.beakerTabs.warning')">故障报警日志</li>
+                    <!--<li ng-class="{'current_box':$state.includes('project.tabs.beakerTabs.curve')}" ng-click="goPage('project.tabs.beakerTabs.curve')">动态线表</li>-->
+                    <li ng-class="{'current_box':$state.includes('project.tabs.beakerTabs.forms')}" ng-click="goPage('project.tabs.beakerTabs.forms')">报表</li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div ui-view="breakerDetails"></div>
+        </div>
+        <!--设备运行情况内容结束 -->
+    </div>
+</div>

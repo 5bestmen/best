@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "devicestudio", "src\devicestudio\devicestudio.vcxproj", "{98ECABF1-BAA7-3987-99BE-F33CD358B062}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8CD40E20-7485-3F7B-A5B2-006F6372C9DC} = {8CD40E20-7485-3F7B-A5B2-006F6372C9DC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "f220", "src\ds_plugin\f220\f220.vcxproj", "{8CD40E20-7485-3F7B-A5B2-006F6372C9DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{23D02CF1-1CBC-4317-8278-E5FE5E0ECB59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98ECABF1-BAA7-3987-99BE-F33CD358B062}.Debug|x64.ActiveCfg = Debug|x64
+		{98ECABF1-BAA7-3987-99BE-F33CD358B062}.Debug|x64.Build.0 = Debug|x64
+		{98ECABF1-BAA7-3987-99BE-F33CD358B062}.Release|x64.ActiveCfg = Release|x64
+		{98ECABF1-BAA7-3987-99BE-F33CD358B062}.Release|x64.Build.0 = Release|x64
+		{8CD40E20-7485-3F7B-A5B2-006F6372C9DC}.Debug|x64.ActiveCfg = Debug|x64
+		{8CD40E20-7485-3F7B-A5B2-006F6372C9DC}.Debug|x64.Build.0 = Debug|x64
+		{8CD40E20-7485-3F7B-A5B2-006F6372C9DC}.Release|x64.ActiveCfg = Release|x64
+		{8CD40E20-7485-3F7B-A5B2-006F6372C9DC}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8CD40E20-7485-3F7B-A5B2-006F6372C9DC} = {23D02CF1-1CBC-4317-8278-E5FE5E0ECB59}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,55 @@
+<div class="window_add" style="width: 100%;height:100%;margin-top:0px;">
+    <div class="title_w">
+        <span ng-if="project.intDBPkPjinfoid == undefined">工程追加</span>
+        <span ng-if="project.intDBPkPjinfoid != undefined">工程信息修改</span>
+        <img src="resources/img/close.png" ng-click="cancel();">
+        <div class="clear"></div>
+    </div>
+    <div class="window_c_2" style="height: 25em">
+        <div class="window_l_2" style="height: 22em">
+            <div class="item_2">
+                <span>工程名</span>
+                <input type="text" ng-model="project.strPjName">
+                <div class="clear"></div>
+            </div>
+
+            <div class="item_2">
+                <span>工程地址</span>
+                <input type="text">
+                <div class="clear"></div>
+            </div>
+
+            <div class="item_2">
+                <span>工程类型</span>
+                <input type="text" ng-model="project.strType">
+                <div class="clear"></div>
+            </div>
+
+            <div class="item_2">
+                <span>业主单位</span>
+                <input type="text" ng-model="project.strOwnerAddress">
+                <div class="clear"></div>
+            </div>
+
+            <div class="item_2">
+                <span>联系人</span>
+                <input type="text" ng-model="project.strContacts">
+                <div class="clear"></div>
+            </div>
+
+            <div class="item_2">
+                <span>联系方式</span>
+                <input type="text" ng-model="project.strContactWay">
+                <div class="clear"></div>
+            </div>
+
+            <div class="item_2">
+                <span>工程基本信息</span>
+                <textarea  ng-model="project.strInfoNote"></textarea>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="window_btn"><a ng-click="this.blur();ok();">提交</a></div>
+    </div>
+</div>

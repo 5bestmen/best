@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* CSS Document */
+input,button,select,textarea{outline:none!important;}
+.oi-radio {
+	line-height:23px;
+	display: block;
+	float:left;
+	margin-left:1%;
+	margin-right:2%;
+}
+.oi-radio input {
+	display: inline-block;
+	width: 24px;
+	height: 1px;
+	position: relative;
+	overflow: visible;
+	border: 0;
+	background: 0 0;
+	-webkit-appearance: none;
+	outline: 0;
+	margin-right: 8px;
+	vertical-align: middle
+}
+.oi-radio input:before {
+	content: '';
+	display: block;
+	width: 23px;
+	height: 23px;
+	border: 1px solid #c7c8cb;
+	border-radius: 13px;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	position: absolute;
+	left: 0;
+	top: -14px;
+	cursor:pointer;
+}
+.oi-radio input:checked:after {
+	background:url(../img/icon.png) no-repeat -26px -26px;
+	-webkit-background-size: 150px auto;
+	border-radius: 13px;
+	background-color:#f04d22;
+	content: "";
+	display: block;
+	width: 23px;
+	height: 23px;
+	position: absolute;
+	left: 0;
+	top: -14px;
+	cursor:pointer;
+}
+
+.oi-list {
+	background-color: #fff
+}
+.oi-list>p{ width:96%; margin:0 2%; line-height:30px; border-bottom:1px solid #E2E2E2}
+.oi-list>li {
+	position: relative;
+	display: -webkit-box;
+	display: box;
+	width:100%;
+	border-top:1px solid #e2e2e2;
+
+}
+.oi-list-text>li {
+	line-height: 50px;
+}
+.oi-list-text>li>p {
+	max-width: 100%
+}
+.oi-list>li:first-child {
+	border: 0;
+	background-image: none
+}
+.oi-list>li:first-child .oi-border-t {
+	border-top: 0;
+	background-image: none
+}
+.oi-list-thumb {
+	width: 50px;
+	height: 50px;
+	margin: 7px 15px 7px 0;
+	position: relative
+}
+.oi-list .oi-avatar, .oi-list .oi-avatar-s, .oi-list .oi-avatar-lg {
+	margin: 7px 15px 7px 0
+}
+.oi-list-thumb-s {
+	position: relative;
+	width: 28px;
+	height: 28px;
+	-webkit-background-size: 28px auto;
+	margin: 11px 15px 11px 0;
+	background-image: url(../images/default.png)
+}
+.oi-list-thumb span, .oi-list-thumb-s span {
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: 100% auto;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1
+}
+.oi-list-info {
+	-webkit-box-flex: 1;
+	box-flex: 1;
+	padding-right: 20px;
+	display: box;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-box-pack: center
+}
+.oi-list-info>h4 {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 400;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	height: 20px
+}
+.oi-list-info>p {
+	font-size: 12px;
+	line-height: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 100%;
+	color: gray
+}
+.oi-list .oi-btn, .oi-list .oi-btn-lg {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -15px;
+}
+
+.laydate-icon {
+	background-image: url(/templates/img/Calendar.png);
+}
+

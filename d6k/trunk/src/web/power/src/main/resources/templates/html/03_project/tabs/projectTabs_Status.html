@@ -1,0 +1,22 @@
+<div id="mid" class="main_mid_dl" style=" z-index:20" >
+    <div id="huabu1">
+        <!--运行状况总结内容 -->
+        <div>
+            <div class="tab_box">
+                <ul>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.run')}" ng-click="goPage('project.tabs.run')">运行状况总结</li>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.info')}" ng-click="goPage('project.tabs.info')">工程基本信息</li>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.warningCinfig')}" ng-click="goPage('project.tabs.warningCinfig')">报警设置</li>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.forms')}" ng-click="goPage('project.tabs.forms')">报表</li>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.health')}" ng-click="goPage('project.tabs.health')">设备健康情况诊断</li>
+                    <li ng-class="{'current_box':$state.includes('project.tabs.warningLog')}" ng-click="goPage('project.tabs.warningLog')">报警历史日志</li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div ui-view="projectDetail" style="position:relative; left:0; top:40px; z-index:99; width:100%;"></div>
+        </div>
+        <!--运行状况总结内容结束 -->
+
+
+    </div>
+</div>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<catalog index="1" name="config/lbwj">
+		<fileItem index="1" fileName="lbwj1" comment="录波文件1"/>
+		<fileItem index="2" fileName="lbwj2" comment="录波文件2"/>
+		<fileItem index="3" fileName="lbwj3" comment="录波文件3"/>
+		<fileItem index="4" fileName="lbwj4" comment="录波文件4"/>
+		<fileItem index="5" fileName="lbwj5" comment="录波文件5"/>
+		<fileItem index="6" fileName="lbwj6" comment="录波文件6"/>
+		<fileItem index="7" fileName="lbwj7" comment="录波文件7"/>
+		<fileItem index="8" fileName="lbwj8" comment="录波文件8"/>
+	</catalog>
+ 	<catalog index="2" name="config/lbwj2">
+		<fileItem index="1" fileName="lbwj1" comment="录波2号文件1"/>
+		<fileItem index="2" fileName="lbwj2" comment="录波2号文件2"/>
+		<fileItem index="3" fileName="lbwj3" comment="录波2号文件3"/>
+		<fileItem index="4" fileName="lbwj4" comment="录波2号文件4"/>
+		<fileItem index="5" fileName="lbwj5" comment="录波2号文件5"/>
+		<fileItem index="6" fileName="lbwj6" comment="录波2号文件6"/>
+		<fileItem index="7" fileName="lbwj7" comment="录波2号文件7"/>
+		<fileItem index="8" fileName="lbwj8" comment="录波2号文件8"/>
+	</catalog>
+</config> 

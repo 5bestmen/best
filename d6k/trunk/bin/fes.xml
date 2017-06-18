@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<fes>
+	<resource>
+		<string>
+			<s lang="en">
+				<l OccNo="1"  Name="this is a string"/>
+				<l OccNo="2"  Name="this is a string"/>
+				<l OccNo="3"  Name="this is a string"/>
+			</s>
+			<s lang="zh-CN">
+				<l OccNo="1"  Name="这是一个字符串"/>
+				<l OccNo="2"  Name="这是一个字符串"/>
+				<l OccNo="3"  Name="这是一个字符串"/>
+			</s>
+		</string>
+	</resource>
+  <channel>
+    <c OccNo="1" ChannelName="1" DriverName="mbtcp" DriverType="1" Medium="0" IP="127.0.0.1" Port="502" COM="COM2" Baud="9600"/>
+    <c OccNo="2" ChannelName="500" DriverName="mbtcp" DriverType="1" Medium="0" IP="127.0.0.1" Port="502" COM="COM2" Baud="9600"/>
+  </channel>
+  <device>			
+    <d OccNo="1" NameOccNo="1000" ChannelOccNo="1" ModelOccNo="1" Type="1" DeviceAddr="1"/>
+    <d OccNo="2" NameOccNo="1001" ChannelOccNo="1" ModelOccNo="1" Type="1" DeviceAddr="1"/>
+    <d OccNo="3" NameOccNo="1000" ChannelOccNo="2" ModelOccNo="1" Type="1" DeviceAddr="1"/>
+    <d OccNo="4" NameOccNo="1001" ChannelOccNo="2" ModelOccNo="1" Type="1" DeviceAddr="1"/>
+  </device>
+	<data>
+	  <AIN>
+      <ai OccNo="1"  NameOccNo="10001" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="1"  Address="0x0000" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="2"  NameOccNo="10002" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="2"  Address="0x0001" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="3"  NameOccNo="10003" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="3"  Address="0x0002" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="4"  NameOccNo="10004" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="4"  Address="0x0003" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="5"  NameOccNo="10005" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="5"  Address="0x0004" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="6"  NameOccNo="10006" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="6"  Address="0x0005" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="7"  NameOccNo="10007" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="7"  Address="0x0006" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="8"  NameOccNo="10008" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="8"  Address="0x0007" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="9"  NameOccNo="10009" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="9"  Address="0x0008" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="10" NameOccNo="10010" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="10" Address="0x0009" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="11" NameOccNo="10026" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="1"  Address="0x0000" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="12" NameOccNo="10027" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="2"  Address="0x0001" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="13" NameOccNo="10028" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="3"  Address="0x0002" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="14" NameOccNo="10029" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="4"  Address="0x0003" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="15" NameOccNo="10030" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="5"  Address="0x0004" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="16" NameOccNo="10031" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="6"  Address="0x0005" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="17" NameOccNo="10032" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="7"  Address="0x0006" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="18" NameOccNo="10033" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="8"  Address="0x0007" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="19" NameOccNo="10034" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="9"  Address="0x0008" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="20" NameOccNo="10035" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="10" Address="0x0009" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="21" NameOccNo="10001" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="1"  Address="0x0000" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="22" NameOccNo="10002" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="2"  Address="0x0001" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="23" NameOccNo="10003" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="3"  Address="0x0002" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="24" NameOccNo="10004" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="4"  Address="0x0003" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="25" NameOccNo="10005" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="5"  Address="0x0004" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="26" NameOccNo="10006" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="6"  Address="0x0005" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="27" NameOccNo="10007" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="7"  Address="0x0006" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="28" NameOccNo="10008" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="8"  Address="0x0007" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="29" NameOccNo="10009" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="9"  Address="0x0008" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="30" NameOccNo="10010" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="10" Address="0x0009" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="31" NameOccNo="10026" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="1"  Address="0x0000" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="32" NameOccNo="10027" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="2"  Address="0x0001" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="33" NameOccNo="10028" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="3"  Address="0x0002" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="34" NameOccNo="10029" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="4"  Address="0x0003" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="35" NameOccNo="10030" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="5"  Address="0x0004" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="36" NameOccNo="10031" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="6"  Address="0x0005" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="37" NameOccNo="10032" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="7"  Address="0x0006" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="38" NameOccNo="10033" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="8"  Address="0x0007" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="39" NameOccNo="10034" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="9"  Address="0x0008" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ai OccNo="40" NameOccNo="10035" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="10" Address="0x0009" InitValue="100" DataSource="1" TransformType="1" TransformOccNo="1" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+    </AIN>
+    <DIN>
+      <di OccNo="1"  NameOccNo="20001" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="1"  Address="0x0001" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="2"  NameOccNo="20002" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="2"  Address="0x0002" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="3"  NameOccNo="20003" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="3"  Address="0x0003" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="4"  NameOccNo="20004" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="4"  Address="0x0004" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="5"  NameOccNo="20005" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="5"  Address="0x0005" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="6"  NameOccNo="20006" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="6"  Address="0x0006" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="7"  NameOccNo="20007" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="7"  Address="0x0007" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="8"  NameOccNo="20008" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="8"  Address="0x0008" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="9"  NameOccNo="20009" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="9"  Address="0x0009" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="10" NameOccNo="20010" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="10" Address="0x0010" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="11" NameOccNo="20001" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="1"  Address="0x0001" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="12" NameOccNo="20002" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="2"  Address="0x0002" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="13" NameOccNo="20003" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="3"  Address="0x0003" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="14" NameOccNo="20004" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="4"  Address="0x0004" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="15" NameOccNo="20005" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="5"  Address="0x0005" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="16" NameOccNo="20006" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="6"  Address="0x0006" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="17" NameOccNo="20007" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="7"  Address="0x0007" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="18" NameOccNo="20008" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="8"  Address="0x0008" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="19" NameOccNo="20009" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="9"  Address="0x0009" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="20" NameOccNo="20010" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="10" Address="0x0010" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="21" NameOccNo="20001" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="1"  Address="0x0001" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="22" NameOccNo="20002" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="2"  Address="0x0002" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="23" NameOccNo="20003" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="3"  Address="0x0003" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="24" NameOccNo="20004" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="4"  Address="0x0004" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="25" NameOccNo="20005" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="5"  Address="0x0005" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="26" NameOccNo="20006" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="6"  Address="0x0006" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="27" NameOccNo="20007" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="7"  Address="0x0007" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="28" NameOccNo="20008" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="8"  Address="0x0008" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="29" NameOccNo="20009" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="9"  Address="0x0009" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="30" NameOccNo="20010" ChannelOccNo="2" DeviceOccNo="3" BlockOccNo="10" Address="0x0010" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="31" NameOccNo="20001" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="1"  Address="0x0001" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="32" NameOccNo="20002" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="2"  Address="0x0002" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="33" NameOccNo="20003" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="3"  Address="0x0003" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="34" NameOccNo="20004" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="4"  Address="0x0004" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="35" NameOccNo="20005" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="5"  Address="0x0005" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="36" NameOccNo="20006" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="6"  Address="0x0006" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="37" NameOccNo="20007" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="7"  Address="0x0007" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="38" NameOccNo="20008" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="8"  Address="0x0008" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="39" NameOccNo="20009" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="9"  Address="0x0009" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <di OccNo="40" NameOccNo="20010" ChannelOccNo="2" DeviceOccNo="4" BlockOccNo="10" Address="0x0010" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+	  </DIN>	
+	  <AOUT>
+      <ao OccNo="1"  NameOccNo="10001" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="1"  Address="0x0002" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="2"  NameOccNo="10002" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="2"  Address="0x0003" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="3"  NameOccNo="10003" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="3"  Address="0x0004" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="4"  NameOccNo="10004" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="4"  Address="0x0005" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="5"  NameOccNo="10005" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="5"  Address="0x0006" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="6"  NameOccNo="10006" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="6"  Address="0x0007" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="7"  NameOccNo="10007" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="7"  Address="0x0008" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="8"  NameOccNo="10008" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="8"  Address="0x0009" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="9"  NameOccNo="10009" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="9"  Address="0x0010" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="10" NameOccNo="10010" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="10" Address="0x0011" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="11" NameOccNo="10011" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="11" Address="0x0012" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="12" NameOccNo="10012" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="12" Address="0x0013" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="13" NameOccNo="10013" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="13" Address="0x0014" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="14" NameOccNo="10014" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="14" Address="0x0015" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="15" NameOccNo="10015" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="15" Address="0x0016" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="16" NameOccNo="10016" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="16" Address="0x0017" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="17" NameOccNo="10017" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="17" Address="0x0018" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="18" NameOccNo="10018" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="18" Address="0x0019" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="19" NameOccNo="10019" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="19" Address="0x0020" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="20" NameOccNo="10020" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="20" Address="0x0021" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="21" NameOccNo="10021" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="21" Address="0x0022" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="22" NameOccNo="10022" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="22" Address="0x0023" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="23" NameOccNo="10023" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="23" Address="0x0024" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="24" NameOccNo="10024" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="24" Address="0x0025" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="25" NameOccNo="10025" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="0"  Address="0x0026" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="26" NameOccNo="10026" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="1"  Address="0x0027" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="27" NameOccNo="10027" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="2"  Address="0x0028" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="28" NameOccNo="10028" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="3"  Address="0x0029" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="29" NameOccNo="10029" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="4"  Address="0x0030" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="30" NameOccNo="10030" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="5"  Address="0x0031" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="31" NameOccNo="10031" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="6"  Address="0x0032" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="32" NameOccNo="10032" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="7"  Address="0x0033" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="33" NameOccNo="10033" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="8"  Address="0x0034" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="34" NameOccNo="10034" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="9"  Address="0x0035" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="35" NameOccNo="10035" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="10" Address="0x0036" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="36" NameOccNo="10036" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="11" Address="0x0037" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="37" NameOccNo="10037" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="12" Address="0x0038" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="38" NameOccNo="10038" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="13" Address="0x0039" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="39" NameOccNo="10039" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="14" Address="0x0040" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="40" NameOccNo="10040" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="15" Address="0x0041" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="41" NameOccNo="10041" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="16" Address="0x0042" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="42" NameOccNo="10042" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="17" Address="0x0043" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="43" NameOccNo="10043" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="18" Address="0x0044" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="44" NameOccNo="10044" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="19" Address="0x0045" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="45" NameOccNo="10045" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="20" Address="0x0046" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="46" NameOccNo="10046" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="21" Address="0x0047" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="47" NameOccNo="10047" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="22" Address="0x0048" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="48" NameOccNo="10048" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="23" Address="0x0049" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+      <ao OccNo="49" NameOccNo="10049" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="24" Address="0x0050" InitValue="100" DataSource="1" TransformType="0" TransformOccNo="2" RangeL="0" RangeH="1000" HighQua="1" LowQua="0" AlarmOccNo="1" ExpressOccNo="2" UnitNameOccNo="1001" PinLabelOccNo="1"/>
+    </AOUT>	
+	  <DOUT>
+      <do OccNo="1"  NameOccNo="20001" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="1"  Address="0x0001" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="2"  NameOccNo="20002" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="2"  Address="0x0002" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="3"  NameOccNo="20003" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="3"  Address="0x0003" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="4"  NameOccNo="20004" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="4"  Address="0x0004" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="5"  NameOccNo="20005" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="5"  Address="0x0005" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="6"  NameOccNo="20006" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="6"  Address="0x0006" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="7"  NameOccNo="20007" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="7"  Address="0x0007" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="8"  NameOccNo="20008" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="8"  Address="0x0008" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="9"  NameOccNo="20009" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="9"  Address="0x0009" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="10" NameOccNo="20010" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="10" Address="0x0010" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="11" NameOccNo="20011" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="11" Address="0x0011" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="12" NameOccNo="20012" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="12" Address="0x0012" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="13" NameOccNo="20013" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="13" Address="0x0013" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="14" NameOccNo="20014" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="14" Address="0x0014" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="15" NameOccNo="20015" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="15" Address="0x0015" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="16" NameOccNo="20016" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="16" Address="0x0016" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="17" NameOccNo="20017" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="17" Address="0x0017" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="18" NameOccNo="20018" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="18" Address="0x0018" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="19" NameOccNo="20019" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="19" Address="0x0019" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="20" NameOccNo="20020" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="20" Address="0x0020" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="21" NameOccNo="20021" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="21" Address="0x0021" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="22" NameOccNo="20022" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="22" Address="0x0022" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="23" NameOccNo="20023" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="23" Address="0x0023" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="24" NameOccNo="20024" ChannelOccNo="1" DeviceOccNo="1" BlockOccNo="24" Address="0x0024" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="25" NameOccNo="20025" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="0"  Address="0x0025" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="26" NameOccNo="20026" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="1"  Address="0x0026" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="27" NameOccNo="20027" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="2"  Address="0x0027" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="28" NameOccNo="20028" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="3"  Address="0x0028" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="29" NameOccNo="20029" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="4"  Address="0x0029" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="30" NameOccNo="20030" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="5"  Address="0x0030" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="31" NameOccNo="20031" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="6"  Address="0x0031" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="32" NameOccNo="20032" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="7"  Address="0x0032" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="33" NameOccNo="20033" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="8"  Address="0x0033" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="34" NameOccNo="20034" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="9"  Address="0x0034" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="35" NameOccNo="20035" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="10" Address="0x0035" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="36" NameOccNo="20036" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="11" Address="0x0036" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="37" NameOccNo="20037" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="12" Address="0x0037" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="38" NameOccNo="20038" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="13" Address="0x0038" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="39" NameOccNo="20039" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="14" Address="0x0039" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="40" NameOccNo="20040" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="15" Address="0x0040" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="41" NameOccNo="20041" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="16" Address="0x0041" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="42" NameOccNo="20042" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="17" Address="0x0042" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="43" NameOccNo="20043" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="18" Address="0x0043" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="44" NameOccNo="20044" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="19" Address="0x0044" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="45" NameOccNo="20045" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="20" Address="0x0045" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="46" NameOccNo="20046" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="21" Address="0x0046" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="47" NameOccNo="20047" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="22" Address="0x0047" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="48" NameOccNo="20048" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="23" Address="0x0048" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+      <do OccNo="49" NameOccNo="20049" ChannelOccNo="1" DeviceOccNo="2" BlockOccNo="24" Address="0x0049" DataSource="1" AlarmOccNo="1" ExpressOccNo="1" PinLabelOccNo="1"/>
+	  </DOUT>
+	</data>
+  <transform>
+    <linear>
+      <l OccNo="1" NameOccNo="8000" MaxRaw="1000" MinRaw="0" MaxScale="100" MinScale="1" Inverse="1" EnaleFactor="1" Gain="1" Offset="1"/>
+      <l OccNo="2" NameOccNo="8000" MaxRaw="1000" MinRaw="0" MaxScale="100" MinScale="1" Inverse="1" EnaleFactor="1" Gain="1" Offset="1"/>
+      <l OccNo="3" NameOccNo="8000" MaxRaw="1000" MinRaw="0" MaxScale="100" MinScale="1" Inverse="1" EnaleFactor="1" Gain="1" Offset="1"/>
+    </linear>
+    <nonlinear>
+      <nl OccNo="1" NameOccNo="9000" Count="4">
+        <p RawValue="0" ScaleValue="0"/>
+        <p RawValue="1" ScaleValue="50"/>
+        <p RawValue="2" ScaleValue="160"/>
+        <p RawValue="3" ScaleValue="390"/>
+      </nl>
+      <nl OccNo="2" NameOccNo="9001" Count="4">
+        <p RawValue="0" ScaleValue="0"/>
+        <p RawValue="2" ScaleValue="50"/>
+        <p RawValue="4" ScaleValue="160"/>
+        <p RawValue="6" ScaleValue="390"/>
+      </nl>
+    </nonlinear>
+  </transform>
+  <alarm>
+  	<ain_alarm> 
+  		<aa OccNo="1" HH="1000" H="500" L="100" LL="0" GStart="1" GLimit="1" DeadBandType="1" DeadBand="100"/>
+  		<aa OccNo="2" HH="1000" H="500" L="100" LL="0" GStart="1" GLimit="1" DeadBandType="1" DeadBand="100"/>
+  		<aa OccNo="3" HH="1000" H="500" L="100" LL="0" GStart="1" GLimit="1" DeadBandType="1" DeadBand="100"/>
+		</ain_alarm>
+		<din_alarm> 
+			<da OccNo="1"/>
+			<da OccNo="2"/>
+			<da OccNo="3"/>
+		</din_alarm>
+  </alarm>
+  <express>
+  </express>
+</fes> 
+

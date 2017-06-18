@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.InverterReportTable" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="psrID" type="java.lang.String" not-null="true"/>
+        <property name="date" column="sdate" type="java.util.Date" not-null="true"/>
+        <property name="electricity" type="java.lang.Double"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="100%" x="963.084" y="0" xmlns="http://www.w3.org/2000/svg" viewBox="913.084 -50 2334.26 1003.63" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://iec.ch/TC57/2005/SVG-schema#">
+    <defs>
+        <linearGradient id="MyGradient_9249" y1="52.5" x1="1256.67" y2="52.5" gradientUnits="userSpaceOnUse" x2="1923.67">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_5138" y1="292.69927" x1="1021.67" y2="306.29473" gradientUnits="userSpaceOnUse" x2="1021.67">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_24599" y1="292.69927" x1="2175.67" y2="306.29473" gradientUnits="userSpaceOnUse" x2="2175.67">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <symbol viewBox="0 0 109.93 53.1882" id="2805@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2805" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2805"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="2805@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2805" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2805"/>
+        </symbol>
+        <symbol viewBox="0 0 109.93 53.1882" id="2831@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2831" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2831"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="2831@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2831" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2831"/>
+        </symbol>
+        <symbol viewBox="0 0 109.93 53.1882" id="2883@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2883" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2883"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="2883@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2883" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2883"/>
+        </symbol>
+        <symbol viewBox="0 0 30.7008 110.838" id="2948@0">
+            <circle visibility="hidden" cx="14.1804" cy="108.338" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2948" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="80.893" x1="14.1804" y2="107.011" x2="14.1804"/>
+            <rect width="25.7008" x="2.5" y="31.8492" height="48.6076" style="stroke-width:1;stroke:rgb(0,255,0);fill:none"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="5.272" x1="14.1804" y2="31.392" x2="14.1804"/>
+            <circle visibility="hidden" cx="14.1804" cy="2.5" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2948"/>
+        </symbol>
+        <symbol viewBox="0 0 30.7008 110.838" id="2948@1">
+            <circle visibility="hidden" cx="14.1804" cy="108.338" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2948" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="80.457" x1="14.1804" y2="107.011" x2="14.1804"/>
+            <rect width="25.7008" x="2.5" y="31.3915" height="49.065" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="4.837" x1="14.1804" y2="31.392" x2="14.1804"/>
+            <circle visibility="hidden" cx="14.1804" cy="2.5" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2948"/>
+        </symbol>
+        <symbol viewBox="0 0 109.93 53.1882" id="2818@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2818" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="2818"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="2818@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2818" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="2818"/>
+        </symbol>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_6190">
+            <path fill="none" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5"/>
+        </marker>
+        <linearGradient id="MyGradient_3171" y1="542.69927" x1="1021.67" y2="556.29473" gradientUnits="userSpaceOnUse" x2="1021.67">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_18311" y1="542.69927" x1="2175.67" y2="556.29473" gradientUnits="userSpaceOnUse" x2="2175.67">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <symbol viewBox="0 0 109.93 53.1882" id="3093@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3093" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3093"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="3093@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3093" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3093"/>
+        </symbol>
+        <symbol viewBox="0 0 30.7008 110.838" id="3106@0">
+            <circle visibility="hidden" cx="14.1804" cy="108.338" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3106" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="80.893" x1="14.1804" y2="107.011" x2="14.1804"/>
+            <rect width="25.7008" x="2.5" y="31.8492" height="48.6076" style="stroke-width:1;stroke:rgb(0,255,0);fill:none"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="5.272" x1="14.1804" y2="31.392" x2="14.1804"/>
+            <circle visibility="hidden" cx="14.1804" cy="2.5" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3106"/>
+        </symbol>
+        <symbol viewBox="0 0 30.7008 110.838" id="3106@1">
+            <circle visibility="hidden" cx="14.1804" cy="108.338" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3106" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="80.457" x1="14.1804" y2="107.011" x2="14.1804"/>
+            <rect width="25.7008" x="2.5" y="31.3915" height="49.065" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="4.837" x1="14.1804" y2="31.392" x2="14.1804"/>
+            <circle visibility="hidden" cx="14.1804" cy="2.5" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3106"/>
+        </symbol>
+        <symbol viewBox="0 0 109.93 53.1882" id="3120@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3120" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3120"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="3120@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3120" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3120"/>
+        </symbol>
+        <symbol viewBox="0 0 109.93 53.1882" id="3134@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3134" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3134"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="3134@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3134" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3134"/>
+        </symbol>
+        <symbol viewBox="0 0 109.93 53.1882" id="3149@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3149" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3149"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="3149@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3149" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3149"/>
+        </symbol>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_18240">
+            <path fill="none" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5"/>
+        </marker>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_2900">
+            <path fill="none" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5"/>
+        </marker>
+        <symbol viewBox="0 0 109.93 53.1882" id="3164@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3164" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3164"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="3164@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3164" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3164"/>
+        </symbol>
+        <symbol viewBox="0 0 109.93 53.1882" id="3179@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3179" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3179"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="3179@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3179" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3179"/>
+        </symbol>
+        <symbol viewBox="0 0 109.93 53.1882" id="3193@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3193" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3193"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="3193@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3193" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3193"/>
+        </symbol>
+        <symbol viewBox="0 0 30.7008 110.838" id="3207@0">
+            <circle visibility="hidden" cx="14.1804" cy="108.338" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3207" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="80.893" x1="14.1804" y2="107.011" x2="14.1804"/>
+            <rect width="25.7008" x="2.5" y="31.8492" height="48.6076" style="stroke-width:1;stroke:rgb(0,255,0);fill:none"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="5.272" x1="14.1804" y2="31.392" x2="14.1804"/>
+            <circle visibility="hidden" cx="14.1804" cy="2.5" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3207"/>
+        </symbol>
+        <symbol viewBox="0 0 30.7008 110.838" id="3207@1">
+            <circle visibility="hidden" cx="14.1804" cy="108.338" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3207" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="80.457" x1="14.1804" y2="107.011" x2="14.1804"/>
+            <rect width="25.7008" x="2.5" y="31.3915" height="49.065" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="4.837" x1="14.1804" y2="31.392" x2="14.1804"/>
+            <circle visibility="hidden" cx="14.1804" cy="2.5" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3207"/>
+        </symbol>
+        <symbol viewBox="0 0 109.93 53.1882" id="3220@0">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3220" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="80.22" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.9505" y="2.5" height="48.1882" style="stroke-width:1;stroke:rgb(0,255,0);fill:none" transform="translate(55.69,26.5941) rotate(270) translate(-55.69,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(0,255,0);fill:none;" y1="27.7541" x1="5.25" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(0,255,0);fill:none;" r="1.5" ownerid="3220"/>
+        </symbol>
+        <symbol viewBox="0 -0.2268 109.93 53.415" id="3220@1">
+            <circle visibility="hidden" cx="107.43" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3220" sno="1"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="79.78" y2="27.7541" x2="106.11"/>
+            <rect width="25.479" x="42.7205" y="2.273199999999999" height="48.6418" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,0,0);" transform="translate(55.46,26.5941) rotate(270) translate(-55.46,-26.5941)"/>
+            <line style="stroke-width:2;stroke:rgb(255,0,0);fill:none;" y1="27.7541" x1="4.82" y2="27.7541" x2="31.14"/>
+            <circle visibility="hidden" cx="2.5" cy="27.7541" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" r="1.5" ownerid="3220"/>
+        </symbol>
+        <linearGradient id="MyGradient_12622" y1="752.69927" x1="2175.67" y2="766.29473" gradientUnits="userSpaceOnUse" x2="2175.67">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_29935" y1="752.69927" x1="1021.67" y2="766.29473" gradientUnits="userSpaceOnUse" x2="1021.67">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_9421">
+            <path fill="none" stroke="rgb(0,128,0)" d="M 0 -4.5 L 12 0 L 0 4.5"/>
+        </marker>
+    </defs>
+    <rect width="3813.5136" flags="GDF" x="-308.0868" y="-903.634" fill="rgb(0,0,0)" height="2710.902" maxid="3241" type="接线图" id="0" owner="DA测试站1#DTU" rule="1"/>
+    <g id="共享层">
+        <g id="619">
+            <a xlink:href="sys/一次接线索引图.svg">
+                <rect width="667" x="1256.67" y="0" height="105" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_9249)"/>
+                <polygon points="1256.67,0 1256.67,105 1257.67,104 1257.67,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1256.67,0 1923.67,0 1922.67,1 1257.67,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1923.67,0 1922.67,1 1922.67,104 1923.67,105" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="1922.67,104 1923.67,105 1256.67,105 1257.67,104" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="1465.17" y="84.5" font-family="黑体" fill="rgb(128,0,0)" font-size="64">主接线图</text>
+            </a>
+        </g>
+        <g id="1705">
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M 1024.56 299.499 L 1168.77 299.499">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Ms1#1"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="1719">
+            <path style="stroke-width:0;fill:url(#MyGradient_5138)" d="M 963.084 292.699 H1080.26 V306.295 H963.084 Z" transform="translate(1021.67,299.497) rotate(270) translate(-1021.67,-299.497)">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Ms1#1"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="1818">
+            <path style="stroke-width:0;fill:url(#MyGradient_24599)" d="M 2117.08 292.699 H2234.26 V306.295 H2117.08 Z" transform="translate(2175.67,299.497) rotate(270) translate(-2175.67,-299.497)">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Ms2#1"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="1949">
+            <text x="1218.21" y="263.55" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">1</text>
+        </g>
+        <g id="1950">
+            <text x="1966.22" y="262.55" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">5</text>
+        </g>
+        <g id="1951">
+            <text x="1398.79" y="265.55" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">2</text>
+        </g>
+        <g id="1961">
+            <text x="1714.45" y="378.239" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">3</text>
+        </g>
+        <g id="2805">
+            <use width="109.9299999999998" x="1166.93" y="271.4249" height="53.18820000000005" xlink:href="#2805@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux1"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux1Kg value"/>
+            </metadata>
+        </g>
+        <g id="2831">
+            <use width="109.9299999999998" x="1531.93" y="273.4249" height="53.18820000000005" xlink:href="#2831@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux4"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux4Kg value"/>
+            </metadata>
+        </g>
+        <g id="2883">
+            <use width="109.9299999999998" x="1916.93" y="272.4249" height="53.18820000000005" xlink:href="#2883@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux5"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux5Kg value"/>
+            </metadata>
+        </g>
+        <g id="2948">
+            <use width="30.70080000000007" x="1766.0296" y="297.377" height="110.838" xlink:href="#2948@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux3"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux3Kg value"/>
+            </metadata>
+        </g>
+        <g id="3001">
+            <text x="1569.84" y="265.99" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">4</text>
+        </g>
+        <g id="3003">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="299.634" x1="1274.67" y2="299.634" x2="1351.33"/>
+        </g>
+        <g id="2818">
+            <use width="109.9299999999998" x="1348.93" y="273.4249" height="53.18820000000005" xlink:href="#2818@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux2"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux2Kg value"/>
+            </metadata>
+        </g>
+        <g id="3081">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="301.634" x1="1459.33" y2="301.634" x2="1536"/>
+        </g>
+        <g id="3082">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="300.634" x1="1641.33" y2="300.634" x2="1922"/>
+        </g>
+        <g id="3083">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_6190);fill:none;" y1="405.634" x1="1780.33" y2="443.634" x2="1780.33"/>
+        </g>
+        <g id="3084">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="300.634" x1="2025.33" y2="300.634" x2="2173.33"/>
+        </g>
+        <g id="3085">
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M 1024.56 549.499 L 1168.77 549.499">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Ms1#1"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="3086">
+            <path style="stroke-width:0;fill:url(#MyGradient_3171)" d="M 963.084 542.699 H1080.26 V556.295 H963.084 Z" transform="translate(1021.67,549.497) rotate(270) translate(-1021.67,-549.497)">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Ms1#1"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="3087">
+            <text x="1956.22" y="512.55" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999994">10</text>
+        </g>
+        <g id="3088">
+            <text x="1570.34" y="515.99" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">8</text>
+        </g>
+        <g id="3089">
+            <text x="1714.95" y="628.239" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">9</text>
+        </g>
+        <g id="3090">
+            <text x="1398.29" y="515.55" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999994">7</text>
+        </g>
+        <g id="3091">
+            <path style="stroke-width:0;fill:url(#MyGradient_18311)" d="M 2117.08 542.699 H2234.26 V556.295 H2117.08 Z" transform="translate(2175.67,549.497) rotate(270) translate(-2175.67,-549.497)">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Ms2#1"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="3092">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="550.634" x1="2025.33" y2="550.634" x2="2173.33"/>
+        </g>
+        <g id="3093">
+            <use width="109.9299999999998" x="1916.93" y="522.4249" height="53.18820000000005" xlink:href="#3093@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux10"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux10Kg value"/>
+            </metadata>
+        </g>
+        <g id="3106">
+            <use width="30.70080000000007" x="1766.0296" y="547.377" height="110.8380000000001" xlink:href="#3106@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux9"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux9Kg value"/>
+            </metadata>
+        </g>
+        <g id="3119">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="550.634" x1="1641.33" y2="550.634" x2="1922"/>
+        </g>
+        <g id="3120">
+            <use width="109.9299999999998" x="1531.93" y="523.4249" height="53.18820000000005" xlink:href="#3120@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux8"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux8Kg value"/>
+            </metadata>
+        </g>
+        <g id="3133">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="551.634" x1="1459.33" y2="551.634" x2="1536"/>
+        </g>
+        <g id="3134">
+            <use width="109.9299999999998" x="1348.93" y="523.4249" height="53.18820000000005" xlink:href="#3134@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux7"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux7Kg value"/>
+            </metadata>
+        </g>
+        <g id="3147">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="549.634" x1="1274.67" y2="549.634" x2="1351.33"/>
+        </g>
+        <g id="3148">
+            <text x="1214.71" y="513.55" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="36.99999999999994">6</text>
+        </g>
+        <g id="3149">
+            <use width="109.9299999999998" x="1166.93" y="521.4249" height="53.18820000000005" xlink:href="#3149@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux6"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux6Kg value"/>
+            </metadata>
+        </g>
+        <g id="3162">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_18240);fill:none;" y1="655.634" x1="1780.33" y2="693.634" x2="1780.33"/>
+        </g>
+        <g id="3163">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_2900);fill:none;" y1="865.634" x1="1780.33" y2="903.634" x2="1780.33"/>
+        </g>
+        <g id="3164">
+            <use width="109.9299999999998" x="1166.93" y="731.4249" height="53.18820000000005" xlink:href="#3164@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux11"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux11Kg value"/>
+            </metadata>
+        </g>
+        <g id="3177">
+            <text x="1208.71" y="723.55" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">11</text>
+        </g>
+        <g id="3178">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="759.634" x1="1274.67" y2="759.634" x2="1351.33"/>
+        </g>
+        <g id="3179">
+            <use width="109.9299999999998" x="1348.93" y="733.4249" height="53.18820000000005" xlink:href="#3179@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux12"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux12Kg value"/>
+            </metadata>
+        </g>
+        <g id="3192">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="761.634" x1="1459.33" y2="761.634" x2="1536"/>
+        </g>
+        <g id="3193">
+            <use width="109.9299999999998" x="1531.93" y="733.4249" height="53.18820000000005" xlink:href="#3193@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux13"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux13Kg value"/>
+            </metadata>
+        </g>
+        <g id="3206">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="760.634" x1="1641.33" y2="760.634" x2="1922"/>
+        </g>
+        <g id="3207">
+            <use width="30.70080000000007" x="1766.0296" y="757.377" height="110.8380000000001" xlink:href="#3207@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux14"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux14Kg value"/>
+            </metadata>
+        </g>
+        <g id="3220">
+            <use width="109.9299999999998" x="1916.93" y="732.4249" height="53.18820000000005" xlink:href="#3220@0"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Kdtux15"/>
+                <cge:Meas_Ref  ObjectID="break Kdtux15Kg value"/>
+            </metadata>
+        </g>
+        <g id="3233">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" y1="760.634" x1="2025.33" y2="760.634" x2="2173.33"/>
+        </g>
+        <g id="3234">
+            <path style="stroke-width:0;fill:url(#MyGradient_12622)" d="M 2117.08 752.699 H2234.26 V766.295 H2117.08 Z" transform="translate(2175.67,759.497) rotate(270) translate(-2175.67,-759.497)">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Ms2#1"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="3235">
+            <text x="1389.29" y="725.55" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">12</text>
+        </g>
+        <g id="3236">
+            <text x="1704.45" y="838.239" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">14</text>
+        </g>
+        <g id="3237">
+            <text x="1560.84" y="725.99" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">13</text>
+        </g>
+        <g id="3238">
+            <text x="1956.72" y="722.55" font-family="黑体" fill="rgb(255,255,255)" font-weight="bold" font-size="37">15</text>
+        </g>
+        <g id="3239">
+            <path style="stroke-width:0;fill:url(#MyGradient_29935)" d="M 963.084 752.699 H1080.26 V766.295 H963.084 Z" transform="translate(1021.67,759.497) rotate(270) translate(-1021.67,-759.497)">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Ms1#1"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="3240">
+            <path style="stroke-width:1;stroke:rgb(0,128,0);fill:none;" d="M 1024.56 759.499 L 1168.77 759.499">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Ms1#1"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="3241">
+            <line style="stroke-width:1;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_9421);fill:none;" y1="615.634" x1="1780.33" y2="653.634" x2="1780.33"/>
+        </g>
+    </g>
+    <g id="SCD层"/>
+    <g>
+        <circle fill="yellow" cx="1274.36" cy="299.179" stroke="green" id="node_0" r="2.25"/>
+        <circle fill="yellow" cx="1169.43" cy="299.179" stroke="green" id="node_1" r="2.25"/>
+        <circle fill="yellow" cx="1639.36" cy="301.179" stroke="green" id="node_2" r="2.25"/>
+        <circle fill="yellow" cx="1534.43" cy="301.179" stroke="green" id="node_3" r="2.25"/>
+        <circle fill="yellow" cx="2024.36" cy="300.179" stroke="green" id="node_4" r="2.25"/>
+        <circle fill="yellow" cx="1919.43" cy="300.179" stroke="green" id="node_5" r="2.25"/>
+        <circle fill="yellow" cx="1780.21" cy="405.715" stroke="green" id="node_6" r="2.25"/>
+        <circle fill="yellow" cx="1780.21" cy="299.8770000000001" stroke="green" id="node_7" r="2.25"/>
+        <circle fill="yellow" cx="1456.36" cy="301.179" stroke="green" id="node_8" r="2.25"/>
+        <circle fill="yellow" cx="1351.43" cy="301.179" stroke="green" id="node_9" r="2.25"/>
+        <circle fill="yellow" cx="2024.36" cy="550.1790000000001" stroke="green" id="node_10" r="2.25"/>
+        <circle fill="yellow" cx="1919.43" cy="550.1790000000001" stroke="green" id="node_11" r="2.25"/>
+        <circle fill="yellow" cx="1780.21" cy="655.715" stroke="green" id="node_12" r="2.25"/>
+        <circle fill="yellow" cx="1780.21" cy="549.877" stroke="green" id="node_13" r="2.25"/>
+        <circle fill="yellow" cx="1639.36" cy="551.1790000000001" stroke="green" id="node_14" r="2.25"/>
+        <circle fill="yellow" cx="1534.43" cy="551.1790000000001" stroke="green" id="node_15" r="2.25"/>
+        <circle fill="yellow" cx="1456.36" cy="551.1790000000001" stroke="green" id="node_16" r="2.25"/>
+        <circle fill="yellow" cx="1351.43" cy="551.1790000000001" stroke="green" id="node_17" r="2.25"/>
+        <circle fill="yellow" cx="1274.36" cy="549.1790000000001" stroke="green" id="node_18" r="2.25"/>
+        <circle fill="yellow" cx="1169.43" cy="549.1790000000001" stroke="green" id="node_19" r="2.25"/>
+        <circle fill="yellow" cx="1274.36" cy="759.179" stroke="green" id="node_20" r="2.25"/>
+        <circle fill="yellow" cx="1169.43" cy="759.179" stroke="green" id="node_21" r="2.25"/>
+        <circle fill="yellow" cx="1456.36" cy="761.179" stroke="green" id="node_22" r="2.25"/>
+        <circle fill="yellow" cx="1351.43" cy="761.179" stroke="green" id="node_23" r="2.25"/>
+        <circle fill="yellow" cx="1639.36" cy="761.179" stroke="green" id="node_24" r="2.25"/>
+        <circle fill="yellow" cx="1534.43" cy="761.179" stroke="green" id="node_25" r="2.25"/>
+        <circle fill="yellow" cx="1780.21" cy="865.7147" stroke="green" id="node_26" r="2.25"/>
+        <circle fill="yellow" cx="1780.21" cy="759.877" stroke="green" id="node_27" r="2.25"/>
+        <circle fill="yellow" cx="2024.36" cy="760.179" stroke="green" id="node_28" r="2.25"/>
+        <circle fill="yellow" cx="1919.43" cy="760.179" stroke="green" id="node_29" r="2.25"/>
+    </g>
+</svg>

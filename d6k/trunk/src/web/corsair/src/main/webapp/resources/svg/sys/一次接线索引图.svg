@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="100%" x="0" y="0" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 1298.8 903.698" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://iec.ch/TC57/2005/SVG-schema#">
+    <defs>
+        <linearGradient id="MyGradient_17888" y1="206.305" x1="482.684" y2="206.305" gradientUnits="userSpaceOnUse" x2="769.684">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_28492" y1="512.154" x1="65.47999999999999" y2="512.154" gradientUnits="userSpaceOnUse" x2="352.48">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_9882" y1="202.037" x1="896.49" y2="202.037" gradientUnits="userSpaceOnUse" x2="1183.49">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_28464" y1="579.7190000000001" x1="894" y2="579.7190000000001" gradientUnits="userSpaceOnUse" x2="1181">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_28259" y1="262.037" x1="896.49" y2="262.037" gradientUnits="userSpaceOnUse" x2="1183.49">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_14491" y1="643.3200000000001" x1="897.5999999999999" y2="643.3200000000001" gradientUnits="userSpaceOnUse" x2="1184.6">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_19054" y1="707.062" x1="897.6700000000001" y2="707.062" gradientUnits="userSpaceOnUse" x2="1184.67">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_11184" y1="516.034" x1="897.5999999999999" y2="516.034" gradientUnits="userSpaceOnUse" x2="1184.6">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_19240" y1="514.885" x1="482.622" y2="514.885" gradientUnits="userSpaceOnUse" x2="769.622">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_19638" y1="640.876" x1="481.7480000000001" y2="640.876" gradientUnits="userSpaceOnUse" x2="768.7480000000001">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_27422" y1="577.778" x1="482.81" y2="577.778" gradientUnits="userSpaceOnUse" x2="769.81">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_7642" y1="702.218" x1="480.3390000000001" y2="702.218" gradientUnits="userSpaceOnUse" x2="767.3390000000001">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_13882" y1="582.154" x1="65.47999999999999" y2="582.154" gradientUnits="userSpaceOnUse" x2="352.48">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_3087" y1="718.154" x1="65.47999999999999" y2="718.154" gradientUnits="userSpaceOnUse" x2="352.48">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_23464" y1="648.154" x1="65.47999999999999" y2="648.154" gradientUnits="userSpaceOnUse" x2="352.48">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_12229" y1="201.735" x1="67.68899999999999" y2="201.735" gradientUnits="userSpaceOnUse" x2="354.689">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_2083" y1="264.305" x1="482.684" y2="264.305" gradientUnits="userSpaceOnUse" x2="769.684">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_26775" y1="261.735" x1="67.68899999999999" y2="261.735" gradientUnits="userSpaceOnUse" x2="354.689">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_4994" y1="321.735" x1="67.68899999999999" y2="321.735" gradientUnits="userSpaceOnUse" x2="354.689">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+        <linearGradient id="MyGradient_21276" y1="324.305" x1="482.684" y2="324.305" gradientUnits="userSpaceOnUse" x2="769.684">
+            <stop offset="0%" stop-color="#000000"/>
+            <stop offset="50%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#000000"/>
+        </linearGradient>
+    </defs>
+    <rect width="3596.409000000001" flags="GDF" x="-1198.803" y="-803.698" fill="rgb(0,0,0)" height="2411.094" maxid="451" type="索引图" id="0" owner="卫星钟" rule="1"/>
+    <g id="第1层">
+        <g id="160">
+            <rect width="348.544" x="427.328" y="183.683" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="357">
+            <rect width="348.544" x="842.318" y="684.439" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="348">
+            <rect width="348.544" x="842.2380000000001" y="620.698" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="312">
+            <rect width="348.544" x="842.2380000000001" y="557.097" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="372">
+            <rect width="348.544" x="842.2380000000001" y="493.412" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="345">
+            <rect width="348.544" x="841.1279999999999" y="239.415" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="309">
+            <rect width="348.544" x="841.1279999999999" y="179.415" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="442">
+            <rect width="348.544" x="427.328" y="241.683" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="451">
+            <rect width="348.544" x="430.328" y="303.683" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="378">
+            <rect width="348.544" x="427.266" y="492.263" height="45" style="stroke-width:0;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="391">
+            <rect width="348.544" x="427.454" y="555.155" height="45" style="stroke-width:0;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="386">
+            <rect width="348.544" x="428.075" y="618.698" height="45" style="stroke-width:0;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="396">
+            <rect width="348.544" x="424.982" y="679.596" height="45" style="stroke-width:0;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="424">
+            <rect width="348.544" x="10.12300000000002" y="695.531" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="426">
+            <rect width="348.544" x="10.12300000000002" y="625.531" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="420">
+            <rect width="348.544" x="10.12300000000002" y="559.531" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="303">
+            <rect width="348.544" x="10.12300000000002" y="489.531" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="445">
+            <rect width="348.544" x="12.59700000000001" y="299.661" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="443">
+            <rect width="348.544" x="12.59700000000001" y="239.661" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="430">
+            <rect width="348.544" x="15.34400000000002" y="179.661" height="45" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="408">
+            <rect width="365.706" x="4.215000000000003" y="121.674" height="682.024" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="432">
+            <rect width="365.706" x="423.094" y="122.674" height="304.382" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="433">
+            <rect width="365.706" x="423.094" y="426.92" height="368.566" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="409">
+            <rect width="365.706" x="833.097" y="122.674" height="304.382" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="410">
+            <rect width="365.706" x="833.097" y="426.92" height="368.566" style="stroke-width:1;stroke:rgb(8,109,1);"/>
+        </g>
+        <g id="3">
+            <a xlink:href="../系统站/电源点接线图.svg">
+                <rect width="287" x="482.684" y="188.805" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_17888)"/>
+                <polygon points="482.684,188.805 482.684,223.805 483.684,222.805 483.684,189.805" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="482.684,188.805 769.684,188.805 768.684,189.805 483.684,189.805" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="769.684,188.805 768.684,189.805 768.684,222.805 769.684,223.805" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="768.684,222.805 769.684,223.805 482.684,223.805 483.684,222.805" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="594.184" y="216.805" font-family="黑体" fill="rgb(128,0,0)" font-size="21">电源点</text>
+            </a>
+        </g>
+        <g id="147">
+            <image width="51px" x="433.328" y="189.683" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="292">
+            <a xlink:href="../sys/主目录.svg">
+                <rect width="1197.676" x="0" y="0" height="100" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(170,170,170);"/>
+                <polygon points="0,0 0,100 1,99 1,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="0,0 1197.68,0 1196.68,1 1,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1197.68,0 1196.68,1 1196.68,99 1197.68,100" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="1196.68,99 1197.68,100 0,100 1,99" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="376.338" y="82" font-family="Song [Ibm_aix]" fill="rgb(85,0,0)" font-weight="bold" font-size="64">一次接线图目录</text>
+            </a>
+        </g>
+        <g id="293"/>
+        <g id="301">
+            <a xlink:href="../偃师站/偃师变.svg">
+                <rect width="287" x="65.47999999999999" y="494.654" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_28492)"/>
+                <polygon points="65.48,494.654 65.48,529.654 66.48,528.654 66.48,495.654" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="65.48,494.654 352.48,494.654 351.48,495.654 66.48,495.654" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="352.48,494.654 351.48,495.654 351.48,528.654 352.48,529.654" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="351.48,528.654 352.48,529.654 65.48,529.654 66.48,528.654" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="154.98" y="522.654" font-family="黑体" fill="rgb(128,0,0)" font-size="21">偃师变电站</text>
+            </a>
+        </g>
+        <g id="302">
+            <image width="51px" x="16.1237" y="495.531" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="307">
+            <a xlink:href="../4#分接箱/4#分接箱.svg">
+                <rect width="287" x="896.49" y="184.537" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_9882)"/>
+                <polygon points="896.49,184.537 896.49,219.537 897.49,218.537 897.49,185.537" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="896.49,184.537 1183.49,184.537 1182.49,185.537 897.49,185.537" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1183.49,184.537 1182.49,185.537 1182.49,218.537 1183.49,219.537" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="1182.49,218.537 1183.49,219.537 896.49,219.537 897.49,218.537" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="963.99" y="212.537" font-family="黑体" fill="rgb(128,0,0)" font-size="21">偃康线4#分接箱</text>
+            </a>
+        </g>
+        <g id="308">
+            <image width="51px" x="847.13" y="185.415" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="310">
+            <a xlink:href="../偃康线9#槐化路分支/偃康线9#槐化路分支.svg">
+                <rect width="287" x="894" y="562.2190000000001" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_28464)"/>
+                <polygon points="894,562.219 894,597.219 895,596.219 895,563.219" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="894,562.219 1181,562.219 1180,563.219 895,563.219" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1181,562.219 1180,563.219 1180,596.219 1181,597.219" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="1180,596.219 1181,597.219 894,597.219 895,596.219" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="950.5" y="590.2190000000001" font-family="黑体" fill="rgb(128,0,0)" font-size="21">偃康线9#槐化分支</text>
+            </a>
+        </g>
+        <g id="311">
+            <image width="51px" x="848.2430000000001" y="563.097" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="343">
+            <a xlink:href="../8#分接箱/8#分接箱.svg">
+                <rect width="287" x="896.49" y="244.537" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_28259)"/>
+                <polygon points="896.49,244.537 896.49,279.537 897.49,278.537 897.49,245.537" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="896.49,244.537 1183.49,244.537 1182.49,245.537 897.49,245.537" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1183.49,244.537 1182.49,245.537 1182.49,278.537 1183.49,279.537" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="1182.49,278.537 1183.49,279.537 896.49,279.537 897.49,278.537" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="963.99" y="272.537" font-family="黑体" fill="rgb(128,0,0)" font-size="21">偃康线8#分接箱</text>
+            </a>
+        </g>
+        <g id="344">
+            <image width="51px" x="847.13" y="245.415" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="346">
+            <a xlink:href="../商兴线33#开关站/商兴线33#开关站.svg">
+                <rect width="287" x="897.5999999999999" y="625.8200000000001" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_14491)"/>
+                <polygon points="897.6,625.82 897.6,660.82 898.6,659.82 898.6,626.82" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="897.6,625.82 1184.6,625.82 1183.6,626.82 898.6,626.82" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1184.6,625.82 1183.6,626.82 1183.6,659.82 1184.6,660.82" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="1183.6,659.82 1184.6,660.82 897.6,660.82 898.6,659.82" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="959.5999999999999" y="653.8200000000001" font-family="黑体" fill="rgb(128,0,0)" font-size="21">商兴线33#开关站</text>
+            </a>
+        </g>
+        <g id="347">
+            <image width="51px" x="848.2430000000001" y="626.698" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="355">
+            <a xlink:href="../商兴线38#开关站/商兴线38#开关站.svg">
+                <rect width="287" x="897.6700000000001" y="689.562" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_19054)"/>
+                <polygon points="897.67,689.562 897.67,724.562 898.67,723.562 898.67,690.562" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="897.67,689.562 1184.67,689.562 1183.67,690.562 898.67,690.562" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1184.67,689.562 1183.67,690.562 1183.67,723.562 1184.67,724.562" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="1183.67,723.562 1184.67,724.562 897.67,724.562 898.67,723.562" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="959.6700000000001" y="717.562" font-family="黑体" fill="rgb(128,0,0)" font-size="21">商兴线38#开关站</text>
+            </a>
+        </g>
+        <g id="356">
+            <image width="51px" x="848.314" y="690.439" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="370">
+            <a xlink:href="../工东线3#窑头分支/工东线3#窑头分支.svg">
+                <rect width="287" x="897.5999999999999" y="498.534" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_11184)"/>
+                <polygon points="897.6,498.534 897.6,533.534 898.6,532.534 898.6,499.534" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="897.6,498.534 1184.6,498.534 1183.6,499.534 898.6,499.534" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1184.6,498.534 1183.6,499.534 1183.6,532.534 1184.6,533.534" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="1183.6,532.534 1184.6,533.534 897.6,533.534 898.6,532.534" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="954.0999999999999" y="526.534" font-family="黑体" fill="rgb(128,0,0)" font-size="21">工东线3#窑头分支</text>
+            </a>
+        </g>
+        <g id="371">
+            <image width="51px" x="848.2430000000001" y="499.412" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="376">
+            <a xlink:href="../工东线29#杏园分支/工东线29#杏园分支.svg">
+                <rect width="287" x="482.622" y="497.385" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_19240)"/>
+                <polygon points="482.622,497.385 482.622,532.385 483.622,531.385 483.622,498.385" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="482.622,497.385 769.622,497.385 768.622,498.385 483.622,498.385" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="769.622,497.385 768.622,498.385 768.622,531.385 769.622,532.385" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="768.622,531.385 769.622,532.385 482.622,532.385 483.622,531.385" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="533.622" y="525.385" font-family="黑体" fill="rgb(128,0,0)" font-size="21">工东线29#杏园分支</text>
+            </a>
+        </g>
+        <g id="377">
+            <image width="51px" x="433.266" y="498.263" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="387">
+            <image width="51px" x="432.392" y="624.254" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="388">
+            <a xlink:href="../工东线34#开关站/工东线34#开关站.svg">
+                <rect width="287" x="481.7480000000001" y="623.376" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_19638)"/>
+                <polygon points="481.748,623.376 481.748,658.376 482.748,657.376 482.748,624.376" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="481.748,623.376 768.748,623.376 767.748,624.376 482.748,624.376" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="768.748,623.376 767.748,624.376 767.748,657.376 768.748,658.376" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="767.748,657.376 768.748,658.376 481.748,658.376 482.748,657.376" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="543.7480000000001" y="651.376" font-family="黑体" fill="rgb(128,0,0)" font-size="21">工东线34#开关站</text>
+            </a>
+        </g>
+        <g id="389">
+            <a xlink:href="../工东线12#新城分支/工东线12#新城分支.svg">
+                <rect width="287" x="482.81" y="560.278" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_27422)"/>
+                <polygon points="482.81,560.278 482.81,595.278 483.81,594.278 483.81,561.278" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="482.81,560.278 769.81,560.278 768.81,561.278 483.81,561.278" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="769.81,560.278 768.81,561.278 768.81,594.278 769.81,595.278" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="768.81,594.278 769.81,595.278 482.81,595.278 483.81,594.278" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="533.81" y="588.278" font-family="黑体" fill="rgb(128,0,0)" font-size="21">工东线12#新城分支</text>
+            </a>
+        </g>
+        <g id="390">
+            <image width="51px" x="433.454" y="561.155" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="394">
+            <a xlink:href="../工东线62#开关站/工东线62#开关站.svg">
+                <rect width="287" x="480.3390000000001" y="684.718" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_7642)"/>
+                <polygon points="480.339,684.718 480.339,719.718 481.339,718.718 481.339,685.718" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="480.339,684.718 767.339,684.718 766.339,685.718 481.339,685.718" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="767.339,684.718 766.339,685.718 766.339,718.718 767.339,719.718" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="766.339,718.718 767.339,719.718 480.339,719.718 481.339,718.718" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="542.3390000000001" y="712.718" font-family="黑体" fill="rgb(128,0,0)" font-size="21">工东线62#开关站</text>
+            </a>
+        </g>
+        <g id="395">
+            <image width="51px" x="429.086" y="683.699" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="411">
+            <text x="97.55199999999998" y="476.559" font-family="黑体" fill="rgb(255,255,255)" font-size="21">变电站一次接线图</text>
+        </g>
+        <g id="418">
+            <image width="51px" x="16.1237" y="565.531" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="421">
+            <a xlink:href="../工业园站/工业园变.svg">
+                <rect width="287" x="65.47999999999999" y="564.654" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_13882)"/>
+                <polygon points="65.48,564.654 65.48,599.654 66.48,598.654 66.48,565.654" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="65.48,564.654 352.48,564.654 351.48,565.654 66.48,565.654" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="352.48,564.654 351.48,565.654 351.48,598.654 352.48,599.654" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="351.48,598.654 352.48,599.654 65.48,599.654 66.48,598.654" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="143.98" y="592.654" font-family="黑体" fill="rgb(128,0,0)" font-size="21">工业园变电站</text>
+            </a>
+        </g>
+        <g id="422">
+            <image width="51px" x="16.1237" y="701.531" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="423">
+            <image width="51px" x="16.1237" y="631.531" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="425">
+            <a xlink:href="../黄庄变/黄庄变.svg">
+                <rect width="287" x="65.47999999999999" y="700.654" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_3087)"/>
+                <polygon points="65.48,700.654 65.48,735.654 66.48,734.654 66.48,701.654" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="65.48,700.654 352.48,700.654 351.48,701.654 66.48,701.654" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="352.48,700.654 351.48,701.654 351.48,734.654 352.48,735.654" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="351.48,734.654 352.48,735.654 65.48,735.654 66.48,734.654" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="188.98" y="728.654" font-family="黑体" fill="rgb(128,0,0)" font-size="21">备用</text>
+            </a>
+        </g>
+        <g id="427">
+            <a xlink:href="../商都站/商都变.svg">
+                <rect width="287" x="65.47999999999999" y="630.654" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_23464)"/>
+                <polygon points="65.48,630.654 65.48,665.654 66.48,664.654 66.48,631.654" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="65.48,630.654 352.48,630.654 351.48,631.654 66.48,631.654" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="352.48,630.654 351.48,631.654 351.48,664.654 352.48,665.654" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="351.48,664.654 352.48,665.654 65.48,665.654 66.48,664.654" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="154.98" y="658.654" font-family="黑体" fill="rgb(128,0,0)" font-size="21">商都变电站</text>
+            </a>
+        </g>
+        <g id="428">
+            <image width="51px" x="16.1237" y="185.531" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="429">
+            <a xlink:href="../sys/偃师配网接线图.svg">
+                <rect width="287" x="67.68899999999999" y="184.235" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_12229)"/>
+                <polygon points="67.689,184.235 67.689,219.235 68.689,218.235 68.689,185.235" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="67.689,184.235 354.689,184.235 353.689,185.235 68.689,185.235" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="354.689,184.235 353.689,185.235 353.689,218.235 354.689,219.235" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="353.689,218.235 354.689,219.235 67.689,219.235 68.689,218.235" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="157.689" y="212.235" font-family="黑体" fill="rgb(128,0,0)" font-size="21">城区配网图</text>
+            </a>
+        </g>
+        <g id="431">
+            <text x="135.552" y="166.559" font-family="黑体" fill="rgb(255,255,255)" font-size="21">配网接线图</text>
+        </g>
+        <g id="434">
+            <text x="536.27" y="160.72" font-family="黑体" fill="rgb(255,255,255)" font-size="21">电源点接线图</text>
+        </g>
+        <g id="435">
+            <text x="554.751" y="473.089" font-family="黑体" fill="rgb(255,255,255)" font-size="21">开关站接线图</text>
+        </g>
+        <g id="436">
+            <text x="951.27" y="160.72" font-family="黑体" fill="rgb(255,255,255)" font-size="21">开关站接线图</text>
+        </g>
+        <g id="437">
+            <text x="961.27" y="474.72" font-family="黑体" fill="rgb(255,255,255)" font-size="21">开关站接线图</text>
+        </g>
+        <g id="438">
+            <line style="stroke-width:1;stroke:rgb(8,109,1);fill:none;" y1="426.92" x1="368.144" y2="426.92" x2="2.4217"/>
+        </g>
+        <g id="440">
+            <image width="51px" x="433.328" y="247.683" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="441">
+            <a xlink:href="../sys/电池活化图.svg">
+                <rect width="287" x="482.684" y="246.805" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_2083)"/>
+                <polygon points="482.684,246.805 482.684,281.805 483.684,280.805 483.684,247.805" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="482.684,246.805 769.684,246.805 768.684,247.805 483.684,247.805" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="769.684,246.805 768.684,247.805 768.684,280.805 769.684,281.805" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="768.684,280.805 769.684,281.805 482.684,281.805 483.684,280.805" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="572.684" y="274.805" font-family="黑体" fill="rgb(128,0,0)" font-size="21">电池活化图</text>
+            </a>
+        </g>
+        <g id="444">
+            <a xlink:href="../scada功能测试站1/scada功能测试站1#.svg">
+                <rect width="287" x="67.68899999999999" y="244.235" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_26775)"/>
+                <polygon points="67.689,244.235 67.689,279.235 68.689,278.235 68.689,245.235" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="67.689,244.235 354.689,244.235 353.689,245.235 68.689,245.235" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="354.689,244.235 353.689,245.235 353.689,278.235 354.689,279.235" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="353.689,278.235 354.689,279.235 67.689,279.235 68.689,278.235" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="147.689" y="272.235" font-family="黑体" fill="rgb(128,0,0)" font-size="21">SCADA测试站1</text>
+            </a>
+        </g>
+        <g id="446">
+            <a xlink:href="../scada功能测试站2/scada功能测试站2#开关站.svg">
+                <rect width="287" x="67.68899999999999" y="304.235" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_4994)"/>
+                <polygon points="67.689,304.235 67.689,339.235 68.689,338.235 68.689,305.235" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="67.689,304.235 354.689,304.235 353.689,305.235 68.689,305.235" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="354.689,304.235 353.689,305.235 353.689,338.235 354.689,339.235" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="353.689,338.235 354.689,339.235 67.689,339.235 68.689,338.235" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="146.189" y="332.235" font-family="黑体" fill="rgb(128,0,0)" font-size="21">SCADA测试站2</text>
+            </a>
+        </g>
+        <g id="447">
+            <image width="51px" x="16.1237" y="245.531" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="448">
+            <image width="51px" x="16.1237" y="305.531" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="449">
+            <image width="51px" x="433.328" y="307.683" height="33px" style="stroke-width:0;stroke:rgb(8,109,1);fill:none;" xlink:href="D:\prs3000/bmp/iconjiexian.bmp"/>
+        </g>
+        <g id="450">
+            <a xlink:href="../DA主接线图.svg">
+                <rect width="287" x="482.684" y="306.805" height="35" style="stroke-width:1;stroke:rgb(8,109,1);fill:url(#MyGradient_21276)"/>
+                <polygon points="482.684,306.805 482.684,341.805 483.684,340.805 483.684,307.805" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="482.684,306.805 769.684,306.805 768.684,307.805 483.684,307.805" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="769.684,306.805 768.684,307.805 768.684,340.805 769.684,341.805" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="768.684,340.805 769.684,341.805 482.684,341.805 483.684,340.805" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="583.684" y="334.805" font-family="黑体" fill="rgb(128,0,0)" font-size="21">DA接线图</text>
+            </a>
+        </g>
+    </g>
+    <g/>
+</svg>

@@ -1,0 +1,44 @@
+
+<style>
+    body{ padding:50px 0 0 50px;}
+    .datainp{ width:150px; height:30px; border:1px #ccc solid;}
+    .floatLeft{ float:left}
+</style>
+
+
+<p style="background:#ffffff">
+
+    <div style="font-size:16px;color:green;padding-top:1%;text-align: center;font-weight:bold;">超短期预测曲线</div>
+
+    <div class="content" style="padding-top:1%;">
+        <span style="line-height:2em; margin-left:1%">场站选择：</span>
+        <span style="width:50%">
+             <select class="c12" id="filterKind" style="min-width:35%" ng-model="ftKind">
+                 <option value="name1">临港111111111111111光伏电站</option>
+                 <option value="name2">临港222222222222222光伏电站</option>
+             </select>
+        </span>
+        <div class="clear"></div>
+    </div>
+
+    <p style="line-height:2em; margin-left:1%">
+        <input class="datainp floatLeft" id="dateBegin" type="text" placeholder="起始时间"  readonly>
+        <input class="floatLeft" style="height:30px" type="button" onClick="jeDate({dateCell:'#dateBegin',isTime:true,minDate:'2017-06-01 00:00:00',format:'YYYY-MM-DD hh:mm:00'})" value=" ... ">
+
+        <span class="floatLeft" style="margin:10px"></span>
+
+        <input class="datainp floatLeft" id="dateEnd" type="text" placeholder="截止时间"  readonly>
+        <input class="floatLeft" style="height:30px" type="button" onClick="jeDate({dateCell:'#dateEnd',isTime:true,minDate:'2017-06-01 00:00:00',format:'YYYY-MM-DD hh:mm:00'})" value=" ... ">
+
+        <span class="floatLeft" style="margin:20px"></span>
+
+        <span class="build_z" ng-click="this.blur();doFilter()" style="margin-left:5%">加载</span>
+        <span class="build" ng-click="this.blur();cleanFilter()" onclick="this.blur(); return false;" style="margin-left:3%">误差</span>
+    </p>
+
+    <!--<div style="padding-top: 1%"></div>-->
+
+    <div id="ultraShortCurve" style="width: 90%;height:700px;">
+    </div>
+
+

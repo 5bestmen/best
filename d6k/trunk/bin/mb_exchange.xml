@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <station>
+        <s StationID="1" StationName="可视化接地"/>
+    </station>
+    <device>
+        <d DeviceID="1" DeviceName="1#采集器通道" DeviceAddr="1" Protocol="modbus" IP="192.168.127.234" Port="502" AnalogStartAddr="0x0" BinaryStartAddr="0x0" KwhStartAddr="0x0" AnalogTelectrlStartAddr="0x0" BinaryTelectrlStartAddr="0x0" FuncodeAnalog="3" FuncodeBinary="2" FuncodeKwh="4" FuncodeTelectrlAnalog="6" FuncodeTelectrlBinary="5"/>
+        <d DeviceID="2" DeviceName="2#采集器通道" DeviceAddr="1" Protocol="modbus" IP="192.168.127.254" Port="502" AnalogStartAddr="0x0" BinaryStartAddr="0x0" KwhStartAddr="0x0" AnalogTelectrlStartAddr="0x0" BinaryTelectrlStartAddr="0x0" FuncodeAnalog="3" FuncodeBinary="2" FuncodeKwh="4" FuncodeTelectrlAnalog="6" FuncodeTelectrlBinary="5"/>
+        <d DeviceID="3" DeviceName="1#PLC通道" DeviceAddr="1" Protocol="modbus" IP="192.168.127.1" Port="502" AnalogStartAddr="0x0" BinaryStartAddr="0x0" KwhStartAddr="0x0" AnalogTelectrlStartAddr="0x0" BinaryTelectrlStartAddr="0x0" FuncodeAnalog="3" FuncodeBinary="1" FuncodeKwh="4" FuncodeTelectrlAnalog="6" FuncodeTelectrlBinary="5"/>
+    </device>
+    <paraconfig>
+    	<d DeviceID="1">   		
+            <analog/>
+            <binary>
+                <b ID="0" Name="验电1" Address="0" TransType="1" TransInfo="[1,3,11][1,1,13:1|1,2,0:1]"/>
+                <b ID="1" Name="分闸1" Address="1" TransType="1" TransInfo="[1,3,10][1,1,13:1|1,2,0:1]"/>
+                <b ID="2" Name="合闸1" Address="2" TransType="1" TransInfo="[1,3,9][1,1,13:1|1,2,0:1]"/>
+                <b ID="3" Name="验电2" Address="3"/>
+                <b ID="4" Name="分闸2" Address="4"/>
+                <b ID="5" Name="合闸2" Address="5"/>
+                <b ID="6" Name="验电3" Address="6"/>
+                <b ID="7" Name="分闸3" Address="7"/>
+                <b ID="8" Name="合闸3" Address="8"/>
+                <b ID="9" Name="验电4" Address="9"/>
+                <b ID="10" Name="分闸4" Address="10"/>
+                <b ID="11" Name="合闸4" Address="11"/>
+                <b ID="12" Name="锁定" Address="12"/>
+                <b ID="13" Name="解锁" Address="13" TransType="2" TransInfo="[1,3,13]"/>
+                <b ID="14" Name="照明" Address="14" TransType="2" TransInfo="[1,3,12]"/>
+                <b ID="15" Name="备用" Address="15"/>
+            </binary>
+            <kwh/>
+        </d>
+    	<d DeviceID="2">   		
+            <analog/>
+            <binary>
+                <b ID="0" Name="闭锁1" Address="0" TransType="2" TransInfo="[1,3,14]"/>
+                <b ID="1" Name="闭锁2" Address="1"/>
+                <b ID="2" Name="闭锁3" Address="2"/>
+                <b ID="3" Name="闭锁4" Address="3"/>
+                <b ID="4" Name="备用1" Address="4"/>
+                <b ID="5" Name="备用2" Address="5"/>
+                <b ID="6" Name="备用3" Address="6"/>
+                <b ID="7" Name="备用4" Address="7"/>
+                <b ID="8" Name="验电灯1" Address="8"/>
+                <b ID="9" Name="接地灯1" Address="9"/>
+                <b ID="10" Name="验电灯2" Address="10"/>
+                <b ID="11" Name="接地灯2" Address="11"/>
+                <b ID="12" Name="验电灯3" Address="12"/>
+                <b ID="13" Name="接地灯3" Address="13"/>
+                <b ID="14" Name="验电灯4" Address="14"/>
+                <b ID="15" Name="接地灯4" Address="15"/>
+            </binary>
+            <kwh/>
+        </d>
+        <d DeviceID="3">
+            <analog>
+                <a ID="0" Name="电压1" Address="0"/>
+                <a ID="1" Name="电压2" Address="1"/>
+                <a ID="2" Name="温度" Address="2"/>
+                <a ID="3" Name="湿度" Address="3"/>
+                <a ID="4" Name="备用1" Address="4"/>
+                <a ID="5" Name="备用2" Address="5"/>
+                <a ID="6" Name="备用3" Address="6"/>
+                <a ID="7" Name="备用4" Address="7"/>
+                <a ID="8" Name="备用5" Address="8"/>
+                <a ID="9" Name="遥控合闸" Address="9"/>
+                <a ID="10" Name="遥控分闸" Address="10"/>
+                <a ID="11" Name="遥控验电" Address="11"/>
+                <a ID="12" Name="遥控照明" Address="12"/>
+                <a ID="13" Name="C1解锁信号" Address="13"/>
+                <a ID="14" Name="C2闭锁信号" Address="14"/>
+            </analog>
+            <binary>
+                <b ID="0" Name="验电" Address="3000"/>
+                <b ID="1" Name="维护锁定" Address="3001"/>
+                <b ID="2" Name="维护解锁" Address="3002"/>
+                <b ID="3" Name="远程遥控" Address="3003"/>
+                <b ID="4" Name="本地电动" Address="3004"/>
+                <b ID="5" Name="本地手动" Address="3005"/>
+                <b ID="6" Name="照明" Address="3006"/>
+                <b ID="7" Name="互锁" Address="3007"/>
+                <b ID="8" Name="分闸信号" Address="3008"/>
+                <b ID="9" Name="合闸信号" Address="3009" TransType="1" TransInfo="[1,2,9:1]"/>
+                <b ID="10" Name="门开" Address="3010"/>
+                <b ID="11" Name="手动闭锁" Address="3011"/>
+                <b ID="12" Name="备用1" Address="3012"/>
+                <b ID="13" Name="验电成功反馈" Address="3013" TransType="1" TransInfo="[1,2,8:1]"/>
+                <b ID="14" Name="强分反馈" Address="3014"/>
+                <b ID="15" Name="备用2" Address="3015"/>
+            </binary>
+            <kwh/>
+        </d>
+    </paraconfig>
+</config>
+
+
+<!-- 注释:TransType，为0不转发；为1下发遥控命令；为2下发遥调命令。 -->
+<!-- 注释:TransInfo，[][]第一个为转发目标，第二个为转发条件。多个转发目标用|连接，多个转发条件用|连接。eg:转发目标[1,3,14|1,4,14]，转发条件[1,1,13:1|1,2,0:1] -->

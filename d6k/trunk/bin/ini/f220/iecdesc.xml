@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <IecProtocol IecType="104">
+  	<TransReason>
+  	  <ResInfo ResKey="1" ResDesc="周期循环per cyc"/>
+  	  <ResInfo ResKey="2" ResDesc="背景扫描back"/>
+  	  <ResInfo ResKey="3" ResDesc="突发spont"/>
+  	  <ResInfo ResKey="4" ResDesc="初始化init"/>
+  	  <ResInfo ResKey="5" ResDesc="请求或被请求 req"/>
+  	  <ResInfo ResKey="6" ResDesc="激活act"/>
+  	  <ResInfo ResKey="7" ResDesc="激活确认actcon"/>
+  	  <ResInfo ResKey="8" ResDesc="停止激活deact"/>
+  	  <ResInfo ResKey="9" ResDesc="停止激活确认deactcon"/>
+  	  <ResInfo ResKey="10" ResDesc="激活结束actterm"/>
+  	  <ResInfo ResKey="11" ResDesc="远程命令引起的返送信息retrem"/>
+  	  <ResInfo ResKey="12" ResDesc="当地命令引起的返送信息retloc"/>
+  	  <ResInfo ResKey="13" ResDesc="文件传送file"/>
+  	  
+  	  <ResInfo ResKey="20" ResDesc="响应总召唤introgen"/>
+  	  <ResInfo ResKey="37" ResDesc="响应计数量总召唤reqcogcn"/>
+  	  <ResInfo ResKey="38" ResDesc="响应第 1组计数量召唤reqco1"/>
+  	  <ResInfo ResKey="39" ResDesc="响应第 2组计数量召唤reqco2"/>
+  	  <ResInfo ResKey="40" ResDesc="响应第 3组计数量召唤reqco3"/>
+  	  <ResInfo ResKey="41" ResDesc="响应第 4组计数量召唤reqco4"/>
+  	</TransReason>
+  	
+  	<CodeInfo>
+  		<CodeItem CodeKey="1" CodeName="M_SP_NA_1" CodeDesc="单点遥信变位"/>
+  		<CodeItem CodeKey="2" CodeName="M_SP_TA_1" CodeDesc="单点遥信变位短时标"/>
+  		<CodeItem CodeKey="3" CodeName="M_DP_NA_1" CodeDesc="双点遥信变位"/>
+  		<CodeItem CodeKey="4" CodeName="M_DP_TA_1" CodeDesc="双点遥信变位短时标"/>
+  		<CodeItem CodeKey="5" CodeName="M_ST_NA_1" CodeDesc="步长位置信息"/>
+  		<CodeItem CodeKey="6" CodeName="M_ST_TA_1" CodeDesc="带短时标的步长位置信息"/>
+  		<CodeItem CodeKey="7" CodeName="M_BO_NA_1" CodeDesc="32位比特串"/>
+  		<CodeItem CodeKey="8" CodeName="M_BO_TA_1" CodeDesc="带短时标的32位比特串"/>
+  		<CodeItem CodeKey="9" CodeName="M_ME_NA_1" CodeDesc="带品质描述的规一化值"/>
+  		<CodeItem CodeKey="10" CodeName="M_ME_TA_1" CodeDesc="带短时标带品质描述的规一化值"/>
+  		<CodeItem CodeKey="11" CodeName="M_ME_NB_1" CodeDesc="带品质描述的比例系数"/>
+  		<CodeItem CodeKey="12" CodeName="M_ME_TB_1" CodeDesc="带短时标带品质描述的比例系数"/>
+  		<CodeItem CodeKey="13" CodeName="M_ME_NC_1" CodeDesc="短浮点数"/>
+  		<CodeItem CodeKey="14" CodeName="M_ME_TC_1" CodeDesc="带短时标的短浮点数"/>
+  		<CodeItem CodeKey="15" CodeName="M_IT_NA_1" CodeDesc="累计值"/>
+  		<CodeItem CodeKey="16" CodeName="M_IT_TA_1" CodeDesc="带短时标的累计值"/>
+  		<CodeItem CodeKey="17" CodeName="M_EP_TA_1" CodeDesc="带时标的继电保护或重合闸设备单个事件"/>
+  		<CodeItem CodeKey="18" CodeName="M_EP_TB_1" CodeDesc="带时标的继电保护装置成组启动事件"/>
+  		<CodeItem CodeKey="19" CodeName="M_EP_TC_1" CodeDesc="带时标的继电保护装置成组输出电路信息事件"/>
+  		<CodeItem CodeKey="20" CodeName="M_PS_NA_1" CodeDesc="具有状态变位检出的成组单点信息"/>
+  		<CodeItem CodeKey="21" CodeName="M_ME_ND_1" CodeDesc="不带品质描述的规一化值 "/>
+  		<CodeItem CodeKey="30" CodeName="M_SP_TB_1" CodeDesc="带 CP56Time2a 时标的单点信息"/>
+  		<CodeItem CodeKey="31" CodeName="M_DP_TB_1" CodeDesc="带 CP56Time2a 时标的双点信息"/>
+  		<CodeItem CodeKey="32" CodeName="M_ST_TB_1" CodeDesc="带 CP56Time2a 时标的步位置信息"/>
+  		<CodeItem CodeKey="33" CodeName="M_BO_TB_1" CodeDesc="带 CP56Time2a 时标的 32 比特串"/>
+  		<CodeItem CodeKey="34" CodeName="M_ME_TD_1" CodeDesc="带 CP56Time2a 时标的测量值规一化值"/>
+  		<CodeItem CodeKey="35" CodeName="M_ME_TE_1" CodeDesc="带 CP56Time2a 时标的测量值标度化值"/>
+  		<CodeItem CodeKey="36" CodeName="M_ME_TF 1" CodeDesc="带 CP56Time2a 时标的测量值短浮点数"/>
+  		<CodeItem CodeKey="37" CodeName="M_IT_TB_1" CodeDesc="带 CP56Time2a 时标的累计量"/>
+  		<CodeItem CodeKey="38" CodeName="M_EP_TD_1" CodeDesc="带 CP56Time2a 时标的继电保护设备事件"/>
+  		<CodeItem CodeKey="39" CodeName="M_EP_TE_1" CodeDesc="带 CP56Time2a 时标的继电保护设备成组启动事件"/>
+  		<CodeItem CodeKey="40" CodeName="M_EP_TF _1" CodeDesc="带 CP56Time2a 时标的继电保拌装置成组输出电路信息"/>
+  		<CodeItem CodeKey="70" CodeName="M_EI_NA_1" CodeDesc="初始化结束"/>
+  		
+  	</CodeInfo>
+  </IecProtocol>
+</config> 

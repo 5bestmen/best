@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<conf>
+	<scada_module>
+    <m index="1" name="scdsvc" load="dll" argument=""  description="SCADA核心模块"/>
+    <m index="2" name="vmcs" load="dll" argument=""  description="实时图形界面模块"/>
+    <m index="3" name="alarm" load="exe" argument=""  description="告警模块"/>
+    <m index="4" name="history" load="dll" argument=""  description="历史库存储模块"/>
+	</scada_module> 
+  <scheme>
+    <s  name="NORMAL_SERVER"  description="SCADA服务器">
+      <m index="1" name="scdsvc" load="dll" argument="" option="true"  description="SCADA核心模块"/>
+      <m index="2" name="vmcs" load="dll" argument="" option="false" description="实时图形界面模块"/>
+      <m index="3" name="alarm" load="exe" argument="" option="false" description="告警模块"/>
+    </s> 
+    <s  name="HIS_SERVER"  description="历史服务器">
+      <m index="1" name="scdsvc" load="dll" argument="" option="true"  description="SCADA核心模块"/>
+      <m index="2" name="vmcs" load="dll" argument="" option="false" description="实时图形界面模块"/>
+    </s>   
+  </scheme>
+</conf> 
+

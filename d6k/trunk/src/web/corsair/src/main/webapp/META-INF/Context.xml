@@ -1,0 +1,9 @@
+<Context path="/corsair" docBase="workdaily" debug="0"
+	privileged="true">
+	<Resource name="jdbc/sr" auth="Container"
+		type="javax.sql.DataSource" driverClassName="oracle.jdbc.driver.OracleDriver"
+		url="jdbc:oracle:thin:@172.16.38.2:1521/D6000"
+		username="DMS" password="smd123!" removeAbandoned="true"
+		removeAbandonedTimeout="20" logAbandoned="true" maxIdle="10"
+		maxWait="50000" maxActive="20" />
+</Context>

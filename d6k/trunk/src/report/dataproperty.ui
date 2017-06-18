@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QDataProperty</class>
+ <widget class="QDialog" name="QDataProperty">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>316</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>模拟量数据源</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>290</y>
+     <width>158</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_9">
+    <item>
+     <widget class="QPushButton" name="okPushButton">
+      <property name="text">
+       <string>确认</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="cancelPushButton">
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>12</y>
+     <width>474</width>
+     <height>275</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="title">
+         <string>时间</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>起始</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="dateEdit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>结束</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="endDateEdit">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="setPushButton">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>设置</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="title">
+         <string>间隔</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QComboBox" name="TimeComboBox">
+           <property name="editable">
+            <bool>true</bool>
+           </property>
+           <item>
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>15分钟</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>30分钟</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1小时</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2小时</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>3小时</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QGroupBox" name="dataType">
+        <property name="title">
+         <string>数值类型</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QRadioButton" name="curValradioButton">
+           <property name="text">
+            <string>值</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="mostValradioButton">
+           <property name="text">
+            <string>最值</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="avgValradioButton">
+           <property name="text">
+            <string>平均值</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="overValradioButton">
+           <property name="text">
+            <string>越限值</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="sumValradioButton">
+           <property name="text">
+            <string>统计值</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="mostVal">
+        <property name="title">
+         <string>最值选项</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QRadioButton" name="maxValradioButton">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>最大值</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="maxValTimeradioButton">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>最大值发生时间</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="minValradioButton">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>最小值</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="minValTimeradioButton">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="text">
+            <string>最小值发生时间</string>
+           </property>
+           <property name="checkable">
+            <bool>true</bool>
+           </property>
+           <property name="checked">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="overVal">
+        <property name="title">
+         <string>越线值选项</string>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="fieldGrowthPolicy">
+          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+         </property>
+         <item row="0" column="0" colspan="2">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QRadioButton" name="overUpCountradioButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>越上限次数</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="overDownCountradioButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>越下限次数</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="OverUpUpCountradioButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>越上上限次数</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QRadioButton" name="overUpTimeradioButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>越上限时间</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="overDownTimeradioButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>越下线时间</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="overUpUpTimeradioButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>越下下限时间</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QRadioButton" name="overDownDownCountRateradioButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>越下下限次数</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="overDownDownTimeRateradioButton">
+               <property name="enabled">
+                <bool>true</bool>
+               </property>
+               <property name="text">
+                <string>越下下限时间</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="normalRateradioButton">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+               <property name="text">
+                <string>合格率</string>
+               </property>
+               <property name="checkable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>setPushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_settime()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>215</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>TimeComboBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_timeChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>324</x>
+     <y>44</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>curValradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setDataType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mostValradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setDataType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>124</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>avgValradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setDataType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>overValradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setDataType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>267</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sumValradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setDataType()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>338</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>overUpCountradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setOverVal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>overDownCountradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setOverVal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OverUpUpCountradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setOverVal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>313</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>overUpTimeradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setOverVal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>overDownTimeradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setOverVal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>overUpUpTimeradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setOverVal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>313</x>
+     <y>237</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>overDownDownCountRateradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setOverVal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>78</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>overDownDownTimeRateradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setOverVal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>195</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>normalRateradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setOverVal()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>313</x>
+     <y>261</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>okPushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_ok()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cancelPushButton</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_cancel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maxValradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setMostValue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>50</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maxValTimeradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setMostValue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>minValradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setMostValue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>minValTimeradioButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>QDataProperty</receiver>
+   <slot>slot_on_setMostValue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>317</x>
+     <y>157</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>196</x>
+     <y>159</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_on_settime()</slot>
+  <slot>slot_on_timeChanged(int)</slot>
+  <slot>slot_on_setDataType()</slot>
+  <slot>slot_on_setMostValue()</slot>
+  <slot>slot_on_setOverVal()</slot>
+  <slot>slot_on_ok()</slot>
+  <slot>slot_on_cancel()</slot>
+ </slots>
+</ui>

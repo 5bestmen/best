@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/add_model.png</file>
+        <file>images/delete_model.png</file>
+        <file>images/m_group.png</file>
+        <file>images/m_model.png</file>
+        <file>images/m_save.png</file>
+        <file>images/m_scene.png</file>
+        <file>images/model_tool.png</file>
+    </qresource>
+</RCC>

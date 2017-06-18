@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="server.cpp" />
+    <ClCompile Include="dbgsvrmodule.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="netbusmodule.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="rtdbmodule.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="coremodule.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+    <ClCompile Include="basemodule.cpp">
+      <Filter>module</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="server.h" />
+    <ClInclude Include="dbgsvrmodule.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="netbusmodule.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="rtdbmodule.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="coremodule.h">
+      <Filter>module</Filter>
+    </ClInclude>
+    <ClInclude Include="basemodule.h">
+      <Filter>module</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="module">
+      <UniqueIdentifier>{b5bf3773-8daa-4414-8944-32f98718259e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

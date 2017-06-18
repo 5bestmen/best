@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.template.psr.PSRTemplateMapping" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="PSRID" type="java.lang.String" not-null="true"/>
+        <many-to-one name="deviceTemplate" class="com.corsair.entity.template.psr.DeviceTemplate" fetch="join"/>
+        <property name="devEncode" type="java.lang.String" />
+        <many-to-one name="electricStationInfo" class="com.corsair.entity.ElectricStationInfo" fetch="join"/>
+    </class>
+</hibernate-mapping>

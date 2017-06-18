@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:task="http://www.springframework.org/schema/task"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.0.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+       http://www.springframework.org/schema/task
+       http://www.springframework.org/schema/task/spring-task-3.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"
+       default-autowire="byName">
+
+    <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:scada.properties</value>
+                <value>classpath:corsair.properties</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <!-- 加载配置文件 -->
+    <bean id="propertyConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:jdbc.properties</value>
+                <value>classpath:corsair.properties</value>
+                <value>classpath:corsair.properties</value>
+                <value>classpath:hibernate.properties</value>
+                <value>classpath:scada.properties</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 加载jndi数据源 -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"/>
+        <!--<property name="url" value="${jdbc.url}"/>-->
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+        <property name="maxIdle" value="${jdbc.maxIdle}"/>
+        <property name="maxWait" value="${jdbc.maxWait}"/>
+        <property name="maxActive" value="${jdbc.jdbc.maxActive}"/>
+    </bean>
+
+
+    <!--创建jdbc模板-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource">
+        </property>
+    </bean>
+
+    <!-- 在spring中配置hibernate -->
+    <bean id="sessionFactory"
+          class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">
+                    ${hibernate.dialect}
+                </prop>
+                <prop key="hibernate.transaction.factory_class">
+                    ${hibernate.transaction.factory_class}
+                </prop>
+                <prop key="hibernate.show_sql">
+                    ${hibernate.show_sql}
+                </prop>
+                <prop key="hibernate.cache.provider_class">
+                    ${hibernate.cache.provider_class}
+                </prop>
+                <prop key="hibernate.current_session_context_class">${hibernate.current_session_context_class}</prop>
+                <prop key="hibernate.cache.use_second_level_cache">
+                    ${hibernate.cache.use_second_level_cache}
+                </prop>
+                <prop key="hibernate.cache.use_query_cache">
+                    ${hibernate.cache.use_query_cache}
+                </prop>
+                <prop key="hibernate.hbm2ddl.auto">
+                    ${hibernate.hbm2ddl.auto}
+                </prop>
+            </props>
+        </property>
+        <property name="mappingDirectoryLocations">
+            <list>
+                <value>classpath:/com/rbac/entity</value>
+                <value>classpath:/com/corsair/entity</value>
+                <value>classpath:/com/eventsrv/entity</value>
+            </list>
+        </property>
+        <property name="mappingResources">
+            <list>
+                <value>hbm/snaker.task.hbm.xml</value>
+                <value>hbm/snaker.order.hbm.xml</value>
+                <value>hbm/snaker.ccorder.hbm.xml</value>
+                <value>hbm/snaker.process.hbm.xml</value>
+                <value>hbm/snaker.taskactor.hbm.xml</value>
+                <value>hbm/snaker.workitem.hbm.xml</value>
+                <value>hbm/snaker.surrogate.hbm.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- 自动将这些包下的类封装为spring bean -->
+    <context:component-scan base-package="com.rbac.dao">
+    </context:component-scan>
+    <context:component-scan base-package="com.rbac.service">
+    </context:component-scan>
+    <context:component-scan base-package="com.rbac.engine">
+    </context:component-scan>
+
+    <context:component-scan base-package="com.corsair.dao">
+    </context:component-scan>
+    <context:component-scan base-package="com.corsair.service">
+    </context:component-scan>
+    <!--<context:component-scan base-package="com.corsair.measurement.magic">-->
+    <!--</context:component-scan>-->
+    <context:component-scan base-package="com.corsair.chart">
+    </context:component-scan>
+    <!--<context:component-scan base-package="com.corsair.measurement.simulate">-->
+    <!--</context:component-scan>-->
+    <context:component-scan base-package="com.corsair.measurement">
+    </context:component-scan>
+
+    <context:component-scan base-package="com.eventsrv.dao">
+    </context:component-scan>
+    <context:component-scan base-package="com.eventsrv.service">
+    </context:component-scan>
+
+    <bean id="baseDaoSupport" class="com.rbac.common.BaseDaoSupport">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    <!--<bean id="realTimeClient" class="com.corsair.measurement.RealTimeClient">-->
+    <!--<property name="url" value="${scada.realtime.service.url}"/>-->
+    <!--</bean>-->
+    <bean id="scadaConfig" class="com.corsair.measurement.ScadaConfig">
+        <property name="url" value="${scada.realtime.service.url}"/>
+        <property name="simulate" value="${scada.measurement.simulate}"/>
+    </bean>
+
+    <!--todo 测试用，以后会删除-->
+    <bean id="arrayStatus" class="simulate.com.corsair.service.station.ArrayStatusService"/>
+    <bean id="arrayMatrix" class="simulate.com.corsair.service.station.ArrayMatrixService"/>
+    <bean id="stationStatus" class="simulate.com.corsair.service.station.StationStatusService"/>
+    <bean id="DeviceStatusInfoService" class="simulate.com.corsair.device.DeviceStatusInfoService"/>
+
+    <!-- 配置事务管理器 -->
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <!-- 事务执行方式 REQUIRED：指定当前方法必需在事务环境中运行， 如果当前有事务环境就加入当前正在执行的事务环境， 如果当前没有事务，就新建一个事务。
+                这是默认值。 -->
+            <tx:method name="create*" propagation="REQUIRED"/>
+            <tx:method name="save*" propagation="REQUIRED"/>
+            <tx:method name="add*" propagation="REQUIRED"/>
+            <tx:method name="update*" propagation="REQUIRED"/>
+            <tx:method name="remove*" propagation="REQUIRED"/>
+            <tx:method name="del*" propagation="REQUIRED"/>
+            <tx:method name="import*" propagation="REQUIRED"/>
+
+            <tx:method name="start*" propagation="REQUIRED"/>
+            <tx:method name="execute*" propagation="REQUIRED"/>
+            <!--<tx:method name="save*" propagation="REQUIRED"/>-->
+            <tx:method name="delete*" propagation="REQUIRED"/>
+            <!--<tx:method name="update*" propagation="REQUIRED" />-->
+            <!--<tx:method name="remove*" propagation="REQUIRED" />-->
+            <tx:method name="assign*" propagation="REQUIRED"/>
+            <!--<tx:method name="create*" propagation="REQUIRED" />-->
+            <tx:method name="complete*" propagation="REQUIRED"/>
+            <tx:method name="finish*" propagation="REQUIRED"/>
+            <tx:method name="terminate*" propagation="REQUIRED"/>
+            <tx:method name="take*" propagation="REQUIRED"/>
+            <tx:method name="deploy*" propagation="REQUIRED"/>
+            <tx:method name="undeploy*" propagation="REQUIRED"/>
+            <tx:method name="redeploy*" propagation="REQUIRED"/>
+            <!-- 指定当前方法以非事务方式执行操作，如果当前存在事务，就把当前事务挂起，等我以非事务的状态运行完，再继续原来的事务。 查询定义即可
+                read-only="true" 表示只读 -->
+            <tx:method name="get*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="find*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="load*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="query*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="search*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="is*" propagation="REQUIRED" read-only="true" />
+            <tx:method name="*" propagation="REQUIRED" />
+            <!--<tx:method name="*" propagation="NOT_SUPPORTED" read-only="true" />-->
+
+        </tx:attributes>
+    </tx:advice>
+
+    <!-- 定义切面，在 com.*.service.*Service.*（..） 中执行有关的hibernate session的事务操作 -->
+    <aop:config>
+        <aop:pointcut id="serviceOperation" expression="execution(* com.*.service.*Service.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceOperation"/>
+    </aop:config>
+    <aop:config>
+        <aop:pointcut id="chartOperation" expression="execution(* com.corsair.chart.*Chart.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="chartOperation"/>
+    </aop:config>
+    <aop:config>
+        <aop:pointcut id="measurementOperation" expression="execution(* com.corsair.measurement.*.*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="measurementOperation"/>
+    </aop:config>
+    <aop:config>
+        <aop:advisor advice-ref="txAdvice" pointcut="execution(* org.snaker.engine.core..*.*(..))"/>
+    </aop:config>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <!-- 支持 @Transactional 标记 -->
+    <tx:annotation-driven proxy-target-class="true"
+                          transaction-manager="transactionManager"/>
+
+    <context:annotation-config/>
+    <!--spring扫描注解的配置   -->
+    <context:component-scan base-package="com.corsair.service"/>
+
+    <!--开启这个配置，spring才能识别@Scheduled注解   -->
+    <task:annotation-driven scheduler="qbScheduler" mode="proxy"/>
+    <task:scheduler id="qbScheduler" pool-size="10"/>
+
+
+    <bean id="jacksonMessageConverter"
+          class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="jacksonMessageConverter"/>
+            </list>
+        </property>
+    </bean>
+
+    <util:map id="magicMap" scope="prototype" map-class="java.util.HashMap"
+              key-type="java.lang.String" value-type="com.corsair.measurement.IMeasurement">
+        <entry key="communicate-status" value-ref="communicate-status"/>
+        <entry key="day-generated" value-ref="day-generated"/>
+        <entry key="day-grid-generated" value-ref="day-grid-generated"/>
+        <entry key="month-average-efficiency" value-ref="month-average-efficiency"/>
+        <!--<entry key="month-energy" value-ref="month-energy"/>-->
+        <entry key="month-grid-energy" value-ref="month-grid-energy"/>
+        <entry key="month-realtime-power" value-ref="month-realtime-power"/>
+        <entry key="pvarray-current" value-ref="pvarray-current"/>
+        <entry key="pvarray-power" value-ref="pvarray-power"/>
+        <entry key="realtime-power" value-ref="realtime-power"/>
+        <entry key="run-status" value-ref="run-status"/>
+        <entry key="total-generated" value-ref="total-generated"/>
+        <entry key="system-efficiency" value-ref="system-efficiency"/>
+    </util:map>
+
+    <util:map id="specialChartMap" scope="prototype" map-class="java.util.HashMap"
+              key-type="java.lang.String" value-type="com.corsair.chart.IPSRChart">
+        <!--<entry key="JunctionCurrentChart" value-ref="junctionCurrent"/>-->
+
+        <!--<entry key="yesterday-average-efficiency" value-ref="yesterday-average-efficiency"/>-->
+    </util:map>
+</beans>
+

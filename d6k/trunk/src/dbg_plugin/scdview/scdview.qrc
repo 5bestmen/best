@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resources/channel.png</file>
+        <file>Resources/device.png</file>
+        <file>Resources/node.png</file>
+        <file>Resources/ai.png</file>
+        <file>Resources/aout.png</file>
+        <file>Resources/di.png</file>
+        <file>Resources/dout.png</file>
+        <file>Resources/aio.png</file>
+    </qresource>
+</RCC>

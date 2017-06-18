@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.InverterEfficiencyData" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="ID">
+            <generator class="uuid"/>
+        </id>
+
+        <many-to-one name="inverterEfficiency" class="com.corsair.entity.InverterEfficiency" fetch="join"/>
+        <many-to-one name="inverterTemperature" class="com.corsair.entity.InverterTemperature" fetch="join"/>
+        <many-to-one name="inverterPowerPoint" class="com.corsair.entity.InverterPowerPoint"  fetch="join"/>
+        <!--<set name="inverterTemperature" inverse="true">-->
+            <!--<key column="InverterEfficiencyData"/>-->
+            <!--<one-to-many class="com.corsair.entity.InverterTemperature"/>-->
+        <!--</set>-->
+        <!--<set name="inverterPowerPoint" inverse="true">-->
+            <!--<key column="InverterEfficiencyData"/>-->
+            <!--<one-to-many class="com.corsair.entity.InverterPowerPoint"/>-->
+        <!--</set>-->
+        <property name="efficiency" type="java.lang.Double"/>
+    </class>
+</hibernate-mapping>

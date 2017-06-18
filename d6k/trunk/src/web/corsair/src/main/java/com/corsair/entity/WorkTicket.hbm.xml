@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.corsair.entity.WorkTicket" catalog="DMS" dynamic-insert="true" dynamic-update="true">
+        <id name="id">
+            <generator class="uuid"/>
+        </id>
+        <property name="processId" type="java.lang.String"/>
+        <property name="taskId" type="java.lang.String"/>
+        <property name="workTicketType" type="java.lang.Integer" not-null="true"/>
+        <property name="code" type="java.lang.String" not-null="true"/>
+        <property name="responsiblePerson" type="java.lang.String" not-null="true"/>
+        <property name="department" type="java.lang.String"/>
+        <property name="plannedWorkingStartingTime" type="java.lang.String"/>
+        <property name="plannedWorkingEndingTime" type="java.lang.String"/>
+        <property name="fillWorkTicketTime" type="java.lang.String"/>
+        <property name="crew" type="java.util.ArrayList"/>
+        <property name="task" type="java.lang.String"/>
+        <property name="summary" type="java.lang.String"/>
+        <property name="workTicketEnd" type="java.lang.String"/>
+        <property name="workPermitPerson" type="java.lang.String"/>
+        <property name="remark" type="java.lang.String"/>
+        <property name="state" type="java.lang.Integer"/>
+        <property name="workTicketSigner" type="java.lang.String"/>
+        <property name="summaryTime" type="java.lang.String"/>
+        <property name="workCondition" type="java.lang.String"/>
+        <property name="signTime" type="java.lang.String"/>
+        <property name="extensionTime" type="java.lang.String"/>
+        <property name="PermittingWorkTime" type="java.lang.String"/>
+        <property name="responsiblePersonTime" type="java.lang.String"/>
+        <property name="permitPersonTime" type="java.lang.String"/>
+        <property name="otherMatters" type="java.lang.String"/>
+        <property name="receivedWorkTicketTime" type="java.lang.String"/>
+        <property name="workTicketCreateTime" type="java.lang.String"/>
+        <property name="fullTimePerson" type="java.lang.String"/>
+        <property name="fullRemark" type="java.lang.String"/>
+        <property name="otherRemark" type="java.lang.String"/>
+        <property name="isDelay" type="java.lang.Boolean"/>
+        <property name="isChangePerson" type="java.lang.Boolean"/>
+        <property name="newResponsiblePerson" type="java.lang.String"/>
+        <list name="securityMeasureses" inverse="false" cascade="all" lazy="false">
+            <key><column name="workTicket"/></key>
+            <list-index column="indexNumber" base="1"/>
+            <one-to-many class="com.corsair.entity.SecurityMeasures"/>
+        </list>
+        <list name="workTicketRecords" inverse="true" cascade="all" lazy="false">
+            <key><column name="workTicket"/></key>
+            <list-index column="indexNumber" base="1"/>
+            <one-to-many class="com.corsair.entity.WorkTicketRecord"/>
+        </list>
+        <list name="workContents" inverse="true" cascade="all" lazy="false">
+            <key><column name="workTicket"/></key>
+            <list-index column="indexNumber" base="1"/>
+            <one-to-many class="com.corsair.entity.WorkContent"/>
+        </list>
+        <list name="workPermits" inverse="false" cascade="all" lazy="false">
+            <key><column name="workTicket"/></key>
+            <list-index column="indexNumber" base="1"/>
+            <one-to-many class="com.corsair.entity.WorkPermit"/>
+        </list>
+        <list name="personnelChanges" inverse="false" cascade="all" lazy="false">
+            <key><column name="workTicket"/></key>
+            <list-index column="indexNumber" base="1"/>
+            <one-to-many class="com.corsair.entity.PersonnelChangeCondition"/>
+        </list>
+        <list name="workTicketDelays" inverse="false" cascade="all" lazy="false">
+            <key><column name="workTicket"/></key>
+            <list-index column="indexNumber" base="1"/>
+            <one-to-many class="com.corsair.entity.WorkTicketDelay"/>
+        </list>
+        <list name="needAttentions" inverse="false" cascade="all" lazy="false">
+            <key><column name="workTicket"/></key>
+            <list-index column="indexNumber" base="1"/>
+            <one-to-many class="com.corsair.entity.NeedAttention"/>
+        </list>
+        <list name="attenTionMeasure" inverse="false" cascade="all" lazy="false">
+            <key><column name="workTicket"/></key>
+            <list-index column="indexNumber" base="1"/>
+            <one-to-many class="com.corsair.entity.AttenTionMeasure"/>
+        </list>
+    </class>
+</hibernate-mapping>

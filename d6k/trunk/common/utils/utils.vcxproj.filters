@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="misc">
+      <UniqueIdentifier>{892b9c41-f6ce-4df9-828f-388eee800a07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sharememory">
+      <UniqueIdentifier>{eb21787e-03a5-4a9b-9179-aaad24b65cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="system">
+      <UniqueIdentifier>{7831c033-745e-4560-a27e-173864b9d22c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="string">
+      <UniqueIdentifier>{4ecc2327-512b-45b0-81b3-a87437c76d99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\misc.h">
+      <Filter>misc</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\array.h">
+      <Filter>sharememory</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\queue.h">
+      <Filter>sharememory</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\smallocator.h">
+      <Filter>sharememory</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\smapi.h">
+      <Filter>sharememory</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\autolock.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\processmutex.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\thread.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\threadmutex.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\strdata.h">
+      <Filter>string</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="utils\misc.cpp">
+      <Filter>misc</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\array.cpp">
+      <Filter>sharememory</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\queue.cpp">
+      <Filter>sharememory</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\smallocator.cpp">
+      <Filter>sharememory</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\smapi.cpp">
+      <Filter>sharememory</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\autolock.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\processmutex.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\thread.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\threadmutex.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\strdata.cpp">
+      <Filter>string</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

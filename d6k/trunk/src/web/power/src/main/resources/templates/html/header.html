@@ -1,0 +1,154 @@
+<link rel="stylesheet" href="../css/realdata.css">
+
+<div class="top" id="header">
+    <!--<div class="top_logo"><img src="../img/logo_top.png" /></div>-->
+    <div class="title">光伏功率预测监控系统</div>
+    <div class="quit" ng-click="logout()">
+        <span><img src="../img/quit.png" /></span>
+        <span>退出</span>
+        <div class="clear"></div>
+    </div>
+    <div class="person">
+        <span><img src="../img/person.png" /></span>
+        <span>欢迎 {{logininfo.userInfoID.strUsername}}</span>
+        <div class="clear"></div>
+    </div>
+    <div class="date">
+        <span><img src="../img/time.png" /></span>
+        <span>{{nowDate}}</span>
+        <div class="clear"></div>
+    </div>
+
+    <div class="data measurement-panel-lime">
+        <div class="measurement-panel-heading">
+            <span class="pull-left">组件温度</span>
+            <span class="measurement measurement_set" data-name="ThisMonthKwh" data-measurementID="1-56-3-0400" data-measurementType="3">29.8</span>
+            <span class="pull-right">℃</span>
+        </div>
+        <!--<div class="clear"></div>-->
+    </div>
+
+    <div class="data measurement-panel-lime">
+        <div class="measurement-panel-heading">
+            <span class="pull-left">辐射度</span>
+            <span class="measurement measurement_set" data-name="ThisMonthKwh" data-measurementID="1-56-3-0400" data-measurementType="3">188</span>
+            <span class="pull-right">W/x</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="data measurement-panel-lime">
+        <div class="measurement-panel-heading">
+            <span class="pull-left">压力</span>
+            <span class="measurement measurement_set" data-name="ThisMonthKwh" data-measurementID="1-56-3-0400" data-measurementType="3">852.6</span>
+            <span class="pull-right">hP</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="data measurement-panel-lime">
+        <div class="measurement-panel-heading">
+            <span class="pull-left">湿度</span>
+            <span class="measurement measurement_set" data-name="ThisMonthKwh" data-measurementID="1-56-3-0400" data-measurementType="3">67.2</span>
+            <span class="pull-right">%RH</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="data measurement-panel-lime">
+        <div class="measurement-panel-heading">
+            <span class="pull-left">温度</span>
+            <span class="measurement measurement_set" data-name="ThisMonthKwh" data-measurementID="1-56-3-0400" data-measurementType="3">32.3</span>
+            <span class="pull-right">℃</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="data measurement-panel-lime">
+        <div class="measurement-panel-heading">
+            <span class="pull-left">风向</span>
+            <span class="measurement measurement_set" data-name="ThisMonthKwh" data-measurementID="1-56-3-0400" data-measurementType="3">23.924</span>
+            <span class="pull-right">°</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="data measurement-panel-lime">
+        <div class="measurement-panel-heading">
+            <span class="pull-left">风速</span>
+            <span class="measurement measurement_set" data-name="ThisMonthKwh" data-measurementID="1-56-3-0400" data-measurementType="3">1.014</span>
+            <span class="pull-right">m/s</span>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <div class="clear"></div>
+</div>
+<div class="menu_dl">
+    <ul>
+        <li ng-class="{'current_nav_f':$state.includes('home')}" ng-click="$state.go('home')">
+            <span><img src="../img/home.png" /></span>
+            <span>home</span>
+            <div class="clear"></div>
+        </li>
+        <img class="line" src="../img/line02.png" />
+
+        <li ng-class="{'current_nav_f':$state.includes('predictionCurve')}" ng-click="$state.go('predictionCurve')">
+            <span><img src="../img/curve.png" /></span>
+            <span>预测曲线</span>
+            <div class="clear"></div>
+        </li>
+        <img class="line" src="../img/line02.png" />
+
+        <li ng-class="{'current_nav_f':$state.includes('userManage')}" ng-click="gotoUserManagePage()">
+            <span><img src="../img/curve.png" /></span>
+            <span>实时曲线</span>
+            <div class="clear"></div>
+        </li>
+        <img class="line" src="../img/line02.png" />
+
+        <li ng-class="{'current_nav_f':$state.includes('macModel')}" ng-click="$state.go('macModel')">
+            <span><img src="../img/report.png" /></span>
+            <span>报表统计</span>
+            <div class="clear"></div>
+        </li>
+        <img class="line" src="../img/line02.png" />
+
+        <li ng-class="{'current_nav_f':$state.includes('proConfig')}" ng-click="$state.go('proConfig')">
+            <span><img src="../img/history.png" /></span>
+            <span>历史查询</span>
+            <div class="clear"></div>
+        </li>
+
+        <img class="line" src="../img/line02.png" />
+        <li ng-class="{'current_nav_f':$state.includes('proConfig')}" ng-click="$state.go('proConfig')">
+            <span><img src="../img/Statistics.png" /></span>
+            <span>数据统计</span>
+            <div class="clear"></div>
+        </li>
+
+        <img class="line" src="../img/line02.png" />
+        <li ng-class="{'current_nav_f':$state.includes('proConfig')}" ng-click="$state.go('proConfig')">
+            <span><img src="../img/opertion.png" /></span>
+            <span>事项查询</span>
+            <div class="clear"></div>
+        </li>
+        <img class="line" src="../img/line02.png" />
+
+        <li ng-class="{'current_nav_f':$state.includes('proConfig')}" ng-click="$state.go('proConfig')">
+            <span><img src="../img/set.png" /></span>
+            <span>电站设置</span>
+            <div class="clear"></div>
+        </li>
+        <img class="line" src="../img/line02.png" />
+
+        <li ng-class="{'current_nav_f':$state.includes('proConfig')}" ng-click="$state.go('proConfig')">
+            <span><img src="../img/help.png" /></span>
+            <span>帮助</span>
+            <div class="clear"></div>
+        </li>
+        <img class="line" src="../img/line02.png" />
+
+        <div class="clear"></div>
+    </ul>
+</div>

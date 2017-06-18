@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <deviceitem number="1" devicename="FTU220" common="二遥FTU维护模块" dllname="f220" version="V1.2"/>
+  <deviceitem number="2" devicename="RTU123" common="三遥RTU测试软件" dllname="fdk" version="V1.1"/>
+  <deviceitem number="3" devicename="CTU253" common="四遥CTU维护软件" dllname="eee" version="V2.2"/>
+  <deviceitem number="4" devicename="MBSIM" common="MODBUS 仿真模块" dllname="mbsim" version="V1.2"/>
+  <deviceitem number="5" devicename="RLY103" common="103测试模块" dllname="rly103" version="V0.1"/>
+</config> 

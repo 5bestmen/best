@@ -1,0 +1,13 @@
+<device name="test" vender="test">
+<digitals name="遥信">
+<digital datatype="bool" blockno="1" name="遥信1" datasource="" InitValue="0" InitialQua="0" BitString="0 BitCloseString="" BitOpenString="" SOE="" Address="" PinLabel="""/>
+</digitals>
+<analogues name="遥测">
+<analogue datatype="double" RangeL="0" cc2="1" blockno="1" name="遥测1" UnitName="" Sensitivity="0" Express="" Address="" PinLabel=""/>
+</analogues>
+<analogouts name="遥调"/>
+<analogout datatype="" blockno="1" name="遥调1" Address="" PinLabel=""/>
+</analogouts>
+<digitalouts name="遥控">
+<digitalout datatype="" blockno="1" name="遥控1" Address="" PinLabel="" IsSBO="" TelCtlWaitTime="0" TelCtlSendTime="0" TelCtlExecTime=""/>
+</digitalouts>

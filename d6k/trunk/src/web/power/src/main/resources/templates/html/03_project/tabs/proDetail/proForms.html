@@ -1,0 +1,87 @@
+<!--报表 -->
+<div id="login_one_4">
+    <div style="background:#ffffff">
+        <div class="content" style="padding-top:1%">
+            <span style="line-height:2em; margin-left:1%">选择时间期间：</span>
+            <span style="width:50%">
+                <span style="float:left; line-height:2em; ">按</span>
+                <select class="c12">
+                    <option value="">日</option>
+                </select>
+                <span style="float:left; line-height:2em; margin-left:2%">生成报表</span>
+                <div class="clear"></div>
+            </span>
+            <div class="clear"></div>
+        </div>
+        <div style="padding-bottom:1%;">
+            <span style="line-height:2em; margin-left:1%;">选择报表内容：</span>
+            <div class="sheet_choice">
+                <div class="sheet_det">
+                    <div>选择设备</div>
+                    <div class="sheet_list">
+                        <span name="choice" onclick="chooseThis(this,'choice')">断路器设备1</span>
+                        <span name="choice" onclick="chooseThis(this,'choice')">断路器设备2</span>
+                    </div>
+                </div>
+                <img src="resources/img/next.png">
+                <div class="sheet_det">
+                    <div>
+                        <span>选择测量点</span>
+                        <span class="c15" style="float:right; margin-right:2%; cursor:pointer">删除</span>
+                    </div>
+                    <div class="sheet_list">
+                        <span name="choice2" onclick="chooseThis(this,'choice2')">A相电流</span>
+                        <span name="choice2" onclick="chooseThis(this,'choice2')">B相电流</span>
+                    </div>
+                </div>
+                <img src="resources/img/next.png">
+                <div class="sheet_det">
+                    <div>
+                        <span>报表项目</span>
+                        <span class="c15" style="float:right; margin-right:2%; cursor:pointer">删除</span>
+                    </div>
+                    <div class="sheet_list">
+                        <span name="choice3" onclick="chooseThis(this,'choice3')">断路器1.A相电流</span>
+                    </div>
+                </div>
+                <a class="build03" onclick="this.blur(); return false;">生成报表</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <table class="sheet" cellpadding="0" cellspacing="0">
+        <tr>
+            <th>时间间隔</th>
+            <th>断路器1.A相电流</th>
+            <th>断路器1.B相电流</th>
+            <th>XX</th>
+            <th>XX</th>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+    <div style="width:64%; margin:0 auto; margin-top:1%;">
+        <a class="build02" style="margin-left:2%"  onclick="this.blur(); return false;">打印</a>
+        <a class="build02" onclick="this.blur(); return false;">下载</a>
+    </div>
+</div>
+<!--报表结束 -->

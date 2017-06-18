@@ -1,0 +1,12 @@
+#ifndef ATTRIWINDOW_GLOBAL_H
+#define ATTRIWINDOW_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef ATTRIWINDOW_LIB
+# define ATTRIWINDOW_EXPORT Q_DECL_EXPORT
+#else
+# define ATTRIWINDOW_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // ATTRIWINDOW_GLOBAL_H

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <module>
+    <item id="2" name="agc" descript="agc" dllname="agc"  type="" version="V1.1"/>
+    <item id="3" name="object" descript="对象组态" dllname="object"  type="" version="V2.2"/>
+    <item id="4" name="rmt104" descript="rmt104" dllname="dada" type="" version="V1.2"/>   
+  </module>
+</config> 

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg width="100%" x="0" y="0" xmlns="http://www.w3.org/2000/svg" viewBox="-50 -50 1897.67 1031.64" height="100%" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:cge="http://iec.ch/TC57/2005/SVG-schema#">
+    <defs>
+        <linearGradient id="MyGradient_25862" y1="408.71333" x1="898.833" y2="425.04667" gradientUnits="userSpaceOnUse" x2="898.833">
+            <stop offset="0%" stop-color="#006000"/>
+            <stop offset="50%" stop-color="#00DB00"/>
+            <stop offset="100%" stop-color="#006000"/>
+        </linearGradient>
+        <marker orient="auto" markerHeight="9" viewBox="0 -4.5 12 9" refX="12" markerWidth="12" refY="0" markerUnits="strokeWidth" id="MyMarkey_25097">
+            <path fill="rgb(0,128,0)" stroke="rgb(0,128,0)" d="M 6 0 L 0 -4.5 L 12 0 L 0 4.5 z"/>
+        </marker>
+    </defs>
+    <rect width="5392.998" flags="GDF" x="-1797.666" y="-931.6391" fill="rgb(211,242,255)" height="2794.9173" maxid="1164" type="接线图" id="0" owner="西风电场升压站" rule="1"/>
+    <g id="共享层">
+        <g id="14">
+            <path style="stroke-width:0;fill:url(#MyGradient_25862)" d="M 0 408.713 H1797.67 V425.047 H0 Z">
+                <metadata>
+                    <cge:PSR_Ref ObjectID="Mgy2031#"/>
+                </metadata>
+            </path>
+        </g>
+        <g id="32">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 216.667 420.38 L 216.667 567.047"/>
+        </g>
+        <g id="438">
+            <a xlink:href="index.svg">
+                <rect width="706.322" x="512.213" y="0" height="102.9096" style="stroke-width:1;stroke:rgb(255,255,255);fill:rgb(255,255,255);"/>
+                <polygon points="512.213,0 512.213,102.91 513.213,101.91 513.213,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="512.213,0 1218.53,0 1217.53,1 513.213,1" stroke="rgb(255,255,255)" stroke-width="1"/>
+                <polygon points="1218.53,0 1217.53,1 1217.53,101.91 1218.53,102.91" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <polygon points="1217.53,101.91 1218.53,102.91 512.213,102.91 513.213,101.91" stroke="rgb(0,0,0)" stroke-width="1"/>
+                <text x="610.874" y="83.45480000000001" font-family="黑体" fill="rgb(128,0,0)" font-size="64">长园集团光伏电站</text>
+            </a>
+        </g>
+        <g id="439">
+            <image width="84.8968px" x="171.2366" y="780.2968" height="59.4664px" style="stroke-width:1;stroke:rgb(255,255,255);fill:none;" xlink:href="bmp/pv.jpg"/>
+        </g>
+        <g id="508">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 216.073 655.572 L 216.073 782.238"/>
+        </g>
+        <g id="543">
+            <line style="stroke-width:2;stroke:rgb(0,128,0);marker-end:url(#MyMarkey_25097);fill:none;" y1="306.122" x1="842.334" y2="158.824" x2="842.334"/>
+            <circle visibility="hidden" cx="842.334" cy="304.076" style="stroke-width:2;stroke:rgb(0,128,0);fill:none;" r="1.5" ownerid="543"/>
+            <metadata>
+                <cge:PSR_Ref ObjectID="Hyk4fjxzzf"/>
+            </metadata>
+        </g>
+        <g id="788">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 521.073 657.572 L 521.073 784.238"/>
+        </g>
+        <g id="790">
+            <image width="84.8968px" x="476.2366" y="782.2968" height="59.4664px" style="stroke-width:1;stroke:rgb(255,255,255);fill:none;" xlink:href="bmp/pv.jpg"/>
+        </g>
+        <g id="805">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 841.073 659.572 L 841.073 786.238"/>
+        </g>
+        <g id="806">
+            <image width="84.8968px" x="796.2366" y="784.2968" height="59.4664px" style="stroke-width:1;stroke:rgb(255,255,255);fill:none;" xlink:href="bmp/pv.jpg"/>
+        </g>
+        <g id="836">
+            <image width="84.8968px" x="1115.2316" y="783.2968" height="59.4664px" style="stroke-width:1;stroke:rgb(255,255,255);fill:none;" xlink:href="bmp/pv.jpg"/>
+        </g>
+        <g id="837">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 1160.07 658.572 L 1160.07 785.238"/>
+        </g>
+        <g id="853">
+            <image width="84.8968px" x="1475.2316" y="782.2968" height="59.4664px" style="stroke-width:1;stroke:rgb(255,255,255);fill:none;" xlink:href="bmp/pv.jpg"/>
+        </g>
+        <g id="854">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 1520.07 657.572 L 1520.07 784.238"/>
+        </g>
+        <g id="957">
+            <text x="173.447" y="901.659" font-family="黑体" fill="rgb(128,0,0)" font-size="27">01#阵列</text>
+        </g>
+        <g id="1076">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 842.302 303.799 L 842.302 420.465"/>
+        </g>
+        <g id="1077">
+            <text x="473.447" y="901.659" font-family="黑体" fill="rgb(128,0,0)" font-size="27">02#阵列</text>
+        </g>
+        <g id="1078">
+            <text x="803.447" y="901.659" font-family="黑体" fill="rgb(128,0,0)" font-size="27">03#阵列</text>
+        </g>
+        <g id="1079">
+            <text x="1113.45" y="901.659" font-family="黑体" fill="rgb(128,0,0)" font-size="27">04#阵列</text>
+        </g>
+        <g id="1080">
+            <text x="1473.45" y="901.659" font-family="黑体" fill="rgb(128,0,0)" font-size="27">05#阵列</text>
+        </g>
+        <g id="1135">
+            <rect width="89.05119999999999" x="171.6974" y="590.6582" height="44.8656" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,255,255);" transform="translate(216.223,613.091) rotate(270) translate(-216.223,-613.091)"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="657.14" x1="238.142" y2="568.283" x2="193.57"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="646.127" x1="208.837" y2="626.786" x2="208.837"/>
+            <polyline points="226.151,600.76 219.396,592.026 225.824,584.232 220.253,577.232" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;"/>
+        </g>
+        <g id="1136">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 522.667 420.38 L 522.667 567.047"/>
+        </g>
+        <g id="1137">
+            <rect width="89.05119999999999" x="476.6974" y="590.6582" height="44.8656" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,255,255);" transform="translate(521.223,613.091) rotate(270) translate(-521.223,-613.091)"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="657.14" x1="543.142" y2="568.283" x2="498.57"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="646.127" x1="513.837" y2="626.786" x2="513.837"/>
+            <polyline points="531.151,600.76 524.396,592.026 530.824,584.232 525.253,577.232" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;"/>
+        </g>
+        <g id="1142">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 842.667 420.38 L 842.667 567.047"/>
+        </g>
+        <g id="1143">
+            <rect width="89.05119999999999" x="796.6974" y="590.6582" height="44.8656" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,255,255);" transform="translate(841.223,613.091) rotate(270) translate(-841.223,-613.091)"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="657.14" x1="863.142" y2="568.283" x2="818.57"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="646.127" x1="833.837" y2="626.786" x2="833.837"/>
+            <polyline points="851.151,600.76 844.396,592.026 850.824,584.232 845.253,577.232" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;"/>
+        </g>
+        <g id="1148">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 1161.67 420.38 L 1161.67 567.047"/>
+        </g>
+        <g id="1149">
+            <rect width="89.05119999999999" x="1115.6944" y="590.6582" height="44.8656" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,255,255);" transform="translate(1160.22,613.091) rotate(270) translate(-1160.22,-613.091)"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="657.14" x1="1182.14" y2="568.283" x2="1137.57"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="646.127" x1="1152.84" y2="626.786" x2="1152.84"/>
+            <polyline points="1170.15,600.76 1163.4,592.026 1169.82,584.232 1164.25,577.232" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;"/>
+        </g>
+        <g id="1155">
+            <rect width="89.05119999999999" x="1476.6944" y="590.6582" height="44.8656" style="stroke-width:1;stroke:rgb(255,0,0);fill:rgb(255,255,255);" transform="translate(1521.22,613.091) rotate(270) translate(-1521.22,-613.091)"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="657.14" x1="1543.14" y2="568.283" x2="1498.57"/>
+            <line style="stroke-width:1;stroke:rgb(255,0,0);fill:none;" y1="646.127" x1="1513.84" y2="626.786" x2="1513.84"/>
+            <polyline points="1531.15,600.76 1524.4,592.026 1530.82,584.232 1525.25,577.232" style="stroke-width:1;stroke:rgb(255,0,0);fill:none;"/>
+        </g>
+        <g id="1160">
+            <path style="stroke-width:2;stroke:rgb(8,109,1);fill:none;" d="M 1522.67 420.38 L 1522.67 567.047"/>
+        </g>
+    </g>
+    <g id="SCD层">
+        <g id="968">
+            <text x="338.528" y="583.736" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi815kl9ce009n20150 value"/>
+            </metadata>
+        </g>
+        <g id="969">
+            <text x="338.528" y="547.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi815kl9cebsb750001 value"/>
+            </metadata>
+        </g>
+        <g id="970">
+            <text x="338.528" y="621.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi815kl9ce4jcgf0020 value"/>
+            </metadata>
+        </g>
+        <g id="971">
+            <text x="298.36" y="623.152" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">P</text>
+        </g>
+        <g id="972">
+            <text x="291.86" y="581.9109999999999" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ua</text>
+        </g>
+        <g id="973">
+            <text x="296.36" y="546.67" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ia</text>
+        </g>
+        <g id="998">
+            <text x="586.36" y="545.67" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ia</text>
+        </g>
+        <g id="999">
+            <text x="581.86" y="580.9109999999999" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ua</text>
+        </g>
+        <g id="1000">
+            <text x="588.36" y="622.152" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">P</text>
+        </g>
+        <g id="1001">
+            <text x="628.528" y="620.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi815m2kbh83mk30020 value"/>
+            </metadata>
+        </g>
+        <g id="1002">
+            <text x="628.528" y="546.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi815m2kbheph880001 value"/>
+            </metadata>
+        </g>
+        <g id="1003">
+            <text x="628.528" y="582.736" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi815m2kbhe250o0150 value"/>
+            </metadata>
+        </g>
+        <g id="1004">
+            <text x="948.528" y="582.736" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi815q1ak7u3spe0150 value"/>
+            </metadata>
+        </g>
+        <g id="1005">
+            <text x="948.528" y="546.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi815q1ak7cpk0h0001 value"/>
+            </metadata>
+        </g>
+        <g id="1006">
+            <text x="948.528" y="620.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi815q1ak7spi7a0020 value"/>
+            </metadata>
+        </g>
+        <g id="1007">
+            <text x="908.36" y="622.152" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">P</text>
+        </g>
+        <g id="1008">
+            <text x="901.86" y="580.9109999999999" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ua</text>
+        </g>
+        <g id="1009">
+            <text x="906.36" y="545.67" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ia</text>
+        </g>
+        <g id="1022">
+            <text x="1226.36" y="545.67" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ia</text>
+        </g>
+        <g id="1023">
+            <text x="1221.86" y="580.9109999999999" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ua</text>
+        </g>
+        <g id="1024">
+            <text x="1228.36" y="622.152" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">P</text>
+        </g>
+        <g id="1025">
+            <text x="1268.53" y="620.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi8159gp05jnibm0020 value"/>
+            </metadata>
+        </g>
+        <g id="1026">
+            <text x="1268.53" y="546.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi8159gp05a9hg00001 value"/>
+            </metadata>
+        </g>
+        <g id="1027">
+            <text x="1268.53" y="582.736" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi8159gp05fqkji0150 value"/>
+            </metadata>
+        </g>
+        <g id="1028">
+            <text x="1638.53" y="592.736" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi8159vjnjv1ioh0150 value"/>
+            </metadata>
+        </g>
+        <g id="1029">
+            <text x="1638.53" y="556.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi8159vjnjktjo00001 value"/>
+            </metadata>
+        </g>
+        <g id="1030">
+            <text x="1638.53" y="630.236" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0027oi8159vjnjm3ehh0020 value"/>
+            </metadata>
+        </g>
+        <g id="1031">
+            <text x="1598.36" y="632.152" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">P</text>
+        </g>
+        <g id="1032">
+            <text x="1591.86" y="590.9109999999999" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ua</text>
+        </g>
+        <g id="1033">
+            <text x="1596.36" y="555.67" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ia</text>
+        </g>
+        <g id="1084">
+            <text x="982.1699999999999" y="287.601" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0022oi815p8cmc96q080151 value"/>
+            </metadata>
+        </g>
+        <g id="1085">
+            <text x="982.1699999999999" y="251.101" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0022oi815p8cmchrq3n0002 value"/>
+            </metadata>
+        </g>
+        <g id="1086">
+            <text x="982.1699999999999" y="325.101" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">999.99</text>
+            <metadata>
+                <cge:Meas_Ref  ObjectID="analog 0022oi815p8cmc6143n0021 value"/>
+            </metadata>
+        </g>
+        <g id="1087">
+            <text x="942" y="327.017" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">P</text>
+        </g>
+        <g id="1088">
+            <text x="935.5" y="285.776" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ua</text>
+        </g>
+        <g id="1089">
+            <text x="940" y="250.536" font-family="Bitstream Charter" fill="rgb(0,85,255)" font-size="23">Ia</text>
+        </g>
+    </g>
+    <g>
+        <circle fill="yellow" cx="842.334" cy="304.0758" stroke="green" id="node_0" r="2.25"/>
+    </g>
+</svg>

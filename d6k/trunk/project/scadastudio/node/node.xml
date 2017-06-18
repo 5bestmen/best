@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+    <nserver>
+        <group name="server" count="2">
+            <n TagName="xzb-server" HostName="xzb-PC" OccNo="1" SlaveOccNo="2" BlockNo="1" NodeType="1" Network_IP_A="172.16.38.48" Network_IP_B="172.16.38.48" IsTimeSource="0" Program="组1.组2.组3" Config="" GrpName="server"/>
+        </group>
+    </nserver>
+    <nfes>
+        <group name="nodegroup0t" count="2">
+            <n TagName="node12" HostName="xzb-PC" SlaveOccNo="1" OccNo="3" BlockNo="0" NodeType="2" Network_IP_A="172.16.38.48" Network_IP_B="172.16.38.48" IsTimeSource="0" Program="" Config="fes0" GrpName=""/>
+            <n TagName="node14" HostName="" OccNo="4" BlockNo="0" NodeType="2" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="fes1" GrpName=""/>
+        </group>
+        <group name="nodegroup4" count="2">
+            <n TagName="node17" HostName="" SlaveOccNo="1"  OccNo="5" BlockNo="0" NodeType="2" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="fes2" GrpName=""/>
+        </group>
+        <group name="nodegroup6" count="2">
+            <n TagName="node18" HostName=""  SlaveOccNo="1"  OccNo="6" BlockNo="0" NodeType="2" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="fes3" GrpName=""/>
+        </group>
+        <group name="nodegroup7" count="2">
+            <n TagName="node20" HostName=""  SlaveOccNo="1"  OccNo="7" BlockNo="0" NodeType="2" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="fes4" GrpName=""/>
+            <n TagName="node21" HostName="" OccNo="8" BlockNo="0" NodeType="2" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="fes4" GrpName=""/>
+        </group>
+        <n TagName="nodefes13" HostName="1"  SlaveOccNo="1" OccNo="9" BlockNo="0" NodeType="2" Network_IP_A="0" Network_IP_B="test" IsTimeSource="0" Program="组1.组2.组3" Config="fes5" GrpName=""/>
+        <n TagName="node13" HostName=""  SlaveOccNo="1" OccNo="10" BlockNo="0" NodeType="2" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="fes6" GrpName=""/>
+    </nfes>
+    <nworksstation>
+        <group name="workstationgroup0" count="1">
+            <n TagName="workstation0" HostName="1" OccNo="11" BlockNo="0" NodeType="3" Network_IP_A="0" Network_IP_B="test" IsTimeSource="0" Program="组1.组2.组3" Config="" GrpName=""/>
+            <n TagName="workstation1" HostName="1" OccNo="12" BlockNo="0" NodeType="3" Network_IP_A="0" Network_IP_B="test" IsTimeSource="0" Program="组1.组2.组3" Config="" GrpName=""/>
+        </group>
+        <group name="nodegroup0" count="1">
+            <n TagName="node9" HostName="" OccNo="13" BlockNo="0" NodeType="3" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="" GrpName=""/>
+            <n TagName="node10" HostName="" OccNo="14" BlockNo="0" NodeType="3" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="" GrpName=""/>
+        </group>
+        <group name="nodegroup5" count="1">
+            <n TagName="node16" HostName="" OccNo="15" BlockNo="0" NodeType="3" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="" GrpName=""/>
+            <n TagName="node15" HostName="" OccNo="16" BlockNo="0" NodeType="3" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="" GrpName=""/>
+        </group>
+        <group name="nodegroup8" count="1">
+            <n TagName="node22" HostName="" OccNo="17" BlockNo="0" NodeType="3" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="" GrpName=""/>
+            <n TagName="node23" HostName="" OccNo="18" BlockNo="0" NodeType="3" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="" GrpName=""/>
+        </group>
+        <n TagName="node8" HostName="" OccNo="2" BlockNo="0" NodeType="3" Network_IP_A="127.0.0.1" Network_IP_B="127.0.0.1" IsTimeSource="0" Program="" Config="" GrpName=""/>
+    </nworksstation>
+</node>

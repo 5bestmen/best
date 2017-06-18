@@ -1,0 +1,36 @@
+<div style="position:relative; left:0; top:40px; z-index:99; padding-top:3%;">
+    <div style="width: 50%;float: left">
+    <div class="content">
+        <span class="c06" style="width: 50%">设备名：</span>
+        <span class="c07" ng-bind="breakerInfo.strDeviceName"></span>
+        <div class="clear"></div>
+    </div>
+    <div class="content">
+        <span class="c06" style="width: 50%">设备型号：</span>
+        <span class="c07" ng-bind="breakerInfo.strModel"></span>
+        <div class="clear"></div>
+    </div>
+    <div class="content">
+        <span class="c06" style="width: 50%">GUID：</span>
+        <span class="c07" ng-bind="breakerInfo.strGuid"></span>
+        <div class="clear"></div>
+    </div>
+    <div class="content">
+        <span class="c06" style="width: 50%">激活时间：</span>
+        <span class="c07" ng-bind="breakerInfo.strInstallTimeStamp.slice(0,19)"></span>
+        <div class="clear"></div>
+    </div>
+    <div class="content">
+        <span class="c06" style="width: 50%">安装位置：</span>
+        <span class="c07" ng-bind="breakerInfo.strPosition"></span>
+        <div class="clear"></div>
+    </div>
+        <div class="content">
+            <span class="c06" style="width: 50%">追加说明：</span>
+            <span class="c07" style="width: 50%;height: 10em" ng-bind="breakerInfo.strDeviceNote"></span>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div style='width: 20%;height: 23.5em;float: left;margin-left: 10px;background-image: url("resources/img/{{breakerInfo.strDeviceSnapShot == null ? "default.png" : breakerInfo.strDeviceSnapShot}}");background-size:100% 100%'>
+    </div>
+</div>
