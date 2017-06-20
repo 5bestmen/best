@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "ui_faulteventwgt.h"
+#include "asdu_info.h"
 
 class CCommThread;
 class CPointInfo;
@@ -16,7 +17,7 @@ public:
     CFaultEventWgt(CCommThread *pCommunicate, CPointInfo *pPointInfo, CInfoConfigWgt *pConfgWgt,QWidget *parent = 0);
     ~CFaultEventWgt();
 public slots:
-    void Slot_MalFuction(int nBinaryType, int nBinaryAddr, int nBinaryValue, QString strTime, int nAnalogType, QMap<int, int>);
+    void Slot_MalFuction(ASDUGZ gzData);
 
 private:
     Ui::CFaultEventWgt ui;

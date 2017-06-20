@@ -5101,6 +5101,16 @@ namespace Config
 				{
 					return it->second;
 				}
+				case HASHID::SYSTEMVARIABLEID:
+				{
+					nType = IDD_TYPE::IDD_SYSVAR;
+					return it->second;
+				}
+				case HASHID::USERVIRIABLEID:
+				{
+					nType = IDD_TYPE::IDD_USERVAR;
+					return it->second;
+				}
 				default:
 					break;
 				}

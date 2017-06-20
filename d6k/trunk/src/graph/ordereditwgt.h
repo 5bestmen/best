@@ -6,6 +6,7 @@
 class EditCellWgt;
 class QComboBox;
 class QSpinBox;
+class CBaseDyncEventItem;
 
 class COrderEditWgt : public QDialog
 {
@@ -19,11 +20,15 @@ public:
 	//初始化  窗口 tab内容
 	void InitWindowTabInfo();
 
+	QTableWidget *GetCurrentTableWidget();
+
 public slots:
     //绑定
 	void Slot_VarBindData();
 	//选择window  槽函数
 	void Slot_ChooseWindow();
+	//确认
+	void Slot_OrderConform();
 
 private:
 	Ui::COrderEditWgt ui;
@@ -42,5 +47,7 @@ private:
 	EditCellWgt *m_pWindowCellWgt;
 	//窗口动作
 	QComboBox *m_pWindowActionCombobox;
+	//该命令编辑数据
+	CBaseDyncEventItem* m_pEventItem;
 
 };

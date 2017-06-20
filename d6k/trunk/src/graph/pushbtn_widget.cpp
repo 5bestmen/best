@@ -2,6 +2,7 @@
 #include "widget_factory.h"
 #include "graph_module.h"
 #include "colour_define.h"
+#include "dync_event.h"
 
 #include <QStyleOptionGraphicsItem>
 #include <QPainter>
@@ -17,6 +18,8 @@ CPushBtnWidget::CPushBtnWidget(QRectF rcPos, BTN_TYPE shape):CBaseWidget(rcPos)
 	m_Shape = shape;
 
 	m_eRotateCenter = ROTATE_MIDCENTER;
+	//√¸¡Ó
+	m_pEventIntent = new CDyncEventData;
 
 	switch (shape)
 	{

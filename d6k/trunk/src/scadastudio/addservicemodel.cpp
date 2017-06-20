@@ -93,8 +93,15 @@ void CAddServiceModel::InitPara()
 {
 	m_horizontal_header_list.clear();
 
-	m_horizontal_header_list.append(QObject::tr("Name"));
+	//LoadType nLoadType;    //! 调用类型：dll形式 ，exe形式
+	//AppType  nAppType;	   //! 应用类型：内置应用，扩展服务
+
+
+	m_horizontal_header_list.append(QObject::tr("ProgramName"));
+	m_horizontal_header_list.append(QObject::tr("AppType"));
 	m_horizontal_header_list.append(QObject::tr("LoadType"));
+	m_horizontal_header_list.append(QObject::tr("LoadType"));
+
 	m_horizontal_header_list.append(QObject::tr("Argument"));
 	m_horizontal_header_list.append(QObject::tr("Description"));
 }

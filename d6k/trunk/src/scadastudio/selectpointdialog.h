@@ -2,6 +2,7 @@
 #define SELECTPOINTDIALOG_H
 
 #include <QDialog>
+#include <memory>
 #include "ui_selectpointdialog.h"
 
 namespace Config

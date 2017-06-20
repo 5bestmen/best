@@ -7,6 +7,8 @@
 #include "graph_module.h"
 #include "browsescreenwgt.h"
 #include "graph_module.h"
+#include "dync_var_op_event.h"
+#include "dync_file_op_event.h"
 
 
 
@@ -26,10 +28,15 @@ COrderEditWgt::COrderEditWgt(QWidget *parent)
 	ui.tableWidget_9->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 	ui.tableWidget_10->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
 	ui.tableWidget_11->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
 	//初始化变量数据结构
 	InitVarTabInfo();
 	//初始化window
 	InitWindowTabInfo();
+	//
+	connect(ui.pushButton,SIGNAL(clicked()),this,SLOT(Slot_OrderConform()));
+	//取消
+	connect(ui.pushButton_2,SIGNAL(clicked()),this,SLOT(close()));
 }
 
 COrderEditWgt::~COrderEditWgt()
@@ -161,4 +168,60 @@ void COrderEditWgt::Slot_ChooseWindow()
 		//TODO
 	}
 	pBrowseWgt->deleteLater();
+}
+
+void COrderEditWgt::Slot_OrderConform()
+{
+	//确认
+
+	//判断当前页面
+	if (ui.tabWidget->currentIndex() == 0)
+	{
+		//基础
+		if (ui.tabWidget_2->currentIndex() == 0)
+		{
+			//变量
+			m_pEventItem = new CDyncVarOpEventItem;
+		}
+		else if (ui.tabWidget_2->currentIndex() == 1)
+		{
+		}
+		else if (ui.tabWidget_2->currentIndex() == 2)
+		{
+		}
+		else if (ui.tabWidget_2->currentIndex() == 3)
+		{
+		}
+		else if (ui.tabWidget_2->currentIndex() == 4)
+		{
+		}
+		else if (ui.tabWidget_2->currentIndex() == 5)
+		{
+		}
+	}
+	else if (ui.tabWidget->currentIndex() == 1)
+	{
+		//操作
+		if (ui.tabWidget_3->currentIndex() == 0)
+		{
+
+		}
+		else if (ui.tabWidget_3->currentIndex() == 1)
+		{
+
+		}
+		else if (ui.tabWidget_3->currentIndex() == 1)
+		{
+
+		}
+		else if (ui.tabWidget_3->currentIndex() == 1)
+		{
+
+		}
+		else if (ui.tabWidget_3->currentIndex() == 1)
+		{
+
+		}
+	}
+	accept();
 }

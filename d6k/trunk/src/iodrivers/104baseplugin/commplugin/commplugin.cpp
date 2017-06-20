@@ -105,7 +105,7 @@ CCommPlugin::CCommPlugin(CFtuModule *pModule)
 	//定值设定
 	connect(m_pApduRecver, SIGNAL(Signal_devWriteBack(int, int, int)), this, SIGNAL(Signal_devWriteBack(int, int, int)));
     //故障
-    connect(m_pApduRecver, SIGNAL(Signal_MalFuction(int, int, int, QString, int, QMap<int, int>)), this, SIGNAL(Signal_MalFuction(int, int, int, QString, int, QMap<int, int>)));
+    connect(m_pApduRecver, SIGNAL(Signal_MalFuction(ASDUGZ)), this, SIGNAL(Signal_MalFuction(ASDUGZ)));
     //死区
     connect(m_pApduRecver, SIGNAL(Signal_ZoneFeedBack(int, float, int, int)), this, SIGNAL(Signal_ZoneFeedBack(int, float, int, int)));
 	//定值读取

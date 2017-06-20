@@ -3,6 +3,8 @@
 #include <QTextOption>
 #include "base_widget.h"
 
+
+class CDyncEventData;
 class CPushBtnWidget : public CBaseWidget
 {
 	Q_OBJECT
@@ -86,7 +88,14 @@ public:
 	//设置字体位置
 	void SetFontLayout(QTextOption &txtOpt);
 
+	//获取命令信息
+	CDyncEventData* GetEventIntent()
+	{
+		return m_pEventIntent;
+	}
 
 private:
 	BTN_TYPE m_Shape;
+	//命令
+	CDyncEventData* m_pEventIntent;
 };

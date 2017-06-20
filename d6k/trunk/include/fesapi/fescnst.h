@@ -96,6 +96,7 @@ enum IO_DATASOURCE
 
 enum NODE_TYPE
 {
+	NODE_NULL =   0 , //!< 无效节点
 	NODE_SVR    = 1,  //!< 服务器
 	NODE_FES    = 2,  //!< 前置机
 	NODE_CLIENT = 3,  //!< 工作站

@@ -341,6 +341,10 @@ bool CFesDB::PutRtData(int32u nIddType, int32u nOccNo, int32u nFiledID, IO_VARIA
 		}
 		break;
 	}
+	case IDD_USERVAR:
+		break;
+	case IDD_SYSVAR:
+		break;
 	default:
 		Q_ASSERT(false);
 		bRet = false;

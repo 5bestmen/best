@@ -68,6 +68,7 @@
 #include "createnewtemplatewgt.h"
 #include "added_widget.h"
 #include "curveplot_wgt.h"
+#include "pushbtn_widget.h"
 
 #include <QMouseEvent>
 #include <QMessageBox>
@@ -6703,6 +6704,19 @@ void CGraphView::ChangeProperty()
 
 		//AddHistFiles();
 	}
+
+
+	//°´Å¥ÊôÐÔ
+
+	if (pWidget->GetWidgetType() == DRAW_TOOLS_BTN_NORMAL)
+	{
+		CPushBtnWidget *pBtnWgt = dynamic_cast<CPushBtnWidget*>(pWidget);
+		if (pBtnWgt != nullptr)
+		{
+			m_pBindInfoManager->setValue(m_mapIdToProperty[ITEM_PUSHBUTTON_PRESSORDER], reinterpret_cast<long long>(pBtnWgt->GetEventIntent()));
+		}
+	}
+	
 
 
 }

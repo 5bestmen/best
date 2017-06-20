@@ -883,12 +883,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_nodeworkstationmodel.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_outputmessagerclient.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_outputmessagerserver.cpp">
-      <Filter>Generated Files\Release</Filter>
-    </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_analogalarmview.cpp">
       <Filter>Generated Files\Debug</Filter>
     </ClCompile>
@@ -2490,8 +2484,6 @@
     <CustomBuild Include="forwarding_select_domodel.h">
       <Filter>module\config\fes config\forwarding\forwarding_do\form</Filter>
     </CustomBuild>
-    <CustomBuild Include="GeneratedFiles\debug\moc_predefs.h.cbt" />
-    <CustomBuild Include="GeneratedFiles\release\moc_predefs.h.cbt" />
     <CustomBuild Include="fes_di_select_doubledi_dialog.ui">
       <Filter>module\config\fes config\data\di\form</Filter>
     </CustomBuild>

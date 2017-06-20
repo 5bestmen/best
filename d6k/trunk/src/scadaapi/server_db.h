@@ -23,9 +23,12 @@
 #define SERVER_DB_MODULE_H
 
 #include "scada_db.h"
+#include "variant.h"
 #include "fesapi/fes_magicmem.h"
+#include <array>
 #include <vector>
 #include <memory>
+#include <functional>
 #include <unordered_map>
 
 typedef std::shared_ptr<VARDATA> VARDATA_DEF;
@@ -47,6 +50,49 @@ public:
 	{
 		return m_nEstimateSize;
 	}
+	bool  GetUserVarByOccNo(int32u nOccNo, VARDATA **pUserVar);
+	bool  GetSysVarByOccNo(int32u nOccNo,  VARDATA** pSysVar);
+
+	bool  GetRTData(int32u nIddType, int32u nOccNo, int32u nFiledID, IO_VARIANT &RetData);
+	bool  PutRtData(int32u nIddType, int32u nOccNo, int32u nFiledID, IO_VARIANT *pData, void *pExt, void *pSrc);
+
+private:
+	void  InitFuncArrary();
+	//获取
+	std::array< std::function<bool(int32u, IO_VARIANT&)  >, ATT_MAX> m_arrGetUserVarRTDataFuncs;
+	std::array< std::function<bool(int32u, IO_VARIANT&)  >, ATT_MAX> m_arrGetSysVarRTDataFuncs;
+	//设置属性
+	std::array< std::function<bool(int32u, IO_VARIANT*, void*, void*)   >, ATT_MAX> m_arrUserVarSetFunctions;
+	std::array< std::function<bool(int32u, IO_VARIANT*, void*, void*)   >, ATT_MAX> m_arrSysVarSetFunctions;
+
+private:
+	bool GetUserVarScanEnable(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVarQua(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaState(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaValEx(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaSignalValEx(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaManSet(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaLowOutPut(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaHighOutPut(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaHighQua(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaLowQua(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaDesc(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaPin(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetUserVaUint(int32u nOccNo, IO_VARIANT &RetData) const;
+
+	bool GetSysVarScanEnable(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVarQua(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaState(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaValEx(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaSignalValEx(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaManSet(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaLowOutPut(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaHighOutPut(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaHighQua(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaLowQua(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaDesc(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaPin(int32u nOccNo, IO_VARIANT &RetData) const;
+	bool GetSysVaUint(int32u nOccNo, IO_VARIANT &RetData) const;
 private:
 	size_t m_nEstimateSize;
 protected:

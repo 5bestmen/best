@@ -20,7 +20,7 @@
       <widget class="QTreeWidget" name="treeWidget">
        <column>
         <property name="text">
-         <string>Screen</string>
+         <string/>
         </property>
        </column>
       </widget>

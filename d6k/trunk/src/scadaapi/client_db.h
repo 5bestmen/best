@@ -48,6 +48,8 @@ public:
 	{
 		return m_nEstimateSize;
 	}
+	bool  GetRTData(int32u nIddType, int32u nOccNo, int32u nFiledID, IO_VARIANT &RetData);
+	bool  PutRtData(int32u nIddType, int32u nOccNo, int32u nFiledID, IO_VARIANT *pData, void *pExt, void *pSrc);
 private:
 	size_t m_nEstimateSize;
 protected:

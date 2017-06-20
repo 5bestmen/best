@@ -2507,22 +2507,17 @@ void CApduRecver::OnRecvDefalutMsg(char *pBuff, int nLength)
 
     ASDUGZ* pAsduGZ = (ASDUGZ*)pBuff;
 
-    int nBinaryType = pAsduGZ->m_BinaryType;
-    int nBinaryAddr = pAsduGZ->m_BinaryAddr.GetAddr();
-    int nBinaryValue = pAsduGZ->m_BinaryValue;
 
-    QString strErrorTime = pAsduGZ->m_BinaryTime.Dump();
+	emit Signal_MalFuction(*pAsduGZ);
+	if (pAsduGZ->m_AnalogType == 1)
+	{
+		//short
+		
+	}
+	else
+	{
+		//float
 
-    int nAnalogType = pAsduGZ->m_AnalogType;
-
-    //数据
-    QMap<int, int> mapData;
+	}
     
-    for (int i = 0; i < pAsduGZ->GetItemCount(); i++)
-    {
-        mapData.insert(pAsduGZ->m_data[i].m_infoaddr.GetAddr(), pAsduGZ->m_data[i].m_AnalogValue);
-
-    }
-
-    emit Signal_MalFuction(nBinaryType, nBinaryAddr, nBinaryValue, strErrorTime, nAnalogType, mapData);
 }

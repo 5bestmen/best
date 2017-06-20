@@ -20,6 +20,7 @@ CCommThread::CCommThread(QObject *parent)
 	qRegisterMetaType<FILE_CATALOG_REQUEST_1>("FILE_CATALOG_REQUEST_1&");
 	qRegisterMetaType<FILE_ATTR_INFO>("FILE_ATTR_INFO&");
 	qRegisterMetaType<QList<Catalog_Info>>("QList<Catalog_Info>&");
+	qRegisterMetaType<ASDUGZ>("ASDUGZ");
 }
 
 CCommThread::~CCommThread()
@@ -71,7 +72,7 @@ void CCommThread::run()
 	connect(&commPlugin, SIGNAL(Signal_DisAnalogShortFloat(int, int, float, int)), this, SIGNAL(Signal_ScaledAnalogNormal(int, int, float, int)));
 	connect(&commPlugin, SIGNAL(Signal_AnalogNormalShortTime(int, int, float, int)), this, SIGNAL(Signal_AnalogNormalShortTime(int, int, float, int)));
     //故障
-    connect(&commPlugin, SIGNAL(Signal_MalFuction(int, int, int, QString, int, QMap<int, int>)), this, SIGNAL(Signal_MalFuction(int, int, int, QString, int, QMap<int, int>)));
+    connect(&commPlugin, SIGNAL(Signal_MalFuction(ASDUGZ)), this, SIGNAL(Signal_MalFuction(ASDUGZ)));
 
 	//发送和接收到的数据
 	connect(&commPlugin, SIGNAL(Signal_Write16Data(QByteArray)), this, SIGNAL(Signal_Write16Data(QByteArray)));

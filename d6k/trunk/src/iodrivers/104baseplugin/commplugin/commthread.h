@@ -120,7 +120,7 @@ signals:
     //复位进程
     void Signal_ResetProcess();
     //故障
-    void Signal_MalFuction(int nBinaryType, int nBinaryAddr, int nBinaryValue, QString strTime, int nAnalogType, QMap<int, int>);
+    void Signal_MalFuction(ASDUGZ gzData);
     //死区
     void Signal_ZoomArea(ZOOM_BASE &zoomBaseInfo);
     //死区反馈

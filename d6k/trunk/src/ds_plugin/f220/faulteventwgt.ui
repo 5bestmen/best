@@ -30,6 +30,11 @@
       </column>
       <column>
        <property name="text">
+        <string>BinaryNum</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
         <string>BinaryType</string>
        </property>
       </column>
@@ -45,12 +50,17 @@
       </column>
       <column>
        <property name="text">
-        <string>nAnalyType</string>
+        <string>MalfunctionTime</string>
        </property>
       </column>
       <column>
        <property name="text">
-        <string>MalfunctionTime</string>
+        <string>AnalogNum</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>nAnalyType</string>
        </property>
       </column>
       <column>

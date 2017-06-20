@@ -124,9 +124,8 @@ QWidget *CBindInfoFactory::createEditor(QtVariantPropertyManager *manager,QtProp
 		editor->SetTypeFalg(CBindDataWgt::ITEM_PUSHBUTTON_ORDER);
 		editor->SetWriteFlag(m_bWriteFlag);
 		editor->SetArrDataTypes(m_arrDataType);
-
-		editor->SetBindData(manager->value(property).toString());
-
+		editor->SetBindData(QString::number(manager->value(property).toLongLong()));
+		editor->SetDynamicBrush(manager->value(property).toLongLong());
 		//TODO
 		theCreatedEditors[property].append(editor);
 		theEditorToProperty[editor] = property;

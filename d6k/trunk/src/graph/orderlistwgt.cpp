@@ -1,5 +1,6 @@
 #include "orderlistwgt.h"
 #include "ordereditwgt.h"
+#include "dync_event.h"
 
 COrderListWgt::COrderListWgt(QWidget *parent)
 	: QDialog(parent)
@@ -7,6 +8,8 @@ COrderListWgt::COrderListWgt(QWidget *parent)
 	ui.setupUi(this);
 	connect(ui.pushButton,SIGNAL(clicked()),this,SLOT(Slot_AddNewOrder()));
 	m_pOrderEditWgt = nullptr;
+
+	m_pEventIntent = new CDyncEventData;
 }
 
 COrderListWgt::~COrderListWgt()
@@ -15,6 +18,8 @@ COrderListWgt::~COrderListWgt()
 	{
 		m_pOrderEditWgt->deleteLater();
 	}
+
+	delete m_pEventIntent;
 }
 
 void COrderListWgt::Slot_AddNewOrder()
@@ -24,5 +29,10 @@ void COrderListWgt::Slot_AddNewOrder()
 		m_pOrderEditWgt = new COrderEditWgt;
 	}
 
-	m_pOrderEditWgt->exec();
+	if (m_pOrderEditWgt->exec())
+	{
+		//МгдиЪ§Он
+		
+	}
+	;
 }

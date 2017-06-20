@@ -3356,7 +3356,7 @@ namespace Config
 		
 		if (strDesc.size() > MAX_NAME_LENGTH_SCADASTUDIO)
 		{
-			pUser->m_strDescription = strDesc.mid(0, MAX_NAME_LENGTH_SCADASTUDIO);
+			pUser->m_strDescription = strDesc.mid(0, MAX_NAME_LENGTH_SCADASTUDIO / 2);
 		}
 		else
 		{
@@ -4535,16 +4535,17 @@ namespace Config
 		if (Module_ID::DEVICE_AI == nType ||
 			Module_ID::DEVICE_DI == nType || 
 			Module_ID::DEVICE_AO == nType || 
-			Module_ID::DEVICE_DO == nType)
+			Module_ID::DEVICE_DO == nType ||
+			Module_ID::USERVARAIBLE)
 		{
 			if (stTagName.isEmpty())
 			{
 				//stTagName为空，删除关联关系
-				DeleteUserVariableSourceTagNameArr(strLastTagName.toStdString());
+				return DeleteUserVariableSourceTagNameArr(strLastTagName.toStdString());
 			}
 			else
 			{
-				ModifyUserVariableSourceTagNameArr(stTagName.toStdString(), strLastTagName.toStdString());
+				return ModifyUserVariableSourceTagNameArr(stTagName.toStdString(), strLastTagName.toStdString());
 			}
 		}
 		else if (Module_ID::NODE_MODULE_SERVER == nType)
@@ -6185,7 +6186,9 @@ namespace Config
 						pUser->m_nType = xml.attributes().value("DataType").toInt();
 						pUser->m_dbInitValue = xml.attributes().value("InitValue").toDouble();
 						pUser->m_nInitialQua = xml.attributes().value("InitialQua").toInt();
+						
 						pUser->m_strSourceTagName = xml.attributes().value("SourceTagName").toString();
+
 						pUser->m_strScaleTagName = xml.attributes().value("ScaleTagName").toString();
 						pUser->m_nScaleType = xml.attributes().value("ScaleType").toInt();
 						pUser->m_nScaleOccNo = xml.attributes().value("ScaleOccNo").toInt();

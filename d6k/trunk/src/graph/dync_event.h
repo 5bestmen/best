@@ -37,8 +37,7 @@ class CVariant;
 
  
 class CBaseWidget;
-class CBaseDyncEventItem;
-class CDyncFileOpEventItem;
+class CBaseDyncEventItem; 
 
 class CEventIntent
 {
@@ -78,26 +77,16 @@ public:
 	virtual CBaseDyncData *CloneDyncData();
 	// 处理动态事件
 	virtual bool ProcessAction(CBaseWidget *pWidget, CEventIntent & intent);
-	// 
-	void GetFileOpEvents(std::vector <CDyncFileOpEventItem*> &data) const;
 
-	std::vector<CBaseDyncEventItem*> & GetFileOpEvents();
-
-	// 设置文件操作事件，此操作会删除原有的所有文件类操作
-	void SetFileOpEvents(const std::vector <CDyncFileOpEventItem*> &data);
 	// 删除事件
 	void DeleteOpEvent(CBaseDyncEventItem *pEvent);
 
 	void DeleteEvent(CBaseDyncEventItem *pEvent);
 	// 检查事件，删除已经被取消掉的事件
 	void TrimData();
-	//
- 	void GetFileOpEvents(std::vector<CBaseDyncEventItem*> &arrEvents);
-	// 创建一个新的操作
-	CDyncFileOpEventItem* CreateFileOpEvent();
-	bool AddFileOpEvent(CDyncFileOpEventItem * pFileOp);
-	// 保存
-	bool SaveFileOp(CDyncFileOpEventItem * pFileOp);
+
+	//创建事件
+	CBaseDyncEventItem* CreateEventItem(int nEventType);
 
 protected:
 	//! 每个网格可能存在多种动态连接

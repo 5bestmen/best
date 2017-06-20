@@ -34,16 +34,16 @@
 #define NULL    ((void *)0)
 #endif
 #endif
- 
+
 
 #pragma pack (1)
 
 /*! \struct  FesInfo
 *   \brief 前置基本信息 */
-struct FesInfo 
+struct FesInfo
 {
 	int FesId;                                             //!前置ID
-	char FesDesc[MAX_NAME_LENGTH + STRING_PAD ];           //!前置描述
+	char FesDesc[MAX_NAME_LENGTH + STRING_PAD];           //!前置描述
 	char FesTagName[MAX_NAME_LENGTH + STRING_PAD];         //!前置TagName
 	char FesVersion[MAX_NAME_LENGTH + STRING_PAD];         //!前置版本
 	char FesExt[MAX_NAME_LENGTH + STRING_PAD];             //!前置扩展信息
@@ -52,7 +52,7 @@ struct FesInfo
 
 /*! \struct  StringUnit
 *   \brief 字符串基本单元 */
-struct StringUnit 
+struct StringUnit
 {
 	int32u OccNo;
 	char Desc[MAX_NAME_LENGTH + STRING_PAD];
@@ -92,8 +92,8 @@ struct NODE
 
 	int32u NetAIpV6Addr[4];  //! IPV6 的A网地址
 	int32u NetBIpV6Addr[4];  //! IPV6 的B网地址
-	
-	int8s TagName[MAX_NAME_LENGTH + STRING_PAD ];   //! group name of nodes   == TagName
+
+	int8s TagName[MAX_NAME_LENGTH + STRING_PAD];   //! group name of nodes   == TagName
 	int8s HostName[MAX_NAME_LENGTH + STRING_PAD];     /* name of a node */
 	int8s GroupName[MAX_NAME_LENGTH + STRING_PAD];   //! 组名，如果是单机，该字段为空，如果主备机，该字段一样。
 };
@@ -107,7 +107,7 @@ union COMM_PARA
 		int32u  MasterComPort;                     /*串口号  1～32对应于COM1～COM32*/
 		int32u  SlaveComPort;                      /*备用串口号*/
 		int32u  BaudRate;                          /*波特率波特率：110、300、600、1200、2400、4800、9600、14400、19200、28800、38400、56000、57600、115200、128000、256000、500000*/
-		
+
 		int8u  Parity;                            /*校验：0－无校验  1－偶校验 2－奇校验*/
 		int8u  DataBit;                           /*数据位：4，5，6，7，8*/
 		int8u  StopBit;                           /*停止位：0－1位  1－1.5位  2－2位*/
@@ -137,7 +137,7 @@ struct CHANNEL
 	int8u   Heartbeat;                         /* 心跳 */
 	int8u   PrintOn;                           //调试开关：1：输出通道通讯报文，0：不输出
 	int8u   WorkNet;                           /*当前工作网络*/
-	
+
 	COMM_PARA CommPara;
 
 	int32u State;
@@ -151,7 +151,7 @@ struct CHANNEL
 
 	char    ChannelName[MAX_NAME_LENGTH + STRING_PAD]; //通道名称
 	char    DriverName[MAX_NAME_LENGTH + STRING_PAD]; //驱动名称
-	
+
 	int8u	DriverType;	  //驱动类型
 
 	int8u	StateCore;	//通道内核状态
@@ -161,19 +161,19 @@ struct CHANNEL
 };
 
 /*! \struct  DEVICE
-*   \brief  装置定义 
-    \ 预留考虑定值管理
+*   \brief  装置定义
+	\ 预留考虑定值管理
 */
 struct DEVICE
 {
 	int32u  OccNo;
-	
+
 	int32u  NameOccNo;     //! 只读字符串池内的ID序号
 	int32u  NodeOccNo;     //! 隶属于哪个节点
 	int32u  ChannelOccNo;  //! 隶属于哪个通道
 
 	int32u  ModelOccNo;     //! 装置引入时用的模板ID 型号标识:DA-R771、772??
-	
+
 	int8u  Type;           //! 装置类型   1－保护测控  2-保护  3－测控 4－管理机 5-其他
 	int8u  Pad1;
 	int16u Pad2;
@@ -190,7 +190,7 @@ struct DEVICE
 };
 
 /*! \struct  DIN
-*   \brief  开关量定义  
+*   \brief  开关量定义
 */
 struct DIN
 {
@@ -222,11 +222,11 @@ struct DIN
 	int8u Init;                              /* UNINITED / INITED ,DEFAULT_INIT  */
 	int8u Quality;                           /* QUALITY_OK /QUALITY_BAD, DEFAULT_QUA */
 	int8u ManSet;                            /* 0: Normal, 1: has been Manual set **/
- 	               
-	int8u Value;            			    /* DI's Output: 0/1                  */ 
-	int8u NegValue;         		        /* DI's complementery of Output: 1/0 */ 
+
+	int8u Value;            			    /* DI's Output: 0/1                  */
+	int8u NegValue;         		        /* DI's complementery of Output: 1/0 */
 	int8u RawValue;                     	//原始值   /* Data collects from inst. , produces */  /* Output/NotOutput based on SiglaType */
-  
+
 
 	int8u  CtrlByte;                          /* 控制字 */
 	int8u  IsSOE;                           /* 0: Non-SOE, 1: SOE **/
@@ -234,7 +234,7 @@ struct DIN
 	int8u StartCtrl;                          /* filled by cfg. to initilized a sequence*/
 	int8u SignalType;                         /* 0 : NORMAL_OPEN; 1: NORMAL_CLOSE  */
 
-	
+
 	// 统计及计算后整理
 	int32u  NodeOccNo;     //! 隶属节点
 	int32u  ChannelOccNo;  //! 隶属通道
@@ -243,15 +243,15 @@ struct DIN
 
 	int32u  AlarmOccNo;    //! 关联的告警ID
 	int32u  DataSource;    //! 数据来源 由组态生成？
-	
+
 	int32u  ExpressOccNo;  //! 计算表标识
 
-	
+
 	int32u  Desc0_OccNo;
 	int32u  Desc1_OccNo;
 
 	int32u  PinLabelOccNo;   //! 端子号描述(字符串)
-	
+
 	TIMEPAK LastUpdateTime;  //! 最近一次更新时间
 };
 
@@ -310,7 +310,7 @@ struct  AIN_ALARM
 {
 	int32u  OccNo;
 	int32u  NameOccNo;   //! 只读字符串池内的ID序号
-	 
+
 	int8u   ScanEnable;     //! 是否启用
 	int8u   OnQualityGood;  //! 测值品质好才告警
 	int8u   DeadBandType;   //! 死区的类型，0是相对值，1是绝对值
@@ -411,10 +411,10 @@ struct AIN
 	int32u  OccNo;
 	int32u  BlockNo;       //! 板内测点排行号 (LSN) ，在装置内的顺序号，可以不连续，值非0
 	int32u  NameOccNo;     //! 只读字符串池内的ID序号
-	
+
 	int8u   IsSpare;       //! 是否备用点，不送往SCADA; 从其他点表导入可能存在无用的备用点
 	int8u   Pad1;
-	int16u  Pad2; 
+	int16u  Pad2;
 
 	char    Address[MAX_ADDRESS_LENGTH + STRING_PAD]; //点地址
 
@@ -425,7 +425,7 @@ struct AIN
 	int8u Init;                              /* UNINITED / INITED ,DEFAULT_INIT  */
 	int8u Quality;                           /* QUALITY_OK /QUALITY_BAD, DEFAULT_QUA */
 	int8u ManSet;                            /* 0: Normal, 1: has been Manual set **/
-					                     	//人工置数点，不从装置更新值
+											//人工置数点，不从装置更新值
 
 	fp64  SignalValue;            /* Output referred signal, assigned by drive */
 	fp64  RawValue;	              //！ 原始值
@@ -454,7 +454,7 @@ struct AIN
 	int32u  NodeOccNo;      //! 隶属节点
 	int32u  ChannelOccNo;   //! 隶属通道
 	int32u  DeviceOccNo;    //! 隶属通道	
-	
+
 	int32u  AlarmOccNo;     //! 关联的告警，一个告警内部有多个限值告警
 	int32u  ExpressOccNo;   //! 计算表标识
 
@@ -489,7 +489,7 @@ struct DOUT
 	int8u ScanEnable;                           /* SCAN_OUT / SCAN_IN, DEFAULT_SCAN */
 	int8u Init;                              /* UNINITED / INITED ,DEFAULT_INIT  */
 	int8u Quality;                           /* QUALITY_OK /QUALITY_BAD, DEFAULT_QUA */
-	 
+
 	int8u Output;                            /* DI's Output: 0/1                  */
 	int8u RelayState;                        /* collected from modules specifying real output */
 	int8u CtrlType;                          //0: Select  1:Sel Ok / Exec  2:Cancel
@@ -512,7 +512,7 @@ struct DOUT
 	int32u  NodeOccNo;     //! 隶属节点
 	int32u  ChannelOccNo;  //! 隶属通道
 	int32u  DeviceOccNo;   //! 隶属通道
-	
+
 	int32u  AlarmOccNo;    //! 关联的告警ID
 	int32u  ExpressionOccNo;  //! 计算表标识
 
@@ -527,7 +527,7 @@ struct AOUT
 	int32u  OccNo;
 	int32u  BlockNo;       //! 板内测点排行号 (LSN) ，在装置内的顺序号，可以不连续，值非0
 	int32u  NameOccNo;   //! 只读字符串池内的ID序号
-	
+
 	int8u   IsSpare;       //! 是否备用点，不送往SCADA; 从其他点表导入可能存在无用的备用点
 	int8u   Pad1;
 	int16u  Pad2;
@@ -538,7 +538,7 @@ struct AOUT
 	int8u IsDefined;                         /* YES : is defined, NO: spare */
 	int8u ScanEnable;                           /* SCAN_OUT / SCAN_IN, DEFAULT_SCAN */
 	int8u Init;                              /* UNINITED / INITED ,DEFAULT_INIT  */
-	int8u Quality;                           /* QUALITY_OK /QUALITY_BAD, DEFAULT_QUA */	
+	int8u Quality;                           /* QUALITY_OK /QUALITY_BAD, DEFAULT_QUA */
 
 	fp64    Output;                            /* AIN's output, caculated by drive or exp. */
 	fp64    RawData;                           /* data collects from instrument  */
@@ -560,7 +560,7 @@ struct AOUT
 	int32u  NodeOccNo;      //! 隶属节点
 	int32u  ChannelOccNo;   //! 隶属通道
 	int32u  DeviceOccNo;    //! 隶属通道
-	
+
 	int32u  AlarmOccNo;     //! 关联的告警ID
 	int32u  ExpressOccNo;   //! 计算表标识
 
@@ -675,9 +675,9 @@ struct FT_CHANNEL
 
 	int32u State;
 	int8u Prority;
-	  
+
 	// 加载后计算出来的信息
-	
+
 	int32u  NodeOccNo;  //! 隶属于哪个节点
 
 	char    ChannelName[MAX_NAME_LENGTH + STRING_PAD]; //通道名称
@@ -814,8 +814,8 @@ struct AINALARM_MSG
 	int16u	AlarmFlag;     //! 最高位为1不允许报警,为0允许报警
 	int16u  AlarmState;    //! 对开关量无意义;对模拟量,
 	fp64	Value;         //! 当前测值
-	
-	int8u  ExtraData[MSG_LEN - sizeof(AINALARM_MSG_H)]; 
+
+	int8u  ExtraData[MSG_LEN - sizeof(AINALARM_MSG_H)];
 };
 
 /*! \struct  DINALARM_MSG_H
@@ -872,7 +872,7 @@ struct DIAG_MSG_H
 
 	int32u  NodeOccNo;
 	int32u  ChannelOccNo;
-	int32u  DeviceOccNo;	 
+	int32u  DeviceOccNo;
 };
 /*! \struct  DIAG_MSG
 *   \brief  自诊断告警事件信文 */
@@ -961,8 +961,8 @@ enum NBM_MSG_TYPES
 	NBMT_MSG_SYNCH = 0,			 // 消息同步类型
 	NBMT_MSG_EVENT,				 // 事项消息类型
 	NBMT_CONTROL_EVENT,			 // 遥控消息类型
-							
-	SEND_SWITCH_CMD_REQ	= 10010, // 发送切换报文
+
+	SEND_SWITCH_CMD_REQ = 10010, // 发送切换报文
 	RECV_SWITCH_CMD_RES = 20010, // 接收响应
 };
 
@@ -971,10 +971,10 @@ enum FE_MCODE
 	MT_SETVALUE = 0X03,       //!< 设值
 	MT_SETVALUE_DONE = 0X04,  //!< 设值完成
 	MT_NORMAL_EVENT = 0X50,   //!< 普通事件
-	MT_OPER  = 0X5A,    //!< 控制操作调节
-	MT_DIAG  = 0X5B,    //!< 自诊断信息
+	MT_OPER = 0X5A,    //!< 控制操作调节
+	MT_DIAG = 0X5B,    //!< 自诊断信息
 	MT_RELAY = 0X5D,    //!< 保护事件
-	MT_RELAY_EXT= 0X5E, //!< 保护扩展事件 
+	MT_RELAY_EXT = 0X5E, //!< 保护扩展事件 
 	MT_RELAY_DIAG = 0X5F, //!< 保护自诊断
 };
 
@@ -990,7 +990,7 @@ struct FES_CMD
 	int32u NodeOccNo;
 	int32u ChannelOccNo;
 	int32u OccNo;
-	
+
 	IO_VARIANT	Value;
 };
 

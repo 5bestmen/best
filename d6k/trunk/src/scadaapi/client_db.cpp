@@ -148,6 +148,16 @@ size_t CClientDB::LoadMem(unsigned char * pAddr)
 	return m_nEstimateSize;
 }
 
+bool CClientDB::GetRTData(int32u nIddType, int32u nOccNo, int32u nFiledID, IO_VARIANT &RetData)
+{
+	return true;
+}
+
+bool CClientDB::PutRtData(int32u nIddType, int32u nOccNo, int32u nFiledID, IO_VARIANT *pData, void *pExt, void *pSrc)
+{
+	return true;
+}
+
 size_t CClientDB::CreateAinAlarm(unsigned char* pAddr)
 {
 	Q_ASSERT(pAddr);

@@ -237,9 +237,47 @@ bool CUserVariableModel::setData(const QModelIndex &index, const QVariant &value
 				}
 				
 
-				memset(m_pVariable->m_arrItem[nRow]->m_szTagName, 0, sizeof(m_pVariable->m_arrItem[nRow]->m_szTagName));
-				int nSize = value.toString().size();
-				strncpy(m_pVariable->m_arrItem[nRow]->m_szTagName, value.toString().toStdString().c_str(), qMin(MAX_TAGNAME_LEN_SCADASTUDIO, nSize));
+				////////////////////////////////////////////////////通知外部模块scada variable module/////////////////////////////////////////////////////
+				//scada variable
+				std::vector<QString>  vec;
+				m_pCore->GetModulesName(vec);
+				auto pScadaVariableModule = m_pCore->GetModule("scada_variable");
+				Q_ASSERT(pScadaVariableModule);
+				if (!pScadaVariableModule)
+				{
+					auto strError = tr("Get scada variable module poiter failed!!!");
+					m_pCore->LogMsg(SCADAVARIABLE_DESC, strError.toStdString().c_str(), LEVEL_1);
+
+					return false;
+				}
+				bool bFlag = pScadaVariableModule->ChangeTagNameNodify(strSourceTagName, QString(strLastTagName.c_str()), Module_ID::USERVARAIBLE);
+				Q_ASSERT(bFlag);
+				if (!bFlag)
+				{
+					auto strError = QObject::tr("ScadaVariable relation SourceTagName %1 modify error!").arg(m_pVariable->m_arrItem[nRow]->m_szTagName);
+					m_pCore->LogMsg(FES_DESC, strError.toStdString().c_str(), LEVEL_1);
+
+					return false;
+				}
+				//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+				
+				//HASH ID修改
+				if (m_pFesData->ModifyFesHashMap(USERVIRIABLEID, value.toString(), m_pVariable->m_arrItem[nRow]->m_szTagName))
+				{
+					memset(m_pVariable->m_arrItem[nRow]->m_szTagName, 0, sizeof(m_pVariable->m_arrItem[nRow]->m_szTagName));
+					int nSize = value.toString().size();
+					strncpy(m_pVariable->m_arrItem[nRow]->m_szTagName, value.toString().toStdString().c_str(), qMin(MAX_TAGNAME_LEN_SCADASTUDIO, nSize));
+				}
+				else
+				{
+					auto strError = tr("User varaible hash tagname %1 modify failed!!!").arg(value.toString());
+					m_pCore->LogMsg(FES_DESC, strError.toStdString().c_str(), LEVEL_1);
+
+					return false;
+				}
+
+
 			}
 		}
 		else if (index.column() == Description)

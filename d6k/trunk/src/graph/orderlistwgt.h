@@ -4,7 +4,7 @@
 #include "ui_orderlistwgt.h"
 
 class COrderEditWgt;
-
+class CDyncEventData;
 class COrderListWgt : public QDialog
 {
 	Q_OBJECT
@@ -19,4 +19,7 @@ private:
 	Ui::COrderListWgt ui;
 	//ÃüÁî²Ù×÷
 	COrderEditWgt *m_pOrderEditWgt;
+	//ÃüÁî
+	CDyncEventData* m_pEventIntent;
+
 };

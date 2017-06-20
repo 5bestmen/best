@@ -106,6 +106,9 @@ enum
     M_EP_TE_1 = 39,     // 带时标CP56Time2a的继电保护装置成组启动事件
     M_EP_TF_1 = 40,     // 带时标CP56Time2a的继电保护装置成组出口信息
     /*在监视方向的系统信息*/
+
+	C_GZ_SJ_1 = 42,     //故障事件  TODO
+
     M_EI_NA_1 = 70,     // 初始化结束
     /*在控制方向的过程信息*/
     C_SC_NA_1 = 45,     // 单命令
@@ -149,7 +152,6 @@ enum
 	D_DV_RD_1 = 132,   //定值读取反馈  多值
 	D_DV_WR_1 = 136,   //参数设置确认
 
-    C_GZ_SJ_1 = 140,     //故障事件  TODO
 
 	D_FIX_SWITCH = 200,   //切换定值区
 	D_FIX_SEARCH = 201,   //获取定值区号
@@ -1686,15 +1688,17 @@ public:
 
 
 public:
+	unsigned char m_BinayNum;     //遥信个数
     unsigned char m_BinaryType;    //遥信类型
-    INFOADDR3 m_BinaryAddr;        //遥信点号
+	ASDUADDR2 m_BinaryAddr;        //遥信点号
     unsigned char m_BinaryValue;   //遥信值
-    CP56Time2a m_BinaryTime;       //故障事件
+    CP56Time2a m_BinaryTime;       //故障时刻标志
 
+	unsigned char m_AnaloyNum;      //遥测个数
     unsigned char m_AnalogType;    //遥测类型
 
 public:
-    enum { MAX_DATA_PER_ASDU_GZ = (MAX_ASDU_SIZE - sizeof(ASDU_BASE) - sizeof(INFOADDR3) - sizeof(CP56Time2a) - 2) / sizeof(ASDU_GZ_DATA), };
+    enum { MAX_DATA_PER_ASDU_GZ = 8, };
     ASDU_GZ_DATA m_data[MAX_DATA_PER_ASDU_GZ];
 
 

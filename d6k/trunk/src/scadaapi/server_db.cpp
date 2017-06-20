@@ -154,6 +154,208 @@ size_t CServerDB::LoadMem(unsigned char * pAddr)
 	return m_nEstimateSize;
 }
 
+bool CServerDB::GetUserVarByOccNo(int32u nOccNo, VARDATA **pAout)
+{
+	return true;
+}
+
+bool CServerDB::GetSysVarByOccNo(int32u nOccNo, VARDATA** pDout)
+{
+	return true;
+}
+
+bool CServerDB::GetRTData(int32u nIddType, int32u nOccNo, int32u nFiledID, IO_VARIANT &RetData)
+{
+	Q_ASSERT(nOccNo != INVALID_OCCNO && nOccNo <= MAX_OCCNO);
+	if (nOccNo == INVALID_OCCNO || nOccNo > MAX_OCCNO)
+		return false;
+
+	bool bRet = false;
+	switch (nIddType)
+	{
+	case IDD_SYSVAR:
+		break;
+	case IDD_USERVAR:
+		break;
+	default:
+		Q_ASSERT(false);
+		bRet = false;
+		break;
+	}
+	return true;
+}
+
+bool CServerDB::PutRtData(int32u nIddType, int32u nOccNo, int32u nFiledID, IO_VARIANT *pData, void *pExt, void *pSrc)
+{
+	Q_ASSERT(nOccNo != INVALID_OCCNO && nOccNo <= MAX_OCCNO);
+	if (nOccNo == INVALID_OCCNO || nOccNo > MAX_OCCNO)
+		return false;
+
+	bool bRet = false;
+	switch (nIddType)
+	{
+	case IDD_SYSVAR:
+		break;
+	case IDD_USERVAR:
+		break;
+	default:
+		Q_ASSERT(false);
+		bRet = false;
+		break;
+	}
+	return true;
+}
+
+void CServerDB::InitFuncArrary()
+{
+	m_arrGetUserVarRTDataFuncs[ATT_IN_OUT] = std::bind(&CServerDB::GetUserVarScanEnable, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_QUA] = std::bind(&CServerDB::GetUserVarQua, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_STATE] = std::bind(&CServerDB::GetUserVaState, this, std::placeholders::_1, std::placeholders::_2);
+
+	m_arrGetUserVarRTDataFuncs[ATT_VALUE] = std::bind(&CServerDB::GetUserVaValEx, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_SIGNAL_VALUE] = std::bind(&CServerDB::GetUserVaSignalValEx, this, std::placeholders::_1, std::placeholders::_2);
+
+	m_arrGetUserVarRTDataFuncs[ATT_MANSET] = std::bind(&CServerDB::GetUserVaManSet, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_MINOUTPUT] = std::bind(&CServerDB::GetUserVaLowOutPut, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_MAXOUTPUT] = std::bind(&CServerDB::GetUserVaHighOutPut, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_HIQUA] = std::bind(&CServerDB::GetUserVaHighQua, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_LOQUA] = std::bind(&CServerDB::GetUserVaLowQua, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_DESCRIPTION] = std::bind(&CServerDB::GetUserVaDesc, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_PINLABEL] = std::bind(&CServerDB::GetUserVaPin, this, std::placeholders::_1, std::placeholders::_2);
+	m_arrGetUserVarRTDataFuncs[ATT_UNIT] = std::bind(&CServerDB::GetUserVaUint, this, std::placeholders::_1, std::placeholders::_2);
+
+}
+
+bool CServerDB::GetUserVarScanEnable(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVarQua(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaState(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaValEx(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaSignalValEx(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaManSet(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaLowOutPut(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaHighOutPut(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaHighQua(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaLowQua(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaDesc(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaPin(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetUserVaUint(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVarScanEnable(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVarQua(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaState(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaValEx(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaSignalValEx(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaManSet(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaLowOutPut(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaHighOutPut(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaHighQua(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaLowQua(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaDesc(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaPin(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return true;
+}
+
+bool CServerDB::GetSysVaUint(int32u nOccNo, IO_VARIANT &RetData) const
+{
+	return  true;
+}
+
 size_t CServerDB::CreateAinAlarm(unsigned char* pAddr)
 {
 	Q_ASSERT(pAddr);

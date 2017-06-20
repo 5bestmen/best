@@ -298,14 +298,62 @@ bool CScadaApi::PutRTData(int32u nIddType, int32u nNodeOccNo, int32u nOccNo, int
 	{
 		return false;
 	}
-	CFesDB* pFes = GetFesDBByOccNO(nNodeOccNo);
+	NODE_TYPE nType = GetNodeType(nNodeOccNo);
+	
+	bool bRet = false;
 
-	Q_ASSERT(pFes);
-	if (!pFes)
+	switch (nType)
+	{
+	case NODE_NULL:
 	{
 		return false;
+	}		
+	case NODE_SVR:
+	{
+		CServerDB* pServer = GetScadaDbByOccNo(nNodeOccNo);
+
+		Q_ASSERT(pServer);
+		if (!pServer)
+		{
+			return false;
+		}
+
+		bRet = pServer->PutRtData(nIddType, nOccNo, nFiledID, pData, pExt, pSrc);
+		break;
 	}
-	bool bRet = pFes->PutRtData(nIddType, nOccNo, nFiledID, pData,pExt,pSrc);
+	case NODE_FES:
+	{
+		CFesDB* pFes = GetFesDBByOccNO(nNodeOccNo);
+
+		Q_ASSERT(pFes);
+		if (!pFes)
+		{
+			return false;
+		}
+
+		bRet = pFes->PutRtData(nIddType, nOccNo, nFiledID, pData, pExt, pSrc); 
+		break;
+	}
+	case NODE_CLIENT:
+	{
+		CClientDB* pClient = GetClientDBByOccNo(nNodeOccNo);
+
+		Q_ASSERT(pClient);
+		if (!pClient)
+		{
+			return false;
+		}
+
+		bRet = pClient->PutRtData(nIddType, nOccNo, nFiledID, pData, pExt, pSrc);
+		break;
+	}
+	default:
+		{
+			Q_ASSERT(false);
+			return false;
+		}
+	}
+
 	Q_ASSERT(bRet);
 	if (!bRet)
 	{
@@ -313,6 +361,31 @@ bool CScadaApi::PutRTData(int32u nIddType, int32u nNodeOccNo, int32u nOccNo, int
 	}
 	return true;
 }
+
+NODE_TYPE CScadaApi::GetNodeType(int32u nNodeOccNo)
+{
+	Q_ASSERT(nNodeOccNo!=INVALID_OCCNO && nNodeOccNo <=MAX_NODE_OCCNO);
+	if (nNodeOccNo==INVALID_OCCNO || nNodeOccNo >MAX_OCCNO)
+	{
+		return NODE_NULL ;
+	}
+
+	Q_ASSERT(m_mapType.empty()==false);
+	if (m_mapType.empty())
+	{
+		return NODE_NULL;
+	}
+	auto iter = m_mapType.find(nNodeOccNo);
+	if (iter==m_mapType.end())
+	{
+		return NODE_NULL;
+	}
+	else 
+	{
+		return iter->second;
+	}
+}
+
 /*
 bool CScadaApi::GetDinValue(int32u nNodeOccNo, int32u nOccNo, CVariant & val, int8u &nQuality)
 {
@@ -592,7 +665,7 @@ size_t CScadaApi::CreateScadaDB(unsigned char* pAddr)
 		nRet = pServer->LoadMem(pAddr);
 		m_arrScdDBs.push_back(pServer);
 		m_mapScdDbs.insert(std::make_pair(pServer->GetNodeOccNo(),pServer));
-
+		m_mapType.insert(std::make_pair(pServer->GetNodeOccNo(),NODE_SVR));
 		pAddr += nRet;
 	}
 
@@ -624,7 +697,7 @@ size_t CScadaApi::CreateClientDB(unsigned char* pAddr)
 		nRet = pClient->LoadMem(pAddr);
 		m_arrClientDBs.push_back(pClient);
 		m_mapClientDBs.insert(std::make_pair(pClient->GetNodeOccNo(), pClient));
-
+		m_mapType.insert(std::make_pair(pClient->GetNodeOccNo(),NODE_CLIENT));
 		pAddr += nRet;
 	}
 
@@ -783,6 +856,7 @@ size_t CScadaApi::CreateFesMem(unsigned char* pHead)
 			pFesDB->LoadMem((unsigned char*)((char*)m_pFesHead + i->NodeOffSet));
 			m_arrFesDbs.push_back(pFesDB);
 			m_mapFesDBs.insert(std::make_pair(i->OccNo, pFesDB));
+			m_mapType.insert(std::make_pair(i->OccNo,NODE_FES));
 		}
 	}
 	return 0;
@@ -797,6 +871,42 @@ CFesDB* CScadaApi::GetFesDBByOccNO(int32u nOccNo)
 	}
 	auto it = m_mapFesDBs.find(nOccNo);
 	if (it==m_mapFesDBs.end())
+	{
+		return nullptr;
+	}
+	else
+	{
+		return it->second;
+	}
+}
+
+CServerDB* CScadaApi::GetScadaDbByOccNo(int32u nOccNo)
+{
+	Q_ASSERT(nOccNo != INVALID_OCCNO && nOccNo <= MAX_NODE_OCCNO);
+	if (nOccNo == INVALID_OCCNO || nOccNo > MAX_NODE_OCCNO)
+	{
+		return nullptr;
+	}
+	auto it = m_mapScdDbs.find(nOccNo);
+	if (it == m_mapScdDbs.end())
+	{
+		return nullptr;
+	}
+	else
+	{
+		return it->second;
+	}
+}
+
+CClientDB* CScadaApi::GetClientDBByOccNo(int32u nOccNo)
+{
+	Q_ASSERT(nOccNo != INVALID_OCCNO && nOccNo <= MAX_NODE_OCCNO);
+	if (nOccNo == INVALID_OCCNO || nOccNo > MAX_NODE_OCCNO)
+	{
+		return nullptr;
+	}
+	auto it = m_mapClientDBs.find(nOccNo);
+	if (it == m_mapClientDBs.end())
 	{
 		return nullptr;
 	}

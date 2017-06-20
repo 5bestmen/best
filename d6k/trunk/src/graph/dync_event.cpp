@@ -24,6 +24,9 @@
 #include "base_widget.h"
 #include "dync_event.h"
 #include "base_dync_event_item.h"
+#include "dync_file_op_event.h"
+#include "dync_var_op_event.h"
+#include "dync_sys_op_event.h"
 
 #include "stl_util-inl.h"
 
@@ -298,91 +301,7 @@ bool  CDyncEventData::ProcessAction(CBaseWidget *pWidget, CEventIntent &intent)
 // }
 
 #if 0
-bool CDyncEventData::AddFileOpEvent(std::shared_ptr <CDyncFileOpEventItem> & ptr)
-{
-	if (ptr == nullptr)
-		return false;
 
-	auto it = m_arrFileEvents.begin();
-	for (; it != m_arrFileEvents.end(); ++it)
-	{
-		if ((*it) == ptr)
-		{
-			return false;
-		}
-	}
-	m_arrFileEvents.push_back(ptr);
-	return true;
-}
-
-bool CDyncEventData::SaveFileOp(CDyncFileOpEventItem * pFileOp)
-{
-	Q_ASSERT(pFileOp);
-	if (pFileOp == nullptr)
-		return false;
-
-	if (pFileOp->m_bEnable == true)
-	{// 增加
-		auto it = m_arrFileEvents.begin();
-		for (; it != m_arrFileEvents.end(); ++it)
-		{
-			if ((*it).get() == pFileOp)
-			{
-				*(*it) = *pFileOp;
-				return true;
-			}
-		}
-		// 没有找到，新增加
-		m_arrFileEvents.push_back(std::make_shared<CDyncFileOpEventItem>(pFileOp));
-	}
-	else
-	{// 删除
-		auto it = m_arrFileEvents.begin();
-		for (; it != m_arrFileEvents.end(); ++it)
-		{
-			if ((*it).get() == pFileOp)
-			{
-				m_arrFileEvents.erase(it);
-				return true;
-			}
-		}
-	}
-	return false;
-}
-
-bool CDyncEventData::SaveFileOp(std::shared_ptr <CDyncFileOpEventItem> & ptr)
-{
-	if (ptr == nullptr)
-		return false;
-
-	if (ptr->m_bEnable == true)
-	{// 增加
-		auto it = m_arrFileEvents.begin();
-		for (; it != m_arrFileEvents.end(); ++it)
-		{
-			if ((*it) == ptr)
-			{
-				*(*it) = *ptr;
-				return true;
-			}
-		}
-		// 没有找到，新增加
-		m_arrFileEvents.push_back(ptr);
-	}
-	else
-	{// 删除
-		auto it = m_arrFileEvents.begin();
-		for (; it != m_arrFileEvents.end(); ++it)
-		{
-			if ((*it) == ptr)
-			{
-				m_arrFileEvents.erase(it);
-				return true;
-			}
-		}
-	}
-	return false;
-}
 /*! \fn void CDyncEventData::DeleteEvent(CBaseDyncEventItem *pEvent)
 *********************************************************************************************************
 ** \brief CDyncEventData::DeleteEvent
@@ -425,27 +344,52 @@ void CDyncEventData::TrimData()
 		}
 	}
 }
+#endif
 
-void CDyncEventData::GetFileOpEvents(std::vector <CDyncFileOpEventItem*> &data) const
+CBaseDyncEventItem * CDyncEventData::CreateEventItem(int nEventType)
 {
-	// 	data.clear();
-	// 	auto iter = m_arrEvents.begin();
-	// 	for ( ; iter != m_arrEvents.end(); ++iter)
-	// 	{
-	// 		if ((*iter)->GetEventType() == CBaseDyncEventItem::DYNC_FILE_OP )
-	// 		{
-	// 			data.push_back( (*iter).get() );
-	// 		}
-	// 	}
-	// 	return;
+	CBaseDyncEventItem *newItem = nullptr;
+	
+	switch (nEventType)
+	{
+	case CBaseDyncEventItem::DYNC_FILE_OP:
+	{
+		//文件操作
+		newItem = new CDyncFileOpEventItem;
+		break;
+	}
+	case CBaseDyncEventItem::DYNC_VAR_OP:
+	{
+		//变量操作
+		newItem = new CDyncFileOpEventItem;
+		break;
+	}
+	case CBaseDyncEventItem::DYNC_SYS_OP:
+	{
+		//系统类操作
+		newItem = new CDyncSysOpEventItem;
+		break;
+	}
+	case CBaseDyncEventItem::DYNC_SCRIPT_OP:
+	{
+		//脚本类操作
+		break;
+	}
+	case CBaseDyncEventItem::DYNC_USER_OP:
+	{
+		//用户操作
+		break;
+	}
+	
+	default:
+		break;
+	}
+	
+	return newItem;
 }
 
-// void  CDyncEventData::GetFileOpEvents(std::vector<CBaseDyncEventItem*> &arrEvents)
-// {
-// 
-// }
 
-#endif
+
 
  
 

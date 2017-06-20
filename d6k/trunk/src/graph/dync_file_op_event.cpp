@@ -304,4 +304,112 @@ void CDyncFileOpEventItem::DoAction(CEventIntent &intent)
 	}
 }
 
+
+#if 0
+bool CDyncEventData::AddFileOpEvent(std::shared_ptr <CDyncFileOpEventItem> & ptr)
+{
+	if (ptr == nullptr)
+		return false;
+
+	auto it = m_arrFileEvents.begin();
+	for (; it != m_arrFileEvents.end(); ++it)
+	{
+		if ((*it) == ptr)
+		{
+			return false;
+		}
+	}
+	m_arrFileEvents.push_back(ptr);
+	return true;
+}
+
+bool CDyncEventData::SaveFileOp(CDyncFileOpEventItem * pFileOp)
+{
+	Q_ASSERT(pFileOp);
+	if (pFileOp == nullptr)
+		return false;
+
+	if (pFileOp->m_bEnable == true)
+	{// 增加
+		auto it = m_arrFileEvents.begin();
+		for (; it != m_arrFileEvents.end(); ++it)
+		{
+			if ((*it).get() == pFileOp)
+			{
+				*(*it) = *pFileOp;
+				return true;
+			}
+		}
+		// 没有找到，新增加
+		m_arrFileEvents.push_back(std::make_shared<CDyncFileOpEventItem>(pFileOp));
+	}
+	else
+	{// 删除
+		auto it = m_arrFileEvents.begin();
+		for (; it != m_arrFileEvents.end(); ++it)
+		{
+			if ((*it).get() == pFileOp)
+			{
+				m_arrFileEvents.erase(it);
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+bool CDyncEventData::SaveFileOp(std::shared_ptr <CDyncFileOpEventItem> & ptr)
+{
+	if (ptr == nullptr)
+		return false;
+
+	if (ptr->m_bEnable == true)
+	{// 增加
+		auto it = m_arrFileEvents.begin();
+		for (; it != m_arrFileEvents.end(); ++it)
+		{
+			if ((*it) == ptr)
+			{
+				*(*it) = *ptr;
+				return true;
+			}
+		}
+		// 没有找到，新增加
+		m_arrFileEvents.push_back(ptr);
+	}
+	else
+	{// 删除
+		auto it = m_arrFileEvents.begin();
+		for (; it != m_arrFileEvents.end(); ++it)
+		{
+			if ((*it) == ptr)
+			{
+				m_arrFileEvents.erase(it);
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+void CDyncEventData::GetFileOpEvents(std::vector <CDyncFileOpEventItem*> &data) const
+{
+	// 	data.clear();
+	// 	auto iter = m_arrEvents.begin();
+	// 	for ( ; iter != m_arrEvents.end(); ++iter)
+	// 	{
+	// 		if ((*iter)->GetEventType() == CBaseDyncEventItem::DYNC_FILE_OP )
+	// 		{
+	// 			data.push_back( (*iter).get() );
+	// 		}
+	// 	}
+	// 	return;
+}
+
+// void  CDyncEventData::GetFileOpEvents(std::vector<CBaseDyncEventItem*> &arrEvents)
+// {
+// 
+// }
+#endif
+
 /** @}*/

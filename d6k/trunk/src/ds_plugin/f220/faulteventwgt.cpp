@@ -32,7 +32,7 @@ CFaultEventWgt::CFaultEventWgt(CCommThread *pCommunicate, CPointInfo *pPointInfo
     ui.treeWidget->setHidden(true);
     
 
-    connect(m_pCommunicate, SIGNAL(Signal_MalFuction(int, int, int, QString, int, QMap<int, int>)), this, SLOT(Slot_MalFuction(int, int, int, QString, int, QMap<int, int>)));
+    connect(m_pCommunicate, SIGNAL(Signal_MalFuction(ASDUGZ)), this, SLOT(Slot_MalFuction(ASDUGZ)));
 
 //     QMap<int, int> ttt;
 //     ttt.insert(3344,311);
@@ -48,7 +48,7 @@ CFaultEventWgt::~CFaultEventWgt()
 
 }
 
-void CFaultEventWgt::Slot_MalFuction(int nBinaryType, int nBinaryAddr, int nBinaryValue, QString strTime, int nAnalogType, QMap<int, int> mapData)
+void CFaultEventWgt::Slot_MalFuction(ASDUGZ gzData)
 {
     //往表格里插入数据
     int nRow = ui.tableWidget->rowCount();
@@ -60,39 +60,34 @@ void CFaultEventWgt::Slot_MalFuction(int nBinaryType, int nBinaryAddr, int nBina
     ui.tableWidget->setItem(nRow, 0, item0);
 
     QTableWidgetItem *item1 = new QTableWidgetItem;
-    item1->setText(QString::number(nBinaryType));
+    item1->setText(QString::number(gzData.m_BinayNum));
     ui.tableWidget->setItem(nRow, 1, item1);
 
     QTableWidgetItem *item2 = new QTableWidgetItem;
-    item2->setText(QString::number(nBinaryAddr));
+    item2->setText(QString::number(gzData.m_BinaryType));
     ui.tableWidget->setItem(nRow, 2, item2);
 
     QTableWidgetItem *item3 = new QTableWidgetItem;
-    item3->setText(QString::number(nBinaryValue));
+    item3->setText(QString::number(gzData.m_BinaryAddr.GetAddr()));
     ui.tableWidget->setItem(nRow, 3, item3);
 
     QTableWidgetItem *item4 = new QTableWidgetItem;
-    item4->setText(QString::number(nAnalogType));
+    item4->setText(QString::number(gzData.m_BinaryValue));
     ui.tableWidget->setItem(nRow, 4, item4);
 
     QTableWidgetItem *item5 = new QTableWidgetItem;
-    item5->setText(strTime);
+    item5->setText(gzData.m_BinaryTime.Dump());
     ui.tableWidget->setItem(nRow, 5, item5);
 
 
+	QString strData;
+	QStringList lstTitle;
+	lstTitle << "UAB" << "UBC" << "UCA" << "U0" << "IA" << "IB" << "IC" << "I0";
+	for (int i=0; i<ASDUGZ::MAX_DATA_PER_ASDU_GZ; i++)
+	{
+		strData += lstTitle[i] + ":"  + QString::number(gzData.m_data[i].m_AnalogValue) + "     ";
+	}
 
-    QMap<int, int>::const_iterator it = mapData.constBegin();
-
-    QString strData;
-    while (it != mapData.constEnd())
-    {
-        strData.append(QString::number(it.key())); 
-        strData.append(" : ");
-        strData.append(QString::number(it.value()));
-
-        strData.append("     ");
-        it++;
-    }
 
     QTableWidgetItem *item6 = new QTableWidgetItem;
     item6->setText(strData);

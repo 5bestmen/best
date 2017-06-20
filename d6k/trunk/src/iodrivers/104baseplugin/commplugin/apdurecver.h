@@ -204,7 +204,8 @@ signals:
 	//设定数据响应   48/136    6/7   1/0  
 	void Signal_devWriteBack(int iControlType,int iCot,int iQos);
     //故障
-    void Signal_MalFuction(int nBinaryType, int nBinaryAddr, int nBinaryValue, QString strTime, int nAnalogType, QMap<int,int>);
+    void Signal_MalFuction(ASDUGZ gzData);
+	//
     //死区
     void Signal_ZoneFeedBack(int nAddr,float fValue,int qpm,int nCot);
 	//写文件

@@ -67,9 +67,10 @@ CSelectPointDialog::CSelectPointDialog(QWidget *parent, Config::CFesConfigData *
 	m_pSort->sort(0);
 	//m_pSort->setFilterKeyColumn()
 
+
 	if (!m_pTagAtt)
 	{
-		m_pTagAtt = new CTagAttMgr;
+		m_pTagAtt = new CTagAttMgr();
 	}
 
 	connect(ui.lineEdit_3, SIGNAL(textChanged(QString)), this, SLOT(FilterChanged(QString)));
@@ -576,6 +577,7 @@ bool CSelectPointDialog::InitUserVariableGroup(CQuoteItem *pItem, Config::CUserV
 		newItem->setData(reinterpret_cast<long long>(var), POINTERDATA);
 		newItem->setData(FES_USER_VARIBALE_GROUP_ITEM, Qt::UserRole);
 		newItem->setData(nDeepths, GROUP_NUMBER_ROLE);
+		newItem->setEditable(false);
 		newItem->setIcon(QIcon(CLOSE_GROUP_PNG));
 
 		pItem->appendRow(newItem);
@@ -863,7 +865,6 @@ void CSelectPointDialog::DoubleClicked(const QModelIndex &index)
 void CSelectPointDialog::InitAttrCombo(int nType)
 {
 	ui.comboBox_2->clear();
-
 	if (m_bFilterEnWrite)
 	{
 		std::vector<std::string> vec;

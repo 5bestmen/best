@@ -40,7 +40,7 @@
 //	tagnname修改类型 virtual bool ChangeTagNameNodify(QString &tagName, QString &lastTagName, int nType)
 enum Module_ID
 {
-	FES, DEVICE_AI, DEVICE_DI, DEVICE_AO, DEVICE_DO,
+	FES, DEVICE_AI, DEVICE_DI, DEVICE_AO, DEVICE_DO, USERVARAIBLE,
 	GRAPH,
 	REPORT,
 	//左边树结构ID
