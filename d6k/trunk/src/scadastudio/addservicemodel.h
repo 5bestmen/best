@@ -15,7 +15,19 @@ class CAddServiceModel : public QAbstractTableModel
 
 	enum
 	{
-		Name, LoadType, Argument, Description
+		Name, AppType, LoadType, Argument, Description, Prority
+	};
+
+	enum AppType
+	{
+		Inn_APP = 0,    //内置应用
+		Ext_App = 1,    //扩展服务
+	};
+
+	enum LoadType
+	{
+		Load_Dll = 0,   //dll启动
+		Load_Exe = 1,   //exe启动
 	};
 
 public:
@@ -43,6 +55,8 @@ private:
 private:
 	Config::CNodeConfigData *m_pConfig;
 	QStringList m_horizontal_header_list;
+	QMap<int, QString> m_appTypeMap;
+	QMap<int, QString> m_loadTypeMap;
 };
 
 #endif

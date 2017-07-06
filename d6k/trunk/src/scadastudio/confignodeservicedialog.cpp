@@ -67,7 +67,7 @@ void CConfigNodeServiceDialog::ClickedTable(const QModelIndex &index)
 	}
 
 	ui.lineEdit_name->setText(arr[index.row()]->Name);
-	ui.lineEdit_load->setText(arr[index.row()]->LoadType);
+	ui.lineEdit_load->setText(QString("%1").arg(arr[index.row()]->LoadType));
 	ui.lineEdit_argument->setText(arr[index.row()]->Argument);
 	ui.lineEdit_description->setText(arr[index.row()]->Description);
 	ui.lineEdit_option->setText(arr[index.row()]->Option);

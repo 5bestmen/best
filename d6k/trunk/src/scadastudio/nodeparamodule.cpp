@@ -1833,6 +1833,8 @@ void CNodeParaModule::ItemChanged(QStandardItem *item)
 
 		if (!CheckTagNameIsValid(strTagName, NODE_CONFIG_DESC) || !CheckTagNameIsValid(strLastTagName, NODE_CONFIG_DESC))
 		{
+			item->setData(strLastTagName, Qt::EditRole);
+			
 			return;
 		}
 
@@ -1910,6 +1912,13 @@ void CNodeParaModule::ItemChanged(QStandardItem *item)
 		auto strLastTagName = index.data(LASTVALUE).toString();
 		if (strTagName == strLastTagName)
 		{
+			return;
+		}
+
+		if (!CheckTagNameIsValid(strTagName, NODE_CONFIG_DESC) || !CheckTagNameIsValid(strLastTagName, NODE_CONFIG_DESC))
+		{
+			item->setData(strLastTagName, Qt::EditRole);
+
 			return;
 		}
 

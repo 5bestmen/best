@@ -23,7 +23,7 @@ public:
 	enum COLUMN
 	{
 		ID, TagName, DoubleDI, OccNo, BlockOccNo/*, DataType*/, Desc, InitValue, InitQua, Address, PinLabel,
-		SignalType, SOE, BitCloseString, BitOpenString, AlarmTagName, AlarmType, SaveDisk, SaveDiskPeriod, SaveDB, SaveDBPeriod, ReferenceCount, DataSource,
+		SignalType, SOE, BitCloseString, BitOpenString, AlarmTagName/*, AlarmType*/, SaveDisk, SaveDiskPeriod, SaveDB, SaveDBPeriod, ReferenceCount, DataSource,
 		ChannelOccNo, DeviceOccNo, Express
 	}; 
 

@@ -43,7 +43,7 @@ CProjMgr::CProjMgr(CCore *pCore)
 
 	QAction *pAct = new QAction(tr("open"), pCore->GetUIMgr()->menuBar());
 	pAct->setIcon(QIcon(OPEN_GROUP_PNG));
-	QMenu *pMenu = pCore->GetUIMgr()->menuBar()->addMenu(QObject::tr("&file"));
+	QMenu *pMenu = pCore->GetUIMgr()->menuBar()->addMenu(QObject::tr("&File"));
 
 	QAction *pActSave = new QAction(tr("save"), pCore->GetUIMgr()->menuBar());
 	pActSave->setIcon(QIcon(SAVE_PNG));
@@ -78,7 +78,7 @@ CProjMgr::CProjMgr(CCore *pCore)
 
 	pMenu->addAction(pCloseProjectAct);
 
-	auto pObjectMenu = pCore->GetUIMgr()->menuBar()->addMenu("tool");
+	auto pObjectMenu = pCore->GetUIMgr()->menuBar()->addMenu(QObject::tr("Tool"));
 	QAction *pEquipmentModelAct = new QAction(tr("equipment model"), pObjectMenu);
 	pObjectMenu->addAction(pEquipmentModelAct);
 

@@ -33,10 +33,7 @@ public:
 
 	}
 
-	virtual void Refresh()
-	{
-
-	}
+	virtual void Refresh();
 
 	virtual void SetModifyFlag(bool bFlag)
 	{

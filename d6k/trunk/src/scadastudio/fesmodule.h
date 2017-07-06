@@ -89,6 +89,8 @@ public:
 	//×Ö·û´®ÃèÊöÄÚ´æ³Ø
 	virtual bool GetDesPoolArr(std::unordered_map<std::string, int32u> *pHash, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo);
 
+	virtual QString GetOccNoFromScadaVariableUserSourceTagName(const QString &strFes, const QString &strRelatedTagName);
+
 	//virtual void SetModifyFlag(bool bFlag)
 	//{
 	//	//m_bModifyFlag = bFlag;

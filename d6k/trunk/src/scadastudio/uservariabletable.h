@@ -33,6 +33,8 @@ public:
 		return m_pSort;
 	}
 
+	void RefrushModel();
+
 private:
 	void AddUserVariablePoint(QModelIndex &index);
 	void DeleteUserVariablePoint(QModelIndex &index);

@@ -254,6 +254,15 @@
     <Filter Include="module\report">
       <UniqueIdentifier>{1519cde8-8528-4a0d-b0a1-05fcf9f184fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="module\config\fes config\his">
+      <UniqueIdentifier>{043c8442-e0cb-422e-966e-65b0d25e9b9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\his\aireportsave">
+      <UniqueIdentifier>{3ac2dbdb-e540-4d4c-8d28-e7a93200e24e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="module\config\fes config\his\aicurvesave">
+      <UniqueIdentifier>{8bab3e37-7c29-4410-87b1-d1216c33ff63}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1900,6 +1909,63 @@
     <ClCompile Include="feschannel_forwardingchannel_data.cpp">
       <Filter>module\config</Filter>
     </ClCompile>
+    <ClCompile Include="log\log2file.cpp">
+      <Filter>module\log</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aireportsaveview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aireportsaveview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="aireportsaveview.cpp">
+      <Filter>module\config\fes config\his\aireportsave</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aireportsavetable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aireportsavetable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="aireportsavetable.cpp">
+      <Filter>module\config\fes config\his\aireportsave</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aireportsavemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aireportsavemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="aireportsavemodel.cpp">
+      <Filter>module\config\fes config\his\aireportsave</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aicurvesaveview.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aicurvesaveview.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="aicurvesaveview.cpp">
+      <Filter>module\config\fes config\his\aicurvesave</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aicurvesavetable.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aicurvesavetable.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="aicurvesavetable.cpp">
+      <Filter>module\config\fes config\his\aicurvesave</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_aicurvesavemodel.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_aicurvesavemodel.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="aicurvesavemodel.cpp">
+      <Filter>module\config\fes config\his\aicurvesave</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="channel.h">
@@ -2505,185 +2571,204 @@
     <CustomBuild Include="fes_do_blockingsignaletan_select_fesuservaraible_model.h">
       <Filter>module\config\fes config\data\do\form</Filter>
     </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\debug\moc_predefs.h.cbt" />
+    <CustomBuild Include="GeneratedFiles\release\moc_predefs.h.cbt" />
+    <CustomBuild Include="images\alarm.png" />
+    <CustomBuild Include="images\channel.png" />
+    <CustomBuild Include="images\close_group.png" />
+    <CustomBuild Include="images\closeproject.png" />
+    <CustomBuild Include="images\delete.png" />
+    <CustomBuild Include="images\device.png" />
+    <CustomBuild Include="images\equipment.png" />
+    <CustomBuild Include="images\fes.png" />
+    <CustomBuild Include="images\graph.png" />
+    <CustomBuild Include="images\hissave.png" />
+    <CustomBuild Include="images\new.png" />
+    <CustomBuild Include="images\node.png" />
+    <CustomBuild Include="images\open_group.png" />
+    <CustomBuild Include="images\pdr.png" />
+    <CustomBuild Include="images\project.png" />
+    <CustomBuild Include="images\report.png" />
+    <CustomBuild Include="images\save.png" />
+    <CustomBuild Include="images\scale.png" />
+    <CustomBuild Include="images\seqscript.png" />
+    <CustomBuild Include="images\system.png" />
+    <CustomBuild Include="images\systemvariable.png" />
+    <CustomBuild Include="images\uservariable.png" />
+    <CustomBuild Include="images\variablelist.png" />
+    <CustomBuild Include="..\..\include\scadastudio\define.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\icore.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\imainwindow.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\imodule.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\iprojmgr.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="logdefine.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\quoteItem.h">
+      <Filter>core</Filter>
+    </CustomBuild>
+    <CustomBuild Include="uimodule\systemoutputmodel.h">
+      <Filter>core\uimodule</Filter>
+    </CustomBuild>
+    <CustomBuild Include="extenservicemodulemgr.h">
+      <Filter>core\managemodel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="modulemgr.h">
+      <Filter>core\managemodel</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\datatypes.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="global.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="readtableconfig.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadastudiodefine.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="stl_util-inl.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="timepack.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="xmlreader.h">
+      <Filter>module\base</Filter>
+    </CustomBuild>
+    <CustomBuild Include="alarm_data.h">
+      <Filter>module\config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\include\scadastudio\base.h">
+      <Filter>module\config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="base_data.h">
+      <Filter>module\config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="config_data.h">
+      <Filter>module\config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="fes_conf_data.h">
+      <Filter>module\config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="feschannel_forwardingchannel_data.h">
+      <Filter>module\config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scadavirable_data.h">
+      <Filter>module\config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="scale_data.h">
+      <Filter>module\config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="variable_data.h">
+      <Filter>module\config</Filter>
+    </CustomBuild>
+    <CustomBuild Include="log\log2file.h">
+      <Filter>module\log</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\fespub\tag_att.h">
+      <Filter>module\fespub</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_addservicedialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_addserviceplandialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_channelparaconfigdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_closeprojectdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_confignodeserviceDialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_exportmodeldialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_extendserviceconfigdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_fes_di_select_doubledi_dialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_fesdo_blockingsignaltag_select_dialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_forwarding_select_ai_tagname_dialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_forwarding_select_ao_tagname_dialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_forwarding_select_di_tagname_dialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_forwarding_select_do_tagname_dialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_scadalinearscalesetdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_scadanonlinearscalesetdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_scadauservariableselectscaledialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_selectalarmdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_selectpointdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_selectscaledialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_setscadaalarmdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_setscaledialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_totalselectdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="GeneratedFiles\ui_uservariableselectalarmdialog.h">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aireportsaveview.h">
+      <Filter>module\config\fes config\his\aireportsave</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aireportsavetable.h">
+      <Filter>module\config\fes config\his\aireportsave</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aireportsavemodel.h">
+      <Filter>module\config\fes config\his\aireportsave</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aicurvesaveview.h">
+      <Filter>module\config\fes config\his\aicurvesave</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aicurvesavetable.h">
+      <Filter>module\config\fes config\his\aicurvesave</Filter>
+    </CustomBuild>
+    <CustomBuild Include="aicurvesavemodel.h">
+      <Filter>module\config\fes config\his\aicurvesave</Filter>
+    </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="scadastudio.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_fes_di_select_doubledi_dialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_fesdo_blockingsignaltag_select_dialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="feschannel_forwardingchannel_data.h">
-      <Filter>module\config</Filter>
-    </ClInclude>
-    <ClInclude Include="alarm_data.h">
-      <Filter>module\config</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\scadastudio\base.h">
-      <Filter>module\config</Filter>
-    </ClInclude>
-    <ClInclude Include="base_data.h">
-      <Filter>module\config</Filter>
-    </ClInclude>
-    <ClInclude Include="config_data.h">
-      <Filter>module\config</Filter>
-    </ClInclude>
-    <ClInclude Include="fes_conf_data.h">
-      <Filter>module\config</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\scadastudio\icore.h">
-      <Filter>core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\scadastudio\imodule.h">
-      <Filter>core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\scadastudio\imainwindow.h">
-      <Filter>core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\scadastudio\iprojmgr.h">
-      <Filter>core</Filter>
-    </ClInclude>
-    <ClInclude Include="logdefine.h">
-      <Filter>core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\scadastudio\quoteItem.h">
-      <Filter>core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\scadastudio\define.h">
-      <Filter>core</Filter>
-    </ClInclude>
-    <ClInclude Include="modulemgr.h">
-      <Filter>core\managemodel</Filter>
-    </ClInclude>
-    <ClInclude Include="global.h">
-      <Filter>module\base</Filter>
-    </ClInclude>
-    <ClInclude Include="extenservicemodulemgr.h">
-      <Filter>core\managemodel</Filter>
-    </ClInclude>
-    <ClInclude Include="scadastudiodefine.h">
-      <Filter>module\base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\include\datatypes.h">
-      <Filter>module\base</Filter>
-    </ClInclude>
-    <ClInclude Include="readtableconfig.h">
-      <Filter>module\base</Filter>
-    </ClInclude>
-    <ClInclude Include="variable_data.h">
-      <Filter>module\config</Filter>
-    </ClInclude>
-    <ClInclude Include="scale_data.h">
-      <Filter>module\config</Filter>
-    </ClInclude>
-    <ClInclude Include="scadavirable_data.h">
-      <Filter>module\config</Filter>
-    </ClInclude>
-    <ClInclude Include="..\fespub\tag_att.h">
-      <Filter>module\fespub</Filter>
-    </ClInclude>
-    <ClInclude Include="stl_util-inl.h">
-      <Filter>module\base</Filter>
-    </ClInclude>
-    <ClInclude Include="uimodule\systemoutputmodel.h">
-      <Filter>core\uimodule</Filter>
-    </ClInclude>
-    <ClInclude Include="timepack.h">
-      <Filter>module\base</Filter>
-    </ClInclude>
-    <ClInclude Include="xmlreader.h">
-      <Filter>module\base</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_addservicedialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_addserviceplandialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_channelparaconfigdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_closeprojectdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_confignodeserviceDialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_exportmodeldialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_extendserviceconfigdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_forwarding_select_ai_tagname_dialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_forwarding_select_ao_tagname_dialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_forwarding_select_di_tagname_dialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_forwarding_select_do_tagname_dialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_scadalinearscalesetdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_scadanonlinearscalesetdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_scadauservariableselectscaledialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_selectalarmdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_selectpointdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_selectscaledialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_setscadaalarmdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_setscaledialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_totalselectdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_uservariableselectalarmdialog.h">
-      <Filter>Generated Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="images\alarm.png" />
-    <None Include="images\channel.png" />
-    <None Include="images\close_group.png" />
-    <None Include="images\closeproject.png" />
-    <None Include="images\delete.png" />
-    <None Include="images\device.png" />
-    <None Include="images\equipment.png" />
-    <None Include="images\fes.png" />
-    <None Include="images\graph.png" />
-    <None Include="images\hissave.png" />
-    <None Include="images\new.png" />
-    <None Include="images\node.png" />
-    <None Include="images\open_group.png" />
-    <None Include="images\pdr.png" />
-    <None Include="images\project.png" />
-    <None Include="images\report.png" />
-    <None Include="images\save.png" />
-    <None Include="images\scale.png" />
-    <None Include="images\seqscript.png" />
-    <None Include="images\system.png" />
-    <None Include="images\systemvariable.png" />
-    <None Include="images\uservariable.png" />
-    <None Include="images\variablelist.png" />
   </ItemGroup>
 </Project>

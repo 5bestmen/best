@@ -890,6 +890,12 @@ void CScale::itemChanged(QStandardItem *item)
 			return;
 		}
 
+		auto pWidget = dynamic_cast<IBase *>(m_pCore->GetUIMgr()->GetTabWidget()->currentWidget());
+		if (pWidget)
+		{
+			pWidget->Refresh();
+		}
+
 		//QStandardItemModel *pModel = m_pCore->GetUIMgr()->GetLeftTreeModel();
 		//auto strTagName = CFesModule::GetTagname(pModel->indexFromItem(item), FES_ITEM);
 

@@ -517,17 +517,23 @@ bool CDOModel::setData(const QModelIndex &index, const QVariant &value, int role
 			}
 			else if (index.column() == AssociatedDI)
 			{
-				if (value.toString().compare(m_arrDOs[nRow]->m_szAssociatedDI) != 0)
+				if (strlen(m_arrDOs[nRow]->m_szAssociatedDI) == 0)
 				{
-					auto strTmp = value.toString();
-					if (!CheckTagNameIsValid(strTmp, FES_DESC))
-					{
-						return false;
-					}
-					memset(m_arrDOs[nRow]->m_szAssociatedDI, 0, sizeof(m_arrDOs[nRow]->m_szAssociatedDI));
-					auto nSize = strTmp.size();
-					strncpy(m_arrDOs[nRow]->m_szAssociatedDI, strTmp.toStdString().c_str(), qMin(MAX_TAGNAME_LEN_SCADASTUDIO, nSize));
+					return true;
 				}
+
+				//删除关联关系
+				if (!m_pFes->DeleteDOsRelationAssociatedDIArr(m_arrDOs[nRow]->m_szAssociatedDI, m_arrDOs[nRow]))
+				{
+					auto strTmp = QObject::tr("[Fes %1]  Delete DO TagName %2 Relation Scale failed!!!").arg(m_pFes->m_szTagName).arg(m_arrDOs[nRow]->m_szTagName);
+					m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+					return false;
+				}
+
+				memset(m_arrDOs[nRow]->m_szAssociatedDI, 0, sizeof(m_arrDOs[nRow]->m_szAssociatedDI));
+
+				return true;
 			}
 			else if (index.column() == AssociatedDIValType)
 			{
@@ -538,17 +544,21 @@ bool CDOModel::setData(const QModelIndex &index, const QVariant &value, int role
 			}
 			else if (index.column() == BlockingSignalTag)
 			{
-				if (value.toString().compare(m_arrDOs[nRow]->m_szBlockingSignalTag) != 0)
+				if (strlen(m_arrDOs[nRow]->m_szBlockingSignalTag) == 0)
 				{
-					auto strTmp = value.toString();
-					if (!CheckTagNameIsValid(strTmp, FES_DESC))
-					{
-						return false;
-					}
-					memset(m_arrDOs[nRow]->m_szBlockingSignalTag, 0, sizeof(m_arrDOs[nRow]->m_szBlockingSignalTag));
-					auto nSize = strTmp.size();
-					strncpy(m_arrDOs[nRow]->m_szBlockingSignalTag, strTmp.toStdString().c_str(), qMin(MAX_TAGNAME_LEN_SCADASTUDIO, nSize));
+					return true;
 				}
+
+				//删除关联关系
+				if (!m_pFes->DeleteDOsRelationBlockingSignalTagArr(m_arrDOs[nRow]->m_szBlockingSignalTag, m_arrDOs[nRow]))
+				{
+					auto strTmp = QObject::tr("[Fes %1]  Delete DO TagName %2 Relation Blocking Signal TagName failed!!!").arg(m_pFes->m_szTagName).arg(m_arrDOs[nRow]->m_szTagName);
+					m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+					return false;
+				}
+
+				memset(m_arrDOs[nRow]->m_szBlockingSignalTag, 0, sizeof(m_arrDOs[nRow]->m_szBlockingSignalTag));
 			}
 			else if (index.column() == BlockingProgram)
 			{
@@ -638,6 +648,7 @@ void CDOModel::InitPara()
 	para.tagname = "BlockOccNo";
 	m_mapInfo.insert(BlockOccNo, para);
 	m_lstHorizontalHeader.append(para.desc);
+	((CDOTable *)parent())->setItemDelegateForColumn(BlockOccNo, pDelegateRead);
 
 	//para.desc = tr("DataType");
 	//para.tagname = "DataType";

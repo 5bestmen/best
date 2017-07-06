@@ -664,6 +664,7 @@ void CAnalogAlarmLimitModel::InitPara()
 	para.tagname = "BlockNo";
 	//m_arrInfo.insert(OccNo, para);
 	m_horizontal_header_list.append(para.desc);
+	((CAnalogAlarmLimitTable *)parent())->setItemDelegateForColumn(BlockNo, pDelegateRead);
 
 	para.desc = tr("Condition");
 	para.tagname = "Condition";
@@ -672,11 +673,26 @@ void CAnalogAlarmLimitModel::InitPara()
 	QVector<IDDESC> vec;
 	vec.clear();
 	IDDESC tmp;
-	tmp.desc = tr("ZEROTOONE");
-	tmp.ID = QString("%1").arg(ZEROTOONE);
+	tmp.desc = tr("GREATEREQUAL");
+	tmp.ID = QString("%1").arg(GREATEREQUAL);
 	vec.append(tmp);
-	tmp.desc = tr("ONETOZERO");
-	tmp.ID = QString("%1").arg(ONETOZERO);
+	tmp.desc = tr("LESSEQUAL");
+	tmp.ID = QString("%1").arg(LESSEQUAL);
+	vec.append(tmp);
+	tmp.desc = tr("EQUAL");
+	tmp.ID = QString("%1").arg(EQUAL);
+	vec.append(tmp);
+	tmp.desc = tr("NOTEQUAL");
+	tmp.ID = QString("%1").arg(NOTEQUAL);
+	vec.append(tmp);
+	tmp.desc = tr("BWTEEN");
+	tmp.ID = QString("%1").arg(BWTEEN);
+	vec.append(tmp);
+	tmp.desc = tr("RATEREDUCE");
+	tmp.ID = QString("%1").arg(RATEREDUCE);
+	vec.append(tmp);
+	tmp.desc = tr("RATEINCREASE");
+	tmp.ID = QString("%1").arg(RATEINCREASE);
 	vec.append(tmp);
 	CComboBoxDelegate *pCombo = new CComboBoxDelegate(this, vec);
 	((CAnalogAlarmLimitTable *)parent())->setItemDelegateForColumn(Condition, pCombo);

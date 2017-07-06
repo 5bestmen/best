@@ -197,7 +197,7 @@ namespace Config
 
 		CBaseData *GetData(QString &strTagName, int nType);
 		CBaseData *GetDataFromAllData(QString &strTagName, int &nType);
-		bool GetUserVariableRelatedSourceOccNo(QString &strTagName, QString &strRelatedTagName, QString &strOutput);
+		bool GetUserVariableRelatedSourceOccNo(const QString &strTagName, const QString &strRelatedTagName, QString &strOutput);
 
 
 		//note 关联关系
@@ -338,6 +338,8 @@ namespace Config
 
 		//node tagname修改，node关联的前置的用户变量的sourcetagname关联关系也跟着修改
 		bool ChangeNodeTagNameNodifyFesUserVaraible(const std::string &szNodetagName, const std::string &szNodelastTagName);
+
+		bool LogToFile(const char* filename, const char* log);
 private:
 		void InitSystemVariable();
 
@@ -541,6 +543,19 @@ private:
 
 		void Clear();
 		void Create();
+
+		bool LogToFile(const char* filename, const char* log);
+
+		CFesData *GetFesData(std::string &szTagName)
+		{
+			auto it = m_arrHashTagNameMap.find(szTagName);
+			if (it != m_arrHashTagNameMap.end())
+			{
+				return it->second;
+			}
+
+			return nullptr;
+		}
 	private:
 		bool SaveDataToFile()
 		{

@@ -655,4 +655,8 @@ struct DESC_STRING_POOL
 	std::string strTranslation;
 };
 
+#define LOG_FES_LOG "log/fes_log.log"
+#define LOG_NODE_LOG "log/node_log.log"
+#define LOG_SCADA_VARAIBLE_LOG "log/scada_vairaible_log.log"
+
 #endif

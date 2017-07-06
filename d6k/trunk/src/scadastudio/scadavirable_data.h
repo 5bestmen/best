@@ -124,6 +124,8 @@ namespace Config
 		QString m_strPinLabel;
 
 		QString m_strSourceTagName;
+		QString m_strSourceOccNo;
+
 		QString m_strScaleTagName;
 		int32u m_nScaleType;
 		int32u m_nScaleOccNo;
@@ -1182,6 +1184,8 @@ namespace Config
 
 		//
 		bool ChangeTagNameNodify(const QString &stTagName, const QString &strLastTagName, int nType);
+
+		bool GetUserVariableRelatedSourceOccNo(QString &strTagName, QString &strRelatedTagName, QString &strOutput);
 	private:
 		void InitScadaSystemVariable();
 

@@ -79,22 +79,22 @@ CDOTable::~CDOTable()
 
 void CDOTable::mouseReleaseEvent(QMouseEvent * event)
 {
-	QSet<int32s> set;
+	//QSet<int32s> set;
 
-	QModelIndexList indexList = selectionModel()->selectedIndexes();
-	int row;
-	foreach(QModelIndex index, indexList) {
-		index = m_pSortModel->mapToSource(index);
+	//QModelIndexList indexList = selectionModel()->selectedIndexes();
+	//int row;
+	//foreach(QModelIndex index, indexList) {
+	//	index = m_pSortModel->mapToSource(index);
 
-		row = index.row();
+	//	row = index.row();
 
-		set.insert(row);
-	}
+	//	set.insert(row);
+	//}
 
-	if (set.count())
-	{
-		emit SendSelectedRows(set, DEVICE_DO, (void *)m_pModel);
-	}
+	//if (set.count())
+	//{
+	//	emit SendSelectedRows(set, DEVICE_DO, (void *)m_pModel);
+	//}
 
 	QAbstractItemView::mouseReleaseEvent(event);
 }
@@ -106,18 +106,21 @@ void CDOTable::ShowMouseRightButton(const QPoint& point)
 	QMenu *pMenu = new QMenu(NULL);
 
 	QAction *pAddPoint = new QAction(tr("add point"), pMenu);
-
 	pAddPoint->setIcon(QIcon(CHANNEL_PNG));
-
 	pMenu->addAction(pAddPoint);
 
 	QAction *pDeletePoint = new QAction(tr("delete point"), pMenu);
-
-	pMenu->addAction(pDeletePoint);
-
 	pDeletePoint->setIcon(QIcon(CLOSE_GROUP_PNG));
-
 	pMenu->addAction(pDeletePoint);
+
+	QAction *pClearRelationPoint = nullptr;
+	if (indexSelect.column() == CDOModel::COLUMN::AssociatedDI
+		|| indexSelect.column() == CDOModel::COLUMN::BlockingSignalTag)
+	{
+		pClearRelationPoint = new QAction(QObject::tr("Clear Relation"), pMenu);
+		pClearRelationPoint->setIcon(QIcon(CLOSE_GROUP_PNG));
+		pMenu->addAction(pClearRelationPoint);
+	}
 
 	QAction* selectedItem = pMenu->exec(QCursor::pos());
 
@@ -130,6 +133,11 @@ void CDOTable::ShowMouseRightButton(const QPoint& point)
 	{
 		//删除模拟量点
 		DeleteAnalogPoint(indexSelect);
+	}
+	else if (selectedItem == pClearRelationPoint && pClearRelationPoint != nullptr)
+	{
+		//清空关联
+		m_pModel->setData(indexSelect, Qt::EditRole);
 	}
 
 	pMenu->deleteLater();

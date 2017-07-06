@@ -46,6 +46,8 @@ namespace Config
 		bool CheckTagName(std::string & szTagName) const;
 
 		virtual int32u GetOccNo() const = 0;
+
+		bool LogToFile(const char* pFilename, const char* pLog);
 	public:
 
 	protected:

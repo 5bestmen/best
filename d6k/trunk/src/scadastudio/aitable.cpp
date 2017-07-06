@@ -272,7 +272,14 @@ void CAITable::ShowMouseRightButton(const QPoint& point)
 	pBatchAddPoint->setIcon(QIcon(CLOSE_GROUP_PNG));
 	pMenu->addAction(pBatchAddPoint);
 
-	pMenu->addAction(pDeletePoint);
+	QAction *pClearRelationPoint = nullptr;
+	if (indexSelect.column() == CAIModel::COLUMN::AlarmTagName
+		|| indexSelect.column() == CAIModel::COLUMN::ScaleTagName)
+	{
+		pClearRelationPoint = new QAction(QObject::tr("Clear Relation"), pMenu);
+		pClearRelationPoint->setIcon(QIcon(CLOSE_GROUP_PNG));
+		pMenu->addAction(pClearRelationPoint);
+	}
 
 	QAction* selectedItem = pMenu->exec(QCursor::pos());
 
@@ -289,6 +296,11 @@ void CAITable::ShowMouseRightButton(const QPoint& point)
 	else if (selectedItem == pBatchAddPoint)
 	{
 
+	}
+	else if (selectedItem == pClearRelationPoint && pClearRelationPoint != nullptr)
+	{
+		//Çå¿Õ¹ØÁª
+		m_pModel->setData(indexSelect, Qt::EditRole);
 	}
 
 	pMenu->deleteLater();

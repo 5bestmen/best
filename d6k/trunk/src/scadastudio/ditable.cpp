@@ -100,18 +100,20 @@ void CDITable::ShowMouseRightButton(const QPoint& point)
 	QMenu *pMenu = new QMenu(NULL);
 
 	QAction *pAddPoint = new QAction(tr("add point"), pMenu);
-
 	pAddPoint->setIcon(QIcon(CHANNEL_PNG));
-
 	pMenu->addAction(pAddPoint);
 
 	QAction *pDeletePoint = new QAction(tr("delete point"), pMenu);
-
-	pMenu->addAction(pDeletePoint);
-
 	pDeletePoint->setIcon(QIcon(CLOSE_GROUP_PNG));
-
 	pMenu->addAction(pDeletePoint);
+
+	QAction *pClearRelationPoint = nullptr;
+	if (indexSelect.column() == CDIModel::COLUMN::AlarmTagName)
+	{
+		pClearRelationPoint = new QAction(QObject::tr("Clear Relation"), pMenu);
+		pClearRelationPoint->setIcon(QIcon(CLOSE_GROUP_PNG));
+		pMenu->addAction(pClearRelationPoint);
+	}
 
 	QAction* selectedItem = pMenu->exec(QCursor::pos());
 
@@ -124,6 +126,11 @@ void CDITable::ShowMouseRightButton(const QPoint& point)
 	{
 		//删除模拟量点
 		DeleteAnalogPoint(indexSelect);
+	}
+	else if (selectedItem == pClearRelationPoint && pClearRelationPoint != nullptr)
+	{
+		//清空关联
+		m_pModel->setData(indexSelect, Qt::EditRole);
 	}
 
 	pMenu->deleteLater();

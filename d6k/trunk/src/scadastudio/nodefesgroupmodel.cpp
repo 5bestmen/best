@@ -368,6 +368,7 @@ void CNodeFesGroupModel::InitPara()
 	para.tagname = "BlockNo";
 	//m_arrInfo.insert(OccNo, para);
 	m_horizontal_header_list.append(para.desc);
+	((CNodeFesGroupTable *)parent())->setItemDelegateForColumn(BlockNo, pDelegateRead);
 
 	//para.desc = tr("NodeType");
 	//para.tagname = "NodeType";

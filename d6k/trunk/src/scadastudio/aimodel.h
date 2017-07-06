@@ -23,9 +23,9 @@ class CAIModel : public QAbstractTableModel
 public:
 	enum COLUMN
 	{
-		ID, TagName, Desc, OccNo, BlockOccNo/*, DataType*/, InitQua, Address, PinLabel, InitValue, Format, Unit, Enable,
-		MaxRaw, MinRaw, MaxConvert, MinConvert, ScaleTagName, ScaleType/*, ScaleDesc*/, RangeL, RangeH, HighQua, LowQua,
-		SaveDisk, SaveDiskPeriod, SaveDB, SaveDBPeriod, Sensitivity, SensitivityType, AlarmTagName, AlarmType/*, AlarmDesc*/,
+		ID, TagName, Desc, OccNo, BlockOccNo/*, DataType*/, InitQua, Address, PinLabel, InitValue, /*Format,*/ Unit, Enable,
+		MaxRaw, MinRaw, MaxConvert, MinConvert, ScaleTagName, /*ScaleType*//*, ScaleDesc,*/ RangeL, RangeH, HighQua, LowQua,
+		SaveDisk, SaveDiskPeriod, SaveDB, SaveDBPeriod, Sensitivity, SensitivityType, AlarmTagName, /*AlarmType*//*, AlarmDesc,*/
 		ChannelOccNo, DeviceOccNo, ReferenceCount, DataSource, Express, 
 	};
 

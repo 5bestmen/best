@@ -487,6 +487,7 @@ bool CNodeWorkstationGroupModel::InsertRows(int position, int rows, const QModel
 		}
 
 		pNode->m_nNodeType = NODETYPE::WORKSTAIOTN;
+		pNode->m_strGroup = m_pWorkstationData->m_strGroup;
 	}
 
 	endInsertRows();

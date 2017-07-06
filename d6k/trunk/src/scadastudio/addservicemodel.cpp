@@ -53,9 +53,13 @@ QVariant CAddServiceModel::data(const QModelIndex &index, int role) const
 		{
 			return m_pConfig->m_arrServerService[index.row()]->Name;
 		}
+		else if (index.column() == AppType)
+		{
+			return m_appTypeMap[m_pConfig->m_arrServerService[index.row()]->AppType];
+		}
 		else if (index.column() == LoadType)
 		{
-			return m_pConfig->m_arrServerService[index.row()]->LoadType;
+			return m_loadTypeMap[m_pConfig->m_arrServerService[index.row()]->LoadType];
 		}
 		else if (index.column() == Argument)
 		{
@@ -64,6 +68,10 @@ QVariant CAddServiceModel::data(const QModelIndex &index, int role) const
 		else if (index.column() == Description)
 		{
 			return m_pConfig->m_arrServerService[index.row()]->Description;
+		}
+		else if (index.column() == Prority)
+		{
+			return m_pConfig->m_arrServerService[index.row()]->Prority;
 		}
 	}
 	else if (role == Qt::EditRole)
@@ -93,17 +101,26 @@ void CAddServiceModel::InitPara()
 {
 	m_horizontal_header_list.clear();
 
+	m_appTypeMap.clear();
+	m_loadTypeMap.clear();
+
+	m_appTypeMap.insert(Inn_APP, QObject::tr("Inn_APP"));
+	m_appTypeMap.insert(Ext_App, QObject::tr("Ext_App"));
+
+	m_loadTypeMap.insert(Load_Dll, QObject::tr("Load_Dll"));
+	m_loadTypeMap.insert(Load_Exe, QObject::tr("Load_Exe"));
+
 	//LoadType nLoadType;    //! 调用类型：dll形式 ，exe形式
 	//AppType  nAppType;	   //! 应用类型：内置应用，扩展服务
-
+	
+	//Name, AppType, LoadType, Argument, Description, Prority
 
 	m_horizontal_header_list.append(QObject::tr("ProgramName"));
 	m_horizontal_header_list.append(QObject::tr("AppType"));
 	m_horizontal_header_list.append(QObject::tr("LoadType"));
-	m_horizontal_header_list.append(QObject::tr("LoadType"));
-
 	m_horizontal_header_list.append(QObject::tr("Argument"));
 	m_horizontal_header_list.append(QObject::tr("Description"));
+	m_horizontal_header_list.append(QObject::tr("Prority"));
 }
 
 QVariant CAddServiceModel::headerData(int section, Qt::Orientation orientation, int role) const

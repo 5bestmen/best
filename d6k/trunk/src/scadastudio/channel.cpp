@@ -3401,12 +3401,12 @@ void CChannel::SendSelectedRows(QSet<int32s> &set, int32s nType, void *pModule)
 		m_propertyToIdAI[pProperty] = strTmp;
 		m_idToPropertyAI[strTmp] = pProperty;
 
-		//ScaleType
-		strTmp = tmp[CAIModel::COLUMN::ScaleType].desc;
-		pProperty = variantManager->addProperty(QVariant::UInt, strTmp);
-		property->addSubProperty(pProperty);
-		m_propertyToIdAI[pProperty] = strTmp;
-		m_idToPropertyAI[strTmp] = pProperty;
+		////ScaleType
+		//strTmp = tmp[CAIModel::COLUMN::ScaleType].desc;
+		//pProperty = variantManager->addProperty(QVariant::UInt, strTmp);
+		//property->addSubProperty(pProperty);
+		//m_propertyToIdAI[pProperty] = strTmp;
+		//m_idToPropertyAI[strTmp] = pProperty;
 
 		////ScaleOccNo
 		//strTmp = tmp[CAIModel::COLUMN::ScaleOccNo].desc;
@@ -3707,12 +3707,12 @@ void CChannel::CreateAIAttr(CAIModel *pModel)
 	m_propertyToIdAI[pProperty] = strTmp;
 	m_idToPropertyAI[strTmp] = pProperty;
 
-	//ScaleType
-	strTmp = tmp[CAIModel::COLUMN::ScaleType].desc;
-	pProperty = m_pUi->GetAtrri()->GetIntProperty()->addProperty(strTmp);
-	property->addSubProperty(pProperty);
-	m_propertyToIdAI[pProperty] = strTmp;
-	m_idToPropertyAI[strTmp] = pProperty;
+	////ScaleType
+	//strTmp = tmp[CAIModel::COLUMN::ScaleType].desc;
+	//pProperty = m_pUi->GetAtrri()->GetIntProperty()->addProperty(strTmp);
+	//property->addSubProperty(pProperty);
+	//m_propertyToIdAI[pProperty] = strTmp;
+	//m_idToPropertyAI[strTmp] = pProperty;
 
 	////ScaleOccNo
 	//strTmp = tmp[CAIModel::COLUMN::ScaleDesc].desc;
@@ -4092,18 +4092,18 @@ void CChannel::ValueChangedAI(QtProperty *property, int val)
 			m_pAIModel->setData(m_pAIModel->index(value, CAIModel::COLUMN::SaveDBPeriod), val, Qt::EditRole);
 		}
 	}
-	else if (strTmp.compare(tmp[CAIModel::COLUMN::ScaleType].desc) == 0)
-	{
-		//ScaleType
-		auto AIs = m_pAIModel->GetAIs();
+	//else if (strTmp.compare(tmp[CAIModel::COLUMN::ScaleType].desc) == 0)
+	//{
+	//	//ScaleType
+	//	auto AIs = m_pAIModel->GetAIs();
 
-		foreach(const int &value, m_setSelect)
-		{
-			//AIs[value]->m_nScaleType = val;
+	//	foreach(const int &value, m_setSelect)
+	//	{
+	//		//AIs[value]->m_nScaleType = val;
 
-			m_pAIModel->setData(m_pAIModel->index(value, CAIModel::COLUMN::ScaleType), val, Qt::EditRole);
-		}
-	}
+	//		m_pAIModel->setData(m_pAIModel->index(value, CAIModel::COLUMN::ScaleType), val, Qt::EditRole);
+	//	}
+	//}
 	//else if (strTmp.compare(tmp[CAIModel::COLUMN::ScaleDesc].desc) == 0)
 	//{
 	//	//ScaleOccNo
@@ -4116,18 +4116,18 @@ void CChannel::ValueChangedAI(QtProperty *property, int val)
 	//		m_pAIModel->setData(m_pAIModel->index(value, CAIModel::COLUMN::ScaleDesc), val, Qt::EditRole);
 	//	}
 	//}
-	else if (strTmp.compare(tmp[CAIModel::COLUMN::AlarmType].desc) == 0)
-	{
-		//AlarmType
-		auto AIs = m_pAIModel->GetAIs();
+	//else if (strTmp.compare(tmp[CAIModel::COLUMN::AlarmType].desc) == 0)
+	//{
+	//	//AlarmType
+	//	auto AIs = m_pAIModel->GetAIs();
 
-		foreach(const int &value, m_setSelect)
-		{
-			//AIs[value]->m_nAlarmType = val;
+	//	foreach(const int &value, m_setSelect)
+	//	{
+	//		//AIs[value]->m_nAlarmType = val;
 
-			m_pAIModel->setData(m_pAIModel->index(value, CAIModel::COLUMN::AlarmType), val, Qt::EditRole);
-		}
-	}
+	//		m_pAIModel->setData(m_pAIModel->index(value, CAIModel::COLUMN::AlarmType), val, Qt::EditRole);
+	//	}
+	//}
 	//else if (strTmp.compare(tmp[CAIModel::COLUMN::AlarmDesc].desc) == 0)
 	//{
 	//	//AlarmOccNo
@@ -4964,12 +4964,12 @@ void CChannel::CreateAOAttr(CAOModel *pModel)
 	m_propertyToIdAO[pProperty] = strTmp;
 	m_idToPropertyAO[strTmp] = pProperty;
 
-	//ScaleType
-	strTmp = tmp[CAOModel::COLUMN::ScaleType].desc;
-	pProperty = m_pUi->GetAtrri()->GetIntProperty()->addProperty(strTmp);
-	property->addSubProperty(pProperty);
-	m_propertyToIdAO[pProperty] = strTmp;
-	m_idToPropertyAO[strTmp] = pProperty;
+	////ScaleType
+	//strTmp = tmp[CAOModel::COLUMN::ScaleType].desc;
+	//pProperty = m_pUi->GetAtrri()->GetIntProperty()->addProperty(strTmp);
+	//property->addSubProperty(pProperty);
+	//m_propertyToIdAO[pProperty] = strTmp;
+	//m_idToPropertyAO[strTmp] = pProperty;
 
 
 	//RangeL
@@ -5183,14 +5183,14 @@ void CChannel::ValueChangedAO(QtProperty *property, int val)
 			m_pAOModel->setData(m_pAOModel->index(value, CAOModel::COLUMN::ReferenceCount), val, Qt::EditRole);
 		}
 	}
-	else if (strTmp == tmp[CAOModel::COLUMN::ScaleType].desc)
-	{
-		//ScaleType
-		foreach(const int &value, m_setSelect)
-		{
-			m_pAOModel->setData(m_pAOModel->index(value, CAOModel::COLUMN::ScaleType), val, Qt::EditRole);
-		}
-	}
+	//else if (strTmp == tmp[CAOModel::COLUMN::ScaleType].desc)
+	//{
+	//	//ScaleType
+	//	foreach(const int &value, m_setSelect)
+	//	{
+	//		m_pAOModel->setData(m_pAOModel->index(value, CAOModel::COLUMN::ScaleType), val, Qt::EditRole);
+	//	}
+	//}
 }
 
 void CChannel::CreateDOAttr(CDOModel *pModel)

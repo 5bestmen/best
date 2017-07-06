@@ -150,17 +150,17 @@ QVariant CAOModel::data(const QModelIndex &index, int role) const
 		//{
 		//	return m_arrAOs[nRow]->m_strScaleDesc;
 		//}
-		else if (index.column() == ScaleType)
-		{
-			if (m_arrAOs[nRow]->m_nScaleType == ScaleType::LINEAR)
-			{
-				return m_mapScaleType[ScaleType::LINEAR];
-			}
-			else if(m_arrAOs[nRow]->m_nScaleType == ScaleType::NONLINEAR)
-			{
-				return m_mapScaleType[ScaleType::NONLINEAR];
-			}
-		}
+		//else if (index.column() == ScaleType)
+		//{
+		//	if (m_arrAOs[nRow]->m_nScaleType == ScaleType::LINEAR)
+		//	{
+		//		return m_mapScaleType[ScaleType::LINEAR];
+		//	}
+		//	else if(m_arrAOs[nRow]->m_nScaleType == ScaleType::NONLINEAR)
+		//	{
+		//		return m_mapScaleType[ScaleType::NONLINEAR];
+		//	}
+		//}
 		else if (index.column() == RangeL)
 		{
 			return (double)m_arrAOs[nRow]->m_dblRangeL;
@@ -272,17 +272,17 @@ QVariant CAOModel::data(const QModelIndex &index, int role) const
 		//{
 		//	return m_arrAOs[nRow]->m_strScaleDesc;
 		//}
-		else if (index.column() == ScaleType)
-		{
-			if (m_arrAOs[nRow]->m_nScaleType == ScaleType::LINEAR)
-			{
-				return m_mapScaleType[ScaleType::LINEAR];
-			}
-			else if (m_arrAOs[nRow]->m_nScaleType == ScaleType::NONLINEAR)
-			{
-				return m_mapScaleType[ScaleType::NONLINEAR];
-			}
-		}
+		//else if (index.column() == ScaleType)
+		//{
+		//	if (m_arrAOs[nRow]->m_nScaleType == ScaleType::LINEAR)
+		//	{
+		//		return m_mapScaleType[ScaleType::LINEAR];
+		//	}
+		//	else if (m_arrAOs[nRow]->m_nScaleType == ScaleType::NONLINEAR)
+		//	{
+		//		return m_mapScaleType[ScaleType::NONLINEAR];
+		//	}
+		//}
 		else if (index.column() == RangeL)
 		{
 			return (double)m_arrAOs[nRow]->m_dblRangeL;
@@ -375,6 +375,7 @@ void CAOModel::InitPara()
 	para.tagname = "BlockOccNo";
 	m_mapInfo.insert(BlockOccNo, para);
 	m_lstHorizontalHeader.append(para.desc);
+	((CAOTable *)parent())->setItemDelegateForColumn(BlockOccNo, pReadDelegate);
 
 	//para.desc = tr("DataType");
 	//para.tagname = "DataType";
@@ -522,17 +523,17 @@ void CAOModel::InitPara()
 	m_lstHorizontalHeader.append(para.desc);
 	((CAOTable *)parent())->setItemDelegateForColumn(ScaleTagName, pReadDelegate);
 
-	para.desc = tr("ScaleType");
-	para.tagname = "ScaleType";
-	m_mapInfo.insert(ScaleType, para);
-	m_lstHorizontalHeader.append(para.desc);
-	m_mapScaleType.clear();
-	tmp.desc = tr("linear");
-	//tmp.ID = QString("%1").arg(LINEAR);
-	m_mapScaleType.insert(LINEAR, tmp.desc);
-	tmp.desc = tr("nonlinear");
-	//tmp.ID = QString("%1").arg(NONLINEAR);
-	m_mapScaleType.insert(NONLINEAR, tmp.desc);
+	//para.desc = tr("ScaleType");
+	//para.tagname = "ScaleType";
+	//m_mapInfo.insert(ScaleType, para);
+	//m_lstHorizontalHeader.append(para.desc);
+	//m_mapScaleType.clear();
+	//tmp.desc = tr("linear");
+	////tmp.ID = QString("%1").arg(LINEAR);
+	//m_mapScaleType.insert(LINEAR, tmp.desc);
+	//tmp.desc = tr("nonlinear");
+	////tmp.ID = QString("%1").arg(NONLINEAR);
+	//m_mapScaleType.insert(NONLINEAR, tmp.desc);
 
 	para.desc = tr("RangeL");
 	para.tagname = "RangeL";
@@ -819,13 +820,26 @@ bool CAOModel::setData(const QModelIndex &index, const QVariant &value, int role
 					m_arrAOs[nRow]->m_dbMinConvert = value.toDouble();
 				}
 			}
-			//else if (index.column() == ScaleTagName)
-			//{
-			//	if (m_arrAOs[nRow]->m_strScaleTagName != value.toString())
-			//	{
-			//		m_arrAOs[nRow]->m_strScaleTagName = value.toString();
-			//	}
-			//}
+			else if (index.column() == ScaleTagName)
+			{
+				if (m_arrAOs[nRow]->m_strScaleTagName.isEmpty())
+				{
+					return true;
+				}
+
+				//删除关联关系
+				if (!m_pFes->DeleteAOsRelationScaleArr(m_arrAOs[nRow]->m_strScaleTagName.toStdString(), m_arrAOs[nRow]))
+				{
+					auto strTmp = QObject::tr("[Fes %1]  Delete AO TagName %2 Relation Scale failed!!!").arg(m_pFes->m_szTagName).arg(m_arrAOs[nRow]->m_szTagName);
+					m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+					return false;
+				}
+
+				m_arrAOs[nRow]->m_strScaleTagName.clear();
+
+				return true;
+			}
 			//else if (index.column() == ScaleDesc)
 			//{
 			//	if (m_arrAOs[nRow]->m_strScaleDesc != value.toString())

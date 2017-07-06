@@ -563,6 +563,7 @@ void CDigitalAlarmLimitModel::InitPara()
 	para.tagname = "BlockNo";
 	//m_arrInfo.insert(OccNo, para);
 	m_horizontal_header_list.append(para.desc);
+	((CDigitalAlarmLimitTable *)parent())->setItemDelegateForColumn(BlockNo, pReadOnly);
 
 	para.desc = tr("Condition");
 	para.tagname = "Condition";

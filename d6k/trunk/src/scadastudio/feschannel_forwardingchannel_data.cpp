@@ -3,6 +3,8 @@
 #include "variant.h"
 #include "global.h"
 #include "fes_conf_data.h"
+#include "log/log2file.h"
+
 #include "stl_util-inl.h"
 
 #include <QObject>
@@ -895,6 +897,12 @@ namespace Config
 		writer.writeStartElement("c");
 		writer.writeAttribute("OccNo", QString("%1").arg(nOccNoChannel));
 		writer.writeAttribute("TagName", QString("%1").arg(m_szTagName));
+		if (!CheckTagNameIsValid(m_szTagName, FES_DESC))
+		{
+			auto strTmp = QString("-->Fes TagName %1  Channel TagName %2 count is invalid").arg(pFes->m_szTagName).arg(m_szTagName);
+			MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
+			s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), true);
+		}
 		writer.writeAttribute("ID", QString("%1").arg(m_nID));
 		writer.writeAttribute("Description", QString("%1").arg(m_strDescription));
 		//字符串内存池
@@ -931,7 +939,11 @@ namespace Config
 		//SaveDevice(writer, pFes);
 		///////////////////////device///////////////////////////////////////////
 		writer.writeStartElement("device");
+		
 		writer.writeAttribute("Count", QString("%1").arg(m_arrDevices.size()));
+		auto strTmp = QString("-->Fes TagName %1  Channel TagName %2 device count is %3").arg(pFes->m_szTagName).arg(m_szTagName).arg(m_arrDevices.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
+
 		for (auto const &var : m_arrDevices)
 		{
 			var->SaveDeviceData(writer, nOccNoChannel, nOccNoDevice, nAIOccNo, nDIOccNo, nAOOccNo, nDOOccNo, pFes, pHash, pStringPoolVec, pDescStringPoolOccNo);
@@ -940,6 +952,20 @@ namespace Config
 		//////////////////////////////////////////////////////////////////
 
 		writer.writeEndElement();
+
+		return true;
+	}
+
+	bool CChannelData::LogToFile(const char* pFilename, const char* pLog)
+	{
+		MYLIB::Log2File(pFilename, pLog, true);
+		std::sort(m_arrDevices.begin(), m_arrDevices.end());
+
+		//装置
+		for each (auto var in m_arrDevices)
+		{
+			auto strTmp = QString("[Start Device %1 Log Success!!!]").arg(var->m_szTagName);
+		}
 
 		return true;
 	}
@@ -1232,6 +1258,13 @@ namespace Config
 		writer.writeStartElement("forward_c");
 		writer.writeAttribute("OccNo", QString("%1").arg(nOccNoChannel));
 		writer.writeAttribute("TagName", QString("%1").arg(m_szTagName));
+		if (!CheckTagNameIsValid(m_szTagName, FES_DESC))
+		{
+			auto strTmp = QString("-->Fes %1  Forwarding Channel TagName %2 is invalid!!!").arg(pFes->m_szTagName).arg(m_szTagName);
+			MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+			s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+		}
+
 		writer.writeAttribute("ID", QString("%1").arg(m_nID));
 		writer.writeAttribute("Description", QString("%1").arg(m_strDescription));
 		//字符串内存池
@@ -1305,6 +1338,9 @@ namespace Config
 
 		writer.writeStartElement("Forwarding_AIN");
 		writer.writeAttribute("Count", QString("%1").arg(m_arrAIs.size()));
+		auto strTmp = QString("-->Fes %1  Forwarding Channel %2 AIs count is %3!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(m_arrAIs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+
 
 		Q_ASSERT(nAIOccNo + 1 > 0);
 		int nBlockNo = 0;
@@ -1317,6 +1353,13 @@ namespace Config
 			ai->SetOccNo(nAIOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nAIOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(ai->m_szTagName));
+			if (!CheckTagNameIsValid(ai->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("Fes %1  Forwarding Channel TagName %2  AI TagName %3 is invalid!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(ai->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(ai->m_nID));
 			nBlockNo++;
 			ai->m_nBlockNo = nBlockNo;
@@ -1419,6 +1462,8 @@ namespace Config
 	{
 		writer.writeStartElement("Forwarding_DIN");
 		writer.writeAttribute("Count", QString("%1").arg(m_arrDIs.size()));
+		auto strTmp = QString("-->Fes %1  Forwarding Channel %2 DIs count is %3!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(m_arrDIs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 
 		Q_ASSERT(nDIOccNo + 1);
 
@@ -1437,6 +1482,13 @@ namespace Config
 			di->SetOccNo(nDIOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nDIOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(di->m_szTagName));
+			if (!CheckTagNameIsValid(di->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("Fes %1  Forwarding Channel TagName %2  DI TagName %3 is invalid!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(di->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(di->m_nID));
 
 			nBlockNo++;
@@ -1510,6 +1562,8 @@ namespace Config
 
 		writer.writeStartElement("Forwarding_AOUT");
 		writer.writeAttribute("Count", QString("%1").arg(m_arrAOs.size()));
+		auto strTmp = QString("-->Fes %1  Forwarding Channel %2 AOs count is %3!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(m_arrAOs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 
 		Q_ASSERT(nAOOccNo + 1);
 
@@ -1522,6 +1576,13 @@ namespace Config
 			ao->SetOccNo(nAOOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nAOOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(ao->m_szTagName));
+			if (!CheckTagNameIsValid(ao->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("Fes %1  Forwarding Channel TagName %2  AO TagName %3 is invalid!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(ao->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(ao->m_nID));
 			nBlockOccNo++;
 			ao->m_nBlockNo = nBlockOccNo;
@@ -1626,35 +1687,44 @@ namespace Config
 		}
 
 		writer.writeStartElement("Forwarding_CGOUT");
-		writer.writeAttribute("Count", QString("%1").arg(m_arrAOs.size()));
+		writer.writeAttribute("Count", QString("%1").arg(m_arrCGs.size()));
+		auto strTmp = QString("-->Fes %1  Forwarding Channel %2 CGs count is %3!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(m_arrCGs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 
 		Q_ASSERT(nCGOccNo >= 0);
 
 		int nBlockOccNo = 0;
-		for (auto const &ao : m_arrCGs)
+		for (auto const &cg : m_arrCGs)
 		{
 			writer.writeStartElement("Forwarding_cgo");
 
 			nCGOccNo++;
-			ao->SetOccNo(nCGOccNo);
+			cg->SetOccNo(nCGOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nCGOccNo));
-			writer.writeAttribute("TagName", QString("%1").arg(ao->m_szTagName));
-			writer.writeAttribute("ID", QString("%1").arg(ao->m_nID));
+			writer.writeAttribute("TagName", QString("%1").arg(cg->m_szTagName));
+			if (!CheckTagNameIsValid(cg->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("Fes %1  Forwarding Channel TagName %2  CG TagName %3 is invalid!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(cg->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
+			writer.writeAttribute("ID", QString("%1").arg(cg->m_nID));
 			nBlockOccNo++;
-			ao->m_nBlockNo = nBlockOccNo;
+			cg->m_nBlockNo = nBlockOccNo;
 			writer.writeAttribute("BlockOccNo", QString("%1").arg(nBlockOccNo));
 
-			writer.writeAttribute("GroupNo", QString("%1").arg(ao->m_nGroupNo));
-			writer.writeAttribute("EntryNo", QString("%1").arg(ao->m_nEntryNo));
+			writer.writeAttribute("GroupNo", QString("%1").arg(cg->m_nGroupNo));
+			writer.writeAttribute("EntryNo", QString("%1").arg(cg->m_nEntryNo));
 
-			writer.writeAttribute("Description", QString("%1").arg(ao->m_strDescription));
+			writer.writeAttribute("Description", QString("%1").arg(cg->m_strDescription));
 			//字符串内存池
-			const auto it = pHash->find(ao->m_strDescription.toStdString());
+			const auto it = pHash->find(cg->m_strDescription.toStdString());
 			if (it == pHash->end())
 			{
 				*pDescStringPoolOccNo = *pDescStringPoolOccNo + 1;
-				pHash->insert(make_pair(ao->m_strDescription.toStdString(), *pDescStringPoolOccNo));
-				pStringPoolVec->push_back(ao->m_strDescription.toStdString());
+				pHash->insert(make_pair(cg->m_strDescription.toStdString(), *pDescStringPoolOccNo));
+				pStringPoolVec->push_back(cg->m_strDescription.toStdString());
 
 				//desc occno
 				writer.writeAttribute("DescriptionOccNo", QString("%1").arg(*pDescStringPoolOccNo));
@@ -1665,12 +1735,12 @@ namespace Config
 				writer.writeAttribute("DescriptionOccNo", QString("%1").arg(it->second));
 			}
 
-			writer.writeAttribute("FUN", QString("%1").arg(ao->m_strFUN));
-			writer.writeAttribute("INF", QString("%1").arg(ao->m_strInfo));
+			writer.writeAttribute("FUN", QString("%1").arg(cg->m_strFUN));
+			writer.writeAttribute("INF", QString("%1").arg(cg->m_strInfo));
 
-			writer.writeAttribute("Address", QString("%1").arg(ao->m_strAddress));
+			writer.writeAttribute("Address", QString("%1").arg(cg->m_strAddress));
 
-			ao->m_nChannelOccNo = nOccNoChannel;
+			cg->m_nChannelOccNo = nOccNoChannel;
 			//转发通道大排行号
 			writer.writeAttribute("ForwardingChannelOccNo", QString("%1").arg(nOccNoChannel));
 
@@ -1703,6 +1773,8 @@ namespace Config
 	{
 		writer.writeStartElement("Forwarding_DOUT");
 		writer.writeAttribute("Count", QString("%1").arg(m_arrDOs.size()));
+		auto strTmp = QString("-->Fes %1  Forwarding Channel %2 DOs count is %3!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(m_arrDOs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 
 		Q_ASSERT(nDOOccNo + 1);
 
@@ -1715,6 +1787,13 @@ namespace Config
 
 			writer.writeAttribute("OccNo", QString("%1").arg(nDOOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(dout->m_szTagName));
+			if (!CheckTagNameIsValid(dout->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("Fes %1  Forwarding Channel TagName %2  DOUT TagName %3 is invalid!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(dout->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(dout->m_nID));
 			nBlockOccNo++;
 			dout->m_nBlockNo = nBlockOccNo;
@@ -1788,7 +1867,9 @@ namespace Config
 	bool CForwardingChannelData::SaveKwh(QXmlStreamWriter & writer, int & nOccNoChannel, int & nKwhOccNo, CFesData * pFes, std::unordered_map<std::string, int32u>* pHash, std::vector<std::string>* pStringPoolVec, int32u * pDescStringPoolOccNo)
 	{
 		writer.writeStartElement("Forwarding_KWH");
-		writer.writeAttribute("Count", QString("%1").arg(m_arrDOs.size()));
+		writer.writeAttribute("Count", QString("%1").arg(m_arrKWHs.size()));
+		auto strTmp = QString("-->Fes %1  Forwarding Channel %2 KWHs count is %3!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(m_arrKWHs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 
 		Q_ASSERT(nKwhOccNo + 1);
 
@@ -1801,6 +1882,13 @@ namespace Config
 
 			writer.writeAttribute("OccNo", QString("%1").arg(nKwhOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(kwh->m_szTagName));
+			if (!CheckTagNameIsValid(kwh->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("Fes %1  Forwarding Channel TagName %2  KWH TagName %3 is invalid!!!").arg(pFes->m_szTagName).arg(m_szTagName).arg(kwh->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(kwh->m_nID));
 			nBlockOccNo++;
 			kwh->m_nBlockNo = nBlockOccNo;
@@ -3468,8 +3556,6 @@ namespace Config
 					int32u nTelCtlExecTime = reader.attributes().value("TelCtlExecTime").toUInt();
 					pDigitalOutput->m_dblTelCtlExecTime = nTelCtlExecTime;
 
-					pDigitalOutput->m_strAddress = reader.attributes().value("PinLabel").toString();
-
 					//关联遥信点名
 					auto strAssociatedDI = reader.attributes().value("AssociatedDI").toString();
 					memset(pDigitalOutput->m_szAssociatedDI, 0, sizeof(pDigitalOutput->m_szAssociatedDI));
@@ -3658,7 +3744,7 @@ namespace Config
 					pAnalogOutput->m_nInitialQua = nInitialQua;
 
 					pAnalogOutput->m_strAddress = reader.attributes().value("Address").toString();
-					pAnalogOutput->m_strAddress = reader.attributes().value("PinLabel").toString();
+					pAnalogOutput->m_strPinLabel = reader.attributes().value("PinLabel").toString();
 
 					fp64 dbInitValue = reader.attributes().value("InitValue").toDouble();
 					pAnalogOutput->m_dbInitValue = dbInitValue;
@@ -3738,6 +3824,13 @@ namespace Config
 		m_nOccNo = nOccNoDevice;
 		writer.writeAttribute("OccNo", QString("%1").arg(nOccNoDevice));
 		writer.writeAttribute("TagName", QString("%1").arg(m_szTagName));
+		if (!CheckTagNameIsValid(m_szTagName, FES_DESC))
+		{
+			auto strTmp = QString("-->Fes TagName %1  device %2 is invalid").arg(pFes->m_szTagName).arg(m_szTagName);
+			MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
+			s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), true);
+		}
+
 		writer.writeAttribute("ID", QString("%1").arg(m_nID));
 		writer.writeAttribute("Description", QString("%1").arg(m_strDescription));
 		//字符串内存池
@@ -3773,7 +3866,7 @@ namespace Config
 
 		SaveAO(writer, nOccNoChannel, nOccNoDevice, nAOOccNo, pFes, pHash, pStringPoolVec, pDescStringPoolOccNo);
 
-		SaveDO(writer, nOccNoChannel, nOccNoDevice, nDOOccNo, pHash, pStringPoolVec, pDescStringPoolOccNo);
+		SaveDO(writer, nOccNoChannel, nOccNoDevice, nDOOccNo, pFes, pHash, pStringPoolVec, pDescStringPoolOccNo);
 
 		writer.writeEndElement();
 		//////////////////////////////////////////////////////////////////
@@ -3786,8 +3879,13 @@ namespace Config
 	bool CDevice::SaveAI(QXmlStreamWriter &writer, int &nOccNoChannel, int &nOccNoDevice, int &nAIOccNo, CFesData *pFes
 		, std::unordered_map<std::string, int32u> *pHash, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo)
 	{
+		auto strTmp = QString("-->Fes TagName %1  device %2 AIN log start!!!").arg(pFes->m_szTagName).arg(m_szTagName);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
+		
 		writer.writeStartElement("AIN");
 		writer.writeAttribute("Count", QString("%1").arg(m_arrAIs.size()));
+		strTmp = QString("-->Fes TagName %1  device %2 AIs count is %3").arg(pFes->m_szTagName).arg(m_szTagName).arg((int)m_arrAIs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
 
 		Q_ASSERT(nAIOccNo + 1 > 0);
 		int nBlockOccNo = 0;
@@ -3806,6 +3904,13 @@ namespace Config
 			ai->SetOccNo(nAIOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nAIOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(ai->m_szTagName));
+			if (!CheckTagNameIsValid(ai->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("-->Fes TagName %1  device %2 ai %3 is invalid").arg(pFes->m_szTagName).arg(m_szTagName).arg(ai->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(ai->m_nID));
 			nBlockOccNo++;
 			ai->m_nBlockOccNo = nBlockOccNo;
@@ -3951,6 +4056,9 @@ namespace Config
 	{
 		writer.writeStartElement("DIN");
 		writer.writeAttribute("Count", QString("%1").arg(m_arrDIs.size()));
+		auto strTmp = QString("-->Fes TagName %1  device %2 DIs count is %3").arg(pFes->m_szTagName).arg(m_szTagName).arg((int)m_arrDIs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
+
 
 		Q_ASSERT(nDIOccNo + 1);
 
@@ -3969,6 +4077,13 @@ namespace Config
 			di->SetOccNo(nDIOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nDIOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(di->m_szTagName));
+			if (!CheckTagNameIsValid(di->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("-->Fes TagName %1  device %2 di %3 is invalid").arg(pFes->m_szTagName).arg(m_szTagName).arg(di->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("DoubleDI", QString("%1").arg(di->m_szDoubleDI));
 			writer.writeAttribute("ID", QString("%1").arg(di->m_nID));
 
@@ -4061,6 +4176,8 @@ namespace Config
 
 		writer.writeStartElement("AOUT");
 		writer.writeAttribute("Count", QString("%1").arg(m_arrAOs.size()));
+		auto strTmp = QString("-->Fes TagName %1  device %2 AOs count is %3").arg(pFes->m_szTagName).arg(m_szTagName).arg((int)m_arrAOs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
 
 		Q_ASSERT(nAOOccNo + 1);
 
@@ -4073,6 +4190,13 @@ namespace Config
 			ao->SetOccNo(nAOOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nAOOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(ao->m_szTagName));
+			if (!CheckTagNameIsValid(ao->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("-->Fes TagName %1  device %2 ao %3 is invalid").arg(pFes->m_szTagName).arg(m_szTagName).arg(ao->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(ao->m_nID));
 			nBlockOccNo++;
 			ao->m_nBlockOccNo = nBlockOccNo;
@@ -4158,11 +4282,13 @@ namespace Config
 		return true;
 	}
 
-	bool CDevice::SaveDO(QXmlStreamWriter &writer, int &nOccNoChannel, int &nOccNoDevice, int &nDOOccNo, std::unordered_map<std::string, int32u> *pHash
+	bool CDevice::SaveDO(QXmlStreamWriter &writer, int &nOccNoChannel, int &nOccNoDevice, int &nDOOccNo, CFesData *pFes, std::unordered_map<std::string, int32u> *pHash
 		, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo)
 	{
 		writer.writeStartElement("DOUT");
 		writer.writeAttribute("Count", QString("%1").arg(m_arrDOs.size()));
+		auto strTmp = QString("-->Fes TagName %1  device %2 DOs count is %3").arg(pFes->m_szTagName).arg(m_szTagName).arg((int)m_arrDOs.size());
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
 
 		Q_ASSERT(nDOOccNo + 1);
 
@@ -4175,6 +4301,13 @@ namespace Config
 
 			writer.writeAttribute("OccNo", QString("%1").arg(nDOOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(dout->m_szTagName));
+			if (!CheckTagNameIsValid(dout->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString("-->Fes TagName %1  device %2 ao %3 is invalid").arg(pFes->m_szTagName).arg(m_szTagName).arg(dout->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
+				s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(dout->m_nID));
 			nBlockOccNo++;
 			dout->m_nBlockOccNo = nBlockOccNo;
@@ -4227,6 +4360,18 @@ namespace Config
 		return true;
 	}
 
+
+	bool CDevice::LogToFile(const char* pFilename, const char* pLog)
+	{
+		MYLIB::Log2File(pFilename, pLog, true);
+
+		for each (auto var in m_arrAIs)
+		{
+
+		}
+
+		return true;
+	}
 
 	void CTransform::Save()
 	{

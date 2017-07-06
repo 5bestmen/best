@@ -36,6 +36,7 @@
 
 #include "global.h"
 #include "scadastudio/imodule.h"
+#include "log/log2file.h"
 
 #include <algorithm>
 #include <QFile>
@@ -2397,9 +2398,12 @@ namespace Config
 			QString strTmp = QString(QObject::tr("open %1 fail!!!")).arg(fileName);
 
 			s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			MYLIB::Log2File(LOG_FES_LOG, fileName.toStdString().c_str(), true);
 
 			return false;
 		}
+		QString strTmp = QString("[Open %1 success!!!]").arg(fileName);
+		MYLIB::Log2File(LOG_FES_LOG ,strTmp.toStdString().c_str(), true);
 
 		QXmlStreamWriter writer(&file);
 		writer.setAutoFormatting(true);
@@ -2424,7 +2428,16 @@ namespace Config
 			writer.writeAttribute("DescriptionOccNo", QString("%1").arg(it->second));
 		}
 
+		//校验tagname
+		if (!CheckTagNameIsValid(m_szTagName, FES_DESC))
+		{
+			strTmp = QString(QObject::tr("[Error: Fes %1 TagName is invalid!!!]")).arg(m_szTagName);
+			s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			MYLIB::Log2File(LOG_FES_LOG, fileName.toStdString().c_str(), true);
+		}
 
+		strTmp = QString(QObject::tr("[Fes %1 log start!!!]")).arg(m_szTagName);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 		writer.writeAttribute("TagName", m_szTagName);
 		writer.writeAttribute("version", VERSION);
 		writer.writeAttribute("ID", QString("%1").arg(m_nID));
@@ -2432,6 +2445,12 @@ namespace Config
 		writer.writeAttribute("GroupName", m_strGroupName);
 		//大排行号
 		m_nOccNo = nOccNo;
+		if (m_nOccNo <= 0)
+		{
+			strTmp = QString(QObject::tr("[Fes %1 TagName OccNo %2 is invalid!!!]")).arg(m_szTagName).arg(m_nOccNo);
+			s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			MYLIB::Log2File(LOG_FES_LOG, fileName.toStdString().c_str(), true);
+		}
 		writer.writeAttribute("OccNo", QString("%1").arg(m_nOccNo));
 		
 		SaveTransform(writer, pHash, pStringPoolVec, pDescStringPoolOccNo);
@@ -2459,10 +2478,13 @@ namespace Config
 			return false;
 		}
 		
+		auto strTmp = QString("-->Fes TagName %1  Channel log start").arg(m_szTagName);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
 		writer.writeStartElement("channel");
 
 		int nCounts = (int)m_arrMaps[CHANNELHASHID].size();
-
+		strTmp = QString("-->Fes TagName %1  Channel count is %2").arg(m_szTagName).arg(nCounts);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), LEVEL_1);
 		writer.writeAttribute("Count", QString("%1").arg(nCounts));
 
 		int nOccNoChannel = 0, nOccNoDevice = 0, nOccNoAI = 0, nOccNoDI = 0, nOccNoAO = 0, nOccNoDO = 0;
@@ -2531,11 +2553,16 @@ namespace Config
 			return false;
 		}
 
+		auto strTmp = QString("-->Fes %1  Forwarding Channel log start!!!").arg(m_szTagName);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+
 		writer.writeStartElement("forwardingchannel");
 
 		int nCounts = (int)m_arrMaps[FORWARDINGCHANNEL].size();
 
 		writer.writeAttribute("Count", QString("%1").arg(nCounts));
+		strTmp = QString("-->Fes %1  Forwarding Channel count is %2!!!").arg(m_szTagName).arg(nCounts);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 
 		int nOccNoChannel = 0, nOccNoAI = 0, nOccNoDI = 0, nOccNoAO = 0, nOccNoCG = 0, nOccNoDO = 0, nKwhOccNo = 0;
 		SaveForwardingChannelChildNode(writer, /*m_pChannelGroup*/pChannelGroup, nOccNoChannel, nOccNoAI, nOccNoDI, nOccNoAO, nOccNoCG, nOccNoDO, nKwhOccNo,pHash, pStringPoolVec, pDescStringPoolOccNo);
@@ -2577,6 +2604,9 @@ namespace Config
 			return false;
 		}
 		
+		auto strTmp = QString(QObject::tr("[-->Scale log start!!!]"));
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+
 		writer.writeStartElement("scale");
 
 		SaveLinear(writer, pHash, pStringPoolVec, pDescStringPoolOccNo);
@@ -2624,10 +2654,24 @@ namespace Config
 
 			writer.writeStartElement("l");
 
+			if (!CheckTagNameIsValid(pTmp->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString(QObject::tr("[---->Fes %1  Scale Linear Tagname %2 is invalid!!!]")).arg(m_szTagName).arg(pTmp->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+			writer.writeAttribute("TagName", QString("%1").arg(pTmp->m_szTagName));
+
 			nOccNo++;
+			if (nOccNo <= 0)
+			{
+				auto strTmp = QString(QObject::tr("[---->Scale Linear Tagname %1 OccNo %2 is invalid!!!]")).arg(pTmp->m_szTagName).arg(nOccNo);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
 			linear->SetOccNo(nOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nOccNo));
-			writer.writeAttribute("TagName", QString("%1").arg(pTmp->m_szTagName));
+	
 			writer.writeAttribute("ID", QString("%1").arg(pTmp->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(pTmp->m_strDescription));
 			const auto it = pHash->find(pTmp->m_strDescription.toStdString());
@@ -2672,8 +2716,15 @@ namespace Config
 			return false;
 		}
 
+		auto strTmp = QString(QObject::tr("[-->Scale Linear Log Start!!!]"));
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+		
 		writer.writeStartElement("linear");
 		auto nCount = m_pLinearTransformGroup->GetItemCount();
+		
+		strTmp = QString(QObject::tr("[-->Scale Linear Count:%1!!!]")).arg(nCount);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+		
 		writer.writeAttribute("Count", QString("%1").arg(nCount));
 
 		int nOccNo = 0;
@@ -2714,8 +2765,14 @@ namespace Config
 			Q_ASSERT(nonlinear);
 			auto pTmp = nonlinear->GetNonLinear();
 			Q_ASSERT(pTmp);
-			auto bFlag = QString("%1").arg(pTmp->m_szTagName).isEmpty();
-			Q_ASSERT(!bFlag);
+			auto bFlag = CheckTagNameIsValid(pTmp->m_szTagName, FES_DESC);
+			Q_ASSERT(bFlag);
+			if (!bFlag)
+			{
+				auto strTmp = QString(QObject::tr("[Error----> Fes TagName %1 Scale NonLinear TagName %2 is invalid!!!]")).arg(m_szTagName).arg(pTmp->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
 
 			writer.writeStartElement("nl");
 
@@ -2746,7 +2803,12 @@ namespace Config
 			writer.writeAttribute("Count", QString("%1").arg(pTmp->m_arrPNonliear.size()));
 			writer.writeAttribute("GroupName", QString("%1").arg(pTmp->m_strGroupName));
 
-
+			if (pTmp->m_arrPNonliear.size() == 0)
+			{
+				auto strTmp = QString(QObject::tr("[Error---->Error:Fes %1  Scale NonLinear TagName %2  Point Count is 0!!!]")).arg(m_szTagName).arg(pTmp->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
 			for (auto const &p : pTmp->m_arrPNonliear)
 			{
 				writer.writeStartElement("p");
@@ -2776,6 +2838,9 @@ namespace Config
 		writer.writeStartElement("nonlinear");
 
 		auto nCount = m_pLinearTransformGroup->GetItemCount();
+		
+		auto strTmp = QString(QObject::tr("[-->Scale NonLinear count is %1!!!]")).arg(nCount);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 		writer.writeAttribute("Count", QString("%1").arg(nCount));
 		
 		int nOccNo = 0;
@@ -2789,6 +2854,8 @@ namespace Config
 
 	bool CFesData::SaveAlarm(QXmlStreamWriter &writer, std::unordered_map<std::string, int32u> *pHash, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo)
 	{
+		auto strTmp = QString(QObject::tr("[-->Alarm Log Start!!!]"));
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 		writer.writeStartElement("alarm");
 
 		Q_ASSERT(m_pAnalogGroup);
@@ -2798,6 +2865,9 @@ namespace Config
 		}
 
 		int nCounts = (int)m_arrMaps[HASHID::ANALOGALARMHASHID].size();
+		strTmp = QString(QObject::tr("[-->Fes TagName %1  Alarm analog alarm count is %1!!!]")).arg(nCounts);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+		
 		writer.writeStartElement("ain_alarm");
 		writer.writeAttribute("Count", QString("%1").arg(nCounts));
 		int nAnalogAlarmOccNo = 0, nAanalogAlarmBlockNo = 0;
@@ -2806,6 +2876,10 @@ namespace Config
 
 		writer.writeStartElement("din_alarm");
 		nCounts = (int)m_arrMaps[HASHID::DIGITALALARMHASHID].size();
+		
+		strTmp = QString(QObject::tr("[-->Fes TagName %1  Alarm digital alarm count is %2!!!]")).arg(m_szTagName).arg(nCounts);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+		
 		writer.writeAttribute("Count", QString("%1").arg(nCounts));
 		int nDigitalAlarmOccNo = 0, nDigitalAlarmLimitOccNo = 0;
 		SaveDigtalAlarm(writer, m_pDigitalGroup, nDigitalAlarmOccNo, nDigitalAlarmLimitOccNo, pHash, pStringPoolVec, pDescStringPoolOccNo);
@@ -2847,6 +2921,12 @@ namespace Config
 			var->SetOccNo(nAanalogAlarmOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nAanalogAlarmOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			if (!CheckTagNameIsValid(var->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString(QObject::tr("[Error-->Fes %1  Alarm analog alarm TagName %2 is invalid!!!]")).arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
 			writer.writeAttribute("ID", QString("%1").arg(var->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(var->m_strDescription));
 			//字符串内存池
@@ -2878,6 +2958,13 @@ namespace Config
 
 			auto const &analogOfflimit = var->m_arrAlarmOfflimit;
 			writer.writeAttribute("Count", QString("%1").arg(analogOfflimit.size()));
+			if (analogOfflimit.size() == 0)
+			{
+				auto strTmp = QString(QObject::tr("[Error-->Fes %1  Alarm analog alarm %2 limit count is 0!!!]")).arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			int nBlockNo = 0;
 			for (auto const &tmp : analogOfflimit)
 			{
@@ -2890,6 +2977,13 @@ namespace Config
 				tmp->SetBlockNo(nBlockNo);
 				writer.writeAttribute("BlockNo", QString("%1").arg(nBlockNo));
 				writer.writeAttribute("TagName", QString("%1").arg(tmp->m_szTagName));
+				if (!CheckTagNameIsValid(tmp->m_szTagName, FES_DESC))
+				{
+					auto strTmp = QString(QObject::tr("[Error-->Fes %1  Alarm analog alarm limit TagNames %2 invalid!!!]")).arg(m_szTagName).arg(tmp->m_szTagName);
+					MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+					m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+
 				writer.writeAttribute("ID", QString("%1").arg(tmp->m_nID));
 				writer.writeAttribute("Description", QString("%1").arg(tmp->m_strDescription));
 				//字符串内存池
@@ -2977,6 +3071,12 @@ namespace Config
 			var->SetOccNo(nDigitalAlarmOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(var->GetOccNo()));
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			if (!CheckTagNameIsValid(var->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString(QObject::tr("[Error-->Fes %1  Alarm digital alarm TagName %2 is invalid!!!]")).arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
 			writer.writeAttribute("ID", QString("%1").arg(var->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(var->m_strDescription));
 			//字符串内存池
@@ -3002,6 +3102,12 @@ namespace Config
 			writer.writeAttribute("GroupName", QString("%1").arg(var->m_strGroupName));
 
 			auto const &digtalOfflimit = var->m_arrDigtalOfflimit;
+			if (digtalOfflimit.size() == 0)
+			{
+				auto strTmp = QString(QObject::tr("[Error-->Fes %1  Alarm digital alarm TagName %2 count is 0!!!]")).arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
 			writer.writeAttribute("Count", QString("%1").arg(digtalOfflimit.size()));
 			int nBolckNo = 0;
 			for (auto const &tmp : digtalOfflimit)
@@ -3017,6 +3123,12 @@ namespace Config
 				writer.writeAttribute("BlockNo", QString("%1").arg(nBolckNo));
 
 				writer.writeAttribute("TagName", QString("%1").arg(tmp->TagName));
+				if (!CheckTagNameIsValid(tmp->TagName, FES_DESC))
+				{
+					auto strTmp = QString(QObject::tr("[Error-->Fes %1  Alarm digital alarm limit TagName %2 is invalid!!!]")).arg(m_szTagName).arg(tmp->TagName);
+					MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+					m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
 				writer.writeAttribute("ID", QString("%1").arg(tmp->ID));
 				writer.writeAttribute("Description", QString("%1").arg(tmp->Description));
 				//字符串内存池
@@ -3082,10 +3194,20 @@ namespace Config
 	bool CFesData::SaveVariable(QXmlStreamWriter &writer, std::unordered_map<std::string, int32u> *pHash, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo)
 	{
 		writer.writeStartElement("variable");
+		auto strTmp = QString("-->Fes %1  Variable log start!!!").arg(m_szTagName);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 
+		int nCount = m_arrMaps[HASHID::SYSTEMVARIABLEID].size();
+		strTmp = QString("-->Fes %1 System Variable count is %2!!!").arg(m_szTagName).arg(nCount);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+		SaveSystemVariable(writer, pHash, pStringPoolVec, pDescStringPoolOccNo);
+
+		nCount = m_arrMaps[HASHID::USERVIRIABLEID].size();
+		strTmp = QString("-->Fes %1 User Variable count is %2!!!").arg(m_szTagName).arg(nCount);
+		MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
 		SaveUserVariable(writer, pHash, pStringPoolVec, pDescStringPoolOccNo);
 
-		SaveSystemVariable(writer, pHash, pStringPoolVec, pDescStringPoolOccNo);
+
 
 		writer.writeEndElement();
 
@@ -3117,6 +3239,13 @@ namespace Config
 			var->SetOccNo(nOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			if (!CheckTagNameIsValid(var->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString(QObject::tr("[Error-->Fes %1  System Varaible TagName %2 is invalid!!!]")).arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(var->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(var->m_strDescription));
 			const auto it = pHash->find(var->m_strDescription.toStdString());
@@ -3194,6 +3323,13 @@ namespace Config
 
 			writer.writeAttribute("OccNo", QString("%1").arg(var->GetOccNo()));
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			if (!CheckTagNameIsValid(var->m_szTagName, FES_DESC))
+			{
+				auto strTmp = QString(QObject::tr("[Error-->Fes %1  User Varaible TagName %2 is invalid!!!]")).arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_FES_LOG, strTmp.toStdString().c_str(), true);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(var->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(var->m_strDescription));
 			const auto it = pHash->find(var->m_strDescription.toStdString());
@@ -3398,48 +3534,41 @@ namespace Config
 
 			if (reader.isStartElement())
 			{
-				//QString strTmp = reader.name().toString();
+				QString strTmp = reader.name().toString();
 
-				//if (strTmp == "system")
-				//{
+				if (strTmp == "system")
+				{
 
-				//}
-				//else if (strTmp == "s")
-				//{
-				//	auto pSystem = new CSystemVariable();
+				}
+				else if (strTmp == "s")
+				{
+					auto pSystem = new CSystemVariable();
 
-				//	pSystem->SetOccNo(reader.attributes().value("OccNo").toInt());
-				//	pSystem->m_nID = reader.attributes().value("ID").toInt();
+					pSystem->SetOccNo(reader.attributes().value("OccNo").toInt());
+					pSystem->m_nID = reader.attributes().value("ID").toInt();
 
-				//	memset(pSystem->m_szTagName, 0, sizeof(pSystem->m_szTagName));
-				//	QString strTagName = reader.attributes().value("TagName").toString();
-				//	int nSize = strTagName.size();
-				//	strncpy(pSystem->m_szTagName, strTagName.toStdString().c_str(), qMin(MAX_NAME_LENGTH_SCADASTUDIO, nSize));
+					memset(pSystem->m_szTagName, 0, sizeof(pSystem->m_szTagName));
+					QString strTagName = reader.attributes().value("TagName").toString();
+					int nSize = strTagName.size();
+					strncpy(pSystem->m_szTagName, strTagName.toStdString().c_str(), qMin(MAX_NAME_LENGTH_SCADASTUDIO, nSize));
 
-				//	pSystem->m_strDescription = reader.attributes().value("Description").toString();
-				//	pSystem->m_nType = reader.attributes().value("DataType").toInt();
+					pSystem->m_strDescription = reader.attributes().value("Description").toString();
+					pSystem->m_nType = reader.attributes().value("DataType").toInt();
 
 
-				//	if (!CheckTagNameIsExist(strTagName))
-				//	{
-				//		if (!PushFesTagNameHashMap(HASHID::SYSTEMVARIABLEID, strTagName, pSystem))
-				//		{
-				//			auto strError = QObject::tr("system variable read error!!!");
-				//			s_pGlobleCore->LogMsg(FES_DESC, strError.toStdString().c_str(), LEVEL_1);
+					if (!CheckTagNameIsExist(strTagName))
+					{
+						if (!PushFesTagNameHashMap(HASHID::SYSTEMVARIABLEID, strTagName, pSystem))
+						{
+							auto strError = QObject::tr("system variable read error!!!");
+							s_pGlobleCore->LogMsg(FES_DESC, strError.toStdString().c_str(), LEVEL_1);
 
-				//			continue;
-				//		}
+							continue;
+						}
 
-				//		m_arrSystemVariable.push_back(pSystem);
-				//	}
-				//	else
-				//	{
-				//		auto strError = QObject::tr("system variable read error!!!");
-				//		s_pGlobleCore->LogMsg(FES_DESC, strError.toStdString().c_str(), LEVEL_1);
-
-				//		continue;
-				//	}
-				//}
+						//m_arrSystemVariable.push_back(pSystem);
+					}
+				}
 
 			}
 			else if (reader.isEndElement() && strTmp == "system")
@@ -5132,7 +5261,7 @@ namespace Config
 	** \date 2017年2月28日 
 	** \note 
 	********************************************************************************************************/
-	bool CFesData::GetUserVariableRelatedSourceOccNo(QString &strTagName, QString &strRelatedTagName, QString &strOutput)
+	bool CFesData::GetUserVariableRelatedSourceOccNo(const QString &strTagName, const QString &strRelatedTagName, QString &strOutput)
 	{
 		auto bFlag = strRelatedTagName.isEmpty() || strRelatedTagName.size() > MAX_TAGNAME_LEN_SCADASTUDIO;
 		Q_ASSERT(!bFlag);
@@ -9276,7 +9405,6 @@ bool CFesData::DeleteFesUserVaraibleCombineRelaton(const std::string &szTagName,
 	}
 
 	//////////////////////////////////////////////关联前置用户变量//////////////////////////////////////////////////////////////
-	//Scada变量模块关联用户变量
 	//前置用户变量删除，关联改前置用户变量的关联关系也删除
 	//note
 	//模拟量修改，如果用户变量绑定关联的模拟量存在，那么关联模拟量也跟着修改
@@ -9306,6 +9434,29 @@ bool CFesData::DeleteFesUserVaraibleCombineRelaton(const std::string &szTagName,
 		return false;
 	}
 
+	////////////////////////////////////////////////////通知外部模块scada variable module/////////////////////////////////////////////////////
+	//scada variable
+	std::vector<QString>  vec;
+	m_pCore->GetModulesName(vec);
+	auto pScadaVariableModule = m_pCore->GetModule("scada_variable");
+	Q_ASSERT(pScadaVariableModule);
+	if (!pScadaVariableModule)
+	{
+		auto strError = QObject::tr("Get scada variable module poiter failed!!!");
+		m_pCore->LogMsg(SCADAVARIABLE_DESC, strError.toStdString().c_str(), LEVEL_1);
+
+		return false;
+	}
+	bool bFlag = pScadaVariableModule->ChangeTagNameNodify(QString(""), strSourceTagName, Module_ID::USERVARAIBLE);
+	Q_ASSERT(bFlag);
+	if (!bFlag)
+	{
+		auto strError = QObject::tr("Delete Scada varaible SourceTagName %1 relation failed!!!").arg(strSourceTagName);
+		m_pCore->LogMsg(FES_DESC, strError.toStdString().c_str(), LEVEL_1);
+
+		return false;
+	}
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	return true;
 }
@@ -9546,6 +9697,46 @@ bool CFesData::ChangeNodeTagNameNodifyFesUserVaraible(const std::string &szNodet
 	return true;
 }
 
+/*! \fn bool CFesData::LogToFile(const char* filename, const char* log)
+********************************************************************************************************* 
+** \brief Config::CFesData::LogToFile 
+** \details 前置保存生成日志文件
+** \param filename 
+** \param log 
+** \return bool 
+** \author xingzhibing
+** \date 2017年6月23日 
+** \note 
+********************************************************************************************************/
+bool CFesData::LogToFile(const char* pFilename, const char* pLog)
+{
+	MYLIB::Log2File(pFilename, pLog, true);
+	
+	auto &arrChannel = m_arrMaps[HASHID::CHANNELHASHID];
+	
+	std::vector<std::pair<std::string, CBaseData *>> elems(arrChannel.begin(), arrChannel.end());
+	std::sort(elems.begin(), elems.end());
+	
+	//通道
+	MYLIB::Log2File(pFilename, "[Start Channel Log Succes!!!]", true);
+	for each (auto var in elems)
+	{
+		auto pTmp = static_cast<CChannelData *>(var.second);
+		Q_ASSERT(pTmp);
+		if (!pTmp)
+		{
+			MYLIB::Log2File(pFilename, "[Channel Log ： Channel Pointer is nullptr!!!]", true);
+
+			return false;
+		}
+
+		auto strTmp = QString("[Start Channel %1 Log Succes!!!]").arg(var.first.c_str());
+		var.second;
+	}
+
+	return true;
+}
+
 /*! \fn bool CFesConfigData::LoadChildItem(CFesGroup *pFesGroup, QDomElement &e, const QString &szRoot)
 	*********************************************************************************************************
 	** \brief Config::CFesConfigData::LoadChildItem
@@ -9692,12 +9883,15 @@ bool CFesData::ChangeNodeTagNameNodifyFesUserVaraible(const std::string &szNodet
 			return false;
 		}
 
+		MYLIB::Log2File(LOG_FES_LOG, "[start Fes Log]", false);
 		//保存工程文件
 		SaveChildNode(pXml, e, m_pFesGroup);
 
 		//大排行号
 		int nOccNo = 0;
 		SaveChildItem(m_pFesGroup, szRoot, nOccNo, pHash, pStringPoolVec, pDescStringPoolOccNo);
+
+		
 
 		return true;
 	}
@@ -9921,6 +10115,33 @@ bool CFesData::ChangeNodeTagNameNodifyFesUserVaraible(const std::string &szNodet
 		{
 			m_pFesGroup = new CFesGroup;
 		}
+	}
+
+	//************************************
+	// Method:    LogToFile
+	// FullName:  Config::CFesConfigData::LogToFile
+	// Access:    public 
+	// Returns:   bool
+	// Qualifier:
+	// Parameter: char * filename
+	// Parameter: char * log
+	//************************************
+	bool CFesConfigData::LogToFile(const char * filename, const char * log)
+	{
+		MYLIB::Log2File(filename, log, true);
+		
+		m_arrHashTagNameMap;
+
+		std::vector<std::pair<std::string, CFesData *>> elems(m_arrHashTagNameMap.begin(), m_arrHashTagNameMap.end());
+		std::sort(elems.begin(), elems.end());
+
+		for each (auto var in elems)
+		{
+			auto strTmp = QString("[Start Fes %1 Log Succes!!!]").arg(var.first.c_str());
+			var.second->LogToFile(filename, strTmp.toStdString().c_str());
+		}
+
+		return false;
 	}
 	//
 	/*! \fn CConfigData::CConfigData()

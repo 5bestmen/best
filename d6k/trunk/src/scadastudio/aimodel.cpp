@@ -124,10 +124,10 @@ QVariant CAIModel::data(const QModelIndex &index, int role) const
 		{
 			return m_arrAIs[nRow]->m_dbInitValue;
 		}
-		else if (index.column() == Format)
-		{
-			return m_arrAIs[nRow]->m_strFormat;
-		}
+		//else if (index.column() == Format)
+		//{
+		//	return m_arrAIs[nRow]->m_strFormat;
+		//}
 		else if (index.column() == Unit)
 		{
 			return m_arrAIs[nRow]->m_strUnit;
@@ -156,17 +156,17 @@ QVariant CAIModel::data(const QModelIndex &index, int role) const
 		{
 			return m_arrAIs[nRow]->m_strScaleTagName;
 		}
-		else if (index.column() == ScaleType)
-		{
-			if (m_arrAIs[nRow]->m_nScaleType == ScaleType::LINEAR)
-			{
-				return m_mapScaleType[ScaleType::LINEAR];
-			}
-			else
-			{
-				return m_mapScaleType[ScaleType::NONLINEAR];
-			}
-		}
+		//else if (index.column() == ScaleType)
+		//{
+		//	if (m_arrAIs[nRow]->m_nScaleType == ScaleType::LINEAR)
+		//	{
+		//		return m_mapScaleType[ScaleType::LINEAR];
+		//	}
+		//	else
+		//	{
+		//		return m_mapScaleType[ScaleType::NONLINEAR];
+		//	}
+		//}
 		//else if (index.column() == ScaleDesc)
 		//{
 		//	return m_arrAIs[nRow]->m_strScaleDesc;
@@ -215,19 +215,19 @@ QVariant CAIModel::data(const QModelIndex &index, int role) const
 		{
 			return m_arrAIs[nRow]->m_strAlarmTagName;
 		}
-		else if (index.column() == AlarmType)
-		{
-			if (m_arrAIs[nRow]->m_nAlarmType == AlarmType::AIALARM)
-			{
-				return  m_mapAlarmType[AlarmType::AIALARM];
-			}
-			else if (m_arrAIs[nRow]->m_nAlarmType == AlarmType::DIALARM)
-			{
-				return  m_mapAlarmType[AlarmType::DIALARM];
-			}
-			
-			return QVariant();
-		}
+		//else if (index.column() == AlarmType)
+		//{
+		//	if (m_arrAIs[nRow]->m_nAlarmType == AlarmType::AIALARM)
+		//	{
+		//		return  m_mapAlarmType[AlarmType::AIALARM];
+		//	}
+		//	else if (m_arrAIs[nRow]->m_nAlarmType == AlarmType::DIALARM)
+		//	{
+		//		return  m_mapAlarmType[AlarmType::DIALARM];
+		//	}
+		//	
+		//	return QVariant();
+		//}
 		//else if (index.column() == AlarmDesc)
 		//{
 		//	return m_arrAIs[nRow]->m_strAlarmDesc;
@@ -296,10 +296,10 @@ QVariant CAIModel::data(const QModelIndex &index, int role) const
 		{
 			return m_arrAIs[nRow]->m_dbInitValue;
 		}
-		else if (index.column() == Format)
-		{
-			return m_arrAIs[nRow]->m_strFormat;
-		}
+		//else if (index.column() == Format)
+		//{
+		//	return m_arrAIs[nRow]->m_strFormat;
+		//}
 		else if (index.column() == Unit)
 		{
 			return m_arrAIs[nRow]->m_strUnit;
@@ -328,10 +328,10 @@ QVariant CAIModel::data(const QModelIndex &index, int role) const
 		{
 			return m_arrAIs[nRow]->m_strScaleTagName;
 		}
-		else if (index.column() == ScaleType)
-		{
-			return (uint)m_arrAIs[nRow]->m_nScaleType;
-		}
+		//else if (index.column() == ScaleType)
+		//{
+		//	return (uint)m_arrAIs[nRow]->m_nScaleType;
+		//}
 		//else if (index.column() == ScaleDesc)
 		//{
 		//	return m_arrAIs[nRow]->m_strScaleDesc;
@@ -380,19 +380,19 @@ QVariant CAIModel::data(const QModelIndex &index, int role) const
 		{
 			return m_arrAIs[nRow]->m_strAlarmTagName;
 		}
-		else if (index.column() == AlarmType)
-		{
-			if (m_arrAIs[nRow]->m_nAlarmType == AlarmType::AIALARM)
-			{
-				return  m_mapAlarmType[AlarmType::AIALARM];
-			}
-			else if (m_arrAIs[nRow]->m_nAlarmType == AlarmType::DIALARM)
-			{
-				return  m_mapAlarmType[AlarmType::DIALARM];
-			}
+		//else if (index.column() == AlarmType)
+		//{
+		//	if (m_arrAIs[nRow]->m_nAlarmType == AlarmType::AIALARM)
+		//	{
+		//		return  m_mapAlarmType[AlarmType::AIALARM];
+		//	}
+		//	else if (m_arrAIs[nRow]->m_nAlarmType == AlarmType::DIALARM)
+		//	{
+		//		return  m_mapAlarmType[AlarmType::DIALARM];
+		//	}
 
-			return QVariant();
-		}
+		//	return QVariant();
+		//}
 		//else if (index.column() == AlarmDesc)
 		//{
 		//	return m_arrAIs[nRow]->m_strAlarmDesc;
@@ -662,13 +662,13 @@ bool CAIModel::setData(const QModelIndex &index, const QVariant &value, int role
 					m_arrAIs[nRow]->m_dbInitValue = value.toDouble();
 				}
 			}
-			else if (index.column() == Format)
-			{
-				if (m_arrAIs[nRow]->m_strFormat != value.toString())
-				{
-					m_arrAIs[nRow]->m_strFormat = value.toString();
-				}
-			}
+			//else if (index.column() == Format)
+			//{
+			//	if (m_arrAIs[nRow]->m_strFormat != value.toString())
+			//	{
+			//		m_arrAIs[nRow]->m_strFormat = value.toString();
+			//	}
+			//}
 			else if (index.column() == Unit)
 			{
 				if (m_arrAIs[nRow]->m_strUnit.compare(value.toString()) != 0)
@@ -718,13 +718,13 @@ bool CAIModel::setData(const QModelIndex &index, const QVariant &value, int role
 					m_arrAIs[nRow]->m_dbMinRaw = value.toDouble();
 				}
 			}
-			else if (index.column() == ScaleType)
-			{
-				if (m_arrAIs[nRow]->m_nScaleType != value.toInt())
-				{
-					m_arrAIs[nRow]->m_nScaleType = value.toInt();
-				}
-			}
+			//else if (index.column() == ScaleType)
+			//{
+			//	if (m_arrAIs[nRow]->m_nScaleType != value.toInt())
+			//	{
+			//		m_arrAIs[nRow]->m_nScaleType = value.toInt();
+			//	}
+			//}
 			//else if (index.column() == ScaleDesc)
 			//{
 			//	if (m_arrAIs[nRow]->m_strScaleTagName != value.toString())
@@ -802,13 +802,13 @@ bool CAIModel::setData(const QModelIndex &index, const QVariant &value, int role
 					m_arrAIs[nRow]->m_nSensitivityType = value.toInt();
 				}
 			}
-			else if (index.column() == AlarmType)
-			{
-				if (m_arrAIs[nRow]->m_nAlarmType != value.toInt())
-				{
-					m_arrAIs[nRow]->m_nAlarmType = value.toInt();
-				}
-			}
+			//else if (index.column() == AlarmType)
+			//{
+			//	if (m_arrAIs[nRow]->m_nAlarmType != value.toInt())
+			//	{
+			//		m_arrAIs[nRow]->m_nAlarmType = value.toInt();
+			//	}
+			//}
 			//else if (index.column() == AlarmDesc)
 			//{
 			//	if (m_arrAIs[nRow]->m_strAlarmTagName.compare(value.toString()) != 0)
@@ -857,6 +857,46 @@ bool CAIModel::setData(const QModelIndex &index, const QVariant &value, int role
 					
 					m_arrAIs[nRow]->m_strExpress = strTmp;
 				}
+			}
+			else if (index.column() == AlarmTagName)
+			{
+				if (m_arrAIs[nRow]->m_strAlarmTagName.isEmpty())
+				{
+					return true;
+				}
+				
+				//删除关联关系
+				if (!m_pFes->DeleteAIsRelationAlarmArr(m_arrAIs[nRow]->m_strAlarmTagName.toStdString(), m_arrAIs[nRow]))
+				{
+					auto strTmp = QObject::tr("[Fes %1]  Delete AI TagName %2 Relation Alarm failed!!!").arg(m_pFes->m_szTagName).arg(m_arrAIs[nRow]->m_szTagName);
+					m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+					return false;
+				}
+
+				m_arrAIs[nRow]->m_strAlarmTagName.clear();
+
+				return true;
+			}
+			else if (index.column() == ScaleTagName)
+			{
+				if (m_arrAIs[nRow]->m_strScaleTagName.isEmpty())
+				{
+					return true;
+				}
+				
+				//删除关联关系
+				if (!m_pFes->DeleteAIsRelationScaleArr(m_arrAIs[nRow]->m_strScaleTagName.toStdString(), m_arrAIs[nRow]))
+				{
+					auto strTmp = QObject::tr("[Fes %1]  Delete AI TagName %2 Relation Scale failed!!!").arg(m_pFes->m_szTagName).arg(m_arrAIs[nRow]->m_szTagName);
+					m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+					return false;
+				}
+
+				m_arrAIs[nRow]->m_strScaleTagName.clear();
+
+				return true;
 			}
 
 			return true;
@@ -1258,6 +1298,7 @@ void CAIModel::InitPara()
 	para.tagname = "BlockOccNo";
 	m_mapInfo.insert(BlockOccNo, para);
 	m_lstHorizontalHeader.append(para.desc);
+	((CAITable *)parent())->setItemDelegateForColumn(BlockOccNo, pReadOnlyDelegate);
 
 	////
 	//para.desc = tr("DataType");
@@ -1347,14 +1388,14 @@ void CAIModel::InitPara()
 	delegate = new CLineEditDelegate(this, DOUBLETYPE, 6);
 	((CAITable *)parent())->setItemDelegateForColumn(InitValue, delegate);
 
-	//暂时保留 待讨论
-	//Format x xx xxx xxxx xxxxx x.x
-	para.desc = tr("Format");
-	para.tagname = "Format";
-	m_mapInfo.insert(Format, para);
-	m_lstHorizontalHeader.append(para.desc);
-	delegate = new CLineEditDelegate(this, LINESTRING, 6);
-	((CAITable *)parent())->setItemDelegateForColumn(Format, delegate);
+	////暂时保留 待讨论
+	////Format x xx xxx xxxx xxxxx x.x
+	//para.desc = tr("Format");
+	//para.tagname = "Format";
+	//m_mapInfo.insert(Format, para);
+	//m_lstHorizontalHeader.append(para.desc);
+	//delegate = new CLineEditDelegate(this, LINESTRING, 6);
+	//((CAITable *)parent())->setItemDelegateForColumn(Format, delegate);
 
 	para.desc = tr("Unit");
 	para.tagname = "Unit";
@@ -1405,18 +1446,18 @@ void CAIModel::InitPara()
 	CReadOnlyDelegate *pReadDelegate = new CReadOnlyDelegate(this);
 	((CAITable *)parent())->setItemDelegateForColumn(ScaleTagName, pReadDelegate);
 
-	para.desc = tr("ScaleType");
-	para.tagname = "ScaleType";
-	m_mapInfo.insert(ScaleType, para);
-	m_lstHorizontalHeader.append(para.desc);
-	m_mapScaleType.clear();
-	tmp.desc = tr("linear");
-	//tmp.ID = LINEAR;
-	m_mapScaleType.insert(LINEAR, tmp.desc);
-	tmp.desc = tr("nonlinear");
-	//tmp.ID = NONLINEAR;
-	m_mapScaleType.insert(NONLINEAR, tmp.desc);
-	((CAITable *)parent())->setItemDelegateForColumn(ScaleType, pReadDelegate);
+	//para.desc = tr("ScaleType");
+	//para.tagname = "ScaleType";
+	//m_mapInfo.insert(ScaleType, para);
+	//m_lstHorizontalHeader.append(para.desc);
+	//m_mapScaleType.clear();
+	//tmp.desc = tr("linear");
+	////tmp.ID = LINEAR;
+	//m_mapScaleType.insert(LINEAR, tmp.desc);
+	//tmp.desc = tr("nonlinear");
+	////tmp.ID = NONLINEAR;
+	//m_mapScaleType.insert(NONLINEAR, tmp.desc);
+	//((CAITable *)parent())->setItemDelegateForColumn(ScaleType, pReadDelegate);
 
 	//para.desc = tr("ScaleDesc");
 	//para.tagname = "ScaleDesc";
@@ -1489,7 +1530,7 @@ void CAIModel::InitPara()
 	tmp.ID = "1";
 	arrVecSensitivityType.append(tmp);
 	auto pCombo = new CComboBoxDelegate(this, arrVecSensitivityType);
-	((CAITable *)parent())->setItemDelegateForColumn(AlarmType, pCombo);
+	((CAITable *)parent())->setItemDelegateForColumn(SensitivityType, pCombo);
 
 	para.desc = tr("AlarmTagName");
 	para.tagname = "AlarmTagName";
@@ -1497,18 +1538,18 @@ void CAIModel::InitPara()
 	m_lstHorizontalHeader.append(para.desc);
 	((CAITable *)parent())->setItemDelegateForColumn(AlarmTagName, pReadOnlyDelegate);
 
-	para.desc = tr("AlarmType");
-	para.tagname = "AlarmType";
-	m_mapInfo.insert(AlarmType, para);
-	m_lstHorizontalHeader.append(para.desc);
-	m_mapAlarmType.clear();
-	tmp.desc = tr("ai alarm");
-	tmp.ID = AIALARM;		//AIALARM
-	m_mapAlarmType.insert(AIALARM, tmp.desc);
-	tmp.desc = tr("di alarm");
-	//tmp.ID = DIALARM;		//DIALARM
-	m_mapAlarmType.insert(DIALARM, tmp.desc);
-	((CAITable *)parent())->setItemDelegateForColumn(AlarmType, pReadOnlyDelegate);
+	//para.desc = tr("AlarmType");
+	//para.tagname = "AlarmType";
+	//m_mapInfo.insert(AlarmType, para);
+	//m_lstHorizontalHeader.append(para.desc);
+	//m_mapAlarmType.clear();
+	//tmp.desc = tr("ai alarm");
+	//tmp.ID = AIALARM;		//AIALARM
+	//m_mapAlarmType.insert(AIALARM, tmp.desc);
+	//tmp.desc = tr("di alarm");
+	////tmp.ID = DIALARM;		//DIALARM
+	//m_mapAlarmType.insert(DIALARM, tmp.desc);
+	//((CAITable *)parent())->setItemDelegateForColumn(AlarmType, pReadOnlyDelegate);
 
 	//para.desc = tr("AlarmDesc");
 	//para.tagname = "AlarmDesc";

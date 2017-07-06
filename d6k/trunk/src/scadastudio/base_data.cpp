@@ -24,6 +24,7 @@
 #include "scadastudio/icore.h"
 #include "scadastudiodefine.h"
 #include "scadastudio/define.h"
+#include "log/log2file.h"
 
 #include <string>
 #include <QString>
@@ -115,6 +116,25 @@ namespace Config
 
 		return bFlag;
 	}
+
+	/*! \fn 
+	********************************************************************************************************* 
+	** \brief Config::CBaseData::LogToFile 
+	** \details 日志log
+	** \param pFilename 
+	** \param pLog 
+	** \return bool 
+	** \author xingzhibing
+	** \date 2017年6月23日 
+	** \note 
+	********************************************************************************************************/
+	bool CBaseData::LogToFile(const char* pFilename, const char* pLog)
+	{
+		MYLIB::Log2File(pFilename, pLog, true);
+
+		return true;
+	}
+
 }
 
 

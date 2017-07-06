@@ -29,12 +29,15 @@
 #include "scadastudio/iprojmgr.h"
 #include "variant.h"
 #include "global.h"
+#include "log/log2file.h"
+#include "scadastudio/imodule.h"
 
 #include <QDomDocument>
 #include <QIODevice>
 #include <QFile>
 #include <QXmlStreamWriter>
 #include <qobject.h>
+#include <qmessagebox.h>
 
 extern IMainModuleInterface *s_pGlobleCore;
 
@@ -69,6 +72,9 @@ namespace Config
 		m_nAlarmOccNo = 0;
 		m_strScaleTagName = "";
 		m_nAlarmType = 0;
+
+		m_strSourceOccNo = "";
+		m_strSourceTagName = "";
 	}
 
 	CScadaUserVariable::~CScadaUserVariable()
@@ -1060,11 +1066,15 @@ namespace Config
 
 		if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
 		{
-			QString strTmp = QString(QObject::tr("open %1 fail!!!")).arg(strPath);
+			QString strTmp = QString(QObject::tr("===========open %1 fail!!!==========")).arg(strPath);
 			s_pGlobleCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
 
 			return false;
 		}
+
+		auto strTmp = QObject::tr("=============Open %1 success!!!===============").arg(strPath);
+		MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
 
 		QXmlStreamWriter writer(&file);
 		writer.setAutoFormatting(true);
@@ -1089,6 +1099,12 @@ namespace Config
 		}
 
 		writer.writeAttribute("TagName", m_szTagName);
+		if (!CheckTagNameIsValid(m_szTagName, SCADAVARIABLE_DESC))
+		{
+			auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1 is invalid!!!").arg(m_szTagName);
+			MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+		}
+
 		writer.writeAttribute("version", VERSION);
 		writer.writeAttribute("ID", QString("%1").arg(m_nID));
 		writer.writeAttribute("Extention", m_strExtention);
@@ -1117,6 +1133,9 @@ namespace Config
 	bool CScadaData::SaveAlarm(QXmlStreamWriter &writer, std::unordered_map<std::string, int32u> *pHash, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo)
 	{
 		writer.writeStartElement("alarm");
+		auto strTmp = QObject::tr("-->Scada Varaible TagName %1  alarm log start!!!").arg(m_szTagName);
+		MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+
 
 		Q_ASSERT(m_pScadaAnalogAlarmGroup);
 		if (!m_pScadaAnalogAlarmGroup)
@@ -1127,8 +1146,12 @@ namespace Config
 		int nCounts = (int)m_arrMaps[SCADA_VARIABLE_HASH_ID::ANALOGALARMID].size();
 		writer.writeStartElement("ain_alarm");
 		writer.writeAttribute("Count", QString("%1").arg(nCounts));
+		strTmp = QObject::tr("-->Scada Varaible TagName %1  analog alarm count %1!!!").arg(m_szTagName).arg(nCounts);
+		MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+
 		int nAnalogAlarmOccNo = 0, nAanalogAlarmBlockNo = 0;
 		SaveAnalogAlarm(writer, m_pScadaAnalogAlarmGroup, nAnalogAlarmOccNo, nAanalogAlarmBlockNo, pHash, pStringPoolVec, pDescStringPoolOccNo);
+
 		writer.writeEndElement();
 
 		Q_ASSERT(m_pScadaDigitalAlarmGroup);
@@ -1139,7 +1162,12 @@ namespace Config
 
 		writer.writeStartElement("din_alarm");
 		nCounts = (int)m_arrMaps[SCADA_VARIABLE_HASH_ID::DIGITALALARMID].size();
+
+
 		writer.writeAttribute("Count", QString("%1").arg(nCounts));
+		strTmp = QObject::tr("-->Scada Varaible TagName %1  digital alarm count %1!!!").arg(m_szTagName).arg(nCounts);
+		MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+
 		int nDigitalAlarmOccNo = 0, nDigitalAlarmLimitOccNo = 0;
 		SaveDigtalAlarm(writer, m_pScadaDigitalAlarmGroup, nDigitalAlarmOccNo, nDigitalAlarmLimitOccNo, pHash, pStringPoolVec, pDescStringPoolOccNo);
 		writer.writeEndElement();
@@ -1169,6 +1197,7 @@ namespace Config
 
 
 		auto &arrItem = pGroup->GetItem();
+
 		Q_ASSERT(nAanalogAlarmOccNo + 1 > 0);
 		Q_ASSERT(nAanalogAlarmLimitOccNo + 1 > 0);
 		for each (auto var in arrItem)
@@ -1179,6 +1208,13 @@ namespace Config
 			var->SetOccNo(nAanalogAlarmOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nAanalogAlarmOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			if (!CheckTagNameIsValid(var->m_szTagName, SCADAVARIABLE_DESC))
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  analog alarm %2 is invalid!!!").arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(var->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(var->m_strDescription));
 			//字符串内存池
@@ -1211,6 +1247,19 @@ namespace Config
 
 			auto const &analogOfflimit = var->m_arrAlarmOfflimit;
 			writer.writeAttribute("Count", QString("%1").arg(analogOfflimit.size()));
+			if (analogOfflimit.size() == 0)
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  analog alarm %2  Limit count is 0!!!").arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+			else
+			{
+				auto strTmp = QObject::tr("-->Scada Varaible TagName %1  analog alarm %2  Limit count is %3!!!").arg(m_szTagName).arg(var->m_szTagName).arg(analogOfflimit.size());
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			int nBlockNo = 0;
 			for (auto const &tmp : analogOfflimit)
 			{
@@ -1223,6 +1272,13 @@ namespace Config
 				tmp->SetBlockNo(nBlockNo);
 				writer.writeAttribute("BlockNo", QString("%1").arg(nBlockNo));
 				writer.writeAttribute("TagName", QString("%1").arg(tmp->m_szTagName));
+				if (!CheckTagNameIsValid(tmp->m_szTagName, SCADAVARIABLE_DESC))
+				{
+					auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  analog alarm %2  Limit %3 is invalid!!!").arg(m_szTagName).arg(var->m_szTagName).arg(tmp->m_szTagName);
+					MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+
 				writer.writeAttribute("ID", QString("%1").arg(tmp->m_nID));
 				writer.writeAttribute("Description", QString("%1").arg(tmp->m_strDescription));
 				//字符串内存池
@@ -1310,6 +1366,13 @@ namespace Config
 			var->SetOccNo(nDigitalAlarmOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(var->GetOccNo()));
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			if (!CheckTagNameIsValid(var->m_szTagName, SCADAVARIABLE_DESC))
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  digital alarm %2 is invalid!!!").arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(var->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(var->m_strDescription));
 			//字符串内存池
@@ -1336,6 +1399,19 @@ namespace Config
 
 			auto const &digtalOfflimit = var->m_arrDigtallimit;
 			writer.writeAttribute("Count", QString("%1").arg(digtalOfflimit.size()));
+			if (digtalOfflimit.size() == 0)
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  digtal alarm %2  Limit count is 0!!!").arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+			else
+			{
+				auto strTmp = QObject::tr("-->Scada Varaible TagName %1  digtal alarm %2  Limit count is %3!!!").arg(m_szTagName).arg(var->m_szTagName).arg(digtalOfflimit.size());
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			int nBolckNo = 0;
 			for (auto const &tmp : digtalOfflimit)
 			{
@@ -1350,6 +1426,13 @@ namespace Config
 				writer.writeAttribute("BlockNo", QString("%1").arg(nBolckNo));
 
 				writer.writeAttribute("TagName", QString("%1").arg(tmp->TagName));
+				if (!CheckTagNameIsValid(tmp->TagName, SCADAVARIABLE_DESC))
+				{
+					auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  digtal alarm %2  Limit %3 is invalid!!!").arg(m_szTagName).arg(var->m_szTagName).arg(tmp->TagName);
+					MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+
 				writer.writeAttribute("ID", QString("%1").arg(tmp->ID));
 				writer.writeAttribute("Description", QString("%1").arg(tmp->Description));
 				//字符串内存池
@@ -1402,10 +1485,26 @@ namespace Config
 		return true;
 	}
 
+	/*! \fn 
+	********************************************************************************************************* 
+	** \brief Config::CScadaData::SaveTransform 
+	** \details 
+	** \param writer 
+	** \param  
+	** \param pHash 
+	** \param pStringPoolVec 
+	** \param pDescStringPoolOccNo 
+	** \return bool 
+	** \author xingzhibing
+	** \date 2017年6月29日 
+	** \note 
+	********************************************************************************************************/
 	bool CScadaData::SaveTransform(QXmlStreamWriter &writer, std::unordered_map<std::string, int32u> *pHash
 		, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo)
 	{
 		writer.writeStartElement("scale");
+		auto strTmp = QObject::tr("Transform log start!!!");
+		MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
 
 		SaveLinear(writer, pHash, pStringPoolVec, pDescStringPoolOccNo);
 
@@ -1438,6 +1537,8 @@ namespace Config
 		writer.writeStartElement("linear");
 		auto nCount = m_pScadaLinearGroup->GetItemCount();
 		writer.writeAttribute("Count", QString("%1").arg(nCount));
+		auto strTmp = QObject::tr("-->Scada Varaible TagName %1  Linear scale count is %2!!!").arg(m_szTagName).arg(nCount);
+		MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
 
 		int nOccNo = 0;
 		SaveLinearTransformChildNode(writer, m_pScadaLinearGroup, nOccNo, pHash, pStringPoolVec, pDescStringPoolOccNo);
@@ -1474,6 +1575,12 @@ namespace Config
 			linear->SetOccNo(nOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(pTmp->m_szTagName));
+			if (!CheckTagNameIsValid(pTmp->m_szTagName, SCADAVARIABLE_DESC))
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  Linear TagName %2 is invalid!!!").arg(m_szTagName).arg(pTmp->m_szTagName);
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(pTmp->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(pTmp->m_strDescription));
 			const auto it = pHash->find(pTmp->m_strDescription.toStdString());
@@ -1522,6 +1629,8 @@ namespace Config
 
 		auto nCount = m_pScadaNonLinearGroup->GetItemCount();
 		writer.writeAttribute("Count", QString("%1").arg(nCount));
+		auto strTmp = QObject::tr("-->Scada Varaible TagName %1  NonLinear scale count is %2!!!").arg(m_szTagName).arg(nCount);
+		MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
 
 		int nOccNo = 0;
 		SaveNonLinearTransformChildNode(writer, m_pScadaNonLinearGroup, nOccNo, pHash, pStringPoolVec, pDescStringPoolOccNo);
@@ -1559,6 +1668,12 @@ namespace Config
 			nonlinear->SetOccNo(nOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(pTmp->m_szTagName));
+			if (!CheckTagNameIsValid(pTmp->m_szTagName, SCADAVARIABLE_DESC))
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  NonLinear TagName %2 is invalid!!!").arg(m_szTagName).arg(pTmp->m_szTagName);
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(pTmp->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(pTmp->m_strDescription));
 			const auto it = pHash->find(pTmp->m_strDescription.toStdString());
@@ -1581,6 +1696,18 @@ namespace Config
 
 			writer.writeAttribute("ScaleType", QString("%1").arg(nonlinear->m_nType));
 			writer.writeAttribute("Count", QString("%1").arg(pTmp->m_arrPNonliear.size()));
+			if (pTmp->m_arrPNonliear.size() == 0)
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  NonLinear TagName %2 Point count is 0!!!").arg(m_szTagName).arg(pTmp->m_szTagName);
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+			else
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  NonLinear TagName %2 Point count is %3!!!").arg(m_szTagName).arg(pTmp->m_szTagName).arg(pTmp->m_arrPNonliear.size());
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+			}
+			
 			writer.writeAttribute("GroupName", QString("%1").arg(pTmp->m_strGroupName));
 
 
@@ -1629,6 +1756,13 @@ namespace Config
 			var->SetOccNo(nOccNo);
 			writer.writeAttribute("OccNo", QString("%1").arg(nOccNo));
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			if (!CheckTagNameIsValid(var->m_szTagName, SCADAVARIABLE_DESC))
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  system varaible %2 is invalid!!!").arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(var->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(var->m_strDescription));
 			const auto it = pHash->find(var->m_strDescription.toStdString());
@@ -1694,6 +1828,13 @@ namespace Config
 
 			writer.writeAttribute("OccNo", QString("%1").arg(var->GetOccNo()));
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			if (!CheckTagNameIsValid(var->m_szTagName, SCADAVARIABLE_DESC))
+			{
+				auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  user varaible %2 is invalid!!!").arg(m_szTagName).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("ID", QString("%1").arg(var->m_nID));
 			writer.writeAttribute("Description", QString("%1").arg(var->m_strDescription));
 			const auto it = pHash->find(var->m_strDescription.toStdString());
@@ -1716,7 +1857,35 @@ namespace Config
 			writer.writeAttribute("InitialQua", QString("%1").arg(var->m_nInitialQua));
 			writer.writeAttribute("Address", QString("%1").arg(var->m_strAddress));
 			writer.writeAttribute("PinLabel", QString("%1").arg(var->m_strPinLabel));
+			
 			writer.writeAttribute("SourceTagName", QString("%1").arg(var->m_strSourceTagName));
+			if (!var->m_strSourceTagName.isEmpty())
+			{
+				//根据tagname找OccNo
+				QString strTmp = QString("%1").arg(var->m_szTagName);
+				var->m_strSourceOccNo = "";
+				if (!GetUserVariableRelatedSourceOccNo(strTmp, var->m_strSourceTagName, var->m_strSourceOccNo))
+				{
+					auto strError = QObject::tr("User variable tagname %1 relate sourcetagname failed!!!").arg(var->m_szTagName);
+					LogString(FES_DESC, (char *)strError.toStdString().c_str(), LEVEL_1);
+
+					writer.writeEndElement();
+
+					break;
+				}
+				writer.writeAttribute("SourceOccNo", QString("%1").arg(var->m_strSourceOccNo));
+				//check
+				if (var->m_strSourceOccNo.isEmpty())
+				{
+					auto strTmp = QObject::tr("Error-->Scada Varaible TagName %1  user varaible %2   SourceTagName %3 format is wrong!!!").arg(m_szTagName).arg(var->m_szTagName).arg(var->m_strSourceTagName);
+					MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(SCADAVARIABLE_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+			}
+
+
+
+
 			//关联的转换大排行号
 			//判断转换tagname是否为空
 			if (var->m_strScaleTagName.isEmpty())
@@ -4557,6 +4726,63 @@ namespace Config
 		return true;
 	}
 
+	bool CScadaData::GetUserVariableRelatedSourceOccNo(QString &strTagName, QString &strRelatedTagName, QString &strOutput)
+	{
+		auto bFlag = strRelatedTagName.isEmpty() || strRelatedTagName.size() > MAX_TAGNAME_LEN_SCADASTUDIO;
+		Q_ASSERT(!bFlag);
+		if (bFlag)
+		{
+			auto strError = QObject::tr("User variable tagname %1 related sourcetagname is invalid!!!").arg(strTagName);
+			m_pCore->LogMsg(FES_DESC, strError.toStdString().c_str(), LEVEL_1);
+
+			return false;
+		}
+
+		if (strTagName.isEmpty())
+		{
+			return false;
+		}
+
+		//[].[].[]暂时考虑这个
+		auto &list = strRelatedTagName.split(".");
+		if (list.size() == 3)
+		{
+			//
+			auto &strNodeTagName = list[0];
+			auto &strTagName = list[1];
+			auto &strAttrTagName = list[2];
+			int nNodeType = -1;
+
+			auto pNode = m_pCore->GetModule("node_config");
+			Q_ASSERT(pNode);
+			if (!pNode)
+			{
+				return nullptr;
+			}
+			//node -> fes
+			std::string szFesTagName = pNode->GetFesConfigNameByNodeName(strNodeTagName.toStdString());
+			//Q_ASSERT(!szFesTagName.empty());;
+			if (szFesTagName.empty())
+			{
+				QMessageBox box;
+				box.setText(QObject::tr("Fes node %1 do not relate to fes!!!").arg(strNodeTagName));
+				box.exec();
+
+				return false;
+			}
+
+			auto pFesModule = m_pCore->GetModule("fes");
+			Q_ASSERT(pNode);
+			if (!pNode)
+			{
+				return nullptr;
+			}
+			strOutput = pFesModule->GetOccNoFromScadaVariableUserSourceTagName(szFesTagName.c_str(), strRelatedTagName);
+		}
+
+		return true;
+	}
+
 	/*! \fn void void CScadaData::InitScadaSystemVariable()
 	*********************************************************************************************************
 	** \brief Config::CScadaVirableConfigData::InitScadaSystemVariable
@@ -5207,6 +5433,9 @@ namespace Config
 		{
 			return false;
 		}
+
+		auto strTmp = QObject::tr("Scada varaible log start!!!");
+		MYLIB::Log2File(LOG_SCADA_VARAIBLE_LOG, strTmp.toStdString().c_str(), false);
 
 		SaveChildNode(pXml, e, m_pGroup);
 

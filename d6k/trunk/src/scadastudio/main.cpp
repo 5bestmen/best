@@ -21,6 +21,7 @@
 #include "graphmodel.h"
 #include "ccore.h"
 #include "scadastudio/define.h"
+#include "log/log2file.h"
 
 #include "standarview.h"
 
@@ -110,6 +111,12 @@ int main(int argc, char *argv[])
 	ttttttt = str.length();
 	nima = str.count();
 
+	MYLIB::Log2File("test", "go up", true);
+	MYLIB::Log2File("test", "go up", true);
+	MYLIB::Log2File("test", "go up", true);
+	MYLIB::Log2File("test", "go up", true);
+	MYLIB::Log2File("test", "go up", true);
+	MYLIB::Log2File("test", "go up", true);
 	//auto nSize = str.size();
 
 	//strncpy(pAnalog->m_szTagName, strTagName.toStdString().c_str(), qMin(TAGNAME_SIZE, strTagName.size()));

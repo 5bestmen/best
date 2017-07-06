@@ -51,6 +51,11 @@ CUserVariableTable::~CUserVariableTable()
 
 }
 
+void CUserVariableTable::RefrushModel()
+{
+	m_pModel->RefrushModel();
+}
+
 /*! \fn void CUserVariableTable::DoubleClicked(const QModelIndex & index)
 ********************************************************************************************************* 
 ** \brief CUserVariableTable::DoubleClicked 
@@ -150,7 +155,8 @@ void CUserVariableTable::DoubleClicked(const QModelIndex & index)
 		}
 
 		QString strValue = QString("%1.%2.%3").arg(strNodeTagName.c_str()).arg(strTagName.c_str()).arg(strFileName.c_str());
-		m_pModel->setData(indexTmp, strValue, Qt::EditRole);
+		//m_pModel->setData(indexTmp, strValue, Qt::EditRole);
+		pUserVariableGroup->m_arrItem[indexTmp.row()]->m_strSourceTagName = strValue;
 	}
 	else if (nCol == CUserVariableModel::COLUMN::Scale)
 	{		
@@ -341,18 +347,22 @@ void CUserVariableTable::ShowMouseRightButton(const QPoint& point)
 	QMenu *pMenu = new QMenu(NULL);
 
 	QAction *pAddPoint = new QAction(tr("add point"), pMenu);
-
 	pAddPoint->setIcon(QIcon(CHANNEL_PNG));
-
 	pMenu->addAction(pAddPoint);
 
 	QAction *pDeletePoint = new QAction(tr("delete point"), pMenu);
-
-	pMenu->addAction(pDeletePoint);
-
 	pDeletePoint->setIcon(QIcon(CLOSE_GROUP_PNG));
-
 	pMenu->addAction(pDeletePoint);
+
+	QAction *pClearRelationPoint = nullptr;
+	if (indexSelect.column() == CUserVariableModel::COLUMN::SourceTagName ||
+		indexSelect.column() == CUserVariableModel::COLUMN::Alarm ||
+		indexSelect.column() == CUserVariableModel::COLUMN::Scale)
+	{
+		pClearRelationPoint = new QAction(QObject::tr("Clear Relation"), pMenu);
+		pClearRelationPoint->setIcon(QIcon(CLOSE_GROUP_PNG));
+		pMenu->addAction(pClearRelationPoint);
+	}
 
 	QAction* selectedItem = pMenu->exec(QCursor::pos());
 
@@ -365,6 +375,11 @@ void CUserVariableTable::ShowMouseRightButton(const QPoint& point)
 	{
 		//删除模拟量点
 		DeleteUserVariablePoint(indexSelect);
+	}
+	else if (selectedItem == pClearRelationPoint && pClearRelationPoint != nullptr)
+	{
+		//清空关联
+		m_pModel->setData(indexSelect, Qt::EditRole);
 	}
 
 	pMenu->deleteLater();

@@ -22,7 +22,7 @@ public:
 	enum COLUMN
 	{
 		ID, TagName, OccNo, BlockOccNo, /*DataType,*/ Desc, InitQua, Address, PinLabel, InitValue, Format, Unit, Enable, MaxRaw, MinRaw, MaxConvert, MinConvert,
-		ScaleTagName/*, ScaleDesc*/, ScaleType, RangeL, RangeH, HighQua, LowQua, ReferenceCount, ChannelOccNo, DeviceOccNo
+		ScaleTagName/*, ScaleDesc*//*, ScaleType*/, RangeL, RangeH, HighQua, LowQua, ReferenceCount, ChannelOccNo, DeviceOccNo
 	};
 
 	CAOModel(QObject *parent, std::vector <Config::CAnalogOutput *> &arrAOs, Config::CFesData *pFes, IMainModuleInterface *pCore);

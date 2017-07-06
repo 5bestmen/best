@@ -668,6 +668,7 @@ void CForwardingAIModel::InitPara()
 	para.tagname = "BlockOccNo";
 	m_arrInfo.insert(BlockOccNo, para);
 	horizontal_header_list.append(para.desc);
+	((CForwadingAITable *)parent())->setItemDelegateForColumn(BlockOccNo, pReadOnlyDelegate);
 
 	para.desc = tr("GroupNo");
 	para.tagname = "GroupNo";

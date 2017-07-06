@@ -1076,6 +1076,11 @@ void CAlarm::ItemChanged(QStandardItem *item)
 			return;
 		}
 
+		auto pWidget = dynamic_cast<IBase *>(m_pCore->GetUIMgr()->GetTabWidget()->currentWidget());
+		if (pWidget)
+		{
+			pWidget->Refresh();
+		}
 	}
 	//else if (item->data(Qt::UserRole).toInt() == FES_TYPE_ALARM_ANALOG_LIMIT_ITEM)
 	//{
@@ -1358,6 +1363,12 @@ void CAlarm::ItemChanged(QStandardItem *item)
 				pLimit->setData(strAlarmLimit, LASTVALUE);
 				pLimit->setData(strAlarmLimit, TREE_TOOL_TIP_ROLE);
 			}
+		}
+
+		auto pWidget = dynamic_cast<IBase *>(m_pCore->GetUIMgr()->GetTabWidget()->currentWidget());
+		if (pWidget)
+		{
+			pWidget->Refresh();
 		}
 	}
 	//else if (item->data(Qt::UserRole).toInt() == FES_TYPE_ALARM_DIGITAL_LIMIT_ITEM)

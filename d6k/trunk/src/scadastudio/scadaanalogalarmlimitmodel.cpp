@@ -690,6 +690,8 @@ void CScadaAnalogAlarmLimitModel::InitPara()
 	para.tagname = "BlockNo";
 	//m_arrInfo.insert(OccNo, para);
 	m_horizontal_header_list.append(para.desc);
+	((CScadaAnalogAlarmTable *)parent())->setItemDelegateForColumn(BlockNo, pReadDelegate);
+
 
 	para.desc = tr("Condition");
 	para.tagname = "Condition";

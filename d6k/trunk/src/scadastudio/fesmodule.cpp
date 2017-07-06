@@ -128,7 +128,7 @@ CFesModule::CFesModule(IMainModuleInterface *pCore)
 
 	if (m_pHisSave == nullptr)
 	{
-		m_pHisSave = new CHisSave(m_pCore->GetUIMgr());
+		m_pHisSave = new CHisSave(m_pCore);
 	}
 	else
 	{
@@ -137,7 +137,7 @@ CFesModule::CFesModule(IMainModuleInterface *pCore)
 		delete m_pHisSave;
 		m_pHisSave = nullptr;
 
-		m_pHisSave = new CHisSave(m_pCore->GetUIMgr());
+		m_pHisSave = new CHisSave(m_pCore);
 	}
 
 	if (m_pPdr)
@@ -5579,7 +5579,7 @@ void CFesModule::CreateFesUi(Config::CFesConfigData *pConfig)
 
 	if (m_pHisSave == nullptr)
 	{
-		m_pHisSave = new CHisSave(m_pCore->GetUIMgr());
+		m_pHisSave = new CHisSave(m_pCore);
 	}
 
 	if (m_pPdr == nullptr)
@@ -7573,6 +7573,21 @@ bool CFesModule::GetDesPoolArr(std::unordered_map<std::string, int32u> *pHash, s
 	m_pDescStringPoolOccNo = pDescStringPoolOccNo;
 
 	return true;
+}
+
+QString CFesModule::GetOccNoFromScadaVariableUserSourceTagName(const QString &strFes, const QString &strRelatedTagName)
+{
+	auto pFesData = m_pConfig->GetFesData(strFes.toStdString());
+	Q_ASSERT(pFesData);
+	if (!pFesData)
+	{
+		return nullptr;
+	}
+
+	QString strTmp = "";
+	pFesData->GetUserVariableRelatedSourceOccNo(strFes, strRelatedTagName, strTmp);
+
+	return strTmp;
 }
 
 /*! \fn QString CFesModel::GetGroupName(QModelIndex *pIndex, int nType)

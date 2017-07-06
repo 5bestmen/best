@@ -44,6 +44,11 @@ CUserVariablView::~CUserVariablView()
 
 }
 
+void CUserVariablView::Refresh()
+{
+	m_pTable->RefrushModel();
+}
+
 void CUserVariablView::Delete()
 {
 	m_pTable->setModel(nullptr);

@@ -39,7 +39,8 @@ namespace Config
 		{
 			Index = -1;
 			Name = "";
-			LoadType = "";
+			AppType = 0;
+			LoadType = 0;
 			Argument = "";
 			Description = "";
 			Option = "";
@@ -47,7 +48,9 @@ namespace Config
 
 		int Index;
 		QString Name;
-		QString LoadType;
+		int AppType;
+		int LoadType;
+		int Prority;
 		QString Argument;
 		QString Description;
 		QString Option;

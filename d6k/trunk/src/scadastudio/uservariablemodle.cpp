@@ -308,10 +308,34 @@ bool CUserVariableModel::setData(const QModelIndex &index, const QVariant &value
 		}
 		else if (index.column() == SourceTagName)
 		{
-			if (m_pVariable->m_arrItem[nRow]->m_strSourceTagName != value.toString())
+			if (m_pVariable->m_arrItem[nRow]->m_strSourceTagName.isEmpty())
 			{
-				m_pVariable->m_arrItem[nRow]->m_strSourceTagName = value.toString();
+				return true;
 			}
+
+			auto list = m_pVariable->m_arrItem[nRow]->m_strSourceTagName.split(".");
+			if (list.count() != 3)
+			{
+				auto strTmp = QObject::tr("[Fes %1]  Delete UserVariable TagName %2 Relation SourceTagName %3 is invalid!!!").arg(m_pFesData->m_szTagName).arg(m_pVariable->m_arrItem[nRow]->m_szTagName).arg(m_pVariable->m_arrItem[nRow]->m_strSourceTagName);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+				return false;
+			}
+
+			QString strTmp = QString("%1.%2").arg(list[0]).arg(list[1]);
+
+			//删除关联关系
+			if (!m_pFesData->DeleteUserVariableRelationSourceTagNameArr(strTmp.toStdString(), m_pVariable->m_arrItem[nRow]))
+			{
+				auto strTmp = QObject::tr("[Fes %1]  Delete UserVariable TagName %2 Relation SourceTagName failed!!!").arg(m_pFesData->m_szTagName).arg(m_pVariable->m_arrItem[nRow]->m_szTagName);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+				return false;
+			}
+
+			m_pVariable->m_arrItem[nRow]->m_strSourceTagName.clear();
+
+			return true;
 		}
 		else if (index.column() == Address)
 		{
@@ -336,6 +360,46 @@ bool CUserVariableModel::setData(const QModelIndex &index, const QVariant &value
 			{
 				m_pVariable->m_arrItem[nRow]->m_strPinLabel = value.toString();
 			}
+		}
+		else if (index.column() == Alarm)
+		{
+			if (m_pVariable->m_arrItem[nRow]->m_strAlarmTagName.isEmpty())
+			{
+				return true;
+			}
+
+			//删除关联关系
+			if (!m_pFesData->DeleteUserVariableRelationAlarmArr(m_pVariable->m_arrItem[nRow]->m_strAlarmTagName.toStdString(), m_pVariable->m_arrItem[nRow]))
+			{
+				auto strTmp = QObject::tr("[Fes %1]  Delete AI TagName %2 Relation Alarm failed!!!").arg(m_pFesData->m_szTagName).arg(m_pVariable->m_arrItem[nRow]->m_szTagName);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+				return false;
+			}
+
+			m_pVariable->m_arrItem[nRow]->m_strAlarmTagName.clear();
+
+			return true;
+		}
+		else if (index.column() == Scale)
+		{
+			if (m_pVariable->m_arrItem[nRow]->m_strScaleTagName.isEmpty())
+			{
+				return true;
+			}
+
+			//删除关联关系
+			if (!m_pFesData->DeleteUserVariableRelationScaleArr(m_pVariable->m_arrItem[nRow]->m_strScaleTagName.toStdString(), m_pVariable->m_arrItem[nRow]))
+			{
+				auto strTmp = QObject::tr("[Fes %1]  Delete AI TagName %2 Relation Scale failed!!!").arg(m_pFesData->m_szTagName).arg(m_pVariable->m_arrItem[nRow]->m_szTagName);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+				return false;
+			}
+
+			m_pVariable->m_arrItem[nRow]->m_strScaleTagName.clear();
+
+			return true;
 		}
 
 		return true;

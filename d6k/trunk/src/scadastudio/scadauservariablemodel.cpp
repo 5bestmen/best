@@ -407,10 +407,34 @@ bool CScadaUserVariableModel::setData(const QModelIndex &index, const QVariant &
 		}
 		else if (index.column() == SourceTagName)
 		{
-			if (m_pGroup->m_arrItem[nRow]->m_strSourceTagName != value.toString())
+			if (m_pGroup->m_arrItem[nRow]->m_strSourceTagName.isEmpty())
 			{
-				m_pGroup->m_arrItem[nRow]->m_strSourceTagName = value.toString();
+				return true;
 			}
+
+			auto list = m_pGroup->m_arrItem[nRow]->m_strSourceTagName.split(".");
+			if (list.count() != 3)
+			{
+				auto strTmp = QObject::tr("[Scada Varaible %1]  Delete UserVariable TagName %2 Relation SourceTagName %3 is invalid!!!").arg(m_pScada->m_szTagName).arg(m_pGroup->m_arrItem[nRow]->m_szTagName).arg(m_pGroup->m_arrItem[nRow]->m_strSourceTagName);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+				return false;
+			}
+
+			QString strTmp = QString("%1.%2").arg(list[0]).arg(list[1]);
+
+			//删除关联关系
+			if (!m_pScada->DeleteUserVariableRelationSourceTagNameArr(strTmp.toStdString(), m_pGroup->m_arrItem[nRow]))
+			{
+				auto strTmp = QObject::tr("[Scada Varaible %1]  Delete UserVariable TagName %2 Relation SourceTagName failed!!!").arg(m_pScada->m_szTagName).arg(m_pGroup->m_arrItem[nRow]->m_szTagName);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+				return false;
+			}
+
+			m_pGroup->m_arrItem[nRow]->m_strSourceTagName.clear();
+
+			return true;
 		}
 		else if (index.column() == Address)
 		{
@@ -435,6 +459,46 @@ bool CScadaUserVariableModel::setData(const QModelIndex &index, const QVariant &
 				
 				m_pGroup->m_arrItem[nRow]->m_strPinLabel = value.toString();
 			}
+		}
+		else if (index.column() == Scale)
+		{
+			if (m_pGroup->m_arrItem[nRow]->m_strScaleTagName.isEmpty())
+			{
+				return true;
+			}
+
+			//删除关联关系
+			if (!m_pScada->DeleteUserVariableRelationScaleArr(m_pGroup->m_arrItem[nRow]->m_strScaleTagName.toStdString(), m_pGroup->m_arrItem[nRow]))
+			{
+				auto strTmp = QObject::tr("[Scada Varaible %1]  Delete AI TagName %2 Relation Scale failed!!!").arg(m_pScada->m_szTagName).arg(m_pGroup->m_arrItem[nRow]->m_szTagName);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+				return false;
+			}
+
+			m_pGroup->m_arrItem[nRow]->m_strScaleTagName.clear();
+
+			return true;
+		}
+		else if (index.column() == Alarm)
+		{
+			if (m_pGroup->m_arrItem[nRow]->m_strAlarmTagName.isEmpty())
+			{
+				return true;
+			}
+
+			//删除关联关系
+			if (!m_pScada->DeleteUserVariableRelationAlarmArr(m_pGroup->m_arrItem[nRow]->m_strAlarmTagName.toStdString(), m_pGroup->m_arrItem[nRow]))
+			{
+				auto strTmp = QObject::tr("[Scada Varaible %1]  Delete AI TagName %2 Relation Alarm failed!!!").arg(m_pScada->m_szTagName).arg(m_pGroup->m_arrItem[nRow]->m_szTagName);
+				m_pCore->LogMsg(FES_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+
+				return false;
+			}
+
+			m_pGroup->m_arrItem[nRow]->m_strAlarmTagName.clear();
+
+			return true;
 		}
 
 		return true;

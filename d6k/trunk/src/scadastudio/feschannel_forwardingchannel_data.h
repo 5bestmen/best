@@ -419,8 +419,10 @@ namespace Config
 			, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo);
 		bool SaveAO(QXmlStreamWriter &writer, int &nOccNoChannel, int &nOccNoDevice, int &nAOOccNo, CFesData *pFes, std::unordered_map<std::string, int32u> *pHash
 			, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo);
-		bool SaveDO(QXmlStreamWriter &writer, int &nOccNoChannel, int &nOccNoDevice, int &nDOOccNo, std::unordered_map<std::string, int32u> *pHash
+		bool SaveDO(QXmlStreamWriter &writer, int &nOccNoChannel, int &nOccNoDevice, int &nDOOccNo, CFesData *pFes, std::unordered_map<std::string, int32u> *pHash
 			, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo);
+
+		bool LogToFile(const char* pFilename, const char* pLog);
 	private:
 		void Clear();
 
@@ -484,6 +486,8 @@ namespace Config
 
 		bool SaveChannelData(QXmlStreamWriter &writer, int &nOccNoChannel, int &nOccNoDevice, int &nAIOccNo, int &nDIOccNo, int &nAOOccNo, int &nDOOccNo,
 			CFesData *pFes, std::unordered_map<std::string, int32u> *pHash, std::vector<std::string> *pStringPoolVec, int32u *pDescStringPoolOccNo);
+
+		bool LogToFile(const char* filename, const char* log);
 
 	public:
 		//int32u m_nOccNo;				//¥Û≈≈––∫≈

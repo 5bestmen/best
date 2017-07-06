@@ -35,6 +35,8 @@
 
 #include "global.h"
 #include "scadastudio/imodule.h"
+#include "log/log2file.h"
+#include "qhostaddress.h"
 
 #include <algorithm>
 #include <QFile>
@@ -318,13 +320,43 @@ namespace Config
 			}
 
 			m_arrNodes[0]->m_nSlaveOccNo = m_arrNodes[1]->m_nOccNo;
+
+			//check
+			//判断主备主机名是否相同
+			if (m_arrNodes[0]->m_strHostName == m_arrNodes[1]->m_strHostName)
+			{
+				auto strTmp = QObject::tr("Error-->Node Server group HostNames are same!!!").arg(m_arrNodes[0]->m_strHostName);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
+			//check IP
+			if (m_arrNodes[0]->m_strNetwork_IP_A == m_arrNodes[1]->m_strNetwork_IP_B)
+			{
+				auto strTmp = QObject::tr("Error-->Node Server group IPs %2 are same!!!").arg(m_arrNodes[0]->m_strNetwork_IP_A);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
 		}
 		else if (m_arrNodes.size() == 1)
 		{
 			nOccNo++;
 
 			m_arrNodes[0]->m_nOccNo = nOccNo;
+
+			m_arrNodes[0]->m_nSlaveOccNo = m_arrNodes[0]->m_nOccNo;
 		}
+		else if (m_arrNodes.size() == 0)
+		{
+			//check
+			auto strTmp = QObject::tr("Error-->Node Server node count is 0!!!");
+			MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+			s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+		}
+
+		//check
+		auto strTmp = QObject::tr("-->Node Server node count is %1!!!").arg(m_arrNodes.size());
+		MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
 
 		for each (auto var in m_arrNodes)
 		{
@@ -334,7 +366,23 @@ namespace Config
 			nBlockNo++;
 
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			//check
+			if (!CheckTagNameIsValid(var->m_szTagName, NODE_CONFIG_DESC))
+			{
+				auto strTmp = QObject::tr("Error-->Node Server TagName %1 is invalid!!!").arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("HostName", QString("%1").arg(var->m_strHostName));
+			//check主机名
+			if (!CheckDescIsValid(var->m_strHostName, NODE_CONFIG_DESC) || var->m_strHostName.isEmpty())
+			{
+				auto strTmp = QObject::tr("Error-->Node Server HostName %1 is invalid!!!").arg(var->m_strHostName);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			const auto it = pHash->find(var->m_strHostName.toStdString());
 			if (it == pHash->end())
 			{
@@ -360,25 +408,73 @@ namespace Config
 			writer.writeAttribute("BlockNo", QString("%1").arg(nBlockNo));
 			writer.writeAttribute("NodeType", QString("%1").arg(var->m_nNodeType));
 			writer.writeAttribute("Network_IP_A", QString("%1").arg(var->m_strNetwork_IP_A));
+			QRegExp rx2(MYIPREG);
+			if (!rx2.exactMatch(var->m_strNetwork_IP_A))
+			{
+				auto strTmp = QObject::tr("Error-->Node Server TagName %1  Network_IP_A %2 is invalid!!!").arg(var->m_szTagName).arg(var->m_strNetwork_IP_A);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("Network_IP_B", QString("%1").arg(var->m_strNetwork_IP_B));
+			if (!var->m_strNetwork_IP_B.isEmpty())
+			{
+				if (!rx2.exactMatch(var->m_strNetwork_IP_B))
+				{
+					auto strTmp = QObject::tr("Error-->Node Server TagName %1  Network_IP_B %2 is invalid!!!").arg(var->m_szTagName).arg(var->m_strNetwork_IP_B);
+					MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+			}
+
+			//A网段和B网段不一样
+			if (var->m_strNetwork_IP_A == var->m_strNetwork_IP_B)
+			{
+				auto strTmp = QObject::tr("Error-->Node Server TagName %1  Network_IP_A %2 and Network_IP_B %3 are same!!!").arg(var->m_szTagName).arg(var->m_strNetwork_IP_B).arg(var->m_strNetwork_IP_B);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
+
 			writer.writeAttribute("IsTimeSource", QString("%1").arg(var->m_bIsTimeSource));
 			writer.writeAttribute("Program", QString("%1").arg(var->m_strProgram)); 
+			
 			writer.writeAttribute("Config", QString("%1").arg(var->m_strConfig));
+			if (var->m_strConfig.isEmpty())
+			{
+				auto strTmp = QObject::tr("Error-->Node Server TagName %1  Config is empty!!!").arg(var->m_szTagName).arg(var->m_strConfig);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("GrpName", QString("%1").arg(var->m_strGroup));
 			writer.writeAttribute("Service", QString("%1").arg(var->m_strService));
 			writer.writeAttribute("SlaveOccNo", QString("%1").arg(var->m_nSlaveOccNo));
 
 			//server节点服务
+			int nOccNo = 0;
+			//check
+			if (var->m_arrNodeServiceRole.empty())
+			{
+				auto strTmp = QObject::tr("Error-->Node Server TagName %1 Node Service Role is empty!!!").arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			for each (auto var in var->m_arrNodeServiceRole)
 			{
 				//[0]
 				writer.writeStartElement("m");
 
+				nOccNo++;
 				writer.writeAttribute("index", QString("%1").arg(var->Index));
-				writer.writeAttribute("name", QString("%1").arg(var->Name));
-				writer.writeAttribute("load", QString("%1").arg(var->LoadType));
-				writer.writeAttribute("argument", QString("%1").arg(var->Argument));
-				writer.writeAttribute("description", QString("%1").arg(var->Description));
+				writer.writeAttribute("OccNo", QString("%1").arg(nOccNo));
+				writer.writeAttribute("Name", QString("%1").arg(var->Name));
+				writer.writeAttribute("AppType", QString("%1").arg(var->AppType));
+				writer.writeAttribute("LoadType", QString("%1").arg(var->LoadType));
+				writer.writeAttribute("Argument", QString("%1").arg(var->Argument));
+				writer.writeAttribute("Prority", QString("%1").arg(var->Prority));
+				writer.writeAttribute("Description", QString("%1").arg(var->Description));
 				const auto it = pHash->find(var->Description.toStdString());
 				if (it == pHash->end())
 				{
@@ -1325,18 +1421,20 @@ namespace Config
 					Config::NODE_SERVICE_ROLE *pNodeServiceRole = new Config::NODE_SERVICE_ROLE;
 
 					pNodeServiceRole->Index = xml.attributes().value("index").toInt();
-					pNodeServiceRole->Name = xml.attributes().value("name").toString();
-					auto bFlag = pNodeServiceRole->Name.size() > MAX_TAGNAME_LEN_SCADASTUDIO || pNodeServiceRole->Name.isEmpty();
-					Q_ASSERT(!bFlag);
-					if (bFlag)
+					pNodeServiceRole->Name = xml.attributes().value("Name").toString();
+					auto bFlag = CheckTagNameIsValid(pNodeServiceRole->Name, NODE_CONFIG_DESC);
+					Q_ASSERT(bFlag);
+					if (!bFlag)
 					{
 						xml.readNext();
 						continue;
 					}
 
-					pNodeServiceRole->LoadType = xml.attributes().value("load").toString();
-					pNodeServiceRole->Argument = xml.attributes().value("argument").toString();
-					pNodeServiceRole->Description = xml.attributes().value("description").toString();
+					pNodeServiceRole->AppType = xml.attributes().value("AppType").toInt();
+					pNodeServiceRole->LoadType = xml.attributes().value("LoadType").toInt();
+					pNodeServiceRole->Argument = xml.attributes().value("Argument").toString();
+					pNodeServiceRole->Description = xml.attributes().value("Description").toString();
+					pNodeServiceRole->Prority = xml.attributes().value("Prority").toInt();
 
 					m_arrServerService.push_back(pNodeServiceRole);
 				}
@@ -1426,19 +1524,20 @@ namespace Config
 					Config::NODE_SERVICE_ROLE *pNodeServiceRole = new Config::NODE_SERVICE_ROLE;
 
 					pNodeServiceRole->Index = xml.attributes().value("index").toInt();
-					pNodeServiceRole->Name = xml.attributes().value("name").toString();
-					auto bFlag = pNodeServiceRole->Name.size() > MAX_TAGNAME_LEN_SCADASTUDIO || pNodeServiceRole->Name.isEmpty();
-					Q_ASSERT(!bFlag);
-					if (bFlag)
+					pNodeServiceRole->Name = xml.attributes().value("Name").toString();
+					auto bFlag = CheckTagNameIsValid(pNodeServiceRole->Name, NODE_CONFIG_DESC);
+					Q_ASSERT(bFlag);
+					if (!bFlag)
 					{
 						xml.readNext();
 						continue;
 					}
 
-					pNodeServiceRole->LoadType = xml.attributes().value("load").toString();
-					pNodeServiceRole->Argument = xml.attributes().value("argument").toString();
-					pNodeServiceRole->Description = xml.attributes().value("description").toString();
-					pNodeServiceRole->Option = xml.attributes().value("option").toString();
+					pNodeServiceRole->AppType = xml.attributes().value("AppType").toInt();
+					pNodeServiceRole->LoadType = xml.attributes().value("LoadType").toInt();
+					pNodeServiceRole->Argument = xml.attributes().value("Argument").toString();
+					pNodeServiceRole->Description = xml.attributes().value("Description").toString();
+					pNodeServiceRole->Prority = xml.attributes().value("Prority").toInt();
 
 					pService->m_arrServiceRole.push_back(pNodeServiceRole);
 				}
@@ -1726,6 +1825,14 @@ namespace Config
 
 					memset(pNode->m_szTagName, 0, sizeof(pNode->m_szTagName));
 					auto strTagName = xml.attributes().value("TagName").toString();
+					bool bFlag = CheckTagNameIsValid(strTagName, NODE_CONFIG_DESC);
+					Q_ASSERT(bFlag);
+					if (!bFlag)
+					{
+						xml.readNext();
+						
+						return false;
+					}
 					int nSize = strTagName.size();
 					strncpy(pNode->m_szTagName, strTagName.toStdString().c_str(), qMin(MAX_TAGNAME_LEN_SCADASTUDIO, nSize));
 
@@ -1792,8 +1899,8 @@ namespace Config
 
 					auto strError = QObject::tr("Load server node service fail!!!");
 
-					pService->Name = xml.attributes().value("name").toString();
-					auto bFlag = pService->Name.size() > 0 && pService->Name.size() <= MAX_TAGNAME_LEN_SCADASTUDIO;
+					pService->Name = xml.attributes().value("Name").toString();
+					auto bFlag = CheckTagNameIsValid(pService->Name, NODE_CONFIG_DESC);
 					Q_ASSERT(bFlag);
 					if (!bFlag)
 					{
@@ -1807,11 +1914,13 @@ namespace Config
 					}
 
 					pService->Index = xml.attributes().value("index").toInt();
-					pService->LoadType = xml.attributes().value("load").toString();
-					pService->Argument = xml.attributes().value("argument").toString();
-					pService->Description = xml.attributes().value("description").toString();
+					pService->AppType = xml.attributes().value("AppType").toInt();
+					pService->LoadType = xml.attributes().value("LoadType").toInt();
+					pService->Argument = xml.attributes().value("Argument").toString();
+					pService->Description = xml.attributes().value("Description").toString();
+					pService->Prority = xml.attributes().value("Prority").toInt();
 
-					bFlag = pService->Description.size() > 0 && pService->Description.size() <= MAX_NAME_LENGTH_SCADASTUDIO;
+					bFlag = CheckDescIsValid(pService->Description, NODE_CONFIG_DESC);
 					Q_ASSERT(bFlag);
 					if (!bFlag)
 					{
@@ -1867,6 +1976,10 @@ namespace Config
 
 					memset(pNode->m_szTagName, 0, sizeof(pNode->m_szTagName));
 					auto strTagName = xml.attributes().value("TagName").toString();
+					if (!CheckTagNameIsValid(strTagName, NODE_CONFIG_DESC))
+					{
+						return false;
+					}
 					int nSize = strTagName.size();
 					strncpy(pNode->m_szTagName, strTagName.toStdString().c_str(), qMin(MAX_TAGNAME_LEN_SCADASTUDIO, nSize));
 
@@ -1963,7 +2076,8 @@ namespace Config
 					pNode->m_strNetwork_IP_B = xml.attributes().value("Network_IP_B").toString();
 					pNode->m_bIsTimeSource = xml.attributes().value("IsTimeSource").toInt();
 					pNode->m_strProgram = xml.attributes().value("Program").toString();
-					pNode->m_strGroup = xml.attributes().value("Config").toString();
+					pNode->m_strConfig = xml.attributes().value("Config").toString();
+					pNode->m_strGroup = xml.attributes().value("GrpName").toString();
 					pNode->m_strService = xml.attributes().value("Service").toString();
 
 					LoadNodeServerAndWorkstatonServiceMember(xml, pNode);
@@ -2039,6 +2153,9 @@ namespace Config
 			return false;
 		}
 		
+		auto strTmp = QObject::tr("Node log start!!!");
+		MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), false);
+
 		QDomElement nElet = pXml->createElement("n");
 		QString fileName = "node.xml";
 		nElet.setAttribute("file", fileName);
@@ -2094,12 +2211,36 @@ namespace Config
 		
 
 		writer.writeStartElement("nfes");
+		int nTmp = nOccNo;
 		SaveChildNode(writer, m_pFesGroup, nOccNo, pHash, pStringPoolVec, pDescStringPoolOccNo);
+		if (nOccNo == nTmp)
+		{
+			auto strTmp = QObject::tr("Error-->Node Fes count is 0!!!");
+			MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+			s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+		}
+		else
+		{
+			auto strTmp = QObject::tr("-->Node Fes count is %1!!!").arg(nOccNo - nTmp);
+			MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+		}
 		writer.writeEndElement();
 
 
 		writer.writeStartElement("nworksstation");
+		nTmp = nOccNo;
 		SaveWorkstationChildNode(writer, m_pWorkstationGroup, nOccNo, pHash, pStringPoolVec, pDescStringPoolOccNo);
+		if (nOccNo == nTmp)
+		{
+			auto strTmp = QObject::tr("Error-->Node Workstation count is 0!!!");
+			MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+			s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+		}
+		else
+		{
+			auto strTmp = QObject::tr("-->Node worksstation count is %1!!!").arg(nOccNo - nTmp);
+			MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+		}
 		writer.writeEndElement();
 
 
@@ -2145,30 +2286,86 @@ namespace Config
 		auto it = pGroup->m_arrItem.begin();
 		int nBlockNo = 0;
 
-		if (pGroup->m_arrItem.size() == 2)
+		if (!pGroup->m_strGroup.isEmpty())
+		{
+			if (pGroup->m_arrItem.size() == 2)
+			{
+				for each (auto var in pGroup->m_arrItem)
+				{
+					nOccNo++;
+
+					var->m_nOccNo = nOccNo;
+				}
+
+				pGroup->m_arrItem[0]->m_nSlaveOccNo = pGroup->m_arrItem[1]->m_nOccNo;
+
+				//check
+				//判断主备主机名是否相同
+				if (pGroup->m_arrItem[0]->m_strHostName == pGroup->m_arrItem[1]->m_strHostName)
+				{
+					auto strTmp = QObject::tr("Error-->Node Fes group %1  HostNames %2 are same!!!").arg(pGroup->m_strGroup).arg(pGroup->m_arrItem[0]->m_strHostName);
+					MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+
+				//check IP
+				if (pGroup->m_arrItem[0]->m_strNetwork_IP_A == pGroup->m_arrItem[1]->m_strNetwork_IP_B)
+				{
+					auto strTmp = QObject::tr("Error-->Node Fes group %1 IPs %2 are same!!!").arg(pGroup->m_strGroup).arg(pGroup->m_arrItem[0]->m_strNetwork_IP_A);
+					MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+			}
+			else if (pGroup->m_arrItem.size() == 1)
+			{
+				nOccNo++;
+
+				pGroup->m_arrItem[0]->m_nOccNo = nOccNo;
+
+				pGroup->m_arrItem[0]->m_nSlaveOccNo = pGroup->m_arrItem[0]->m_nOccNo;
+			}
+			else if (pGroup->m_arrItem.size() == 0)
+			{
+				auto strTmp = QObject::tr("Error-->Node Fes Group %1  node count is 0!!!").arg(pGroup->m_strGroup);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+		}
+		else
 		{
 			for each (auto var in pGroup->m_arrItem)
 			{
 				nOccNo++;
 
 				var->m_nOccNo = nOccNo;
+
+				var->m_nSlaveOccNo = var->m_nOccNo;
 			}
-
-			pGroup->m_arrItem[0]->m_nSlaveOccNo = pGroup->m_arrItem[1]->m_nOccNo;
 		}
-		else if (pGroup->m_arrItem.size() == 1)
-		{
-			nOccNo++;
 
-			pGroup->m_arrItem[0]->m_nOccNo = nOccNo;
-		}
 
 		for each (auto var in pGroup->m_arrItem)
 		{
 			writer.writeStartElement("n");
 
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			//check tagname
+			if (!CheckTagNameIsValid(var->m_szTagName, NODE_CONFIG_DESC))
+			{
+				auto strTmp = QObject::tr("Error-->Node Fes Group %1  Node TagName %2 is invalid!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+			
 			writer.writeAttribute("HostName", QString("%1").arg(var->m_strHostName));
+			//check主机名
+			if (!CheckDescIsValid(var->m_strHostName, NODE_CONFIG_DESC) || var->m_strHostName.isEmpty())
+			{
+				auto strTmp = QObject::tr("Error-->Node Fes Group %1  Node HostName %2 is invalid!!!").arg(pGroup->m_strGroup).arg(var->m_strHostName);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+			
 			const auto it = pHash->find(var->m_strHostName.toStdString());
 			if (it == pHash->end())
 			{
@@ -2191,15 +2388,53 @@ namespace Config
 
 			writer.writeAttribute("OccNo", QString("%1").arg(var->m_nOccNo));
 
+			nBlockNo++;
 			var->m_nBlockNo = nBlockNo;
 			writer.writeAttribute("BlockNo", QString("%1").arg(nBlockNo));
 
 			writer.writeAttribute("NodeType", QString("%1").arg(var->m_nNodeType));
 			writer.writeAttribute("Network_IP_A", QString("%1").arg(var->m_strNetwork_IP_A));
+			//check Network_IP_A是否合法
+			QRegExp rx2(MYIPREG);
+			if (!rx2.exactMatch(var->m_strNetwork_IP_A))
+			{
+				auto strTmp = QObject::tr("Error-->Node Fes Group %1 TagName %2  Network_IP_A %3 is invalid!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName).arg(var->m_strNetwork_IP_A);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("Network_IP_B", QString("%1").arg(var->m_strNetwork_IP_B));
+			if (!var->m_strNetwork_IP_B.isEmpty())
+			{
+				if (!rx2.exactMatch(var->m_strNetwork_IP_B))
+				{
+					auto strTmp = QObject::tr("Error-->Node Fes Group %1 TagName %2  Network_IP_B %3 is invalid!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName).arg(var->m_strNetwork_IP_B);
+					MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+
+			}
+
+			//A网段和B网段不一样
+			if (var->m_strNetwork_IP_A == var->m_strNetwork_IP_B)
+			{
+				auto strTmp = QObject::tr("Error-->Node Fes Group %1  Node TagName %2  Network_IP_A %3 and Network_IP_B %4 are same!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName).arg(var->m_strNetwork_IP_B).arg(var->m_strNetwork_IP_B);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("IsTimeSource", QString("%1").arg(var->m_bIsTimeSource));
 			writer.writeAttribute("Program", QString("%1").arg(var->m_strProgram));
+
+
 			writer.writeAttribute("Config", QString("%1").arg(var->m_strConfig));
+			if (var->m_strConfig.isEmpty())
+			{
+				auto strTmp = QObject::tr("Error-->Node Fes Group %1  Node TagName %2  Config %3 is empty!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName).arg(var->m_strConfig);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("GrpName", QString("%1").arg(var->m_strGroup));
 			//新加SlaveOccNo
 			writer.writeAttribute("SlaveOccNo", QString("%1").arg(var->m_nSlaveOccNo));
@@ -2245,22 +2480,62 @@ namespace Config
 		auto it = pGroup->m_arrItem.begin();
 		int nBlockNo = 0;
 
-		if (pGroup->m_arrItem.size() == 2)
+		if (!pGroup->m_strGroup.isEmpty())
+		{
+			if (pGroup->m_arrItem.size() == 2)
+			{
+				for each (auto var in pGroup->m_arrItem)
+				{
+					nOccNo++;
+
+					var->m_nOccNo = nOccNo;
+				}
+
+				pGroup->m_arrItem[0]->m_nSlaveOccNo = pGroup->m_arrItem[1]->m_nOccNo;
+
+				//check
+				//判断主备主机名是否相同
+				if (pGroup->m_arrItem[0]->m_strHostName == pGroup->m_arrItem[1]->m_strHostName)
+				{
+					auto strTmp = QObject::tr("Error-->Node Workstation group %1  HostNames %2 are same!!!").arg(pGroup->m_strGroup).arg(pGroup->m_arrItem[0]->m_strHostName);
+					MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+
+				//check IP
+				if (pGroup->m_arrItem[0]->m_strNetwork_IP_A == pGroup->m_arrItem[1]->m_strNetwork_IP_B)
+				{
+					auto strTmp = QObject::tr("Error-->Node Workstation group %1 IPs %2 are same!!!").arg(pGroup->m_strGroup).arg(pGroup->m_arrItem[0]->m_strNetwork_IP_A);
+					MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+
+			}
+			else if (pGroup->m_arrItem.size() == 1)
+			{
+				nOccNo++;
+
+				pGroup->m_arrItem[0]->m_nOccNo = nOccNo;
+
+				pGroup->m_arrItem[0]->m_nSlaveOccNo = pGroup->m_arrItem[0]->m_nOccNo;
+			}
+			else if (pGroup->m_arrItem.size() == 0)
+			{
+				auto strTmp = QObject::tr("Error-->Node Workstation Group %1  member node count is 0!!!");
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+		}
+		else
 		{
 			for each (auto var in pGroup->m_arrItem)
 			{
 				nOccNo++;
 
 				var->m_nOccNo = nOccNo;
+
+				var->m_nSlaveOccNo = var->m_nOccNo;
 			}
-
-			pGroup->m_arrItem[0]->m_nSlaveOccNo = pGroup->m_arrItem[1]->m_nOccNo;
-		}
-		else if (pGroup->m_arrItem.size() == 1)
-		{
-			nOccNo++;
-
-			pGroup->m_arrItem[0]->m_nOccNo = nOccNo;
 		}
 
 
@@ -2269,22 +2544,29 @@ namespace Config
 			writer.writeStartElement("n");
 
 			writer.writeAttribute("TagName", QString("%1").arg(var->m_szTagName));
+			if (!CheckTagNameIsValid(var->m_szTagName, NODE_CONFIG_DESC))
+			{
+				auto strTmp = QObject::tr("Error-->Node Workstation Group %1 Node TagName %2 is invalid!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("HostName", QString("%1").arg(var->m_strHostName));
-			const auto it = pHash->find(var->m_strHostName.toStdString());
-			if (it == pHash->end())
-			{
-				//字符串池
-				*pDescStringPoolOccNo = *pDescStringPoolOccNo + 1;
-				pHash->insert(std::make_pair(var->m_strHostName.toStdString(), *pDescStringPoolOccNo));
-				pStringPoolVec->push_back(var->m_strHostName.toStdString());
-				//desc occno
-				writer.writeAttribute("DescriptionOccNo", QString("%1").arg(*pDescStringPoolOccNo));
-			}
-			else
-			{
-				//desc occno
-				writer.writeAttribute("DescriptionOccNo", QString("%1").arg(it->second));
-			}
+			//const auto it = pHash->find(var->m_strHostName.toStdString());
+			//if (it == pHash->end())
+			//{
+			//	//字符串池
+			//	*pDescStringPoolOccNo = *pDescStringPoolOccNo + 1;
+			//	pHash->insert(std::make_pair(var->m_strHostName.toStdString(), *pDescStringPoolOccNo));
+			//	pStringPoolVec->push_back(var->m_strHostName.toStdString());
+			//	//desc occno
+			//	writer.writeAttribute("DescriptionOccNo", QString("%1").arg(*pDescStringPoolOccNo));
+			//}
+			//else
+			//{
+			//	//desc occno
+			//	writer.writeAttribute("DescriptionOccNo", QString("%1").arg(it->second));
+			//}
 
 
 			//nOccNo++;
@@ -2292,16 +2574,52 @@ namespace Config
 
 			writer.writeAttribute("OccNo", QString("%1").arg(var->m_nOccNo));
 
+			nBlockNo++;
 			var->m_nBlockNo = nBlockNo;
 			writer.writeAttribute("BlockNo", QString("%1").arg(nBlockNo));
 
 			writer.writeAttribute("NodeType", QString("%1").arg(var->m_nNodeType));
 			writer.writeAttribute("Network_IP_A", QString("%1").arg(var->m_strNetwork_IP_A));
+			QRegExp rx2(MYIPREG);
+			if (!rx2.exactMatch(var->m_strNetwork_IP_A))
+			{
+				auto strTmp = QObject::tr("Error-->Node Workstation Group %1 TagName %2  Network_IP_A %3 is invalid!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName).arg(var->m_strNetwork_IP_A);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("Network_IP_B", QString("%1").arg(var->m_strNetwork_IP_B));
+			if (!var->m_strNetwork_IP_B.isEmpty())
+			{
+				if (!rx2.exactMatch(var->m_strNetwork_IP_B))
+				{
+					auto strTmp = QObject::tr("Error-->Node Workstation Group %1 TagName %2  Network_IP_B %3 is invalid!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName).arg(var->m_strNetwork_IP_B);
+					MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+					s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+				}
+			}
+
+			//A网段和B网段不一样
+			if (var->m_strNetwork_IP_A == var->m_strNetwork_IP_B)
+			{
+				auto strTmp = QObject::tr("Error-->Node Workstation Group %1  Node TagName %2  Network_IP_A %3 and Network_IP_B %4 are same!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName).arg(var->m_strNetwork_IP_B).arg(var->m_strNetwork_IP_B);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+
 			writer.writeAttribute("IsTimeSource", QString("%1").arg(var->m_bIsTimeSource));
 			writer.writeAttribute("Program", QString("%1").arg(var->m_strProgram));
+			
 			writer.writeAttribute("Config", QString("%1").arg(var->m_strConfig));
+			if (var->m_strConfig.isEmpty())
+			{
+				auto strTmp = QObject::tr("Error-->Node Workstation Group %1  Node TagName %2  Config %3 is empty!!!").arg(pGroup->m_strGroup).arg(var->m_szTagName).arg(var->m_strConfig);
+				MYLIB::Log2File(LOG_NODE_LOG, strTmp.toStdString().c_str(), true);
+				s_pGlobleCore->LogMsg(NODE_CONFIG_DESC, strTmp.toStdString().c_str(), LEVEL_1);
+			}
+			
 			writer.writeAttribute("GrpName", QString("%1").arg(var->m_strGroup));
+
 			writer.writeAttribute("SlaveOccNo", QString("%1").arg(var->m_nSlaveOccNo));
 
 			writer.writeAttribute("Service", QString("%1").arg(var->m_strService));
@@ -2313,10 +2631,28 @@ namespace Config
 				writer.writeStartElement("m");
 
 				writer.writeAttribute("index", QString("%1").arg(var->Index));
-				writer.writeAttribute("name", QString("%1").arg(var->Name));
-				writer.writeAttribute("load", QString("%1").arg(var->LoadType));
-				writer.writeAttribute("argument", QString("%1").arg(var->Argument));
-				writer.writeAttribute("description", QString("%1").arg(var->Description));
+				writer.writeAttribute("OccNo", QString("%1").arg(var->Index));
+				writer.writeAttribute("Name", QString("%1").arg(var->Name));
+				writer.writeAttribute("AppType", QString("%1").arg(var->AppType));
+				writer.writeAttribute("LoadType", QString("%1").arg(var->LoadType));
+				writer.writeAttribute("Argument", QString("%1").arg(var->Argument));
+				writer.writeAttribute("Prority", QString("%1").arg(var->Prority));
+				writer.writeAttribute("Description", QString("%1").arg(var->Description));
+				const auto it = pHash->find(var->Description.toStdString());
+				if (it == pHash->end())
+				{
+					//字符串池
+					*pDescStringPoolOccNo = *pDescStringPoolOccNo + 1;
+					pHash->insert(std::make_pair(var->Description.toStdString(), *pDescStringPoolOccNo));
+					pStringPoolVec->push_back(var->Description.toStdString());
+					//DescriptionOccNo
+
+					writer.writeAttribute("DescriptionOccNo", QString("%1").arg(*pDescStringPoolOccNo));
+				}
+				else
+				{
+					writer.writeAttribute("DescriptionOccNo", QString("%1").arg(it->second));
+				}
 
 				//[0]
 				writer.writeEndElement();
